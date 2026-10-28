@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const help = `MoonBit FCS data preparation (Node >= 22)
   node tools/fcs.mjs inspect|validate|stats|metadata|values|gate input.fcs [--options options.json]
@@ -33,6 +34,8 @@ Its optional channels list selects/reorders report columns after full-channel co
 array requests include original channel_indices. Omitted/null retains the all-channel format.
 population-stats start/count slice population member positions like CSV; an explicit window
 adds events (window length), while population_events remains the full group length.
+  include_read_report:true optionally adds the original source SHA-256, selected dataset,
+  source version and actual read warnings before the private canonical statistics copy.
 It uses an in-memory population FCS copy; see POPULATION-STATS.md for limits.
 Build first: moon build --target js --release`;
 
@@ -101,11 +104,12 @@ async function main() {
   if (command === 'population-stats') {
     if (files.length !== 1) throw Error('population-stats needs one input path');
     const parseKeys = ['dataset','strict','allow_exclusive_end','latin1','allow_text_padding','allow_offset_padding'];
-    const allowed = new Set([...parseKeys,'gates','population','scaled','compensated','channels','start','count']);
+    const allowed = new Set([...parseKeys,'gates','population','scaled','compensated','channels','start','count','include_read_report']);
     for (const key of Object.keys(options)) if (!allowed.has(key)) throw Error(`unsupported population-stats option: ${key}`);
-    for (const key of ['scaled','compensated']) if (Object.hasOwn(options, key) && typeof options[key] !== 'boolean') throw Error(`${key} must be boolean`);
+    for (const key of ['scaled','compensated','include_read_report']) if (Object.hasOwn(options, key) && typeof options[key] !== 'boolean') throw Error(`${key} must be boolean`);
     if (!Object.hasOwn(options, 'gates') || typeof options.population !== 'string') throw Error('population-stats requires gates and population');
     const source = input(files[0]);
+    const sourceHash = options.include_read_report ? createHash('sha256').update(source).digest('hex') : null;
     const d = api.load(source, JSON.stringify(options));
     const info = query(d, 'inspect');
     if (info.mode !== 'ListMode') throw Error('population statistics require list DATA; use histogram APIs');
@@ -115,6 +119,7 @@ async function main() {
     delete gateOptions.compensated;
     delete gateOptions.start;
     delete gateOptions.count;
+    delete gateOptions.include_read_report;
     const members = JSON.parse(api.query(d, JSON.stringify(gateOptions)));
     const hasWindow = Object.hasOwn(options, 'start') || Object.hasOwn(options, 'count');
     const start = options.start ?? 0, count = options.count ?? members.length - start;
@@ -131,7 +136,9 @@ async function main() {
       scaled:!!options.scaled || !!options.compensated, compensated:!!options.compensated,
       statistics:reportChannels === null ? statistics : reportChannels.map(i => statistics[i]),
       ...(reportChannels === null ? {} : {channel_indices:reportChannels}),
-      ...(hasWindow ? {events:count} : {})}, null, 2));
+      ...(hasWindow ? {events:count} : {}),
+      ...(options.include_read_report ? {read_report:{source_sha256:sourceHash, dataset:options.dataset ?? 0,
+        version:info.version, warnings:info.warnings}} : {})}, null, 2));
     return;
   }
   if (command === 'csv') {

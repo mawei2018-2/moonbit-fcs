@@ -29,6 +29,8 @@ CSV可另选event_index_column，把该源Dataset索引写入首列，便于CSV�
 
 `population-stats`将gates/population接到既有MoonBit统计，报告该群体的源事件索引、有限/非有限计数、极值、均值和样本方差。可选start/count按群体成员位置取窗口，与CSV语义对齐；显式窗口另报实际events，population_events保留完整群体数。默认全部原通道；可选channels按精确PnN/数字选择和重排报告，返回源channel_indices。顶层scaled/compensated独立选择统计视图，完整通道矩阵先参与补偿，再筛报告列；无中间磁盘FCS，原文件与ANALYSIS不改。内部仍创建群体FCS内存副本；统计为Double，不保证大整数精度。用法和边界见[群体统计](POPULATION-STATS.md)。原stats仍报告整个Dataset，返回格式保持。
 
+`include_read_report:true`可随群体统计附上原输入SHA-256、所选Dataset、原版本及其真实读取warnings，避免内部规范化副本掩盖兼容修正。默认/false保持原schema和输出字节；统计、成员与读取政策保持。许可原文件的单次交付示例见[repod-population-read-report.mjs](examples/repod-population-read-report.mjs)。
+
 CLI报告和写文件回执输出到stdout（JSON），输入、参数或IO等异常写到stderr（文本）。退出码：0表示命令正常执行，1表示异常；compare返回2表示比较结果不兼容。退出0仍须查看报告字段和warnings。
 
 `compare`以首文件为基准，比较存储模式、通道名称/顺序/位宽/范围/放大器/染色名、DATA类型、TIMESTEP及SPILLOVER，JSON逐文件显示mode。事件数、直方图频数、DATA内容和字节序可以不同；L、C、U之间不兼容。此检查用于所列结构/校准字段的流程前置判断，不证明相同生物面板、样本来源、全部元数据或数学等价。
