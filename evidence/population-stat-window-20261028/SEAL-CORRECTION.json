@@ -1,0 +1,19 @@
+{
+  "status": "corrected",
+  "scope": "seal-only expected mean list",
+  "originalFailure": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\SEAL-ATTEMPT-1.json",
+  "actualInputRow5": [
+    "20",
+    "4",
+    "8",
+    "18446744073709551621"
+  ],
+  "correctedExpectedMeans": [
+    8,
+    20,
+    8
+  ],
+  "expectedDerivedFromIndependentInput": true,
+  "runtimeCodeChanged": false,
+  "productTestsRerun": false
+}

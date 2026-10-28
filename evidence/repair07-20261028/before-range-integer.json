@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "rewrite",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\before-inputs\\fractional-range.fcs",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\before-inputs\\fractional-I.fcs",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\before-inputs\\before-range-integer-options.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T05:44:33.325669+00:00",
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Invalid(\"integer encoding requires an integral finite value\")\n"
+}

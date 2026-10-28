@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "test",
+    "isolation08_wbtest.mbt",
+    "--target",
+    "js",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T06:02:20.411636+00:00",
+  "exitCode": 2,
+  "stdout": "[mawei2018/fcs] test isolation08_wbtest.mbt:30 (\"repair08 zero compensation coefficients isolate nonfinite measurements\") failed: isolation08_wbtest.mbt:40:9-40:76@mawei2018/fcs FAILED: `NaN != 5`\ndiff:\n-NaN +5\n[mawei2018/fcs] test isolation08_wbtest.mbt:66 (\"repair08 sparse blocks keep real nonzero compensation dependencies\") failed: isolation08_wbtest.mbt:74:5-74:63@mawei2018/fcs FAILED: `NaN != -0.5`\ndiff:\n-NaN +-0.5\nTotal tests: 2, passed: 0, failed: 2.\n",
+  "stderr": ""
+}

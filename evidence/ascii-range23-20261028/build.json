@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "build",
+    "--target",
+    "js",
+    "--release",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T11:35:51.793763+00:00",
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": "Finished. moon: ran 3 tasks, now up to date\n"
+}

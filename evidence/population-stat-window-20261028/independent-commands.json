@@ -1,0 +1,367 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-0.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 5,\n  \"source_event_indices\": [\n    0,\n    2,\n    4,\n    5,\n    7\n  ],\n  \"channel_names\": [\n    \"Target\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 5,\n      \"nonfinite\": 0,\n      \"minimum\": 3,\n      \"maximum\": 11,\n      \"mean\": 7,\n      \"variance\": 10\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-1.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 5,\n  \"source_event_indices\": [\n    2,\n    4\n  ],\n  \"channel_names\": [\n    \"Target\",\n    \"Driver\",\n    \"Target\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 5,\n      \"maximum\": 7,\n      \"mean\": 6,\n      \"variance\": 2\n    },\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 4,\n      \"maximum\": 6,\n      \"mean\": 5,\n      \"variance\": 2\n    },\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 5,\n      \"maximum\": 7,\n      \"mean\": 6,\n      \"variance\": 2\n    }\n  ],\n  \"channel_indices\": [\n    1,\n    0,\n    1\n  ],\n  \"events\": 2\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\same-window.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-2.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\final-closeout-20261028\\\\window-consumer\\\\same-window.csv\",\"events\":2,\"scaled\":true,\"compensated\":true,\"event_index_column\":\"source_event_index\",\"population\":\"p\",\"population_events\":5,\"source_event_indices\":[2,4]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-3.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 5,\n  \"source_event_indices\": [\n    0,\n    2\n  ],\n  \"channel_names\": [\n    \"Target\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 16,\n      \"maximum\": 28,\n      \"mean\": 22,\n      \"variance\": 72\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ],\n  \"events\": 2\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-4.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 5,\n  \"source_event_indices\": [\n    5,\n    7\n  ],\n  \"channel_names\": [\n    \"Target\"\n  ],\n  \"scaled\": true,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 13,\n      \"maximum\": 16,\n      \"mean\": 14.5,\n      \"variance\": 4.5\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ],\n  \"events\": 2\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-5.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 5,\n  \"source_event_indices\": [\n    0,\n    2,\n    4,\n    5,\n    7\n  ],\n  \"channel_names\": [\n    \"Target\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 5,\n      \"nonfinite\": 0,\n      \"minimum\": 3,\n      \"maximum\": 11,\n      \"mean\": 7,\n      \"variance\": 10\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ],\n  \"events\": 5\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-6.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 5,\n  \"source_event_indices\": [],\n  \"channel_names\": [\n    \"Target\",\n    \"Driver\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 0,\n      \"nonfinite\": 0\n    },\n    {\n      \"count\": 0,\n      \"nonfinite\": 0\n    }\n  ],\n  \"channel_indices\": [\n    1,\n    0\n  ],\n  \"events\": 0\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-7.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 5,\n  \"source_event_indices\": [],\n  \"channel_names\": [\n    \"Target\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 0,\n      \"nonfinite\": 0\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ],\n  \"events\": 0\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-8.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"empty\",\n  \"population_events\": 0,\n  \"source_event_indices\": [],\n  \"channel_names\": [\n    \"Target\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 0,\n      \"nonfinite\": 0\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ],\n  \"events\": 0\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-9.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "invalid population statistics range\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-10.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "invalid population statistics range\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-11.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "invalid population statistics range\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-12.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "invalid population statistics range\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-13.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "invalid population statistics range\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-14.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-15.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-16.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-17.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-18.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-19.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-20.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"unknown population: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\chained.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-21.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 5,\n  \"source_event_indices\": [\n    2,\n    4\n  ],\n  \"channel_names\": [\n    \"Target\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 5,\n      \"maximum\": 7,\n      \"mean\": 6,\n      \"variance\": 2\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ],\n  \"events\": 2\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-nonfinite.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-22.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 4,\n  \"source_event_indices\": [\n    2,\n    3\n  ],\n  \"channel_names\": [\n    \"Signal\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 1,\n      \"nonfinite\": 1,\n      \"minimum\": 20,\n      \"maximum\": 20,\n      \"mean\": 20\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ],\n  \"events\": 2\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\retained-round25-start-request.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-23.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"selected\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    2,\n    4,\n    5\n  ],\n  \"channel_names\": [\n    \"X\",\n    \"Y\",\n    \"ID\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 6,\n      \"maximum\": 12,\n      \"mean\": 9.333333333333334,\n      \"variance\": 9.333333333333332\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 20,\n      \"maximum\": 28,\n      \"mean\": 24,\n      \"variance\": 16\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 18446744073709552000,\n      \"maximum\": 18446744073709552000,\n      \"mean\": 18446744073709552000,\n      \"variance\": 0\n    }\n  ],\n  \"events\": 3\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "create",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\portable-window-example.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-24.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\final-closeout-20261028\\\\window-consumer\\\\portable-window-example.fcs\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\portable-window-example.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\options-25.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"id_window\",\n  \"population_events\": 2,\n  \"source_event_indices\": [\n    5\n  ],\n  \"channel_names\": [\n    \"M\",\n    \"X\",\n    \"M\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 1,\n      \"nonfinite\": 0,\n      \"minimum\": 8,\n      \"maximum\": 8,\n      \"mean\": 8\n    },\n    {\n      \"count\": 1,\n      \"nonfinite\": 0,\n      \"minimum\": 20,\n      \"maximum\": 20,\n      \"mean\": 20\n    },\n    {\n      \"count\": 1,\n      \"nonfinite\": 0,\n      \"minimum\": 8,\n      \"maximum\": 8,\n      \"mean\": 8\n    }\n  ],\n  \"channel_indices\": [\n    2,\n    0,\n    2\n  ],\n  \"events\": 1\n}\n",
+    "stderr": ""
+  }
+]

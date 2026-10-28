@@ -1,0 +1,153 @@
+{
+  "status": "passed",
+  "oracle": "independent Python complete-integer/ASCII reader and bit-string writer",
+  "external_parser_claim": false,
+  "engineSha256": "1a6d5ad5cebfb0ab064ce612c8c4b1c7a84b3faae5dcda8d033fb0cc4074b686",
+  "cases": [
+    {
+      "name": "packed12_little",
+      "products": 5,
+      "numeric_gate": true,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    },
+    {
+      "name": "packed12_big",
+      "products": 5,
+      "numeric_gate": true,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    },
+    {
+      "name": "cross_event_little",
+      "products": 5,
+      "numeric_gate": true,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    },
+    {
+      "name": "mixed_wide_little",
+      "products": 5,
+      "numeric_gate": true,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    },
+    {
+      "name": "cross_event_big",
+      "products": 5,
+      "numeric_gate": true,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    },
+    {
+      "name": "mixed_wide_big",
+      "products": 5,
+      "numeric_gate": true,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    },
+    {
+      "name": "exact_range_above_double",
+      "products": 4,
+      "numeric_gate": false,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    },
+    {
+      "name": "packed_unused_bits",
+      "products": 5,
+      "numeric_gate": true,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    },
+    {
+      "name": "ascii_fixed",
+      "products": 5,
+      "numeric_gate": true,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    },
+    {
+      "name": "ascii_variable",
+      "products": 5,
+      "numeric_gate": true,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    },
+    {
+      "name": "ascii_mixed_width",
+      "products": 5,
+      "numeric_gate": true,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    },
+    {
+      "name": "ascii_wide_integer",
+      "products": 4,
+      "numeric_gate": false,
+      "checks": [
+        "exact-values",
+        "raw-subset-bits-or-spelling",
+        "full-rewrite",
+        "empty-selection",
+        "metadata-remap"
+      ]
+    }
+  ],
+  "products": 58
+}

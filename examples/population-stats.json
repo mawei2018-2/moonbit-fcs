@@ -1,0 +1,74 @@
+{
+  "gates": [
+    {
+      "id": "id_window",
+      "parent": "shape",
+      "integer_bounds": [
+        {
+          "channel": 3,
+          "lower": "18446744073709551618",
+          "upper": "18446744073709551622"
+        }
+      ]
+    },
+    {
+      "id": "high",
+      "parent": "window",
+      "bounds": [
+        [
+          2,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "id": "window",
+      "bounds": [
+        [
+          0,
+          15,
+          45
+        ]
+      ]
+    },
+    {
+      "id": "shape",
+      "parent": "window",
+      "x": 0,
+      "y": 1,
+      "vertices": [
+        [
+          15,
+          0
+        ],
+        [
+          35,
+          0
+        ],
+        [
+          35,
+          5
+        ],
+        [
+          15,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "low",
+      "parent": "window",
+      "bounds": [
+        [
+          2,
+          0,
+          6
+        ]
+      ]
+    }
+  ],
+  "population": "id_window",
+  "scaled": false,
+  "compensated": false
+}

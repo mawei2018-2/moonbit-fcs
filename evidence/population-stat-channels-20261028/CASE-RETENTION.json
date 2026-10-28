@@ -1,0 +1,14 @@
+{
+  "status": "verified",
+  "oldFixture": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+  "newFixture": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\retained-round25-channel-request.fcs",
+  "fixtureBytesIdentical": true,
+  "fixtureSha256": "731f938f1c3179bf54e737db57a977fe64f4ddb9f672069565f380b5665333db",
+  "requestOptionsIdentical": true,
+  "originalInputAndFailureLogRetained": true,
+  "oldExpectedCode": 1,
+  "newExpectedCode": 0,
+  "reason": "explicit additive channels capability; retained original input now verifies channel indices, members and independent statistics",
+  "unchangedOldRequestsRerun": false,
+  "fullOldSuiteOrRepodRun": false
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "gate",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\before-inputs\\identity-with-missing-channel.fcs",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\before-inputs\\before-gate.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T06:01:19.222768+00:00",
+  "exitCode": 0,
+  "stdout": "[]\n",
+  "stderr": ""
+}

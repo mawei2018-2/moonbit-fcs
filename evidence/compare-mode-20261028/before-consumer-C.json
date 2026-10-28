@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "populations",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\before-inputs\\C.fcs",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\before-inputs\\plan.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T08:08:50.955221+00:00",
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "rewrite",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-23-max-20261028\\before-inputs\\generated-ascii.fcs",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-23-max-20261028\\before-inputs\\converted-integer.fcs",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-23-max-20261028\\before-inputs\\rewrite.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T11:23:27.496177+00:00",
+  "exitCode": 0,
+  "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-23-max-20261028\\\\before-inputs\\\\converted-integer.fcs\",\"bytes\":503}\n",
+  "stderr": ""
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "test",
+    "correctness_wbtest.mbt",
+    "--filter",
+    "*inverse*",
+    "--target",
+    "js",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T06:04:44.931533+00:00",
+  "exitCode": 0,
+  "stdout": "Total tests: 3, passed: 3, failed: 0.\n",
+  "stderr": ""
+}

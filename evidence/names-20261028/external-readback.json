@@ -1,0 +1,16 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\fcs-reference-venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "tools/verify-named-repod.py",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\real-example",
+    "--report",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\external-readback-result.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T06:56:18.051231+00:00",
+  "exitCode": 0,
+  "stdout": "{\"status\": \"passed\", \"inputLicense\": \"CC BY4.0 file96804\", \"externalReader\": \"FlowIO1.4.0 preprocess=False\", \"counts\": [2117, 1794, 662], \"selectedValuesVerified\": 1986, \"rawDataBytesVerified\": 7944, \"csvValuesVerified\": 1324, \"sourceSha256\": \"91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c\", \"selectedSha256\": \"0ccebcb39a4d6cfee2d9bc6023b580eaf99eeb45d5ab68d599ed106070977611\", \"oracle\": \"explicit NumPy numeric conditions; FlowIO raw values; direct source DATA byte projection\"}\n",
+  "stderr": ""
+}

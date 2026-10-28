@@ -1,0 +1,33 @@
+{
+  "target": "js",
+  "separateModule": true,
+  "sourceOrigin": "git checkout including non-ignored new files",
+  "exitCode": 0,
+  "wholeReportMatches": true,
+  "inputSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "sourceEvents": 14320,
+  "sourceChannels": 26,
+  "selectedEvents": 2117,
+  "valuesCompared": 6351,
+  "outputSha256": "f7b7eebc2610baf1aa8affaccb8256cbfca2303766bfdacbd4a80b121ae1eaf1",
+  "sourceSha256": {
+    "moon.mod": "75da13efdb5b38329785501a6f875361bb722b3e0cea7ce282626b015201e041",
+    "parse.mbt": "54aa516bac0612479bd27eb53f57b728fe4401cf57151980f248c9c3811bdc1e",
+    "offset_padding.mbt": "99ff42c782c01b2047fd9c9ecb3bf19e1d3c70c36164a5519ed0184f52e47516",
+    "types.mbt": "adba9e7d40ed4314287f0c7492dd0a64329f8c38aa4e7bc53e2f9afc9e5ef926",
+    "events.mbt": "3cbc2228e4e5d81eb4f1418b486fe8a4747dbc1ae123fff0c7aa78519cda8506",
+    "write.mbt": "ad19182e177682923cd5946a06a494e9d9de26e8babcbc2c7c2d81541ca5a4b9",
+    "text.mbt": "88f79664f93de2b39e561e9d59e2783964a51cc31352746719cd3af28c44fefa",
+    "derived_extensions.mbt": "427a40e7e6dbab6ce069c502683a1ac6a5acfaf251a0c71188bbf79d6290a266",
+    "moon.pkg": "2963408fa11c8bfcf19acaca62420456ca01965d6e42d68d4b4dc6eafc4efa03",
+    "pkg.generated.mbti": "27a1e510ee01ca3089cc3039d7799df3d3335c1601b6e44fd10412b2fe12c950",
+    "examples/repod-consumer/main.mbt": "fefcfd3529449121ef9d8233789e903522bcbae154fca4c83f07c3ae7257277f",
+    "examples/repod-consumer/moon.mod": "bc3ac3ee3dc17c72e911551c825d3d131c77f2256a73fef150948585e88ed16e",
+    "examples/repod-consumer/moon.pkg": "eb5241485935d59067f4892594af727f68ad8035747c431b52ed88c39048f565",
+    "tools/run-repod-consumer.py": "97298c4927e6ade127ab4667871bbc2a74f4c60a6fd856f4f28e86ef36f6504f"
+  },
+  "limits": [
+    "project-authored separate module, not external adoption",
+    "raw values only; numeric exchange selection, not biological interpretation"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "csv",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-23-max-20261028\\before-inputs\\converted-integer.fcs",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-23-max-20261028\\before-inputs\\changed.csv",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-23-max-20261028\\before-inputs\\csv-integer.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T11:23:28.107121+00:00",
+  "exitCode": 0,
+  "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-23-max-20261028\\\\before-inputs\\\\changed.csv\",\"events\":3,\"scaled\":false,\"compensated\":false}\n",
+  "stderr": ""
+}

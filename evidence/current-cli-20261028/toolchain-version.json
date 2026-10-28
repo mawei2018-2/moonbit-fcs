@@ -1,0 +1,13 @@
+{
+  "name": "toolchain-version",
+  "startedUtc": "2026-10-27T16:52:56.423967+00:00",
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "version",
+    "--all"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "exitCode": 0,
+  "stdout": "moon 0.1.20260920 (914d7da 2026-09-20) D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe\nmoonc v0.10.14+7d59c7ec9 (2026-09-18) D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moonc.exe\nmoonrun 0.1.20260920 (914d7da 2026-09-20) D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moonrun.exe\n\nFeature flags enabled: rr_moon_mod,rr_moon_pkg\n",
+  "stderr": ""
+}

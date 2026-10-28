@@ -1,0 +1,823 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-0.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 4,\n    \"total_count\": 4,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 2,\n    \"total_count\": 4,\n    \"parent_fraction\": 1,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"exact\",\n    \"parent\": \"shape\",\n    \"event_indices\": [\n      2\n    ],\n    \"count\": 1,\n    \"parent_count\": 2,\n    \"total_count\": 4,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.25\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-1.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"7\",\n    \"10\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-2.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\selected-I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-3.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\selected-I-little-0123.fcs\",\"bytes\":561}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-4.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\I-little-0123.csv\",\"events\":4,\"scaled\":false}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rewritten-I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-5.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\rewritten-I-little-0123.fcs\",\"bytes\":588}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-6.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 4,\n    \"total_count\": 4,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 2,\n    \"total_count\": 4,\n    \"parent_fraction\": 1,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"exact\",\n    \"parent\": \"shape\",\n    \"event_indices\": [\n      2\n    ],\n    \"count\": 1,\n    \"parent_count\": 2,\n    \"total_count\": 4,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.25\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-7.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"7\",\n    \"10\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-8.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\selected-I-big-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-9.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\selected-I-big-0123.fcs\",\"bytes\":561}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-0123.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-10.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\I-big-0123.csv\",\"events\":4,\"scaled\":false}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rewritten-I-big-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-11.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\rewritten-I-big-0123.fcs\",\"bytes\":588}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-12.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 4,\n    \"total_count\": 4,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 2,\n    \"total_count\": 4,\n    \"parent_fraction\": 1,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"exact\",\n    \"parent\": \"shape\",\n    \"event_indices\": [\n      2\n    ],\n    \"count\": 1,\n    \"parent_count\": 2,\n    \"total_count\": 4,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.25\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-13.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"7\",\n    \"18446744073709551616\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-14.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\selected-I-little-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-15.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\selected-I-little-2310.fcs\",\"bytes\":561}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-2310.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-16.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\I-little-2310.csv\",\"events\":4,\"scaled\":false}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rewritten-I-little-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-17.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\rewritten-I-little-2310.fcs\",\"bytes\":588}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-18.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 4,\n    \"total_count\": 4,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 2,\n    \"total_count\": 4,\n    \"parent_fraction\": 1,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"exact\",\n    \"parent\": \"shape\",\n    \"event_indices\": [\n      2\n    ],\n    \"count\": 1,\n    \"parent_count\": 2,\n    \"total_count\": 4,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.25\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-19.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"7\",\n    \"18446744073709551616\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-20.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\selected-I-big-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-21.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\selected-I-big-2310.fcs\",\"bytes\":561}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-2310.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-22.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\I-big-2310.csv\",\"events\":4,\"scaled\":false}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-big-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rewritten-I-big-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-23.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\rewritten-I-big-2310.fcs\",\"bytes\":588}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\A-little-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-24.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 4,\n    \"total_count\": 4,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 2,\n    \"total_count\": 4,\n    \"parent_fraction\": 1,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"exact\",\n    \"parent\": \"shape\",\n    \"event_indices\": [\n      2\n    ],\n    \"count\": 1,\n    \"parent_count\": 2,\n    \"total_count\": 4,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.25\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\A-little-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-25.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"7\",\n    \"18446744073709551616\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\A-little-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-26.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\A-little-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\selected-A-little-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-27.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\selected-A-little-2310.fcs\",\"bytes\":573}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\A-little-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\A-little-2310.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-28.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\A-little-2310.csv\",\"events\":4,\"scaled\":false}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\A-little-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rewritten-A-little-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-29.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\rewritten-A-little-2310.fcs\",\"bytes\":645}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\D-big-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-30.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 4,\n    \"total_count\": 4,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 2,\n    \"total_count\": 4,\n    \"parent_fraction\": 1,\n    \"total_fraction\": 0.5\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\D-big-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-31.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    7,\n    18446744073709552000\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\D-big-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-32.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\D-big-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\selected-D-big-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-33.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\selected-D-big-2310.fcs\",\"bytes\":570}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\D-big-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\D-big-2310.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-34.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\D-big-2310.csv\",\"events\":4,\"scaled\":false}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\D-big-2310.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rewritten-D-big-2310.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-35.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\rewritten-D-big-2310.fcs\",\"bytes\":602}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-36.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-37.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-38.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"channel index out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-39.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"channel index out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-40.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-41.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-42.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: fsc-a\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-43.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name:  FSC-A\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-44.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-45.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-46.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"values range exceeds dataset or 100000 sample chunk\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-47.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "JsonDecodeError((Root, \"Array::from_json: expected array\"))\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\null-columns.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-48.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\null-columns.fcs\",\"bytes\":664}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\null-columns.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-49.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\null-columns.csv\",\"events\":0,\"scaled\":false}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rejected-unknown-subset",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-50.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rejected-unknown-rewrite",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-51.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rejected-unknown-csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-52.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rejected-plan-bounds.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-53.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rejected-plan-vertices.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-54.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\I-little-0123.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\rejected-plan-integer_bounds.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-55.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\ambiguous.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-56.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"2\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\ambiguous.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-57.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\ambiguous.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-58.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"ambiguous channel name: A\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\ambiguous.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\ambiguous-name.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-59.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"ambiguous channel name: A\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\ambiguous.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\explicit-numeric.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names-final\\options-60.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\independent-names-final\\\\explicit-numeric.csv\",\"events\":1,\"scaled\":false}\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "--check",
+    "tools/fcs.mjs"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T14:30:40.594158+00:00",
+  "expectedExitCode": 0,
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": ""
+}

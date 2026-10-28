@@ -1,0 +1,198 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case": "forward parents and branches",
+      "datatype": "I",
+      "order": "little",
+      "selected": [
+        2,
+        5
+      ]
+    },
+    {
+      "case": "forward parents and branches",
+      "datatype": "I",
+      "order": "big",
+      "selected": [
+        2,
+        5
+      ]
+    },
+    {
+      "case": "forward parents and branches",
+      "datatype": "A",
+      "order": "little",
+      "selected": [
+        2,
+        5
+      ]
+    },
+    {
+      "case": "forward parents and branches",
+      "datatype": "F",
+      "order": "big",
+      "selected": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "case": "forward parents and branches",
+      "datatype": "D",
+      "order": "little",
+      "selected": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "case": "empty data/plan/parent have defined denominators"
+    },
+    {
+      "case": "per-step time scaling and compensation preserve raw subset bytes"
+    },
+    {
+      "case": "repair08 independent channels work inside a plan"
+    },
+    {
+      "case": "ANALYSIS requires explicit removal on population subset"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "duplicate"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "empty-id"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "unknown-parent"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "cycle"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "self-cycle"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "unknown-population"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "no-population"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "no-gates"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "events-conflict"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "bounds-conflict"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "multiple-predicates"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "unknown-option"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "fractional-channel"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "fractional-x"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "fractional-exact"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "top-scaled"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "top-compensated"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "exact-scaled"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "exact-compensated"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "empty-exact"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "empty-bounds"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "backwards-bounds"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "short-bounds"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "nonpolygon-xy"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "empty-parent-invalid-child"
+    },
+    {
+      "case": "rejected before output",
+      "vector": "nonboolean-view"
+    },
+    {
+      "case": "histogram is not an event plan",
+      "mode": "C"
+    },
+    {
+      "case": "histogram is not an event plan",
+      "mode": "U"
+    },
+    {
+      "case": "exact plan requires I/A DATA"
+    }
+  ],
+  "commands": 59,
+  "inputLicense": "original MIT synthetic data",
+  "oracle": "explicit hand-worked membership sets; Fraction denominators; struct and raw bit extraction",
+  "sourceSha256": {
+    "gating.mbt": "fa94d5d8d7fe062e67121a60cea21100b23a4a5f3d75dec633cc8c4e4bb3f8e1",
+    "gating_wbtest.mbt": "ea264c94a1bd5f2885175313142dce737f9234f11c999ab62fccbf08e4dbee89",
+    "cmd/bridge/main.mbt": "36fbce98667202d81e05493e0caa1bff9c4802f2056c8c6676af2ba3fd8777f2",
+    "tools/fcs.mjs": "b76967da576f6ec71256f8b57ec7fbac552f384f57db718e611f58b423878c18",
+    "pkg.generated.mbti": "e184787ba3d1290420c701b9d206f788e4a1e3f1eeae0951884b7a80bedf9d41",
+    "compensation.mbt": "8bf6c911d4ba9f509ed7da26a8717013d02b43ddac3f2350a695c658a12cab68",
+    "events.mbt": "e346ed5de08f71267aaa75f82275987ac272c4edd81f3a925b6f8302df2165cf",
+    "write.mbt": "3fee064db93da0548280b71ac56d0b454ea10498b2b4b4da70dd3c8a5d646e3b",
+    "tools/check-gate-plan.py": "648cd847401641b061529f7551fde3ab603ac3a7e8128af4b23272fcdbaf45cb",
+    "examples/gate-plan.json": "c488e1582e8580f6a6f218aa145f70c899363484a43e3adb476a2c47cce26c9c",
+    "examples/gate-plan-events.json": "9a571234143900c51beea1b6dbd7dd8b67bb87955028d00c36f678f469a1db7a",
+    "examples/run-gate-plan.mjs": "afb03412674b32e508ac5c8188252003f1e8014dc3b308bb2e8895bea93f742b",
+    "examples/gate-plan-consumer/main.mbt": "be00d4774a099e69960e7ae3e35046b244ef8d4bf36ea695c4ef8c3daab83a4b",
+    "_build/js/release/build/cmd/bridge/bridge.js": "85628d16544fa2376c432afb4e70f16e2b4c75aca859ae335bf3665c07a22842"
+  }
+}

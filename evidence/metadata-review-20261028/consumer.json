@@ -1,0 +1,14 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\fcs-reference-venv\\Scripts\\python.exe",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-14-max-20261028\\audit_delivery.py",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-14-max-20261028\\consumer",
+    "--project",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T08:39:00.940720+00:00",
+  "exitCode": 0,
+  "stdout": "{\"status\": \"passed\", \"outcome\": \"bounded_review_no_new_defect\", \"commands\": 2, \"valuesVerified\": 4, \"rawBytesVerified\": 32, \"expectedValues\": [[30.125, 3.75], [10.5, 1.25]]}\n",
+  "stderr": ""
+}

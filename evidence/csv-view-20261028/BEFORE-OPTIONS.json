@@ -1,0 +1,36 @@
+{
+  "origin": "exact option objects in probe_before.py; its options file was reused between commands",
+  "before-populations": {
+    "gates": [
+      {
+        "id": "selected",
+        "bounds": [
+          [
+            "A",
+            5,
+            13
+          ]
+        ]
+      }
+    ]
+  },
+  "before-subset": {
+    "gates": [
+      {
+        "id": "selected",
+        "bounds": [
+          [
+            "A",
+            5,
+            13
+          ]
+        ]
+      }
+    ],
+    "population": "selected"
+  },
+  "before-csv-view": {
+    "compensated": true,
+    "scaled": false
+  }
+}

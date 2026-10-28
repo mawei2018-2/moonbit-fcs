@@ -1,0 +1,14 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "fmt",
+    "--check",
+    "write.mbt",
+    "ascii_range23_wbtest.mbt"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T11:35:52.773131+00:00",
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": "Finished. moon: ran 29 tasks, now up to date\n"
+}

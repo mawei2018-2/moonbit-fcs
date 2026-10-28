@@ -1,0 +1,410 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case": "gain and above-PnR TIME survive selection and conversion",
+      "source": "F",
+      "order": "little",
+      "target": "I",
+      "raw": [
+        [
+          198,
+          198
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          198,
+          198
+        ]
+      ],
+      "scaled": [
+        [
+          99,
+          198
+        ],
+        [
+          90,
+          180
+        ],
+        [
+          99,
+          198
+        ]
+      ]
+    },
+    {
+      "case": "gain and above-PnR TIME survive selection and conversion",
+      "source": "F",
+      "order": "little",
+      "target": "A",
+      "raw": [
+        [
+          198,
+          198
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          198,
+          198
+        ]
+      ],
+      "scaled": [
+        [
+          99,
+          198
+        ],
+        [
+          90,
+          180
+        ],
+        [
+          99,
+          198
+        ]
+      ]
+    },
+    {
+      "case": "gain and above-PnR TIME survive selection and conversion",
+      "source": "F",
+      "order": "big",
+      "target": "I",
+      "raw": [
+        [
+          198,
+          198
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          198,
+          198
+        ]
+      ],
+      "scaled": [
+        [
+          99,
+          198
+        ],
+        [
+          90,
+          180
+        ],
+        [
+          99,
+          198
+        ]
+      ]
+    },
+    {
+      "case": "gain and above-PnR TIME survive selection and conversion",
+      "source": "F",
+      "order": "big",
+      "target": "A",
+      "raw": [
+        [
+          198,
+          198
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          198,
+          198
+        ]
+      ],
+      "scaled": [
+        [
+          99,
+          198
+        ],
+        [
+          90,
+          180
+        ],
+        [
+          99,
+          198
+        ]
+      ]
+    },
+    {
+      "case": "gain and above-PnR TIME survive selection and conversion",
+      "source": "D",
+      "order": "little",
+      "target": "I",
+      "raw": [
+        [
+          198,
+          198
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          198,
+          198
+        ]
+      ],
+      "scaled": [
+        [
+          99,
+          198
+        ],
+        [
+          90,
+          180
+        ],
+        [
+          99,
+          198
+        ]
+      ]
+    },
+    {
+      "case": "gain and above-PnR TIME survive selection and conversion",
+      "source": "D",
+      "order": "little",
+      "target": "A",
+      "raw": [
+        [
+          198,
+          198
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          198,
+          198
+        ]
+      ],
+      "scaled": [
+        [
+          99,
+          198
+        ],
+        [
+          90,
+          180
+        ],
+        [
+          99,
+          198
+        ]
+      ]
+    },
+    {
+      "case": "gain and above-PnR TIME survive selection and conversion",
+      "source": "D",
+      "order": "big",
+      "target": "I",
+      "raw": [
+        [
+          198,
+          198
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          198,
+          198
+        ]
+      ],
+      "scaled": [
+        [
+          99,
+          198
+        ],
+        [
+          90,
+          180
+        ],
+        [
+          99,
+          198
+        ]
+      ]
+    },
+    {
+      "case": "gain and above-PnR TIME survive selection and conversion",
+      "source": "D",
+      "order": "big",
+      "target": "A",
+      "raw": [
+        [
+          198,
+          198
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          198,
+          198
+        ]
+      ],
+      "scaled": [
+        [
+          99,
+          198
+        ],
+        [
+          90,
+          180
+        ],
+        [
+          99,
+          198
+        ]
+      ]
+    },
+    {
+      "case": "accepted fractional range to integral range, including empty selection",
+      "source": "F",
+      "target": "I",
+      "empty": false,
+      "raw": [
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "case": "accepted fractional range to integral range, including empty selection",
+      "source": "F",
+      "target": "I",
+      "empty": true,
+      "raw": []
+    },
+    {
+      "case": "accepted fractional range to integral range, including empty selection",
+      "source": "F",
+      "target": "A",
+      "empty": false,
+      "raw": [
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "case": "accepted fractional range to integral range, including empty selection",
+      "source": "F",
+      "target": "A",
+      "empty": true,
+      "raw": []
+    },
+    {
+      "case": "accepted fractional range to integral range, including empty selection",
+      "source": "D",
+      "target": "I",
+      "empty": false,
+      "raw": [
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "case": "accepted fractional range to integral range, including empty selection",
+      "source": "D",
+      "target": "I",
+      "empty": true,
+      "raw": []
+    },
+    {
+      "case": "accepted fractional range to integral range, including empty selection",
+      "source": "D",
+      "target": "A",
+      "empty": false,
+      "raw": [
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "case": "accepted fractional range to integral range, including empty selection",
+      "source": "D",
+      "target": "A",
+      "empty": true,
+      "raw": []
+    },
+    {
+      "case": "bit-boundary",
+      "raw": [
+        [
+          256
+        ]
+      ]
+    },
+    {
+      "case": "capacity",
+      "raw": [
+        [
+          255
+        ]
+      ]
+    },
+    {
+      "case": "insufficient storage is still rejected before output",
+      "target": "I"
+    },
+    {
+      "case": "insufficient storage is still rejected before output",
+      "target": "A"
+    },
+    {
+      "case": "unrepresentable data rejected before output",
+      "vector": "fraction-I"
+    },
+    {
+      "case": "unrepresentable data rejected before output",
+      "vector": "fraction-A"
+    },
+    {
+      "case": "unrepresentable data rejected before output",
+      "vector": "negative-I"
+    },
+    {
+      "case": "unrepresentable data rejected before output",
+      "vector": "infinity-I"
+    },
+    {
+      "case": "unrepresentable data rejected before output",
+      "vector": "nan-I"
+    }
+  ],
+  "commands": 71,
+  "inputLicense": "original MIT synthetic inputs",
+  "oracle": "struct source bytes; Fraction gain/time; independent raw bit extraction and PnR mask identity",
+  "sourceSha256": {
+    "write.mbt": "3fee064db93da0548280b71ac56d0b454ea10498b2b4b4da70dd3c8a5d646e3b",
+    "conversion07_wbtest.mbt": "97b6394f181d3df5457cf95c05cbce8a03c33f2fb602e76b447530eddc708a1a",
+    "pkg.generated.mbti": "9dc10679f401610d7162cc2836c6f262726221131c7d57dcfb10a291dfa7ef2a",
+    "tools/fcs.mjs": "d6faa1c8cfe8b718ed6d1640d647ce026bfc149c95977bbeff81c03752a7965e",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "tools/check-repair06.py": "0b1e5b145c455841096eb1a719e8c313670609de927887a538b5e2c760d964fb",
+    "tools/check-repair07.py": "c35b9bc0ebcd650236f079a520ae05e9888d8a9dbcc9a756a8543f9964b47c37",
+    "_build/js/release/build/cmd/bridge/bridge.js": "778fe6a73706fce23c692cba096a447e501ca1104abe57b7cd9e3a5475716978"
+  }
+}

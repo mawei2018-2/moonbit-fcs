@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python",
+    "tools/check-csv-view.py",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-13-max-20261028\\independent"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T08:27:32.972190+00:00",
+  "exitCode": 0,
+  "stdout": "{\"status\": \"passed\", \"commands\": 8, \"sourceEventIndices\": [1, 2], \"cases\": [{\"case\": \"raw\", \"rows\": 2, \"exactValues\": [[\"8\", \"24\"], [\"12\", \"36\"]], \"scaled\": false, \"compensated\": false, \"csvSha256\": \"16056c0b9ffa772f7a1acfe2af0509eb26181e75beb56f99ea5c0cd57aba709c\"}, {\"case\": \"linear\", \"rows\": 2, \"exactValues\": [[\"4\", \"6\"], [\"6\", \"9\"]], \"scaled\": true, \"compensated\": false, \"csvSha256\": \"2fe4be0cbbd1b65847c6b60fb8a73e2a3a59785ee71e98ec947d94480cf9bdc7\"}, {\"case\": \"compensated\", \"rows\": 2, \"exactValues\": [[\"4\", \"4\"], [\"6\", \"6\"]], \"scaled\": true, \"compensated\": true, \"csvSha256\": \"c484c0a317e9542952c25f1409fd613228637ffefae27df565747b1ee33045b2\"}, {\"case\": \"compensated-explicit-false\", \"rows\": 2, \"exactValues\": [[\"4\", \"4\"], [\"6\", \"6\"]], \"scaled\": true, \"compensated\": true, \"csvSha256\": \"c484c0a317e9542952c25f1409fd613228637ffefae27df565747b1ee33045b2\"}, {\"case\": \"compensated-both-true\", \"rows\": 2, \"exactValues\": [[\"4\", \"4\"], [\"6\", \"6\"]], \"scaled\": true, \"compensated\": true, \"csvSha256\": \"c484c0a317e9542952c25f1409fd613228637ffefae27df565747b1ee33045b2\"}, {\"case\": \"empty-compensated\", \"rows\": 0, \"exactValues\": [], \"scaled\": true, \"compensated\": true, \"csvSha256\": \"fdb7a92cd1f89f108336d9126866c9f7769673126d2468c1c6287b712e0e3743\"}]}\n",
+  "stderr": ""
+}

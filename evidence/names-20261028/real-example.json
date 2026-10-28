@@ -1,0 +1,12 @@
+{
+  "command": [
+    "node",
+    "examples/repod-gate-plan.mjs",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\real-example"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T06:56:16.684921+00:00",
+  "exitCode": 0,
+  "stdout": "{\n  \"status\": \"passed\",\n  \"output\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-10-max-20261028\\\\real-example\",\n  \"sourceSha256\": \"91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c\",\n  \"selectedSha256\": \"0ccebcb39a4d6cfee2d9bc6023b580eaf99eeb45d5ab68d599ed106070977611\",\n  \"planSha256\": \"947eb0e16b99e82d1ee7fb43c3f8cc62aee8bdb140c9521c89a464afd3863d0b\",\n  \"sourceEvents\": 14320,\n  \"sourceWarnings\": [\n    \"accepted explicitly requested ASCII space padding in $BEGINSTEXT\",\n    \"accepted explicitly requested ASCII space padding in $ENDSTEXT\",\n    \"accepted explicitly requested ASCII space padding in $BEGINANALYSIS\",\n    \"accepted explicitly requested ASCII space padding in $ENDANALYSIS\"\n  ],\n  \"counts\": [\n    {\n      \"id\": \"window\",\n      \"count\": 2117,\n      \"parent_count\": 14320,\n      \"parent_fraction\": 0.14783519553072624\n    },\n    {\n      \"id\": \"scatter\",\n      \"count\": 1794,\n      \"parent_count\": 2117,\n      \"parent_fraction\": 0.8474256022673595\n    },\n    {\n      \"id\": \"inner\",\n      \"count\": 662,\n      \"parent_count\": 1794,\n      \"parent_fraction\": 0.3690078037904125\n    }\n  ],\n  \"outputChannels\": [\n    \"SSC-A\",\n    \"FSC-A\",\n    \"Time\"\n  ],\n  \"csvChannels\": [\n    \"Time\",\n    \"FSC-A\"\n  ],\n  \"commands\": 5,\n  \"inputLicense\": \"CC BY4.0 RepOD file96804\",\n  \"externalReadback\": \"not performed by this Node runner; use tools/verify-named-repod.py\"\n}\n",
+  "stderr": ""
+}

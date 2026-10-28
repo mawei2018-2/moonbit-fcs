@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "gate",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-23-max-20261028\\before-inputs\\converted-integer.fcs",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-23-max-20261028\\before-inputs\\gate-integer.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T11:23:27.925104+00:00",
+  "exitCode": 0,
+  "stdout": "[]\n",
+  "stderr": ""
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\actionlint\\actionlint.exe",
+    ".github/workflows/ci.yml"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T12:38:39.386648+00:00",
+  "expectedExitCode": 0,
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": ""
+}

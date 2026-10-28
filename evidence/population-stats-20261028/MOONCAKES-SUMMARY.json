@@ -1,0 +1,148 @@
+{
+  "checkedUtc": "2026-10-28T12:23:22.359288+00:00",
+  "limitPerQuery": 20,
+  "results": [
+    {
+      "query": "fcs",
+      "url": "https://mooncakes.io/api/v0/search?kw=fcs&limit=20",
+      "status": 200,
+      "modules": [
+        {
+          "name": "mawei2018/fcs",
+          "version": "0.2.2",
+          "repository": "https://github.com/mawei2018/moonbit-fcs",
+          "description": "Flow cytometry FCS file validation and reproducible data preparation"
+        },
+        {
+          "name": "lxyhgvb/moonbit-radioframe",
+          "version": "0.2.0",
+          "repository": "https://github.com/lxyhgvb/moonbit-radioframe",
+          "description": "MoonBit wireless frame, link simulation, security, routing, and 6LoWPAN toolkit"
+        }
+      ]
+    },
+    {
+      "query": "cytometry",
+      "url": "https://mooncakes.io/api/v0/search?kw=cytometry&limit=20",
+      "status": 200,
+      "modules": [
+        {
+          "name": "mawei2018/fcs",
+          "version": "0.2.2",
+          "repository": "https://github.com/mawei2018/moonbit-fcs",
+          "description": "Flow cytometry FCS file validation and reproducible data preparation"
+        }
+      ]
+    },
+    {
+      "query": "robust_stats",
+      "url": "https://mooncakes.io/api/v0/search?kw=robust_stats&limit=20",
+      "status": 200,
+      "modules": [
+        {
+          "name": "hxiuzheng/robust_stats",
+          "version": "0.2.2",
+          "repository": "https://github.com/hxiuzheng/moon-robust-stats",
+          "description": "Production-oriented robust statistics, streaming analytics, anomaly detection, and risk toolkit for MoonBit."
+        },
+        {
+          "name": "vicoproplus/moon_ua_parser",
+          "version": "0.2.0",
+          "repository": "https://github.com/vicoproplus/moon_ua_parser",
+          "description": "User-agent parser library ported from uap-core rules with uap-python-compatible semantics"
+        },
+        {
+          "name": "lwq443/moonbit-ocean-qc",
+          "version": "0.3.0",
+          "repository": "https://github.com/lwq443/moonbit-ocean-qc",
+          "description": "Composable, explainable, and traceable quality control for ocean observations."
+        },
+        {
+          "name": "Zjyyer/moonbit-klt-tracker",
+          "version": "0.1.4",
+          "repository": "https://github.com/Zjyyer/moonbit-klt-tracker",
+          "description": "Deterministic sparse KLT feature tracking for grayscale frame buffers."
+        },
+        {
+          "name": "pla678889/moon-experiment",
+          "version": "0.2.3",
+          "repository": "https://github.com/pla678889/moon-experiment",
+          "description": "A mature A/B testing analysis library for MoonBit, supporting sample size estimation, sequential testing, metrics comparison and guardrails."
+        },
+        {
+          "name": "python123-ops/moon-cv-geometry",
+          "version": "0.2.2",
+          "repository": "https://github.com/python123-ops/moon-cv-geometry",
+          "description": "Camera and multi-view geometry foundations for MoonBit: small fixed-size math, projection, distortion, homography, epipolar constraints, and RANSAC."
+        },
+        {
+          "name": "qjgqjg/moon-causal",
+          "version": "0.2.5",
+          "repository": "https://github.com/qjgqjg/moon-causal",
+          "description": "A practical MoonBit causal-inference toolkit with propensity modeling, weighting, matching, diagnostics, uncertainty, simulation, and reproducible benchmarks."
+        },
+        {
+          "name": "Zy789kl/moon-change-point",
+          "version": "0.3.1",
+          "repository": "https://github.com/Zy789kl/moon-change-point",
+          "description": "Production-oriented MoonBit change-point detection, streaming windows, multivariate monitoring, replay, SLO and alert routing"
+        },
+        {
+          "name": "vitro/engine",
+          "version": "0.9.0",
+          "repository": "https://github.com/rustin-beep/Vitro",
+          "description": "MoonBit implementation of the Vitro C teaching engine: 156 diagnostic codes, 151 opcodes, full AST family, byte-exact against Clang-golden and frozen digest baselines"
+        },
+        {
+          "name": "walkzzz/image",
+          "version": "0.5.0",
+          "repository": "https://github.com/toadium/stb-image",
+          "description": "MoonBit image library: pure MoonBit backend for native/wasm-gc/js/wasm multi-target support."
+        },
+        {
+          "name": "zhaoyuanjuns/moonbit_extractor",
+          "version": "0.1.2",
+          "repository": "https://github.com/zhaoyuanjuns/moonbit-extractor",
+          "description": "Extraction process calculation toolkit for liquid-liquid extraction and solid-liquid leaching"
+        },
+        {
+          "name": "yyyt0807/curvefit",
+          "version": "0.2.1",
+          "repository": "https://github.com/yyyt0807/moonbit-curvefit",
+          "description": "Pure MoonBit bounded residual optimization and nonlinear fitting with auditable diagnostics"
+        },
+        {
+          "name": "myc1234567/moon_metric_lab",
+          "version": "0.1.3",
+          "repository": "https://github.com/myc1234567/moon_metric_lab.git",
+          "description": "A pure MoonBit machine learning evaluation metrics and experiment comparison framework supporting native, wasm-gc, and js backends."
+        },
+        {
+          "name": "moonbitlang/core",
+          "version": "0.1.20261023+d971670cd",
+          "repository": "https://github.com/moonbitlang/core",
+          "description": ""
+        },
+        {
+          "name": "Kaida-Amethyst/moondbg",
+          "version": "0.3.1",
+          "repository": "",
+          "description": ""
+        },
+        {
+          "name": "bobzhang/sqlglot",
+          "version": "0.1.0",
+          "repository": "https://github.com/bobzhang/sqlglot.mbt",
+          "description": "A SQL parser, transpiler and optimizer: a MoonBit port of sqlglot"
+        },
+        {
+          "name": "walkzzz/moon-geometry",
+          "version": "0.251.0",
+          "repository": "https://github.com/walkzzz/moon-geometry",
+          "description": "Pure MoonBit computational geometry library: convex hull, Delaunay, Voronoi, polygon boolean ops, transforms, Minkowski"
+        }
+      ]
+    }
+  ],
+  "limits": "bounded name/summary search, not private code or complete contest entries; no uniqueness claim"
+}

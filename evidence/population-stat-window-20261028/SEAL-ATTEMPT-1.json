@@ -1,0 +1,38 @@
+{
+  "status": "failed",
+  "timeUtc": "2026-10-28T14:48:28.371612+00:00",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\seal_final.py"
+  ],
+  "exitCode": 1,
+  "stage": "pre-archive public-example assertion",
+  "incorrectHandWrittenExpectedMeans": [
+    9,
+    30,
+    9
+  ],
+  "actualMeans": [
+    8,
+    20,
+    8
+  ],
+  "independentInputRow5": [
+    "20",
+    "4",
+    "8",
+    "18446744073709551621"
+  ],
+  "sourceEventIndices": [
+    5
+  ],
+  "originalScript": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\seal_final_attempt1.py",
+  "originalScriptSha256": "a0a05681fe9022efb8a58968a067925fd82b4676643ec3b0390812fc1ad62531",
+  "failure": "AssertionError at seal_final.py:105: example mean list != [9,30,9]",
+  "classification": "seal-only mistaken hand-written expected M value; runtime consumer had already checked the true source input",
+  "runtimeSourceChanged": false,
+  "productTestsRerun": false
+}

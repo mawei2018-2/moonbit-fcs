@@ -1,0 +1,13 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "info",
+    "--target",
+    "js"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T11:29:46.253476+00:00",
+  "exitCode": 0,
+  "stdout": "#\n# Package mawei2018/fcs/cmd/bridge has requested interfaces different from canonical backend Wasm:\n#\n# ---\n--- mawei2018/fcs/cmd/bridge Wasm (no generated interface)\n+++ mawei2018/fcs/cmd/bridge Js (D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\_build\\js\\debug\\check\\cmd\\bridge\\bridge.mbti)\n@@ -0,0 +1,23 @@\n+// Generated using `moon info`, DON'T EDIT IT\n+package \"mawei2018/fcs/cmd/bridge\"\n+\n+import {\n+  \"mawei2018/fcs\",\n+}\n+\n+// Values\n+pub fn load(Bytes, String) -> @fcs.Dataset\n+\n+pub fn query(@fcs.Dataset, String) -> String\n+\n+pub fn report(Bytes, String) -> String\n+\n+pub fn transform(Bytes, String) -> Bytes\n+\n+// Errors\n+\n+// Types and methods\n+\n+// Type aliases\n+\n+// Traits\n# ------\n",
+  "stderr": "Finished. moon: ran 6 tasks, now up to date\n"
+}

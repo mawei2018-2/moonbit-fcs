@@ -1,0 +1,26 @@
+{
+  "historicalReceiptSourceSha256": "be2a12ca406b71a07234012842997e59b47e7a9d885a627aea3a25e9d856a881",
+  "currentSourceSha256": "ed00f45986dadcb3f8ea727e3e7f7bd13f560bc0a89f3cf14ffb0b9528b721a8",
+  "sourceArchives": [
+    {
+      "archive": "D:\\CodexLocal\\ban\\outputs\\deep-remediation-20261020\\sources\\moonbit-fcs-0.5.0.zip",
+      "member": "tools/fcs.mjs",
+      "sha256": "ed00f45986dadcb3f8ea727e3e7f7bd13f560bc0a89f3cf14ffb0b9528b721a8",
+      "byteIdenticalToCurrent": true,
+      "matchesHistoricalReceipt": false
+    },
+    {
+      "archive": "D:\\CodexLocal\\ban\\outputs\\contest20-corrections-and-source-20261027.zip",
+      "member": "sources/moonbit-fcs/tools/fcs.mjs",
+      "sha256": "ed00f45986dadcb3f8ea727e3e7f7bd13f560bc0a89f3cf14ffb0b9528b721a8",
+      "byteIdenticalToCurrent": true,
+      "matchesHistoricalReceipt": false
+    }
+  ],
+  "conclusion": "No difference between available archived 0.5 CLI and current source. Historical receipt binds a different source artifact not present in these archives; cause cannot be reconstructed here. Current-path evidence is generated separately, not a claim that every old path has no regression.",
+  "failedReadOnlyLookup": {
+    "command": "git -C D:/CodexLocal/ban/outputs/repos/moonbit-fcs log --all -n8 -- tools/fcs.mjs",
+    "exitCode": 128,
+    "stderr": "fatal: cannot change directory: No such file or directory"
+  }
+}

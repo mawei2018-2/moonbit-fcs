@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "commands": 14,
+  "cases": [
+    {
+      "case": "noncontiguous-population",
+      "sourceIndices": [
+        1,
+        2,
+        4
+      ],
+      "rows": 3
+    },
+    {
+      "case": "population-slice",
+      "sourceIndices": [
+        2,
+        4
+      ],
+      "rows": 2
+    },
+    {
+      "case": "escaped-header",
+      "sourceIndices": [
+        1,
+        2,
+        4
+      ],
+      "rows": 3
+    },
+    {
+      "case": "ordinary-source-range",
+      "sourceIndices": [
+        2,
+        3
+      ],
+      "rows": 2
+    },
+    {
+      "case": "index-is-not-compensated",
+      "sourceIndices": [
+        1,
+        2,
+        4
+      ],
+      "rows": 3
+    },
+    {
+      "case": "empty-population",
+      "sourceIndices": [],
+      "rows": 0
+    },
+    {
+      "case": "unselected-name-allowed",
+      "sourceIndices": [
+        1,
+        2,
+        4
+      ],
+      "rows": 3
+    },
+    {
+      "case": "null keeps original CSV schema",
+      "rows": 5
+    },
+    {
+      "case": "empty-name",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "numeric-name",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "array-name",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "boolean-name",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "selected-name-collision",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "index crosses CSV block boundary",
+      "indexValuesVerified": 782,
+      "scientificSentinelsVerified": 1564,
+      "chunkRows": 781
+    }
+  ],
+  "inputUnchanged": true,
+  "inputLicense": "original MIT synthetic inputs",
+  "oracle": "independent struct rows, Fraction calibration and actual DictReader/reordered-row consumer",
+  "sourceSha256": {
+    "tools/fcs.mjs": "8deaeaa8b6c534829140456dd3fa57ab875596a04ca0af411e6ab37e6c75217c",
+    "tools/check-csv-event-index.py": "965bfac4fe4e1ed5621a2c5f87d5ccd24a0cba0d761c4827d2d7231ec5406200",
+    "tools/check-repair06.py": "0b1e5b145c455841096eb1a719e8c313670609de927887a538b5e2c760d964fb",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "cmd/bridge/main.mbt": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "_build/js/release/build/cmd/bridge/bridge.js": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148"
+  }
+}

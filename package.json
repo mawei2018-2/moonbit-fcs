@@ -1,0 +1,1 @@
+{"name":"moonbit-fcs-local","private":true,"type":"module","engines":{"node":">=22"},"scripts":{"test:cli":"node tools/test_cli.mjs"}}

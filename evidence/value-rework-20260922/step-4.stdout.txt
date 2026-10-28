@@ -1,0 +1,32 @@
+{
+  "version": "FCS3.1",
+  "events": 2,
+  "channels": [
+    {
+      "name": "FSC-A",
+      "stain": "",
+      "bits": 32,
+      "range": 262144,
+      "decades": 0,
+      "zero": 0,
+      "gain": 1
+    },
+    {
+      "name": "FL1-A",
+      "stain": "",
+      "bits": 32,
+      "range": 262144,
+      "decades": 0,
+      "zero": 0,
+      "gain": 1
+    }
+  ],
+  "datatype": "Float32",
+  "byte_order": "LittleEndian",
+  "warnings": [],
+  "spillover": null,
+  "next_offset": 0,
+  "timestep": [
+    "0.1"
+  ]
+}

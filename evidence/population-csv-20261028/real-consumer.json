@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-16-max-20261028\\verify_real.py"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T09:17:57.627174+00:00",
+  "exitCode": 0,
+  "stdout": "{\"status\": \"passed\", \"events\": 662, \"csvValuesVerified\": 1324, \"csvBytesMatchFrozenRound10\": true, \"noIntermediateFcs\": true}\n",
+  "stderr": ""
+}

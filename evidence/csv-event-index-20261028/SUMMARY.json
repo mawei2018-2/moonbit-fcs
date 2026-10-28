@@ -1,0 +1,41 @@
+{
+  "outcome": "bounded_feature_completed",
+  "newDefectsConfirmed": 0,
+  "candidatesResearched": 1,
+  "feature": "optional-csv-source-index-column",
+  "option": "event_index_column",
+  "defaultUnchanged": true,
+  "ordinaryAndPopulationCsvSupported": true,
+  "sourceIndexNotScaledOrCompensated": true,
+  "nullableDefaultAndSelectedColumnCollisionValidated": true,
+  "syntheticCliCalls": 14,
+  "syntheticCases": 14,
+  "crossBlockIndexValuesVerified": 782,
+  "scientificSentinelsVerified": 1564,
+  "indexedExampleCliCalls": 2,
+  "realEventIndicesVerified": 662,
+  "realScientificValuesUnchanged": 1324,
+  "sortedRowsVerified": 662,
+  "filteredRowsVerified": 332,
+  "downstreamNeedsOnlyCsv": true,
+  "noIntermediateFcs": true,
+  "sourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "newIndexedCsvSha256": "4e040b25be65bb4515810534fc0da6ff2b8185071a7522838a1f79ab27604b9a",
+  "beforeCliSha256": "f4f5f44974e56be973414e88a525318b04dc4af3c2101d0b67aee467da09e9cd",
+  "afterCliSha256": "8deaeaa8b6c534829140456dd3fa57ab875596a04ca0af411e6ab37e6c75217c",
+  "compiledJsSha256": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148",
+  "compiledJsUnchanged": true,
+  "coreBridgeAndMoonBitApiUnchanged": true,
+  "research": {
+    "registryQuery": "fcs",
+    "registryLimit": 20,
+    "githubQuery": "cytometry language:MoonBit",
+    "comparison": "FlowKit gated DataFrame and pandas index/index_label export; mature serialization, no algorithm novelty"
+  },
+  "limits": [
+    "index belongs to selected source Dataset; not instrument/global/authenticated identity",
+    "existing scientific column names are not automatically renamed",
+    "no new gate/compensation algorithms or pandas runtime dependency",
+    "16/17 old checks not rerun; no remoteCI result; not pushed/published/submitted"
+  ]
+}

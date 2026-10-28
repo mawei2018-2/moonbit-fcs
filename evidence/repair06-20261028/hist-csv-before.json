@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\before06-cli-adapter.mjs",
+    "csv",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-final\\histogram-C.fcs",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\histogram-false-empty.csv",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\histogram-csv-zero.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T05:19:35.216066+00:00",
+  "exitCode": 0,
+  "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\histogram-false-empty.csv\",\"events\":0,\"scaled\":false}\n",
+  "stderr": ""
+}

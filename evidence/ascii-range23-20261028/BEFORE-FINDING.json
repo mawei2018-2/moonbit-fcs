@@ -1,0 +1,51 @@
+{
+  "source": "public create accepted free ASCII integer_values20/21/5 with range10; strict inspect accepted",
+  "expectedRawValues": [
+    [
+      "20"
+    ],
+    [
+      "21"
+    ],
+    [
+      "5"
+    ]
+  ],
+  "actualAfterIntegerConversion": [
+    [
+      "4"
+    ],
+    [
+      "5"
+    ],
+    [
+      "5"
+    ]
+  ],
+  "integerDataBytes": [
+    20,
+    21,
+    5
+  ],
+  "outputRange": "10",
+  "originalGateIndices": [
+    0,
+    1
+  ],
+  "convertedGateIndices": [],
+  "actualCsv": [
+    [
+      "Signal"
+    ],
+    [
+      "4"
+    ],
+    [
+      "5"
+    ],
+    [
+      "5"
+    ]
+  ],
+  "cause": "ASCII input values are not PnR-masked; integer output kept old PnR10 and masks to four significant bits"
+}

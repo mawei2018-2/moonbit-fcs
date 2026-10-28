@@ -1,0 +1,57 @@
+{
+  "classification": "previously unpromised direct CSV population feature, not a parser bug",
+  "oldDocumentedRoute": "subset population into intermediate FCS, then csv that FCS",
+  "requestedNewPopulationSourceIndices": [
+    1,
+    2
+  ],
+  "oldCsv": [
+    [
+      "B"
+    ],
+    [
+      "10"
+    ],
+    [
+      "20"
+    ],
+    [
+      "30"
+    ]
+  ],
+  "oldReceipt": {
+    "written": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-16-max-20261028\\before-inputs\\old.csv",
+    "events": 3,
+    "scaled": false,
+    "compensated": false
+  },
+  "newAcceptanceCsv": [
+    [
+      "B"
+    ],
+    [
+      "20"
+    ],
+    [
+      "30"
+    ]
+  ],
+  "sourceOptions": {
+    "gates": [
+      {
+        "id": "selected",
+        "bounds": [
+          [
+            "A",
+            1.5,
+            3.5
+          ]
+        ]
+      }
+    ],
+    "population": "selected",
+    "channels": [
+      "B"
+    ]
+  }
+}

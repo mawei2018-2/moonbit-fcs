@@ -1,0 +1,198 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\noncontiguous-population.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-0.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-18-max-20261028\\\\independent\\\\noncontiguous-population.csv\",\"events\":3,\"scaled\":false,\"compensated\":false,\"event_index_column\":\"source_row\",\"population\":\"band\",\"population_events\":3,\"source_event_indices\":[1,2,4]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\population-slice.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-1.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-18-max-20261028\\\\independent\\\\population-slice.csv\",\"events\":2,\"scaled\":false,\"compensated\":false,\"event_index_column\":\"source_row\",\"population\":\"band\",\"population_events\":3,\"source_event_indices\":[2,4]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\escaped-header.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-2.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-18-max-20261028\\\\independent\\\\escaped-header.csv\",\"events\":3,\"scaled\":false,\"compensated\":false,\"event_index_column\":\"row,\\\"\u6e90\\\"\\nindex\",\"population\":\"band\",\"population_events\":3,\"source_event_indices\":[1,2,4]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\ordinary-source-range.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-3.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-18-max-20261028\\\\independent\\\\ordinary-source-range.csv\",\"events\":2,\"scaled\":false,\"compensated\":false,\"event_index_column\":\"row\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\index-is-not-compensated.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-4.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-18-max-20261028\\\\independent\\\\index-is-not-compensated.csv\",\"events\":3,\"scaled\":true,\"compensated\":true,\"event_index_column\":\"row\",\"population\":\"band\",\"population_events\":3,\"source_event_indices\":[1,2,4]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\empty-population.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-5.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-18-max-20261028\\\\independent\\\\empty-population.csv\",\"events\":0,\"scaled\":false,\"compensated\":false,\"event_index_column\":\"row\",\"population\":\"none\",\"population_events\":0,\"source_event_indices\":[]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\unselected-name-allowed.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-6.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-18-max-20261028\\\\independent\\\\unselected-name-allowed.csv\",\"events\":3,\"scaled\":false,\"compensated\":false,\"event_index_column\":\"Signal\",\"population\":\"band\",\"population_events\":3,\"source_event_indices\":[1,2,4]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\null-default.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-7.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-18-max-20261028\\\\independent\\\\null-default.csv\",\"events\":5,\"scaled\":false,\"compensated\":false}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\empty-name.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-8.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "CSV event_index_column must be a nonempty name distinct from selected data columns\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\numeric-name.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-9.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "CSV event_index_column must be a nonempty name distinct from selected data columns\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\array-name.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-10.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "CSV event_index_column must be a nonempty name distinct from selected data columns\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\boolean-name.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-11.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "CSV event_index_column must be a nonempty name distinct from selected data columns\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\selected-name-collision.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-12.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "CSV event_index_column must be a nonempty name distinct from selected data columns\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\wide.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\wide.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\independent\\options-13.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-18-max-20261028\\\\independent\\\\wide.csv\",\"events\":782,\"scaled\":false,\"compensated\":false,\"event_index_column\":\"row\"}\n",
+    "stderr": ""
+  }
+]

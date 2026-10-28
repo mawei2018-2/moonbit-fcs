@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "tools/check-population-stat-window.py",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T14:30:42.378404+00:00",
+  "expectedExitCode": 0,
+  "exitCode": 0,
+  "stdout": "{\"status\": \"passed\", \"commands\": 26, \"cases\": 15, \"expectedFailures\": 12}\n",
+  "stderr": ""
+}

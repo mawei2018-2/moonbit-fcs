@@ -1,0 +1,806 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-0.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"id_window\",\n    \"parent\": \"shape\",\n    \"event_indices\": [\n      2,\n      5\n    ],\n    \"count\": 2,\n    \"parent_count\": 3,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.6666666666666666,\n    \"total_fraction\": 0.3333333333333333\n  },\n  {\n    \"id\": \"high\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      2,\n      3,\n      5\n    ],\n    \"count\": 3,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.75,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"window\",\n    \"event_indices\": [\n      1,\n      2,\n      3,\n      5\n    ],\n    \"count\": 4,\n    \"parent_count\": 6,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.6666666666666666,\n    \"total_fraction\": 0.6666666666666666\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1,\n      2,\n      5\n    ],\n    \"count\": 3,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.75,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"low\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1\n    ],\n    \"count\": 1,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.25,\n    \"total_fraction\": 0.16666666666666666\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-1.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2,\n  5\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\selected-I-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-2.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-09-max-20261028\\\\independent-final\\\\selected-I-little.fcs\",\"bytes\":600}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\selected-I-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-3.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 2,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"ID\",\n      \"stain\": \"\",\n      \"bits\": 65,\n      \"range\": \"36893488147419103232\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"X\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"M\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"LittleEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-4.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"id_window\",\n    \"parent\": \"shape\",\n    \"event_indices\": [\n      2,\n      5\n    ],\n    \"count\": 2,\n    \"parent_count\": 3,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.6666666666666666,\n    \"total_fraction\": 0.3333333333333333\n  },\n  {\n    \"id\": \"high\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      2,\n      3,\n      5\n    ],\n    \"count\": 3,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.75,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"window\",\n    \"event_indices\": [\n      1,\n      2,\n      3,\n      5\n    ],\n    \"count\": 4,\n    \"parent_count\": 6,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.6666666666666666,\n    \"total_fraction\": 0.6666666666666666\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1,\n      2,\n      5\n    ],\n    \"count\": 3,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.75,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"low\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1\n    ],\n    \"count\": 1,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.25,\n    \"total_fraction\": 0.16666666666666666\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-5.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2,\n  5\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\selected-I-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-6.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-09-max-20261028\\\\independent-final\\\\selected-I-big.fcs\",\"bytes\":600}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\selected-I-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-7.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 2,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"ID\",\n      \"stain\": \"\",\n      \"bits\": 65,\n      \"range\": \"36893488147419103232\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"X\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"M\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-A-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-8.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"id_window\",\n    \"parent\": \"shape\",\n    \"event_indices\": [\n      2,\n      5\n    ],\n    \"count\": 2,\n    \"parent_count\": 3,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.6666666666666666,\n    \"total_fraction\": 0.3333333333333333\n  },\n  {\n    \"id\": \"high\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      2,\n      3,\n      5\n    ],\n    \"count\": 3,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.75,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"window\",\n    \"event_indices\": [\n      1,\n      2,\n      3,\n      5\n    ],\n    \"count\": 4,\n    \"parent_count\": 6,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.6666666666666666,\n    \"total_fraction\": 0.6666666666666666\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1,\n      2,\n      5\n    ],\n    \"count\": 3,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.75,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"low\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1\n    ],\n    \"count\": 1,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.25,\n    \"total_fraction\": 0.16666666666666666\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-A-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-9.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2,\n  5\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-A-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\selected-A-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-10.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-09-max-20261028\\\\independent-final\\\\selected-A-little.fcs\",\"bytes\":629}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\selected-A-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-11.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 2,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"ID\",\n      \"stain\": \"\",\n      \"bits\": 0,\n      \"range\": \"36893488147419103232\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"X\",\n      \"stain\": \"\",\n      \"bits\": 0,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"M\",\n      \"stain\": \"\",\n      \"bits\": 0,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Ascii\",\n  \"byte_order\": \"LittleEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-F-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-12.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"high\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      2,\n      3,\n      5\n    ],\n    \"count\": 3,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.75,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"window\",\n    \"event_indices\": [\n      1,\n      2,\n      3,\n      5\n    ],\n    \"count\": 4,\n    \"parent_count\": 6,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.6666666666666666,\n    \"total_fraction\": 0.6666666666666666\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1,\n      2,\n      5\n    ],\n    \"count\": 3,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.75,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"low\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1\n    ],\n    \"count\": 1,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.25,\n    \"total_fraction\": 0.16666666666666666\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-F-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-13.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  1,\n  2,\n  5\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-F-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\selected-F-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-14.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-09-max-20261028\\\\independent-final\\\\selected-F-big.fcs\",\"bytes\":600}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\selected-F-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-15.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 3,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"ID\",\n      \"stain\": \"\",\n      \"bits\": 32,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"X\",\n      \"stain\": \"\",\n      \"bits\": 32,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"M\",\n      \"stain\": \"\",\n      \"bits\": 32,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Float32\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-D-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-16.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"high\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      2,\n      3,\n      5\n    ],\n    \"count\": 3,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.75,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"window\",\n    \"event_indices\": [\n      1,\n      2,\n      3,\n      5\n    ],\n    \"count\": 4,\n    \"parent_count\": 6,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.6666666666666666,\n    \"total_fraction\": 0.6666666666666666\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1,\n      2,\n      5\n    ],\n    \"count\": 3,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.75,\n    \"total_fraction\": 0.5\n  },\n  {\n    \"id\": \"low\",\n    \"parent\": \"window\",\n    \"event_indices\": [\n      1\n    ],\n    \"count\": 1,\n    \"parent_count\": 4,\n    \"total_count\": 6,\n    \"parent_fraction\": 0.25,\n    \"total_fraction\": 0.16666666666666666\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-D-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-17.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  1,\n  2,\n  5\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-D-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\selected-D-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-18.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-09-max-20261028\\\\independent-final\\\\selected-D-little.fcs\",\"bytes\":636}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\selected-D-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-19.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 3,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"ID\",\n      \"stain\": \"\",\n      \"bits\": 64,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"X\",\n      \"stain\": \"\",\n      \"bits\": 64,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"M\",\n      \"stain\": \"\",\n      \"bits\": 64,\n      \"range\": \"256\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Float64\",\n  \"byte_order\": \"LittleEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\empty.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-20.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"id_window\",\n    \"parent\": \"shape\",\n    \"event_indices\": [],\n    \"count\": 0,\n    \"parent_count\": 0,\n    \"total_count\": 0\n  },\n  {\n    \"id\": \"high\",\n    \"parent\": \"window\",\n    \"event_indices\": [],\n    \"count\": 0,\n    \"parent_count\": 0,\n    \"total_count\": 0\n  },\n  {\n    \"id\": \"window\",\n    \"event_indices\": [],\n    \"count\": 0,\n    \"parent_count\": 0,\n    \"total_count\": 0\n  },\n  {\n    \"id\": \"shape\",\n    \"parent\": \"window\",\n    \"event_indices\": [],\n    \"count\": 0,\n    \"parent_count\": 0,\n    \"total_count\": 0\n  },\n  {\n    \"id\": \"low\",\n    \"parent\": \"window\",\n    \"event_indices\": [],\n    \"count\": 0,\n    \"parent_count\": 0,\n    \"total_count\": 0\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-21.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-22.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"none\",\n    \"event_indices\": [],\n    \"count\": 0,\n    \"parent_count\": 6,\n    \"total_count\": 6,\n    \"parent_fraction\": 0,\n    \"total_fraction\": 0\n  },\n  {\n    \"id\": \"child\",\n    \"parent\": \"none\",\n    \"event_indices\": [],\n    \"count\": 0,\n    \"parent_count\": 0,\n    \"total_count\": 6,\n    \"total_fraction\": 0\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\timed.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-23.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"time\",\n    \"event_indices\": [\n      0,\n      1\n    ],\n    \"count\": 2,\n    \"parent_count\": 3,\n    \"total_count\": 3,\n    \"parent_fraction\": 0.6666666666666666,\n    \"total_fraction\": 0.6666666666666666\n  },\n  {\n    \"id\": \"corrected\",\n    \"parent\": \"time\",\n    \"event_indices\": [\n      1\n    ],\n    \"count\": 1,\n    \"parent_count\": 2,\n    \"total_count\": 3,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.3333333333333333\n  },\n  {\n    \"id\": \"raw\",\n    \"parent\": \"time\",\n    \"event_indices\": [\n      0\n    ],\n    \"count\": 1,\n    \"parent_count\": 2,\n    \"total_count\": 3,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.3333333333333333\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\timed.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\timed-selected.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-24.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-09-max-20261028\\\\independent-final\\\\timed-selected.fcs\",\"bytes\":629}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\nonfinite.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-25.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"a\",\n    \"event_indices\": [\n      0,\n      1\n    ],\n    \"count\": 2,\n    \"parent_count\": 3,\n    \"total_count\": 3,\n    \"parent_fraction\": 0.6666666666666666,\n    \"total_fraction\": 0.6666666666666666\n  },\n  {\n    \"id\": \"ac\",\n    \"parent\": \"a\",\n    \"event_indices\": [\n      0,\n      1\n    ],\n    \"count\": 2,\n    \"parent_count\": 2,\n    \"total_count\": 3,\n    \"parent_fraction\": 1,\n    \"total_fraction\": 0.6666666666666666\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\with-analysis.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\analysis-must-not-be-silently-dropped.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-26.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"selection may invalidate ANALYSIS; explicitly request drop_analysis\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\with-analysis.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\analysis-explicitly-dropped.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-27.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-09-max-20261028\\\\independent-final\\\\analysis-explicitly-dropped.fcs\",\"bytes\":600}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-duplicate.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-28.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"gate step IDs must be unique and nonempty: window\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-empty-id.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-29.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"gate step IDs must be unique and nonempty: \")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-unknown-parent.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-30.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown parent gate: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-cycle.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-31.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"gate plan contains a parent cycle\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-self-cycle.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-32.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"gate plan contains a parent cycle\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-unknown-population.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-33.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"unknown population: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-no-population.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-34.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "JsonDecodeError((Root, \"String::from_json: expected string\"))\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-no-gates.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-35.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"missing option: gates\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-events-conflict.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-36.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"choose exactly one event selector: events, bounds or vertices\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-bounds-conflict.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-37.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"choose exactly one event selector: events, bounds or vertices\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-multiple-predicates.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-38.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"gate step requires exactly one predicate\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-unknown-option.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-39.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"unknown gate step option: parents\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-fractional-channel.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-40.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"gate bounds must be [channel,lower,upper]\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-fractional-x.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-41.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-fractional-exact.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-42.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-top-scaled.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-43.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"gate plan view flags belong to each step\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-top-compensated.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-44.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"gate plan view flags belong to each step\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-exact-scaled.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-45.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"exact gate steps require nonempty raw integer bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-exact-compensated.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-46.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"exact gate steps require nonempty raw integer bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-empty-exact.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-47.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"exact gate steps require nonempty raw integer bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-empty-bounds.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-48.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"at least one gate interval is required\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-backwards-bounds.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-49.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"invalid gate bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-short-bounds.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-50.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"gate bounds must be [channel,lower,upper]\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-nonpolygon-xy.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-51.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"x/y apply only to polygon gate steps\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-empty-parent-invalid-child.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-52.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"channel index out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-I-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-nonboolean-view.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-53.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "JsonDecodeError((Root, \"Bool::from_json: expected boolean\"))\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\hist-C.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-54.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\hist-C.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-hist-C.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-55.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"gate plans require list DATA\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\hist-U.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-56.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\hist-U.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-hist-U.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-57.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"gate plans require list DATA\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\source-D-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\rejected-floating-exact.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\independent-final\\options-58.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"exact integer gate requires list I/A DATA\")\n"
+  }
+]

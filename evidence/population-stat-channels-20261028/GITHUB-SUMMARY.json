@@ -1,0 +1,9 @@
+{
+  "query": "fcs language:MoonBit",
+  "repositories": [
+    "mawei2018/moonbit-fcs"
+  ],
+  "isError": false,
+  "rawReceipt": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\r26-research-0.json",
+  "absenceProved": false
+}

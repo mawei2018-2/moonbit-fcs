@@ -1,0 +1,13 @@
+{
+  "sourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "population": "inner",
+  "populationCount": 662,
+  "sourceIndices": [
+    14232,
+    10,
+    7454,
+    14232
+  ],
+  "frozenPopulationReceipt": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\real-example\\populations.json",
+  "frozenPopulationReceiptSha256": "7e967353a1cb6d3954083407bd3cd0d280727130db63b0654891c62758f8c769"
+}

@@ -1,0 +1,47 @@
+{
+  "title": "事件选择后保留通道信息再交付 FCS",
+  "scope": "原创 4 事件样例；输出是格式交换数据，不是临床分析或真实用户证明。",
+  "expected": "选出 FSC-A 在 [15,35) 的两个事件并保留两个指定通道；CSV 和 FCS 均可交付。",
+  "output": "C:\\Users\\uiwcv\\AppData\\Local\\Temp\\moonbit-use-case-qBoIM1",
+  "ok": true,
+  "results": [
+    {
+      "args": [
+        "tools/fcs.mjs",
+        "create",
+        "C:\\Users\\uiwcv\\AppData\\Local\\Temp\\moonbit-use-case-qBoIM1/events.fcs",
+        "--options",
+        "examples/events.json"
+      ],
+      "exit": 0
+    },
+    {
+      "args": [
+        "tools/fcs.mjs",
+        "subset",
+        "C:\\Users\\uiwcv\\AppData\\Local\\Temp\\moonbit-use-case-qBoIM1/events.fcs",
+        "C:\\Users\\uiwcv\\AppData\\Local\\Temp\\moonbit-use-case-qBoIM1/selected.fcs",
+        "--options",
+        "examples/gate.json"
+      ],
+      "exit": 0
+    },
+    {
+      "args": [
+        "tools/fcs.mjs",
+        "csv",
+        "C:\\Users\\uiwcv\\AppData\\Local\\Temp\\moonbit-use-case-qBoIM1/selected.fcs",
+        "C:\\Users\\uiwcv\\AppData\\Local\\Temp\\moonbit-use-case-qBoIM1/selected.csv"
+      ],
+      "exit": 0
+    },
+    {
+      "args": [
+        "tools/fcs.mjs",
+        "inspect",
+        "C:\\Users\\uiwcv\\AppData\\Local\\Temp\\moonbit-use-case-qBoIM1/selected.fcs"
+      ],
+      "exit": 0
+    }
+  ]
+}

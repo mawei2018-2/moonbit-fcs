@@ -1,0 +1,542 @@
+{
+  "source": "Original synthetic cases, MIT; ISAC FCS3.1 normative sections DATATYPE, PnB, PnR and DATA",
+  "reference": "https://www.citometriagic.it/wp-content/uploads/2025/02/FCS_3_1.pdf",
+  "cases": [
+    {
+      "name": "packed12_little",
+      "datatype": "I",
+      "widths": [
+        12,
+        12
+      ],
+      "order": "little",
+      "ranges": null,
+      "values": [
+        [
+          "2748",
+          "3567"
+        ]
+      ],
+      "storedValues": [
+        [
+          "2748",
+          "3567"
+        ]
+      ],
+      "dataHex": "bcfade",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA1MzAwMDAwMDUzMTAwMDAwNTMzMDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxJfCRCWVRFT1JEfDEsMiwzLDR8JFBBUnwyfCRUT1R8MXwkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNTMxfCRFTkREQVRBfDAwMDAwMDA1MzN8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8MTJ8JFAxUnw0MDk2fCRQMUV8MCwwfCRQMk58QzJ8JFAyQnwxMnwkUDJSfDQwOTZ8JFAyRXwwLDB8vPre",
+      "sourceSha256": "7e306237d56949841dcd1d0abdd4cb2b5c84d31af2f8dd473e6c1e826e4d8687",
+      "events": [
+        0
+      ],
+      "channels": [
+        1,
+        0
+      ]
+    },
+    {
+      "name": "packed12_big",
+      "datatype": "I",
+      "widths": [
+        12,
+        12
+      ],
+      "order": "big",
+      "ranges": null,
+      "values": [
+        [
+          "2748",
+          "3567"
+        ]
+      ],
+      "storedValues": [
+        [
+          "2748",
+          "3567"
+        ]
+      ],
+      "dataHex": "abcdef",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA1MzAwMDAwMDUzMTAwMDAwNTMzMDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxJfCRCWVRFT1JEfDQsMywyLDF8JFBBUnwyfCRUT1R8MXwkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNTMxfCRFTkREQVRBfDAwMDAwMDA1MzN8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8MTJ8JFAxUnw0MDk2fCRQMUV8MCwwfCRQMk58QzJ8JFAyQnwxMnwkUDJSfDQwOTZ8JFAyRXwwLDB8q83v",
+      "sourceSha256": "4e3ff8a7b63b5a41fae4c38c69b0d9d25103b7ec4e583106ee4de2fe9f1eaa54",
+      "events": [
+        0
+      ],
+      "channels": [
+        1,
+        0
+      ]
+    },
+    {
+      "name": "cross_event_little",
+      "datatype": "I",
+      "widths": [
+        3,
+        10,
+        5
+      ],
+      "order": "little",
+      "ranges": null,
+      "values": [
+        [
+          "5",
+          "683",
+          "17"
+        ],
+        [
+          "7",
+          "1023",
+          "31"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "storedValues": [
+        [
+          "5",
+          "683",
+          "17"
+        ],
+        [
+          "7",
+          "1023",
+          "31"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "dataHex": "5d35feff8f0000",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA1NTgwMDAwMDU1OTAwMDAwNTY1MDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxJfCRCWVRFT1JEfDEsMiwzLDR8JFBBUnwzfCRUT1R8M3wkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNTU5fCRFTkREQVRBfDAwMDAwMDA1NjV8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8M3wkUDFSfDh8JFAxRXwwLDB8JFAyTnxDMnwkUDJCfDEwfCRQMlJ8MTAyNHwkUDJFfDAsMHwkUDNOfEMzfCRQM0J8NXwkUDNSfDMyfCRQM0V8MCwwfF01/v+PAAA=",
+      "sourceSha256": "c65557fcfb55c60a61bcc3936c403a1dfd261a85ca0a8e148af9ad3ec722c072",
+      "events": [
+        2,
+        0
+      ],
+      "channels": [
+        2,
+        0
+      ]
+    },
+    {
+      "name": "mixed_wide_little",
+      "datatype": "I",
+      "widths": [
+        1,
+        7,
+        9,
+        31,
+        64
+      ],
+      "order": "little",
+      "ranges": null,
+      "values": [
+        [
+          "1",
+          "127",
+          "511",
+          "2147483647",
+          "18446744073709551615"
+        ],
+        [
+          "0",
+          "1",
+          "256",
+          "123",
+          "9007199254740993"
+        ]
+      ],
+      "storedValues": [
+        [
+          "1",
+          "127",
+          "511",
+          "2147483647",
+          "18446744073709551615"
+        ],
+        [
+          "0",
+          "1",
+          "256",
+          "123",
+          "9007199254740993"
+        ]
+      ],
+      "dataHex": "ffffffffffffffffffffffffffff0200f70000000100000000002000",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA2NDkwMDAwMDY1MDAwMDAwNjc3MDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxJfCRCWVRFT1JEfDEsMiwzLDR8JFBBUnw1fCRUT1R8MnwkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNjUwfCRFTkREQVRBfDAwMDAwMDA2Nzd8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8MXwkUDFSfDJ8JFAxRXwwLDB8JFAyTnxDMnwkUDJCfDd8JFAyUnwxMjh8JFAyRXwwLDB8JFAzTnxDM3wkUDNCfDl8JFAzUnw1MTJ8JFAzRXwwLDB8JFA0TnxDNHwkUDRCfDMxfCRQNFJ8MjE0NzQ4MzY0OHwkUDRFfDAsMHwkUDVOfEM1fCRQNUJ8NjR8JFA1UnwxODQ0Njc0NDA3MzcwOTU1MTYxNnwkUDVFfDAsMHz//////////////////wIA9wAAAAEAAAAAACAA",
+      "sourceSha256": "d92eda91b60d58dde86266a1c26aa487f260651d7307f535e3dce203f771900c",
+      "events": [
+        1,
+        0
+      ],
+      "channels": [
+        4,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "cross_event_big",
+      "datatype": "I",
+      "widths": [
+        3,
+        10,
+        5
+      ],
+      "order": "big",
+      "ranges": null,
+      "values": [
+        [
+          "5",
+          "683",
+          "17"
+        ],
+        [
+          "7",
+          "1023",
+          "31"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "storedValues": [
+        [
+          "5",
+          "683",
+          "17"
+        ],
+        [
+          "7",
+          "1023",
+          "31"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "dataHex": "b55c7ffff00080",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA1NTgwMDAwMDU1OTAwMDAwNTY1MDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxJfCRCWVRFT1JEfDQsMywyLDF8JFBBUnwzfCRUT1R8M3wkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNTU5fCRFTkREQVRBfDAwMDAwMDA1NjV8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8M3wkUDFSfDh8JFAxRXwwLDB8JFAyTnxDMnwkUDJCfDEwfCRQMlJ8MTAyNHwkUDJFfDAsMHwkUDNOfEMzfCRQM0J8NXwkUDNSfDMyfCRQM0V8MCwwfLVcf//wAIA=",
+      "sourceSha256": "3d6db409bb985e920ef56596391a15edd549507bee70d789c5cdea1c4d4aab04",
+      "events": [
+        2,
+        0
+      ],
+      "channels": [
+        2,
+        0
+      ]
+    },
+    {
+      "name": "mixed_wide_big",
+      "datatype": "I",
+      "widths": [
+        1,
+        7,
+        9,
+        31,
+        64
+      ],
+      "order": "big",
+      "ranges": null,
+      "values": [
+        [
+          "1",
+          "127",
+          "511",
+          "2147483647",
+          "18446744073709551615"
+        ],
+        [
+          "0",
+          "1",
+          "256",
+          "123",
+          "9007199254740993"
+        ]
+      ],
+      "storedValues": [
+        [
+          "1",
+          "127",
+          "511",
+          "2147483647",
+          "18446744073709551615"
+        ],
+        [
+          "0",
+          "1",
+          "256",
+          "123",
+          "9007199254740993"
+        ]
+      ],
+      "dataHex": "ffffffffffffffffffffffffffff01800000007b0020000000000001",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA2NDkwMDAwMDY1MDAwMDAwNjc3MDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxJfCRCWVRFT1JEfDQsMywyLDF8JFBBUnw1fCRUT1R8MnwkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNjUwfCRFTkREQVRBfDAwMDAwMDA2Nzd8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8MXwkUDFSfDJ8JFAxRXwwLDB8JFAyTnxDMnwkUDJCfDd8JFAyUnwxMjh8JFAyRXwwLDB8JFAzTnxDM3wkUDNCfDl8JFAzUnw1MTJ8JFAzRXwwLDB8JFA0TnxDNHwkUDRCfDMxfCRQNFJ8MjE0NzQ4MzY0OHwkUDRFfDAsMHwkUDVOfEM1fCRQNUJ8NjR8JFA1UnwxODQ0Njc0NDA3MzcwOTU1MTYxNnwkUDVFfDAsMHz//////////////////wGAAAAAewAgAAAAAAAB",
+      "sourceSha256": "58fdd17faaafdda41e7a5fdaa434a4dc28901e939a3b8e315235e145163a2f6f",
+      "events": [
+        1,
+        0
+      ],
+      "channels": [
+        4,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "exact_range_above_double",
+      "datatype": "I",
+      "widths": [
+        64
+      ],
+      "order": "little",
+      "ranges": [
+        "9007199254740994"
+      ],
+      "values": [
+        [
+          "9007199254740993"
+        ],
+        [
+          "9007199254740992"
+        ]
+      ],
+      "storedValues": [
+        [
+          "9007199254740993"
+        ],
+        [
+          "9007199254740992"
+        ]
+      ],
+      "dataHex": "01000000000020000000000000002000",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA1MDcwMDAwMDUwODAwMDAwNTIzMDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxJfCRCWVRFT1JEfDEsMiwzLDR8JFBBUnwxfCRUT1R8MnwkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNTA4fCRFTkREQVRBfDAwMDAwMDA1MjN8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8NjR8JFAxUnw5MDA3MTk5MjU0NzQwOTk0fCRQMUV8MCwwfAEAAAAAACAAAAAAAAAAIAA=",
+      "sourceSha256": "b15fabcf00ca18d8da3285778267e2633e0ecb87cd03d0db1209f86097a7d8b3",
+      "events": [
+        1,
+        0
+      ],
+      "channels": [
+        0
+      ]
+    },
+    {
+      "name": "packed_unused_bits",
+      "datatype": "I",
+      "widths": [
+        12,
+        3
+      ],
+      "order": "little",
+      "ranges": [
+        "1024",
+        "4"
+      ],
+      "values": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "1023",
+          "3"
+        ]
+      ],
+      "storedValues": [
+        [
+          "3073",
+          "5"
+        ],
+        [
+          "4095",
+          "7"
+        ]
+      ],
+      "dataHex": "01dcff3f",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA1MjYwMDAwMDUyNzAwMDAwNTMwMDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxJfCRCWVRFT1JEfDEsMiwzLDR8JFBBUnwyfCRUT1R8MnwkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNTI3fCRFTkREQVRBfDAwMDAwMDA1MzB8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8MTJ8JFAxUnwxMDI0fCRQMUV8MCwwfCRQMk58QzJ8JFAyQnwzfCRQMlJ8NHwkUDJFfDAsMHwB3P8/",
+      "sourceSha256": "1103a371b13007155c6c84b29b4931b755f48e9dba7f993e369f636e0b9c1c4e",
+      "events": [
+        1,
+        0
+      ],
+      "channels": [
+        1,
+        0
+      ]
+    },
+    {
+      "name": "ascii_fixed",
+      "datatype": "A",
+      "widths": [
+        4,
+        3
+      ],
+      "order": "little",
+      "ranges": null,
+      "values": [
+        [
+          "12",
+          "7"
+        ],
+        [
+          "3",
+          "456"
+        ]
+      ],
+      "storedValues": [
+        [
+          "12",
+          "7"
+        ],
+        [
+          "3",
+          "456"
+        ]
+      ],
+      "dataHex": "3030313220203730303033343536",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA1NjIwMDAwMDU2MzAwMDAwNTc2MDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxBfCRCWVRFT1JEfDEsMiwzLDR8JFBBUnwyfCRUT1R8MnwkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNTYzfCRFTkREQVRBfDAwMDAwMDA1NzZ8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8NHwkUDFSfDEwMDAwMDAwMDAwMDAwMDAwMDAwMHwkUDFFfDAsMHwkUDJOfEMyfCRQMkJ8M3wkUDJSfDEwMDAwMDAwMDAwMDAwMDAwMDAwMHwkUDJFfDAsMHwwMDEyICA3MDAwMzQ1Ng==",
+      "sourceSha256": "6f45c0c5d039b7e8f1c08f18b9f9e34217ff68f297c2cba46bc58849aa24e3c1",
+      "events": [
+        1,
+        0
+      ],
+      "channels": [
+        1,
+        0
+      ]
+    },
+    {
+      "name": "ascii_variable",
+      "datatype": "A",
+      "widths": [
+        "*",
+        "*"
+      ],
+      "order": "little",
+      "ranges": null,
+      "values": [
+        [
+          "1",
+          "3"
+        ],
+        [
+          "3",
+          "0"
+        ],
+        [
+          "17",
+          "2"
+        ]
+      ],
+      "storedValues": [
+        [
+          "1",
+          "3"
+        ],
+        [
+          "3",
+          "0"
+        ],
+        [
+          "17",
+          "2"
+        ]
+      ],
+      "dataHex": "312c332c2c20092c330d0a300931370a2032",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA1NjIwMDAwMDU2MzAwMDAwNTgwMDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxBfCRCWVRFT1JEfDEsMiwzLDR8JFBBUnwyfCRUT1R8M3wkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNTYzfCRFTkREQVRBfDAwMDAwMDA1ODB8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8KnwkUDFSfDEwMDAwMDAwMDAwMDAwMDAwMDAwMHwkUDFFfDAsMHwkUDJOfEMyfCRQMkJ8KnwkUDJSfDEwMDAwMDAwMDAwMDAwMDAwMDAwMHwkUDJFfDAsMHwxLDMsLCAJLDMNCjAJMTcKIDI=",
+      "sourceSha256": "2a44bf31d3ac3e8440aa96456ea3700cb59062e5c641b66737db32661e837a53",
+      "events": [
+        2,
+        0
+      ],
+      "channels": [
+        1
+      ]
+    },
+    {
+      "name": "ascii_mixed_width",
+      "datatype": "A",
+      "widths": [
+        "*",
+        4
+      ],
+      "order": "little",
+      "ranges": null,
+      "values": [
+        [
+          "1",
+          "3"
+        ],
+        [
+          "0",
+          "17"
+        ],
+        [
+          "2",
+          "0"
+        ]
+      ],
+      "storedValues": [
+        [
+          "1",
+          "3"
+        ],
+        [
+          "0",
+          "17"
+        ],
+        [
+          "2",
+          "0"
+        ]
+      ],
+      "dataHex": "312c3030303320302c3030313720322c30303030",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA1NjIwMDAwMDU2MzAwMDAwNTgyMDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxBfCRCWVRFT1JEfDEsMiwzLDR8JFBBUnwyfCRUT1R8M3wkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNTYzfCRFTkREQVRBfDAwMDAwMDA1ODJ8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8KnwkUDFSfDEwMDAwMDAwMDAwMDAwMDAwMDAwMHwkUDFFfDAsMHwkUDJOfEMyfCRQMkJ8NHwkUDJSfDEwMDAwMDAwMDAwMDAwMDAwMDAwMHwkUDJFfDAsMHwxLDAwMDMgMCwwMDE3IDIsMDAwMA==",
+      "sourceSha256": "bd897b60d82c3c14edd7aa304d4a10613a4f4bde7d1505749d5440a0efa73539",
+      "events": [
+        1,
+        0
+      ],
+      "channels": [
+        1
+      ]
+    },
+    {
+      "name": "ascii_wide_integer",
+      "datatype": "A",
+      "widths": [
+        22
+      ],
+      "order": "little",
+      "ranges": null,
+      "values": [
+        [
+          "184467440737095516160"
+        ]
+      ],
+      "storedValues": [
+        [
+          "184467440737095516160"
+        ]
+      ],
+      "dataHex": "20313834343637343430373337303935353136313630",
+      "sourceBase64": "RkNTMy4xICAgIDAwMDAwMjU2MDAwMDA1MTIwMDAwMDUxMzAwMDAwNTM0MDAwMDAwMDAwMDAwMDAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwkTU9ERXxMfCREQVRBVFlQRXxBfCRCWVRFT1JEfDEsMiwzLDR8JFBBUnwxfCRUT1R8MXwkTkVYVERBVEF8MHwkQkVHSU5TVEVYVHwwfCRFTkRTVEVYVHwwfCRCRUdJTkFOQUxZU0lTfDB8JEVOREFOQUxZU0lTfDB8JEJFR0lOREFUQXwwMDAwMDAwNTEzfCRFTkREQVRBfDAwMDAwMDA1MzR8Tk9URXxPcmlnaW5hbCBub3JtYXRpdmUgZW5jb2RpbmcgZXhhbXBsZXwkUDFOfEMxfCRQMUJ8MjJ8JFAxUnwxODQ0Njc0NDA3MzcwOTU1MTYxNjF8JFAxRXwwLDB8IDE4NDQ2NzQ0MDczNzA5NTUxNjE2MA==",
+      "sourceSha256": "1cefa8bda409b066d3d9affd1c92bbb6af2d02b289baafa317133d84d7a6984c",
+      "events": [
+        0
+      ],
+      "channels": [
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "feature": "Named hierarchical gate plans and population FCS export",
+  "apiAdded": [
+    "GatePredicate",
+    "GateStep",
+    "Population",
+    "Dataset::gate_plan"
+  ],
+  "semantics": [
+    "parent intersections",
+    "original sorted event indices",
+    "forward references and branches",
+    "input-order results",
+    "per-step views",
+    "explicit zero denominators"
+  ],
+  "newCoreTestsPerBackend": 5,
+  "relatedTestsPerBackend": 4,
+  "targets": [
+    "js",
+    "wasm-gc"
+  ],
+  "independentCliCalls": 59,
+  "independentCases": 38,
+  "legacyRejectedRequests": 38,
+  "legacyCliChecks": 11,
+  "nodeExampleCommands": 6,
+  "publicConsumers": [
+    "js",
+    "wasm-gc"
+  ],
+  "selectedSourceIndices": [
+    2,
+    5
+  ],
+  "selectedExactIds": [
+    "18446744073709551618",
+    "18446744073709551621"
+  ],
+  "analysisProtectionPreserved": true,
+  "originalUncompensatedDataPreserved": true,
+  "beforeCompiledJsSha256": "004413e0563685859ff6053b70204e179978ead9249e158745064d7dfc4b4f94",
+  "afterCompiledJsSha256": "85628d16544fa2376c432afb4e70f16e2b4c75aca859ae335bf3665c07a22842",
+  "limits": [
+    "single parent; no Boolean/multiparent gates",
+    "no GatingML/FlowJo import or GUI",
+    "no automatic classification or clinical claim",
+    "no multi-file batch or merge extension",
+    "in-memory/Double limits remain",
+    "no native runtime or remoteCI result",
+    "not pushed/published/submitted"
+  ]
+}

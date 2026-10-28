@@ -1,0 +1,35 @@
+{
+  "initialCounts": {
+    "window": 2117,
+    "scatter": 0,
+    "inner": 0
+  },
+  "initialCriteria": {
+    "FSC": [
+      500000,
+      1000000
+    ],
+    "SSC": [
+      100000,
+      400000
+    ],
+    "innerFSC": [
+      600000,
+      900000
+    ],
+    "innerSSC": [
+      150000,
+      350000
+    ]
+  },
+  "interpretation": "The nonempty assertion was an unverified demo-threshold assumption, not a product failure. Original code and criteria retained.",
+  "sscQuantilesInsideWindow": [
+    1155442.25,
+    1267230.125,
+    1389402.0,
+    1572209.625,
+    1786023.125,
+    1949246.2,
+    2468611.25
+  ]
+}

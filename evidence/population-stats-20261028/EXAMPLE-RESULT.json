@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "commands": 1,
+  "fixture": "round09 frozen original MIT events file reused read-only; new command executed in round25",
+  "fixtureSha256": "41299eb6a4ab99550d795a17b85b48f7ef369fbca7bcbf20dde135ee5b4eb7f6",
+  "sourceUnchanged": true,
+  "sourceEventIndices": [
+    2,
+    5
+  ],
+  "channels": [
+    "X",
+    "Y",
+    "M",
+    "ID"
+  ],
+  "numericStatisticsCompared": 16,
+  "oracle": "two-value closed-form mean and sample variance from original example integer_values after documented Double conversion",
+  "exampleOptionsSha256": "e07495bf35ef628b301c7b03e5af26b6833b06141cf49a091c354ef22ca1a6b2",
+  "nodeAdapterSha256": "dd3dfc0758ee3e40901bf5ffeac2a7b2e0b35e711107eb1ff48253a66f2d4aec"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\fcs-reference-venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "tools/check-event-selection.py",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\real-consumer",
+    "--repod-only"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T07:44:16.550604+00:00",
+  "exitCode": 0,
+  "stdout": "{\"status\": \"passed\", \"commands\": 5, \"cases\": [{\"case\": \"frozen population IDs to FlowIO consumer\", \"sourceIndices\": [14232, 10, 7454, 14232], \"valuesVerified\": 12, \"rawBytesVerified\": 48, \"sourceSha256\": \"91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c\", \"outputSha256\": \"0e29967073c3a225d208024a6812b6141843014c82b8ebbe788a4589deeeb9ed\", \"externalReader\": \"FlowIO1.4.0 preprocess=False\"}]}\n",
+  "stderr": ""
+}

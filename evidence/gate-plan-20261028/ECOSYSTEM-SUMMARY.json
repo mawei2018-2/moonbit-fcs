@@ -1,0 +1,109 @@
+{
+  "checkedUtc": "2026-10-28T06:12:15.827150+00:00",
+  "endpointSource": "moonbitlang/mooncakes.io@f0c100a5a6d77bc519f9c5d4ed6a8cee8628d695/src/page/home/server_search.mbt",
+  "registryQueries": [
+    {
+      "query": "fcs",
+      "status": 200,
+      "limit": 20,
+      "returnedCount": 2,
+      "modules": [
+        {
+          "name": "mawei2018/fcs",
+          "version": "0.2.2"
+        },
+        {
+          "name": "lxyhgvb/moonbit-radioframe",
+          "version": "0.2.0"
+        }
+      ]
+    },
+    {
+      "query": "cytometry",
+      "status": 200,
+      "limit": 20,
+      "returnedCount": 1,
+      "modules": [
+        {
+          "name": "mawei2018/fcs",
+          "version": "0.2.2"
+        }
+      ]
+    },
+    {
+      "query": "gating",
+      "status": 200,
+      "limit": 20,
+      "returnedCount": 16,
+      "modules": [
+        {
+          "name": "Xpeng/mooncov",
+          "version": "0.1.1"
+        },
+        {
+          "name": "clbbbb/bayes-shift",
+          "version": "0.1.0"
+        },
+        {
+          "name": "lyjttio/moon-data-contract",
+          "version": "0.2.2"
+        },
+        {
+          "name": "SongYZZZ/moon-firmware",
+          "version": "0.1.3"
+        },
+        {
+          "name": "LF-ai-nb/caseweave",
+          "version": "0.1.1"
+        },
+        {
+          "name": "yourenA1108/flipspec",
+          "version": "0.1.1"
+        },
+        {
+          "name": "zhou-wei97/promql",
+          "version": "0.8.0"
+        },
+        {
+          "name": "mldong/jeeflow-core",
+          "version": "0.1.53"
+        },
+        {
+          "name": "Zy789kl/moonlabelkit",
+          "version": "0.1.4"
+        },
+        {
+          "name": "PaiGack/dive",
+          "version": "0.2.0"
+        },
+        {
+          "name": "huanguan-Q/typesafe-sdk-moonbit",
+          "version": "0.2.0"
+        },
+        {
+          "name": "bobzhang/openseek",
+          "version": "0.3.2"
+        },
+        {
+          "name": "Suquster/moonbit-pathfinding",
+          "version": "0.2.0"
+        },
+        {
+          "name": "hnriiuu/moonbit_forceplate",
+          "version": "0.1.1"
+        },
+        {
+          "name": "vectie/bunnia",
+          "version": "0.1.0"
+        },
+        {
+          "name": "bobzhang/games",
+          "version": "0.9.33"
+        }
+      ]
+    }
+  ],
+  "limits": "Public name/description/summary search; no private code or complete contest list. No uniqueness claim.",
+  "relatedMatureTool": "https://flowkit.readthedocs.io/en/latest/gating_strategy.html",
+  "difference": "MoonBit original event identity, exact I/A predicates and FCS exchange; independently implemented, no FlowKit code/data copied"
+}

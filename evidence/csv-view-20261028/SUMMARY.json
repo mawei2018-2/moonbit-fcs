@@ -1,0 +1,71 @@
+{
+  "finding": "CSV receipt reported scaled:false for already-linearized compensated output",
+  "repair": "report effective scaled view and additive compensated selection flag; no numeric-path changes",
+  "independentCliCalls": 8,
+  "csvConsumerCalls": 6,
+  "sourceEventIndices": [
+    1,
+    2
+  ],
+  "selectedRawBytesVerified": 8,
+  "rawCsvValues": [
+    [
+      8,
+      24
+    ],
+    [
+      12,
+      36
+    ]
+  ],
+  "linearCsvValues": [
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      9
+    ]
+  ],
+  "compensatedCsvValues": [
+    [
+      4,
+      4
+    ],
+    [
+      6,
+      6
+    ]
+  ],
+  "gains": [
+    2,
+    4
+  ],
+  "spillover": [
+    [
+      1,
+      0.5
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "omittedFalseAndTrueScaledWithCompensationPreserved": true,
+  "emptySelectedViewPreserved": true,
+  "populationFcsAndCompensatedCsvBytesUnchanged": true,
+  "compensatedCsvSha256BeforeAndAfter": "c484c0a317e9542952c25f1409fd613228637ffefae27df565747b1ee33045b2",
+  "beforeCliSha256": "5d78b5c4d8ada9f73a6c061ce1c729b13b61426419b691b15bd87ed253286f50",
+  "afterCliSha256": "a124053c02760eb4d1819a801a54cb079ddb897e51690daec9c8504800209dbd",
+  "compiledJsSha256": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148",
+  "compiledJsUnchanged": true,
+  "compare12SourceBranchUnchanged": true,
+  "scope": "Node CSV receipt/help only; numerical CSV loop, core/bridge/public API unchanged",
+  "limits": [
+    "view flags identify selected view, including empty output; compensated does not prove matrix exists",
+    "synthetic Fraction/csv consumer is project-local, not external adoption evidence",
+    "unchanged MoonBit/Wasm/round12 comparisons/old full collections/downloads not rerun",
+    "no remote CI result; not pushed/published/submitted"
+  ]
+}

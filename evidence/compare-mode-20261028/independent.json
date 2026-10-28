@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python",
+    "tools/check-compare-mode.py",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T08:13:36.927828+00:00",
+  "exitCode": 0,
+  "stdout": "{\"status\": \"passed\", \"commands\": 23, \"cases\": [{\"case\": \"all ordered cross-mode pairs reject compatibility\", \"comparisons\": 6, \"modes\": [\"ListMode\", \"Correlated\", \"Uncorrelated\"], \"exitCode\": 2, \"validJson\": true}, {\"case\": \"same-mode counts/data/byte-order differences remain compatible\", \"comparisons\": 3, \"acceptedConsumerCalls\": 6, \"consumers\": [{\"file\": \"L1\", \"operation\": \"populations\", \"sourceEventIndices\": [1]}, {\"file\": \"L2\", \"operation\": \"populations\", \"sourceEventIndices\": [1, 2]}, {\"file\": \"C1\", \"operation\": \"histogram-axis\", \"exactFrequencies\": [\"4\", \"6\"]}, {\"file\": \"C2\", \"operation\": \"histogram-axis\", \"exactFrequencies\": [\"8\", \"12\"]}, {\"file\": \"U1\", \"operation\": \"histogram-axis\", \"exactFrequencies\": [\"1\", \"2\"]}, {\"file\": \"U2\", \"operation\": \"histogram-axis\", \"exactFrequencies\": [\"2\", \"3\"]}]}, {\"case\": \"multi-file baseline and existing channel mismatch criterion retained\"}]}\n",
+  "stderr": ""
+}

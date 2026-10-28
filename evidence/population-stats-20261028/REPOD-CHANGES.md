@@ -1,0 +1,1 @@
+New population-stats JSON summary for the numeric inner gate; no FCS/CSV output or source changes. Membership independently derived from source F32 scatter coordinates. Original/derived data CC BY4.0, attribution retained; no biological or clinical inference.

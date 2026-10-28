@@ -1,0 +1,914 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-0.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    180,\n    90\n  ],\n  [\n    198,\n    99\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-little-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-1.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\gain-F-little-I.fcs\",\"bytes\":568}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-little-I.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"198\",\n    \"198\"\n  ],\n  [\n    \"180\",\n    \"180\"\n  ],\n  [\n    \"198\",\n    \"198\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-little-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-3.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    99,\n    198\n  ],\n  [\n    90,\n    180\n  ],\n  [\n    99,\n    198\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-little-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-4.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-little-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-5.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\gain-F-little-A.fcs\",\"bytes\":579}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-little-A.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"198\",\n    \"198\"\n  ],\n  [\n    \"180\",\n    \"180\"\n  ],\n  [\n    \"198\",\n    \"198\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-little-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-7.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    99,\n    198\n  ],\n  [\n    90,\n    180\n  ],\n  [\n    99,\n    198\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-little-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-8.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-9.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    180,\n    90\n  ],\n  [\n    198,\n    99\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-big-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-10.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\gain-F-big-I.fcs\",\"bytes\":568}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-big-I.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"198\",\n    \"198\"\n  ],\n  [\n    \"180\",\n    \"180\"\n  ],\n  [\n    \"198\",\n    \"198\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-big-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-12.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    99,\n    198\n  ],\n  [\n    90,\n    180\n  ],\n  [\n    99,\n    198\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-big-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-13.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-big-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-14.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\gain-F-big-A.fcs\",\"bytes\":579}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-big-A.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"198\",\n    \"198\"\n  ],\n  [\n    \"180\",\n    \"180\"\n  ],\n  [\n    \"198\",\n    \"198\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-big-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-16.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    99,\n    198\n  ],\n  [\n    90,\n    180\n  ],\n  [\n    99,\n    198\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-F-big-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-17.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-18.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    180,\n    90\n  ],\n  [\n    198,\n    99\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-19.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\gain-D-little-I.fcs\",\"bytes\":568}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little-I.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"198\",\n    \"198\"\n  ],\n  [\n    \"180\",\n    \"180\"\n  ],\n  [\n    \"198\",\n    \"198\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-21.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    99,\n    198\n  ],\n  [\n    90,\n    180\n  ],\n  [\n    99,\n    198\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-22.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-23.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\gain-D-little-A.fcs\",\"bytes\":579}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little-A.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"198\",\n    \"198\"\n  ],\n  [\n    \"180\",\n    \"180\"\n  ],\n  [\n    \"198\",\n    \"198\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-25.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    99,\n    198\n  ],\n  [\n    90,\n    180\n  ],\n  [\n    99,\n    198\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-26.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-27.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    180,\n    90\n  ],\n  [\n    198,\n    99\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-big-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-28.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\gain-D-big-I.fcs\",\"bytes\":568}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-big-I.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"198\",\n    \"198\"\n  ],\n  [\n    \"180\",\n    \"180\"\n  ],\n  [\n    \"198\",\n    \"198\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-big-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-30.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    99,\n    198\n  ],\n  [\n    90,\n    180\n  ],\n  [\n    99,\n    198\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-big-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-31.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-big-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-32.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\gain-D-big-A.fcs\",\"bytes\":579}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-big-A.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"198\",\n    \"198\"\n  ],\n  [\n    \"180\",\n    \"180\"\n  ],\n  [\n    \"198\",\n    \"198\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-big-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-34.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    99,\n    198\n  ],\n  [\n    90,\n    180\n  ],\n  [\n    99,\n    198\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-big-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-35.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-range-F.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-I-False.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-36.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\fractional-F-I-False.fcs\",\"bytes\":540}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-I-False.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-37.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 1,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"3\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"1\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-I-False.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"2\",\n    \"0\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-range-F.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-I-True.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-39.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\fractional-F-I-True.fcs\",\"bytes\":538}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-I-True.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-40.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 0,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"3\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"1\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-I-True.fcs"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-range-F.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-A-False.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-42.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\fractional-F-A-False.fcs\",\"bytes\":540}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-A-False.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-43.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 1,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 1,\n      \"range\": \"3\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 1,\n      \"range\": \"1\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Ascii\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-A-False.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"2\",\n    \"0\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-range-F.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-A-True.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-45.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\fractional-F-A-True.fcs\",\"bytes\":538}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-A-True.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-46.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 0,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 1,\n      \"range\": \"3\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 1,\n      \"range\": \"1\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Ascii\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-F-A-True.fcs"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-range-D.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-I-False.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-48.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\fractional-D-I-False.fcs\",\"bytes\":540}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-I-False.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-49.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 1,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"3\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"1\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-I-False.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"2\",\n    \"0\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-range-D.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-I-True.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-51.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\fractional-D-I-True.fcs\",\"bytes\":538}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-I-True.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-52.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 0,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"3\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"1\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-I-True.fcs"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-range-D.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-A-False.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-54.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\fractional-D-A-False.fcs\",\"bytes\":540}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-A-False.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-55.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 1,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 1,\n      \"range\": \"3\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 1,\n      \"range\": \"1\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Ascii\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-A-False.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"2\",\n    \"0\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-range-D.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-A-True.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-57.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\fractional-D-A-True.fcs\",\"bytes\":538}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-A-True.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-58.json"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 0,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 1,\n      \"range\": \"3\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 1,\n      \"range\": \"1\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Ascii\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\fractional-D-A-True.fcs"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\bit-boundary.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\bit-boundary-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-60.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\bit-boundary-I.fcs\",\"bytes\":505}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\bit-boundary-I.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"256\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\capacity.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\capacity-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-62.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\independent07\\\\capacity-I.fcs\",\"bytes\":504}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\capacity-I.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"255\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-width-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-64.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"integer cannot fit chosen storage width\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\gain-D-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-width-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-65.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"ASCII value exceeds width\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-fraction-I-source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-fraction-I-output.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-66.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"integer encoding requires an integral finite value\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-fraction-A-source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-fraction-A-output.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-67.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"integer encoding requires an integral finite value\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-negative-I-source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-negative-I-output.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-68.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"integer cannot fit chosen storage width\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-infinity-I-source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-infinity-I-output.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-69.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"integer encoding requires an integral finite value\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-nan-I-source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\error-nan-I-output.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\independent07\\options-70.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"integer encoding requires an integral finite value\")\n"
+  }
+]

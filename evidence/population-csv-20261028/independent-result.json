@@ -1,0 +1,126 @@
+{
+  "status": "passed",
+  "commands": 19,
+  "cases": [
+    {
+      "case": "raw",
+      "rows": 4,
+      "sourceIndices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "case": "compensated-output",
+      "rows": 4,
+      "sourceIndices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "case": "scaled-output",
+      "rows": 4,
+      "sourceIndices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "case": "slice-middle",
+      "rows": 2,
+      "sourceIndices": [
+        1,
+        2
+      ]
+    },
+    {
+      "case": "slice-after-gap",
+      "rows": 1,
+      "sourceIndices": [
+        4
+      ]
+    },
+    {
+      "case": "empty-at-end",
+      "rows": 0,
+      "sourceIndices": []
+    },
+    {
+      "case": "empty-population",
+      "rows": 0,
+      "sourceIndices": []
+    },
+    {
+      "case": "source-analysis-retained",
+      "rows": 4,
+      "sourceIndices": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "case": "unknown-population",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "missing-population",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "missing-gates",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "cycle",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "unknown-column",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "past-population",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "too-many-members",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "selector-conflict",
+      "rejectedBeforeOutput": true
+    },
+    {
+      "case": "default source slice and no-overwrite preserved"
+    },
+    {
+      "case": "population spans cross cell-budget boundary",
+      "rows": 783,
+      "columns": 128,
+      "valuesVerified": 100224,
+      "chunkRows": 781
+    }
+  ],
+  "inputLicense": "original MIT synthetic inputs",
+  "oracle": "struct/Fraction/csv consumers; explicit source-member positions",
+  "inputUnchanged": true,
+  "sourceSha256": {
+    "tools/fcs.mjs": "f4f5f44974e56be973414e88a525318b04dc4af3c2101d0b67aee467da09e9cd",
+    "tools/check-population-csv.py": "3af9d1ba6677e724403722187fbc6dcfa6bf6116251ba54abda27afea6e654ce",
+    "tools/check-repair06.py": "0b1e5b145c455841096eb1a719e8c313670609de927887a538b5e2c760d964fb",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "gating.mbt": "87f0ab627405dd765fef62422c050af61ee7238677e8589a759d633526b5a807",
+    "cmd/bridge/main.mbt": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "_build/js/release/build/cmd/bridge/bridge.js": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148"
+  }
+}

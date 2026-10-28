@@ -1,0 +1,16 @@
+{
+  "name": "moon-build-js",
+  "startedUtc": "2026-10-27T16:53:02.644079+00:00",
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "build",
+    "--target",
+    "js",
+    "--release",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": "Finished. moon: ran 3 tasks, now up to date\n"
+}

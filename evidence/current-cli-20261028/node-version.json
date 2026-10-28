@@ -1,0 +1,12 @@
+{
+  "name": "node-version",
+  "startedUtc": "2026-10-27T16:53:00.514471+00:00",
+  "command": [
+    "node",
+    "--version"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "exitCode": 0,
+  "stdout": "v24.11.0\n",
+  "stderr": ""
+}

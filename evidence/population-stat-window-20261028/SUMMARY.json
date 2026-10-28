@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "feature": "population-stats member windows",
+  "finishingRound": 29,
+  "cliCalls": 26,
+  "successfulCommands": 14,
+  "expectedFailureCommands": 12,
+  "independentCases": 15,
+  "consumerLaunches": 1,
+  "newRuntimeValidationErrors": 0,
+  "sealOnlyAssertionCorrections": 2,
+  "oldSuitesOrRepodRerun": false,
+  "sdkInvocations": 0,
+  "groupEvents": 5,
+  "windowEvents": 2,
+  "windowSourceIndices": [
+    2,
+    4
+  ],
+  "csvScientificCells": 6,
+  "defaultSchemaAndFullMatrixCompensationRetained": true,
+  "sourceAndAnalysisUnchanged": true,
+  "publicExample": {
+    "producerAndConsumerExecuted": true,
+    "sourceEventIndices": [
+      5
+    ],
+    "groupEvents": 2,
+    "windowEvents": 1,
+    "channelIndices": [
+      2,
+      0,
+      2
+    ],
+    "means": [
+      8,
+      20,
+      8
+    ]
+  },
+  "retainedInput": {
+    "status": "verified",
+    "requestOptionsIdentical": true,
+    "inputBytesIdentical": true,
+    "inputSha256": "731f938f1c3179bf54e737db57a977fe64f4ddb9f672069565f380b5665333db",
+    "oldReceipt": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\COMMANDS.json",
+    "oldExpectedCode": 1,
+    "newExpectedCode": 0,
+    "reason": "retained formerly unsupported start:0 input now verifies the explicitly added window capability and independent statistics",
+    "originalFailureAndInputRetained": true,
+    "wholeOldSuiteRerun": false
+  },
+  "sourceSha256": {
+    "tools/fcs.mjs": "84702ecfcc43677c2325b22d52e74be027bbc59bec114df1f562b8d529f18b0c",
+    "tools/check-population-stat-window.py": "36fba741fbd10b85493964558b7fcbd52175b0efae895882f1b6d7467c732f54",
+    "tools/check-population-stats.py": "df341f334ce3f044e8dbf1ef9156525e78dc3eb9e885323da6bb0c450a05269d",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "examples/population-stat-window.json": "4b1c96c70f847bceaa4230e3778f4a8a9645f45edbbf7b46d519125d42080e83",
+    "events.mbt": "e346ed5de08f71267aaa75f82275987ac272c4edd81f3a925b6f8302df2165cf",
+    "write.mbt": "03d4069a2ae0df563c26f8ff4eb11089d2ffcb042c055083ce40352b81fc9707",
+    "cmd/bridge/main.mbt": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "_build/js/release/build/cmd/bridge/bridge.js": "02c5755340033c8ee5cacdbe2c4f458dd1bbf17b7ff900ba14b40ad5b92ceed6"
+  },
+  "coreAndCompiledUnchanged": true,
+  "sealFailureReceipts": [
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\SEAL-ATTEMPT-1.json",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\SEAL-ATTEMPT-2.json"
+  ]
+}

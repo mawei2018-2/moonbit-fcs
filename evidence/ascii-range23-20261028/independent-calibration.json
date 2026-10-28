@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python",
+    "tools/check-ascii-to-integer.py",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-23-max-20261028\\independent-calibration",
+    "--section",
+    "calibration"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T11:39:37.637571+00:00",
+  "exitCode": 0,
+  "stdout": "{\"status\": \"passed\", \"commands\": 11, \"cases\": 5}\n",
+  "stderr": ""
+}

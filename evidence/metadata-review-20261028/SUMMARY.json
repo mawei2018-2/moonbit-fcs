@@ -1,0 +1,47 @@
+{
+  "outcome": "bounded_review_no_new_defect",
+  "newDefectsConfirmed": 0,
+  "runtimeChanged": false,
+  "scope": "existing metadata updates combined with explicit event/channel reorder and external FCS consumer",
+  "cliCalls": 2,
+  "sourceEventIndices": [
+    2,
+    0
+  ],
+  "sourceChannelIndices": [
+    1,
+    0
+  ],
+  "sourceChannelNames": [
+    "B",
+    "A"
+  ],
+  "valuesVerified": 4,
+  "rawBytesVerified": 32,
+  "expectedValues": [
+    [
+      30.125,
+      3.75
+    ],
+    [
+      10.5,
+      1.25
+    ]
+  ],
+  "metadataFieldsVerified": 6,
+  "noteCaseInsensitiveReplacementAndUntouchedVendorFieldsPreserved": true,
+  "sourceIdentityAndMappingRecorded": true,
+  "inputUnchanged": true,
+  "inputSha256": "ae72c5216d930e53bb8b364f2522833f56b1455f4fb02b912b345396b0c0dcd1",
+  "outputSha256": "78b5f7c8f3feec400e2e387561b1c88d743df0859f6ec60a38e09d4f662709ff",
+  "externalReader": "FlowIO1.4.0 preprocess=False / NumPy2.5.3",
+  "compiledJsSha256": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148",
+  "compiledJsUnchanged": true,
+  "coreBridgeNodeCiAndPublicApiUnchanged": true,
+  "limits": [
+    "one bounded combined path only; no assertion of all metadata/vendor correctness",
+    "caller-provided provenance is not authenticated identity or external adoption evidence",
+    "unchanged build/core/Wasm/round13 CSV/old full collections/downloads not rerun",
+    "no remote CI result; not pushed/published/submitted"
+  ]
+}

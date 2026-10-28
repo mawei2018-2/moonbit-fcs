@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case": "cross-event bits, exact gate and metadata",
+      "order": "little",
+      "sourceValues": 21,
+      "selectedValues": 6
+    },
+    {
+      "case": "cross-event bits, exact gate and metadata",
+      "order": "big",
+      "sourceValues": 21,
+      "selectedValues": 6
+    },
+    {
+      "case": "all-control-prefix fallback; escaped keyword/value",
+      "delimiter": 32
+    },
+    {
+      "case": "finite extreme inverse",
+      "name": "large",
+      "expected": [
+        5e-309,
+        5e-309,
+        5e-309,
+        -5e-309
+      ],
+      "actual": [
+        5e-309,
+        5e-309,
+        5e-309,
+        -5e-309
+      ]
+    },
+    {
+      "case": "finite extreme inverse",
+      "name": "column-range",
+      "expected": [
+        5e-309,
+        5e-309,
+        5e+307,
+        -5e+307
+      ],
+      "actual": [
+        5e-309,
+        5e-309,
+        5e+307,
+        -5e+307
+      ]
+    },
+    {
+      "case": "finite extreme inverse",
+      "name": "row-range",
+      "expected": [
+        5e-309,
+        5e+307,
+        5e-309,
+        -5e+307
+      ],
+      "actual": [
+        5e-309,
+        5e+307,
+        5e-309,
+        -5e+307
+      ]
+    },
+    {
+      "case": "channel mismatch, singular/nonfinite matrix, duplicate/fractional index errors",
+      "passed": true
+    },
+    {
+      "case": "nonfinite measurement stays visible and counted, not JSON null",
+      "passed": true
+    }
+  ],
+  "commands": 21,
+  "oracle": "independent bitstrings/aggregate ints/TEXT delimiter-run parity and closed-form inverse",
+  "inputLicense": "original MIT synthetic vectors",
+  "sourceSha256": {
+    "parse.mbt": "52a8e5483593eb6df5a3500e274fdef4477e827d0092cd868eb88a42ca379e01",
+    "text.mbt": "31eefcddbd16a2182ec641656415a274912f49e38d22bf4c0ff4ce3bf63e3368",
+    "write.mbt": "8271d47320aa0a4342ea62b81751330fe16b72025f85ef0dd5800f491836e1ef",
+    "compensation.mbt": "90423bdd755934930996453a577c31909c4637dfa1711d1a9183e7ca9087d108",
+    "encoding.mbt": "257c70bd7f6246fbaa24dbe4c9fb81994c13f4d7f13b9ba8406182fa9ee58480",
+    "events.mbt": "dd8fb1e62a8099e7b016619009a642cbec2c726a27489af65ff24e6cf8fc0fe4",
+    "cmd/bridge/main.mbt": "ee11b462bb8a6cededc90bb8226f516acd23201a099a5f3480300118dcde74a9",
+    "tools/fcs.mjs": "ed00f45986dadcb3f8ea727e3e7f7bd13f560bc0a89f3cf14ffb0b9528b721a8",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "_build/js/release/build/cmd/bridge/bridge.js": "ac796967fad84051dbe2880166d2e42c15af7ad8b6118b90c3c4460e8c2dbe0d"
+  }
+}

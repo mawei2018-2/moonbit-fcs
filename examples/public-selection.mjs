@@ -1,0 +1,21 @@
+// Public G11 format-exchange example, not a biological gate recommendation.
+import fs from 'node:fs';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+import {load, query, transform} from '../_build/js/release/build/cmd/bridge/bridge.js';
+const [source,directory]=process.argv.slice(2);
+if(!source||!directory)throw Error('Usage: node examples/public-selection.mjs G11.fcs NEW_DIRECTORY');
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const bytes=fs.readFileSync(source);
+if(hash(bytes)!=='40ed9f6d4293a87077cab07a34c68b2497d4d69988adcb64a5f718098f48b56f')throw Error('Expected pinned FlowIO G11 public sample (see PUBLIC-SELECTION.md)');
+const d=load(bytes,JSON.stringify({allow_text_padding:true}));
+const report=JSON.parse(query(d,JSON.stringify({command:'inspect'})));
+const events=JSON.parse(query(d,JSON.stringify({command:'gate',bounds:[[0,1000,2000]],scaled:false})));
+const output=transform(bytes,JSON.stringify({command:'subset',allow_text_padding:true,events,channels:[0,1,2],drop_spillover:true,drop_analysis:true}));
+const reread=JSON.parse(query(load(output,'{"strict":true}'),'{"command":"inspect"}'));
+if(reread.events!==events.length||reread.channels.length!==3)throw Error('Output shape mismatch');
+fs.mkdirSync(directory);
+fs.writeFileSync(path.join(directory,'selected.fcs'),output,{flag:'wx'});
+fs.writeFileSync(path.join(directory,'indices.json'),JSON.stringify(events)+'\n',{flag:'wx'});
+fs.writeFileSync(path.join(directory,'manifest.json'),JSON.stringify({complete:true,sourceSha256:hash(bytes),outputSha256:hash(output),sourceEvents:report.events,selectedEvents:events.length,selection:{bounds:[[0,1000,2000]],channels:[0,1,2],scaled:false},sourceWarnings:report.warnings,outputWarnings:reread.warnings,metadataPolicy:'preserve selected channel metadata; explicitly drop spillover and analysis',limits:'illustrative numeric selection, not a clinical gate or biological classification'},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({directory,sourceEvents:report.events,selectedEvents:events.length,channels:3}));

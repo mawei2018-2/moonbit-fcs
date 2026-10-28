@@ -1,0 +1,55 @@
+{
+  "status": "licensed_data_evidence_verified",
+  "path": "evidence/repod-20260930/exchange-files.zip",
+  "sha256": "cc206544aa1817016e2a0f860f6d157f96cb29256aacb0a00d0ca3f4a30353c5",
+  "license": "CC BY4.0",
+  "sourceFileId": 96804,
+  "sourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "attributionAndLicenseIncluded": true,
+  "derivedChangesDeclared": true,
+  "membersCrcShaReadBack": {
+    "ATTRIBUTION.md": {
+      "bytes": 1101,
+      "crc32": "84ab0cac",
+      "sha256": "7c7a035f734815f8776b8a159a47d35165e3e228e0e8cf0107de1a9e500f3c8e"
+    },
+    "CC-BY-4.0.txt": {
+      "bytes": 18657,
+      "crc32": "2e986f34",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    "consumer-record.json": {
+      "bytes": 112824,
+      "crc32": "e4f2ef98",
+      "sha256": "fbdd86ac3aec2733c501f5c098eb5bc932ee1c10ede6e206d80c82b25b4c731c"
+    },
+    "manifest.json": {
+      "bytes": 1742,
+      "crc32": "b071ae87",
+      "sha256": "724916969b0c1f674b7db6279c00c74a24679643f696e02718d61054366d681d"
+    },
+    "normalized.fcs": {
+      "bytes": 1493370,
+      "crc32": "19e5172f",
+      "sha256": "592a275b6d4891707200d5abc44a1d9f7496c5753851d8863ca1379e0ad5c357"
+    },
+    "selected.fcs": {
+      "bytes": 26630,
+      "crc32": "2058783f",
+      "sha256": "f7b7eebc2610baf1aa8affaccb8256cbfca2303766bfdacbd4a80b121ae1eaf1"
+    },
+    "source.csv": {
+      "bytes": 5828860,
+      "crc32": "23a5577c",
+      "sha256": "c8a1aeae75e0f5ba28a5a71805535f5e44f1dcf80f0b3f69deae5689840a7377"
+    },
+    "SOURCE.json": {
+      "bytes": 1440,
+      "crc32": "b5588117",
+      "sha256": "c827e0b0b5cb92fbaacc7b2a2401876023aefdeeb1420f2dafba312d1069e5d2"
+    }
+  },
+  "sdkBuildOrDependencyCache": false,
+  "historicalArchiveUnchanged": true,
+  "gateCorrection": "ZIP suffix alone does not indicate forbidden material; allow only this individually reviewed licensed evidence bundle"
+}

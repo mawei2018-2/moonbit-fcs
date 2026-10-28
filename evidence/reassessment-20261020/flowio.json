@@ -1,0 +1,89 @@
+{
+  "flowio": "1.4.0",
+  "numpy": "2.5.3",
+  "reference_commit": "83d28a22d42235c10d17afb017250ee208afed95",
+  "results": [
+    {
+      "case": "FlowIO -> MoonBit gate/channel reorder -> FlowIO",
+      "events": 250,
+      "selected": 50,
+      "status": "pass"
+    },
+    {
+      "case": "MoonBit -> FlowIO",
+      "type": "F",
+      "endian": "big",
+      "status": "pass"
+    },
+    {
+      "case": "MoonBit -> FlowIO",
+      "type": "D",
+      "endian": "big",
+      "status": "pass"
+    },
+    {
+      "file": "100715.fcs",
+      "sha256": "733b0f6d959527116860f4c78f0908db33fc71388c7717737b340c100b9f46e7",
+      "events": 65016,
+      "channels": 16,
+      "all_values_equal": true,
+      "rewrite_equal": true
+    },
+    {
+      "file": "3FITC_4PE_004.fcs",
+      "sha256": "240e76eba7e04c7e9116c8c3ad8388ccb2faf58105d21b831d122764a3621e53",
+      "events": 94569,
+      "channels": 4,
+      "all_values_equal": true,
+      "rewrite_equal": true
+    },
+    {
+      "file": "variable_int_example.fcs",
+      "sha256": "88d2933d52686b061f36d8596e0826c9d2e75eb3d654d570f4ad3f1153f9beb2",
+      "events": 2,
+      "channels": 26,
+      "all_values_equal": true,
+      "rewrite_equal": true
+    },
+    {
+      "file": "data_start_offset_discrepancy_example.fcs",
+      "rejected": "HEADER/TEXT DATA discrepancy"
+    },
+    {
+      "file": "data_stop_offset_discrepancy_example.fcs",
+      "rejected": "HEADER/TEXT DATA discrepancy"
+    },
+    {
+      "file": "G11.fcs",
+      "sha256": "40ed9f6d4293a87077cab07a34c68b2497d4d69988adcb64a5f718098f48b56f",
+      "events": 5785,
+      "channels": 12,
+      "defaultRejected": true,
+      "explicitOption": "allow_text_padding",
+      "ignoredTrailingSpaces": 5714,
+      "all_values_equal": true,
+      "rewrite_equal": true,
+      "raw_DATA_bytes_identical": true,
+      "rewrite_strict_validation": true,
+      "selected_events_equal": true,
+      "source_unchanged": true
+    },
+    {
+      "file": "data1.fcs",
+      "known_unsupported_vendor_metadata": "Invalid(\"unpaired TEXT keyword/value\")"
+    },
+    {
+      "file": "B01 KC-A-W---91-US.fcs",
+      "known_unsupported_vendor_metadata": "Invalid(\"overlapping supplemental TEXT\")"
+    }
+  ],
+  "sourceSha256": {
+    "parse.mbt": "fadd02db2522fa560643669eaba578520b31b453d1c2de48c6b9eec0f3612733",
+    "text.mbt": "88f79664f93de2b39e561e9d59e2783964a51cc31352746719cd3af28c44fefa",
+    "write.mbt": "8832020f9a7d05c0fcd9b5c973ae3b89c0766581b9783af27f121f766bd9f8f8",
+    "cmd/bridge/main.mbt": "94697c7de1b193058cf8a7c695aa28efd587d478a0fc5d8bfd611be7f1a01ab6",
+    "tools/fcs.mjs": "83ec1e57bc25277769a79142bdffce0d80ef24a156f15e87f185fbbd7e5582e2",
+    "tools/reference_check.py": "21d7477ed54070cfe78fa5663e93b4044a7b410c17250987e8db0d5c10e59f84",
+    "_build/js/release/build/cmd/bridge/bridge.js": "782cb92abc1820ecc454e32f65d85271924f561f18fb8f9ca7515c1a4f7b574d"
+  }
+}

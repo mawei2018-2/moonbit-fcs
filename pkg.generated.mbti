@@ -1,0 +1,175 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "mawei2018/fcs"
+
+import {
+  "moonbitlang/core/bigint",
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn create(Array[String], Array[Double], double_precision? : Bool, order? : ByteOrder, metadata? : Array[(String, String)], encoding? : Encoding, integer_values? : Array[String], ranges? : Array[String], spillover? : Spillover) -> Bytes raise FcsError
+
+pub fn create_histogram(Array[String], Array[Int], Array[String], mode~ : StorageMode, encoding~ : Encoding, events? : Int, total_events? : String, metadata? : Array[(String, String)]) -> Bytes raise FcsError
+
+pub fn parse(Bytes, offset? : Int, strict? : Bool, allow_exclusive_end? : Bool, latin1? : Bool, allow_text_padding? : Bool, allow_offset_padding? : Bool) -> Dataset raise FcsError
+
+pub fn parse_all(Bytes, strict? : Bool, allow_exclusive_end? : Bool, latin1? : Bool, allow_text_padding? : Bool, allow_offset_padding? : Bool) -> Array[Dataset] raise FcsError
+
+// Errors
+pub suberror FcsError {
+  Invalid(String)
+  Unsupported(String)
+  Limit(String)
+} derive(@debug.Debug)
+pub fn FcsError::to_repr(Self) -> @debug.Repr
+
+// Types and methods
+pub(all) struct Bounds {
+  channel : Int
+  lower : Double
+  upper : Double
+} derive(@debug.Debug)
+pub fn Bounds::to_repr(Self) -> @debug.Repr
+
+pub(all) enum ByteOrder {
+  LittleEndian
+  BigEndian
+} derive(Eq, ToJson, @debug.Debug)
+pub fn ByteOrder::equal(Self, Self) -> Bool
+pub fn ByteOrder::not_equal(Self, Self) -> Bool
+pub fn ByteOrder::to_json(Self) -> Json
+pub fn ByteOrder::to_repr(Self) -> @debug.Repr
+
+pub struct Channel {
+  name : String
+  stain : String
+  bits : Int
+  range : String
+  decades : Double
+  zero : Double
+  gain : Double
+} derive(ToJson, @debug.Debug)
+pub fn Channel::to_json(Self) -> Json
+pub fn Channel::to_repr(Self) -> @debug.Repr
+
+pub struct ChannelStats {
+  count : Int
+  nonfinite : Int
+  minimum : Double?
+  maximum : Double?
+  mean : Double?
+  variance : Double?
+} derive(ToJson, @debug.Debug)
+pub fn ChannelStats::to_json(Self) -> Json
+pub fn ChannelStats::to_repr(Self) -> @debug.Repr
+
+pub struct Dataset {
+  version : String
+  events : Int
+  total_events : String
+  mode : StorageMode
+  kind : NumberType
+  order : ByteOrder
+  file_offset : Int
+  next_offset : Int
+  // private fields
+} derive(@debug.Debug)
+pub fn Dataset::analysis_keywords(Self) -> Array[(String, String)]
+pub fn Dataset::channel_index(Self, String) -> Int raise FcsError
+pub fn Dataset::channel_info(Self) -> Array[Channel]
+pub fn Dataset::gate_plan(Self, Array[GateStep]) -> Array[Population] raise FcsError
+pub fn Dataset::histogram_axis(Self, Int) -> Array[String] raise FcsError
+pub fn Dataset::histogram_events(Self) -> @bigint.BigInt raise FcsError
+pub fn Dataset::histogram_frequencies(Self) -> Array[String]
+pub fn Dataset::histogram_frequency(Self, Array[Int], axis? : Int) -> String raise FcsError
+pub fn Dataset::histogram_shape(Self) -> Array[Int]
+pub fn Dataset::integer_text(Self, Int, Int) -> String raise FcsError
+pub fn Dataset::integer_value(Self, Int, Int) -> @bigint.BigInt raise FcsError
+pub fn Dataset::keyword(Self, String) -> String?
+pub fn Dataset::keywords(Self) -> Array[(String, String)]
+pub fn Dataset::polygon(Self, Int, Int, Array[(Double, Double)], scaled? : Bool, compensated? : Bool) -> Array[Int] raise FcsError
+pub fn Dataset::rectangle(Self, Array[Bounds], scaled? : Bool, compensated? : Bool) -> Array[Int] raise FcsError
+pub fn Dataset::rectangle_exact(Self, Array[IntegerBounds]) -> Array[Int] raise FcsError
+pub fn Dataset::spillover(Self) -> Spillover? raise FcsError
+pub fn Dataset::statistics(Self, Int, scaled? : Bool, compensated? : Bool) -> ChannelStats raise FcsError
+pub fn Dataset::to_repr(Self) -> @debug.Repr
+pub fn Dataset::value(Self, Int, Int, scaled? : Bool, compensated? : Bool) -> Double raise FcsError
+pub fn Dataset::warnings(Self) -> Array[String]
+pub fn Dataset::write(Self, event_indices? : Array[Int], channel_indices? : Array[Int], updates? : Array[(String, String)], drop_spillover? : Bool, drop_analysis? : Bool, encoding? : Encoding) -> Bytes raise FcsError
+
+pub(all) struct Encoding {
+  kind : NumberType
+  widths : Array[Int]
+  order : ByteOrder
+} derive(@debug.Debug)
+pub fn Encoding::to_repr(Self) -> @debug.Repr
+
+pub(all) enum GatePredicate {
+  Rectangle(Array[Bounds])
+  Polygon(Int, Int, Array[(Double, Double)])
+  Exact(Array[IntegerBounds])
+} derive(@debug.Debug)
+pub fn GatePredicate::to_repr(Self) -> @debug.Repr
+
+pub(all) struct GateStep {
+  id : String
+  parent : String?
+  predicate : GatePredicate
+  scaled : Bool
+  compensated : Bool
+} derive(@debug.Debug)
+pub fn GateStep::to_repr(Self) -> @debug.Repr
+
+pub(all) struct IntegerBounds {
+  channel : Int
+  lower : String
+  upper : String
+} derive(@debug.Debug)
+pub fn IntegerBounds::to_repr(Self) -> @debug.Repr
+
+pub(all) enum NumberType {
+  Integer
+  Float32
+  Float64
+  Ascii
+} derive(Eq, ToJson, @debug.Debug)
+pub fn NumberType::equal(Self, Self) -> Bool
+pub fn NumberType::not_equal(Self, Self) -> Bool
+pub fn NumberType::to_json(Self) -> Json
+pub fn NumberType::to_repr(Self) -> @debug.Repr
+
+pub struct Population {
+  id : String
+  parent : String?
+  event_indices : Array[Int]
+  count : Int
+  parent_count : Int
+  total_count : Int
+  parent_fraction : Double?
+  total_fraction : Double?
+} derive(ToJson, @debug.Debug)
+pub fn Population::to_json(Self) -> Json
+pub fn Population::to_repr(Self) -> @debug.Repr
+
+pub(all) struct Spillover {
+  channels : Array[String]
+  coefficients : Array[Double]
+} derive(ToJson, @debug.Debug)
+pub fn Spillover::inverse(Self) -> Array[Double] raise FcsError
+pub fn Spillover::text(Self) -> String
+pub fn Spillover::to_json(Self) -> Json
+pub fn Spillover::to_repr(Self) -> @debug.Repr
+
+pub(all) enum StorageMode {
+  ListMode
+  Correlated
+  Uncorrelated
+} derive(Eq, ToJson, @debug.Debug)
+pub fn StorageMode::equal(Self, Self) -> Bool
+pub fn StorageMode::not_equal(Self, Self) -> Bool
+pub fn StorageMode::to_json(Self) -> Json
+pub fn StorageMode::to_repr(Self) -> @debug.Repr
+
+// Type aliases
+
+// Traits

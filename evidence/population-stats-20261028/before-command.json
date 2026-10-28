@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "population-stats",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\examples\\repod\\titration_CD11c_concat.fcs"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T12:27:24.922103+00:00",
+  "expectedExitCode": 1,
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "invalid command/arguments; use --help\n",
+  "classification": "missing command before additive feature, not a defect claim"
+}

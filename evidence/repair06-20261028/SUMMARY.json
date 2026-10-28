@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "findings": [
+    {
+      "id": "F06-1",
+      "trigger": "F/D TIME tick1 with TIMESTEP0.5/2 converted toI/A",
+      "before": "Integral raw ticks rejected or TIMESTEP applied twice",
+      "repair": "Preserve raw ticks forTIME; keep detector gain normalization",
+      "files": [
+        "write.mbt"
+      ]
+    },
+    {
+      "id": "F06-2",
+      "trigger": "LegalC/U requested through event statistics/gates, CLIvalues or count0CSV",
+      "before": "Fake zero/empty event results or header-only CSV",
+      "repair": "List-mode guards at public event APIs, bridge reports and CSV export; preserve histogram APIs",
+      "files": [
+        "events.mbt",
+        "cmd/bridge/main.mbt",
+        "tools/fcs.mjs"
+      ],
+      "notABug": "Gate without selectors already rejected; retained as negative evidence, not counted as fix"
+    },
+    {
+      "id": "F06-3",
+      "trigger": "Finite data[1e308,-1e308]",
+      "before": "Representable mean0 omitted after delta overflow",
+      "repair": "Divide finite operands before subtraction only when delta overflows",
+      "files": [
+        "events.mbt"
+      ]
+    },
+    {
+      "id": "F06-4",
+      "trigger": "[1e154,-1e154,0,0] has representable sample variance but overflowingM2",
+      "before": "Variance omitted",
+      "repair": "Rare scaled-center-square fallback; divide byn-1 before restoring scale",
+      "files": [
+        "events.mbt"
+      ]
+    }
+  ],
+  "newRegressionTestsPerBackend": 4,
+  "relatedTestsPerBackend": 32,
+  "targets": [
+    "js",
+    "wasm-gc"
+  ],
+  "separateModuleTargets": [
+    "js",
+    "wasm-gc"
+  ],
+  "independentCliCallsInFinalRun": 56,
+  "oracle": "Python struct ticks/gain, exactFraction mean/sample variance and preserved histogram axes",
+  "sourceSha256": {
+    "write.mbt": "2fa9ea30e156fa3ebd00988137e3f2e61e920fdc0a0095b60e14c86000a15f9e",
+    "events.mbt": "e346ed5de08f71267aaa75f82275987ac272c4edd81f3a925b6f8302df2165cf",
+    "pkg.generated.mbti": "9dc10679f401610d7162cc2836c6f262726221131c7d57dcfb10a291dfa7ef2a",
+    "tools/fcs.mjs": "d6faa1c8cfe8b718ed6d1640d647ce026bfc149c95977bbeff81c03752a7965e",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "tools/check-repair06.py": "0b1e5b145c455841096eb1a719e8c313670609de927887a538b5e2c760d964fb",
+    "_build/js/release/build/cmd/bridge/bridge.js": "3831962ae7178cffb5c4951b0005e552f424bb81ab365eb2dceca09ad7d087d3"
+  },
+  "inputLicense": "original MIT synthetic inputs",
+  "historicalSetsRerun": false
+}

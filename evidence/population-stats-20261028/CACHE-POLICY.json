@@ -1,0 +1,10 @@
+{
+  "strategy": "no MoonBit or package-manager invocation; existing compiled bridge read only",
+  "nodeVersion": "v24.11.0",
+  "nodeCompileCache": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\node-compile-cache",
+  "temp": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\tmp",
+  "pythonDontWriteBytecode": true,
+  "sdkInvoked": false,
+  "oldReportCacheWrites": false,
+  "sourceCompiledBridgeReadOnly": true
+}

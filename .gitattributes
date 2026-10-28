@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.fcs -text
+*.png -text
+examples/repod/*.fcs -text
+examples/repod/CC-BY-4.0.txt -text
+*.zip -text

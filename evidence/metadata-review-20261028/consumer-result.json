@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "outcome": "bounded_review_no_new_defect",
+  "commands": 2,
+  "sourceEventIndices": [
+    2,
+    0
+  ],
+  "sourceChannelIndices": [
+    1,
+    0
+  ],
+  "sourceChannelNames": [
+    "B",
+    "A"
+  ],
+  "valuesVerified": 4,
+  "rawBytesVerified": 32,
+  "expectedValues": [
+    [
+      30.125,
+      3.75
+    ],
+    [
+      10.5,
+      1.25
+    ]
+  ],
+  "metadataVerified": {
+    "NOTE": "reviewed",
+    "SOURCE_SAMPLE": "batch14",
+    "VENDOR_CUSTOM": "retain-me",
+    "SOURCE_FILE_SHA256": "ae72c5216d930e53bb8b364f2522833f56b1455f4fb02b912b345396b0c0dcd1",
+    "SOURCE_EVENTS": "2,0",
+    "SOURCE_COLUMNS": "B,A"
+  },
+  "inputUnchanged": true,
+  "inputSha256": "ae72c5216d930e53bb8b364f2522833f56b1455f4fb02b912b345396b0c0dcd1",
+  "outputSha256": "78b5f7c8f3feec400e2e387561b1c88d743df0859f6ec60a38e09d4f662709ff",
+  "externalReader": "FlowIO1.4.0 preprocess=False / NumPy2.5.3",
+  "inputLicense": "original MIT synthetic inputs",
+  "oracle": "Python struct byte projection and explicit source mapping; actual external file consumer",
+  "limits": [
+    "one combined metadata/reorder path only",
+    "caller-provided provenance is not authenticated identity"
+  ],
+  "sourceSha256": {
+    "write.mbt": "3fee064db93da0548280b71ac56d0b454ea10498b2b4b4da70dd3c8a5d646e3b",
+    "construction.mbt": "3879ed35ec20ca787ba52cdb992e1cb08235a8408392895b7c3d5f077a77f724",
+    "text.mbt": "31eefcddbd16a2182ec641656415a274912f49e38d22bf4c0ff4ce3bf63e3368",
+    "cmd/bridge/main.mbt": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+    "tools/fcs.mjs": "a124053c02760eb4d1819a801a54cb079ddb897e51690daec9c8504800209dbd",
+    "tools/check-repair06.py": "0b1e5b145c455841096eb1a719e8c313670609de927887a538b5e2c760d964fb",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "_build/js/release/build/cmd/bridge/bridge.js": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148"
+  }
+}

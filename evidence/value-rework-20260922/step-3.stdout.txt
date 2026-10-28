@@ -1,0 +1,1 @@
+{"written":"{output}/selected.csv","events":2,"scaled":false}

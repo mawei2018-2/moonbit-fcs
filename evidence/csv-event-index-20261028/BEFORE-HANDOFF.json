@@ -1,0 +1,11 @@
+{
+  "classification": "optional CSV handoff enhancement, not data-loss/parser defect",
+  "csvPath": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-17-max-20261028\\view-consumer\\compensated-slice.csv",
+  "header": "\"Time\",\"BUV395-A\"",
+  "sourceIndicesOnlyInSeparateReceipt": [
+    23,
+    28,
+    40
+  ],
+  "existingWorkaround": "join CSV rows to JSON receipt source_event_indices before handing off"
+}

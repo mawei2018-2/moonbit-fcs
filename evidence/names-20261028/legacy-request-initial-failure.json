@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "tools/test-request-contract.mjs"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T06:58:15.804473+00:00",
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: The input did not match the regular expression /exact 32-bit integers/. Input:\n\n'Error: Invalid(\"unknown channel name: 1\")'\n\n    at file:///D:/CodexLocal/ban/work/isolated14-20261027/projects/moonbit-fcs/tools/test-request-contract.mjs:12:10\n    at ModuleJob.run (node:internal/modules/esm/module_job:377:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:691:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: Error: Invalid(\"unknown channel name: 1\")\n      at _M0FP49mawei20183fcs3cmd6bridge11fail__bytes (file:///D:/CodexLocal/ban/work/isolated14-20261027/projects/moonbit-fcs/_build/js/release/build/cmd/bridge/bridge.js:1122:75)\n      at _M0FP49mawei20183fcs3cmd6bridge9transform (file:///D:/CodexLocal/ban/work/isolated14-20261027/projects/moonbit-fcs/_build/js/release/build/cmd/bridge/bridge.js:21259:10)\n      at file:///D:/CodexLocal/ban/work/isolated14-20261027/projects/moonbit-fcs/tools/test-request-contract.mjs:12:21\n      at getActual (node:assert:611:5)\n      at strict.throws (node:assert:759:24)\n      at file:///D:/CodexLocal/ban/work/isolated14-20261027/projects/moonbit-fcs/tools/test-request-contract.mjs:12:10\n      at ModuleJob.run (node:internal/modules/esm/module_job:377:25)\n      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:691:26)\n      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5),\n  expected: /exact 32-bit integers/,\n  operator: 'throws',\n  diff: 'simple'\n}\n\nNode.js v24.11.0\n"
+}

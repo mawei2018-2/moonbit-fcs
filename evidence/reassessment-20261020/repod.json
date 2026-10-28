@@ -1,0 +1,26 @@
+{
+  "flowio": "1.4.0",
+  "numpy": "2.5.3",
+  "sourceEvents": 14320,
+  "sourceChannels": 26,
+  "sourceValuesCompared": 372320,
+  "selectedEvents": 2117,
+  "selectedValuesCompared": 6351,
+  "allSourceValuesEqual": true,
+  "selectedValuesEqual": true,
+  "normalizationValuesEqual": true,
+  "normalizationDataBytesIdentical": true,
+  "selectedDataBytesExactProjection": true,
+  "selectedChannelMetadataPreserved": true,
+  "originalFileUnchanged": true,
+  "sourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "selectedSha256": "f7b7eebc2610baf1aa8affaccb8256cbfca2303766bfdacbd4a80b121ae1eaf1",
+  "normalizedSha256": "592a275b6d4891707200d5abc44a1d9f7496c5753851d8863ca1379e0ad5c357",
+  "attributionRetained": true,
+  "fileLevelLicense": "CC BY 4.0; RepOD file 96804, dataset V2.0 only",
+  "limits": [
+    "FlowIO accepts padded offsets independently; original file is nonconforming to FCS 3.1 section 3.2.17",
+    "raw intensities and numeric selection only; no biological interpretation",
+    "historical G11 file license still unconfirmed"
+  ]
+}

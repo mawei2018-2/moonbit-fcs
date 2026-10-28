@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-22",
+  "command": "node examples/run-use-case.mjs",
+  "passed": true,
+  "scope": "原创 4 事件样例；输出是格式交换数据，不是临床分析或真实用户证明。",
+  "actualUsersProven": false,
+  "externalServicesContacted": false,
+  "sourceSha256": {
+    "core_wbtest.mbt": "e7ce400236fd1f6f8d73d9ad72c684fe44008004c8bbf77a045cd291731e5e52",
+    "events.mbt": "3cbc2228e4e5d81eb4f1418b486fe8a4747dbc1ae123fff0c7aa78519cda8506",
+    "fixtures_wbtest.mbt": "d65ee23164c5d278d784dfec1da9fdc3cac42d510bc35927b2afceebf96c151a",
+    "moon.mod": "79f3403a09d2a356558569a42b3ad1202f937413f97fac69c14f65c07ba63fa4",
+    "moon.pkg": "2963408fa11c8bfcf19acaca62420456ca01965d6e42d68d4b4dc6eafc4efa03",
+    "parse.mbt": "b65f760747534dbf7cd5212e9abb23f3295540e56c846074be70394e74e6365a",
+    "pkg.generated.mbti": "48df2156c7524cc4b7c3b42c5d4eca106a36fbd1e82326f68f9538a81678078d",
+    "text.mbt": "6140304d84084954bc27c4a290142f37af61a745a108a7841e0421b7fffd650d",
+    "types.mbt": "adba9e7d40ed4314287f0c7492dd0a64329f8c38aa4e7bc53e2f9afc9e5ef926",
+    "write.mbt": "ad19182e177682923cd5946a06a494e9d9de26e8babcbc2c7c2d81541ca5a4b9",
+    "examples/events.json": "2fdcb1a8b4687f883e464a5d0534cb8e60114efd8ba2dee7506d56f8f030caab",
+    "examples/gate.json": "1339fc80a858a9f71fff7613d7f8703410262062f0c899529d01902b5efbaa47",
+    "examples/run-use-case.mjs": "359ea34b13ee185b6cae0536da5e25bb56bfc51d2e5dd166c304b1684003a3bb",
+    "examples/use-case.json": "aadf0af510faafc76f79e8411bd7ee11d6ec856e729c7388e325a5e93dd3948b",
+    "tools/fcs.mjs": "1ce3fb2eb02c5ed967e4c439cc1ae933e8d3e65b4e4eb6d2abe5275c83ea4f4f",
+    "tools/test_cli.mjs": "47185be732af621ed934c2d8003b45fa6a2c449615366e8f7848d728400efb13",
+    "cmd/bridge/main.mbt": "f9b56d49271adb41f6af9dadb9b7cb954598b8591042c6e1c0839f2347723bcc",
+    "cmd/bridge/moon.pkg": "7bfec07d8ff1f715aafb5492e43ee8a2a3b291a75fa81e37505988476e98fff7"
+  },
+  "outputs": [
+    {
+      "file": "events.fcs",
+      "bytes": 669,
+      "sha256": "6d3315e0638c4a5b2225b75fdd66a1496c30ca91d5bf5f4ab90673a4590a5c32"
+    },
+    {
+      "file": "selected.csv",
+      "bytes": 29,
+      "sha256": "4d7f7c0d4f0dea4ef912ce40af765435d0d431110719a74d7745537f27e86fd4"
+    },
+    {
+      "file": "selected.fcs",
+      "bytes": 637,
+      "sha256": "9d059c4136d24440287643c7073dfd3f32b5e67fe6fd6c13044a5c863f68a794"
+    },
+    {
+      "file": "step-1.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "step-1.stdout.txt",
+      "bytes": 89,
+      "sha256": "25e276a3be7b8307415c14ec7ac9ee33b6f3a9c4b636d688d04574af1d077e8e"
+    },
+    {
+      "file": "step-2.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "step-2.stdout.txt",
+      "bytes": 103,
+      "sha256": "82dee1b08815c459268e60c6d4b63e90eb57fc36ae4407dabe80949961d1011f"
+    },
+    {
+      "file": "step-3.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "step-3.stdout.txt",
+      "bytes": 117,
+      "sha256": "9d36fedecb246406021f532fe27b9eafb8f3e590c32a7709ddb7d7b3366e7b38"
+    },
+    {
+      "file": "step-4.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "step-4.stdout.txt",
+      "bytes": 506,
+      "sha256": "70e2e333cbb578bc6b38165c4e0a4852473e6e820f7e16c0519545a1512b2bfc"
+    }
+  ],
+  "additionalChecks": null,
+  "previousCoreValidation": "reference-results.json",
+  "note": "New sample execution only; earlier core/reference checks retain their original scope. Command output logs replace the machine-specific temporary directory with {output}; output hashes refer to original bytes.",
+  "sourceHashBasis": "Git-normalized blobs in the delivered source archive. Protocol fixtures are explicitly -text to preserve CRLF; ordinary source line endings normalize to LF."
+}

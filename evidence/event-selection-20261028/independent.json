@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "tools/check-event-selection.py",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T07:44:09.287439+00:00",
+  "exitCode": 0,
+  "stdout": "{\"status\": \"passed\", \"commands\": 37, \"cases\": [{\"case\": \"bounds and order\", \"events\": 0, \"legal\": [[]]}, {\"case\": \"bounds and order\", \"events\": 1, \"legal\": [[], [0, 0, 0]]}, {\"case\": \"bounds and order\", \"events\": 3, \"legal\": [[], [2, 0, 2]]}, {\"case\": \"selected dataset owns the event boundary\", \"datasetSizes\": [3, 1], \"nullSelectionPreserved\": true}]}\n",
+  "stderr": ""
+}

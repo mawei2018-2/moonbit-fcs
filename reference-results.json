@@ -1,0 +1,69 @@
+{
+  "flowio": "1.4.0",
+  "numpy": "2.5.3",
+  "reference_commit": "83d28a22d42235c10d17afb017250ee208afed95",
+  "results": [
+    {
+      "case": "FlowIO -> MoonBit gate/channel reorder -> FlowIO",
+      "events": 250,
+      "selected": 50,
+      "status": "pass"
+    },
+    {
+      "case": "MoonBit -> FlowIO",
+      "type": "F",
+      "endian": "big",
+      "status": "pass"
+    },
+    {
+      "case": "MoonBit -> FlowIO",
+      "type": "D",
+      "endian": "big",
+      "status": "pass"
+    },
+    {
+      "file": "100715.fcs",
+      "sha256": "733b0f6d959527116860f4c78f0908db33fc71388c7717737b340c100b9f46e7",
+      "events": 65016,
+      "channels": 16,
+      "all_values_equal": true,
+      "rewrite_equal": true
+    },
+    {
+      "file": "3FITC_4PE_004.fcs",
+      "sha256": "240e76eba7e04c7e9116c8c3ad8388ccb2faf58105d21b831d122764a3621e53",
+      "events": 94569,
+      "channels": 4,
+      "all_values_equal": true,
+      "rewrite_equal": true
+    },
+    {
+      "file": "variable_int_example.fcs",
+      "sha256": "88d2933d52686b061f36d8596e0826c9d2e75eb3d654d570f4ad3f1153f9beb2",
+      "events": 2,
+      "channels": 26,
+      "all_values_equal": true,
+      "rewrite_equal": true
+    },
+    {
+      "file": "data_start_offset_discrepancy_example.fcs",
+      "rejected": "HEADER/TEXT DATA discrepancy"
+    },
+    {
+      "file": "data_stop_offset_discrepancy_example.fcs",
+      "rejected": "HEADER/TEXT DATA discrepancy"
+    },
+    {
+      "file": "data1.fcs",
+      "known_unsupported_vendor_metadata": "Invalid(\"unpaired TEXT keyword/value\")"
+    },
+    {
+      "file": "G11.fcs",
+      "known_unsupported_vendor_metadata": "Invalid(\"TEXT is missing its terminating delimiter\")"
+    },
+    {
+      "file": "B01 KC-A-W---91-US.fcs",
+      "known_unsupported_vendor_metadata": "Invalid(\"overlapping supplemental TEXT\")"
+    }
+  ]
+}

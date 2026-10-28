@@ -1,0 +1,14 @@
+{
+  "name": "current-cli-flowio",
+  "startedUtc": "2026-10-27T16:53:06.834909+00:00",
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\fcs-reference-venv\\Scripts\\python.exe",
+    "tools/reference_check.py",
+    "--report",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\current-cli-flowio.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "exitCode": 0,
+  "stdout": "{\n  \"flowio\": \"1.4.0\",\n  \"numpy\": \"2.5.3\",\n  \"reference_commit\": null,\n  \"results\": [\n    {\n      \"case\": \"FlowIO -> MoonBit gate/channel reorder -> FlowIO\",\n      \"events\": 250,\n      \"selected\": 50,\n      \"status\": \"pass\"\n    },\n    {\n      \"case\": \"MoonBit -> FlowIO\",\n      \"type\": \"F\",\n      \"endian\": \"big\",\n      \"status\": \"pass\"\n    },\n    {\n      \"case\": \"MoonBit -> FlowIO\",\n      \"type\": \"D\",\n      \"endian\": \"big\",\n      \"status\": \"pass\"\n    }\n  ],\n  \"sourceSha256\": {\n    \"parse.mbt\": \"52a8e5483593eb6df5a3500e274fdef4477e827d0092cd868eb88a42ca379e01\",\n    \"text.mbt\": \"740b9dbb6cfb8a212ce7ed375785b2cc86a8fbcd19294f599be487b10750d67d\",\n    \"write.mbt\": \"3864407046bb69d556f1b984dbe47b58aedeac221d5b9ca62ff0ac8b7d4d8df6\",\n    \"cmd/bridge/main.mbt\": \"ee11b462bb8a6cededc90bb8226f516acd23201a099a5f3480300118dcde74a9\",\n    \"tools/fcs.mjs\": \"ed00f45986dadcb3f8ea727e3e7f7bd13f560bc0a89f3cf14ffb0b9528b721a8\",\n    \"tools/reference_check.py\": \"9bbcdc4eb7cc20c84d933cd07271df93a5cc111c4e3acb00a03f6dac5ec8a6d3\",\n    \"_build/js/release/build/cmd/bridge/bridge.js\": \"1a6d5ad5cebfb0ab064ce612c8c4b1c7a84b3faae5dcda8d033fb0cc4074b686\"\n  }\n}\n",
+  "stderr": ""
+}

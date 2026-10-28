@@ -1,0 +1,303 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L1.fcs"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 2,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"LittleEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L2.fcs"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 3,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\C1.fcs"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": \"10\",\n  \"mode\": \"Correlated\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"LittleEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\C2.fcs"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": \"20\",\n  \"mode\": \"Correlated\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\U1.fcs"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": \"3\",\n  \"mode\": \"Uncorrelated\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"LittleEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "inspect",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\U2.fcs"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": \"5\",\n  \"mode\": \"Uncorrelated\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 16,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"BigEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compare",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\C1.fcs"
+    ],
+    "expectedCode": 2,
+    "code": 2,
+    "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\L1.fcs\",\n    \"events\": 2,\n    \"mode\": \"ListMode\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\C1.fcs\",\n    \"events\": \"10\",\n    \"mode\": \"Correlated\",\n    \"compatible\": false,\n    \"warnings\": []\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compare",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\C1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L1.fcs"
+    ],
+    "expectedCode": 2,
+    "code": 2,
+    "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\C1.fcs\",\n    \"events\": \"10\",\n    \"mode\": \"Correlated\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\L1.fcs\",\n    \"events\": 2,\n    \"mode\": \"ListMode\",\n    \"compatible\": false,\n    \"warnings\": []\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compare",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\U1.fcs"
+    ],
+    "expectedCode": 2,
+    "code": 2,
+    "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\L1.fcs\",\n    \"events\": 2,\n    \"mode\": \"ListMode\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\U1.fcs\",\n    \"events\": \"3\",\n    \"mode\": \"Uncorrelated\",\n    \"compatible\": false,\n    \"warnings\": []\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compare",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\U1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L1.fcs"
+    ],
+    "expectedCode": 2,
+    "code": 2,
+    "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\U1.fcs\",\n    \"events\": \"3\",\n    \"mode\": \"Uncorrelated\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\L1.fcs\",\n    \"events\": 2,\n    \"mode\": \"ListMode\",\n    \"compatible\": false,\n    \"warnings\": []\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compare",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\C1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\U1.fcs"
+    ],
+    "expectedCode": 2,
+    "code": 2,
+    "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\C1.fcs\",\n    \"events\": \"10\",\n    \"mode\": \"Correlated\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\U1.fcs\",\n    \"events\": \"3\",\n    \"mode\": \"Uncorrelated\",\n    \"compatible\": false,\n    \"warnings\": []\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compare",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\U1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\C1.fcs"
+    ],
+    "expectedCode": 2,
+    "code": 2,
+    "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\U1.fcs\",\n    \"events\": \"3\",\n    \"mode\": \"Uncorrelated\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\C1.fcs\",\n    \"events\": \"10\",\n    \"mode\": \"Correlated\",\n    \"compatible\": false,\n    \"warnings\": []\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compare",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L2.fcs"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\L1.fcs\",\n    \"events\": 2,\n    \"mode\": \"ListMode\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\L2.fcs\",\n    \"events\": 3,\n    \"mode\": \"ListMode\",\n    \"compatible\": true,\n    \"warnings\": []\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\options-13.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"A-is-one\",\n    \"event_indices\": [\n      1\n    ],\n    \"count\": 1,\n    \"parent_count\": 2,\n    \"total_count\": 2,\n    \"parent_fraction\": 0.5,\n    \"total_fraction\": 0.5\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "populations",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L2.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\options-14.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "[\n  {\n    \"id\": \"A-is-one\",\n    \"event_indices\": [\n      1,\n      2\n    ],\n    \"count\": 2,\n    \"parent_count\": 3,\n    \"total_count\": 3,\n    \"parent_fraction\": 0.6666666666666666,\n    \"total_fraction\": 0.6666666666666666\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compare",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\C1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\C2.fcs"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\C1.fcs\",\n    \"events\": \"10\",\n    \"mode\": \"Correlated\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\C2.fcs\",\n    \"events\": \"20\",\n    \"mode\": \"Correlated\",\n    \"compatible\": true,\n    \"warnings\": []\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "histogram-axis",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\C1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\options-16.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "[\n  \"4\",\n  \"6\"\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "histogram-axis",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\C2.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\options-17.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "[\n  \"8\",\n  \"12\"\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compare",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\U1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\U2.fcs"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\U1.fcs\",\n    \"events\": \"3\",\n    \"mode\": \"Uncorrelated\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\U2.fcs\",\n    \"events\": \"5\",\n    \"mode\": \"Uncorrelated\",\n    \"compatible\": true,\n    \"warnings\": []\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "histogram-axis",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\U1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\options-19.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "[\n  \"1\",\n  \"2\"\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "histogram-axis",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\U2.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\options-20.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "[\n  \"2\",\n  \"3\"\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compare",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L2.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\C1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\U1.fcs"
+    ],
+    "expectedCode": 2,
+    "code": 2,
+    "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\L1.fcs\",\n    \"events\": 2,\n    \"mode\": \"ListMode\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\L2.fcs\",\n    \"events\": 3,\n    \"mode\": \"ListMode\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\C1.fcs\",\n    \"events\": \"10\",\n    \"mode\": \"Correlated\",\n    \"compatible\": false,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\U1.fcs\",\n    \"events\": \"3\",\n    \"mode\": \"Uncorrelated\",\n    \"compatible\": false,\n    \"warnings\": []\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compare",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\L1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\independent\\renamed.fcs"
+    ],
+    "expectedCode": 2,
+    "code": 2,
+    "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\L1.fcs\",\n    \"events\": 2,\n    \"mode\": \"ListMode\",\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\independent\\\\renamed.fcs\",\n    \"events\": 2,\n    \"mode\": \"ListMode\",\n    \"compatible\": false,\n    \"warnings\": []\n  }\n]\n",
+    "stderr": ""
+  }
+]

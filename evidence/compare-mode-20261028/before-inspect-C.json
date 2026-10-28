@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "inspect",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\before-inputs\\C.fcs"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T08:08:49.967704+00:00",
+  "exitCode": 0,
+  "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": \"10\",\n  \"mode\": \"Correlated\",\n  \"channels\": [\n    {\n      \"name\": \"A\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"B\",\n      \"stain\": \"\",\n      \"bits\": 8,\n      \"range\": \"2\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Integer\",\n  \"byte_order\": \"LittleEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+  "stderr": ""
+}

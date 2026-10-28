@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "timeUtc": "2026-10-28T14:51:24.231604+00:00",
+  "exitCode": 1,
+  "stage": "source-archive file-type inventory gate before ZIP creation",
+  "failure": "AssertionError: workspace has suffixes requiring archive review",
+  "paths": [
+    {
+      "path": "evidence/repod-20260930/exchange-files.zip",
+      "bytes": 3801915,
+      "sha256": "cc206544aa1817016e2a0f860f6d157f96cb29256aacb0a00d0ca3f4a30353c5",
+      "inPriorManifest": true
+    }
+  ],
+  "originalScript": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\seal_final_attempt2.py",
+  "originalScriptSha256": "e422ef3dd631a3c5940fa7db5bdf1244ad676764b1e3a606428b6a4dbaa38fb9",
+  "runtimeSourceChanged": false,
+  "productTestsRerun": false
+}

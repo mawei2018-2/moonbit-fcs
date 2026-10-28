@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "sourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "sourceEvents": 14320,
+  "sourceChannels": 26,
+  "selectedEvents": 2117,
+  "selectedSha256": "f7b7eebc2610baf1aa8affaccb8256cbfca2303766bfdacbd4a80b121ae1eaf1",
+  "normalizedSha256": "592a275b6d4891707200d5abc44a1d9f7496c5753851d8863ca1379e0ad5c357",
+  "sourceWarnings": [
+    "accepted explicitly requested ASCII space padding in $BEGINSTEXT",
+    "accepted explicitly requested ASCII space padding in $ENDSTEXT",
+    "accepted explicitly requested ASCII space padding in $BEGINANALYSIS",
+    "accepted explicitly requested ASCII space padding in $ENDANALYSIS"
+  ],
+  "outputWarnings": [],
+  "defaultRejected": true,
+  "strictOptionRejected": true,
+  "selection": {
+    "bounds": [
+      [
+        0,
+        500000,
+        1000000
+      ]
+    ],
+    "channels": [
+      2,
+      0,
+      1
+    ],
+    "scaled": false
+  },
+  "metadataPolicy": "preserve selected channel metadata; explicitly drop spillover and analysis; canonicalize structural offsets",
+  "derivedFileChanges": {
+    "selected.fcs": "selected events and reordered channels; structural metadata updated",
+    "normalized.fcs": "canonical structural metadata; DATA bytes retained"
+  },
+  "license": {
+    "restricted": false,
+    "termsOfUseType": "LICENSE_BASED",
+    "licenseName": "CC BY Creative Commons Attribution License 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/legalcode"
+  },
+  "attribution": "Bronisz, Agnieszka, 2026, Flow Cytometry data, RepOD V2, doi:10.18150/JOLWGT",
+  "limits": [
+    "numeric format-exchange example; no biological or clinical classification",
+    "project-authored consumer; no external adoption"
+  ]
+}

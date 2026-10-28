@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "inspect",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\before-inputs\\fractional-A.fcs"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T05:44:34.251217+00:00",
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Invalid(\"integer requires decimal digits\")\n"
+}

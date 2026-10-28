@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "test",
+    "correctness_wbtest.mbt",
+    "--target",
+    "js",
+    "--deny-warn",
+    "--filter",
+    "*repeated*"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T01:56:28.472382+00:00",
+  "exitCode": 2,
+  "stdout": "[mawei2018/fcs] test correctness_wbtest.mbt:79 (\"repair05 every repeated TEXT delimiter is escaped\") failed: mawei2018/fcs.FcsError.Invalid\nTotal tests: 1, passed: 0, failed: 1.\n",
+  "stderr": ""
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "test",
+    "semantics06_wbtest.mbt",
+    "--target",
+    "js",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T05:10:08.962438+00:00",
+  "exitCode": 2,
+  "stdout": "[mawei2018/fcs] test semantics06_wbtest.mbt:2 (\"repair06 floating Time conversion preserves raw ticks and TIMESTEP\") failed: mawei2018/fcs.FcsError.Invalid\n[mawei2018/fcs] test semantics06_wbtest.mbt:31 (\"repair06 histogram rejects list-only statistics and gates\") failed: semantics06_wbtest.mbt:44:12-44:66@mawei2018/fcs FAILED: histogram reported fake empty event statistics\n[mawei2018/fcs] test semantics06_wbtest.mbt:63 (\"repair06 finite opposite extremes retain a representable mean\") failed: semantics06_wbtest.mbt:68:3-68:35@mawei2018/fcs FAILED: `None != Some(0)`\ndiff:\n-None +Some(0)\nTotal tests: 3, passed: 0, failed: 3.\n",
+  "stderr": ""
+}

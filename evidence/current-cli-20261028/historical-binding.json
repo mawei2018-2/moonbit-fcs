@@ -1,0 +1,73 @@
+{
+  "historicalTasks": 55,
+  "newExecution": false,
+  "scope": "Matching recorded source and rebuilt artifact identities; not a fresh 55-task run",
+  "bindings": [
+    {
+      "file": "parse.mbt",
+      "historical": "52a8e5483593eb6df5a3500e274fdef4477e827d0092cd868eb88a42ca379e01",
+      "current": "52a8e5483593eb6df5a3500e274fdef4477e827d0092cd868eb88a42ca379e01",
+      "matches": true
+    },
+    {
+      "file": "encoding.mbt",
+      "historical": "257c70bd7f6246fbaa24dbe4c9fb81994c13f4d7f13b9ba8406182fa9ee58480",
+      "current": "257c70bd7f6246fbaa24dbe4c9fb81994c13f4d7f13b9ba8406182fa9ee58480",
+      "matches": true
+    },
+    {
+      "file": "histogram.mbt",
+      "historical": "9adf519edc90a7ee4ec8f594c519ca6360b3928c094c817f2b622d764d7fd83a",
+      "current": "9adf519edc90a7ee4ec8f594c519ca6360b3928c094c817f2b622d764d7fd83a",
+      "matches": true
+    },
+    {
+      "file": "compensation.mbt",
+      "historical": "9470a5567af442fbf8351b5454cf36413355270fd517c0734106400ffc24e442",
+      "current": "9470a5567af442fbf8351b5454cf36413355270fd517c0734106400ffc24e442",
+      "matches": true
+    },
+    {
+      "file": "construction.mbt",
+      "historical": "3879ed35ec20ca787ba52cdb992e1cb08235a8408392895b7c3d5f077a77f724",
+      "current": "3879ed35ec20ca787ba52cdb992e1cb08235a8408392895b7c3d5f077a77f724",
+      "matches": true
+    },
+    {
+      "file": "geometry.mbt",
+      "historical": "7a07dbea8cf93e47bc9e3852ad1ea4364cc5da8f9b6786e8e84e67f3b5f74acb",
+      "current": "7a07dbea8cf93e47bc9e3852ad1ea4364cc5da8f9b6786e8e84e67f3b5f74acb",
+      "matches": true
+    },
+    {
+      "file": "write.mbt",
+      "historical": "3864407046bb69d556f1b984dbe47b58aedeac221d5b9ca62ff0ac8b7d4d8df6",
+      "current": "3864407046bb69d556f1b984dbe47b58aedeac221d5b9ca62ff0ac8b7d4d8df6",
+      "matches": true
+    },
+    {
+      "file": "events.mbt",
+      "historical": "dd8fb1e62a8099e7b016619009a642cbec2c726a27489af65ff24e6cf8fc0fe4",
+      "current": "dd8fb1e62a8099e7b016619009a642cbec2c726a27489af65ff24e6cf8fc0fe4",
+      "matches": true
+    },
+    {
+      "file": "cmd/bridge/main.mbt",
+      "historical": "ee11b462bb8a6cededc90bb8226f516acd23201a099a5f3480300118dcde74a9",
+      "current": "ee11b462bb8a6cededc90bb8226f516acd23201a099a5f3480300118dcde74a9",
+      "matches": true
+    },
+    {
+      "file": "tools/check-deep-features.py",
+      "historical": "e7a1ef3174e95b50037833379e237e0661dc8760117f6bdafb0ad508bff8c8d7",
+      "current": "e7a1ef3174e95b50037833379e237e0661dc8760117f6bdafb0ad508bff8c8d7",
+      "matches": true
+    },
+    {
+      "file": "_build/js/release/build/cmd/bridge/bridge.js",
+      "historical": "1a6d5ad5cebfb0ab064ce612c8c4b1c7a84b3faae5dcda8d033fb0cc4074b686",
+      "current": "1a6d5ad5cebfb0ab064ce612c8c4b1c7a84b3faae5dcda8d033fb0cc4074b686",
+      "matches": true
+    }
+  ]
+}

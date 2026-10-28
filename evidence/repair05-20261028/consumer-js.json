@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "run",
+    ".",
+    "--target",
+    "js",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\consumer\\app",
+  "startedUtc": "2026-10-28T01:59:23.431000+00:00",
+  "exitCode": 0,
+  "stdout": "18446744073709551619\ntrue\n18446744073709551619\n1\ntrue\n",
+  "stderr": ""
+}

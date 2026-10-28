@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "gate",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\before-inputs\\n3.fcs",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\before-inputs\\n3-mixed.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T07:30:32.338990+00:00",
+  "exitCode": 0,
+  "stdout": "[\n  0,\n  3\n]\n",
+  "stderr": ""
+}

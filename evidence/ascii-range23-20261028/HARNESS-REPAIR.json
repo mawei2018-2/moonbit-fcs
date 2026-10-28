@@ -1,0 +1,11 @@
+{
+  "issue": "P1E duplicate in independently constructed logarithmic fixture",
+  "scope": "new developer check tool only",
+  "repair": "replace original same-width amplifier token rather than append a second structural key",
+  "completedCallsRetained": 22,
+  "remainingCallsOnly": true,
+  "productSourceUnchanged": true,
+  "malformedFixturePath": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-23-max-20261028\\independent\\log-unrepresentable.fcs",
+  "malformedFixtureSha256": "41c4b462c238b2075a08e05c966771bb47f5739024e529362a10e353397a1291",
+  "remainingCallsPassed": 11
+}

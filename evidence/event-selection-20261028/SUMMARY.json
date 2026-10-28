@@ -1,0 +1,38 @@
+{
+  "finding": "explicit gate events lacked selected-Dataset range validation",
+  "repair": "validate each event before returning the selection; no sorting/deduplication",
+  "syntheticCliCalls": 37,
+  "realConsumerCalls": 5,
+  "datasetBoundarySizes": [
+    0,
+    1,
+    3
+  ],
+  "chainedDatasetSizes": [
+    3,
+    1
+  ],
+  "orderDuplicatesEmptyAndNullPreserved": true,
+  "realSourceIndices": [
+    14232,
+    10,
+    7454,
+    14232
+  ],
+  "externalReader": "FlowIO1.4.0 preprocess=False",
+  "realValuesVerified": 12,
+  "realRawBytesVerified": 48,
+  "sourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "outputSha256": "0e29967073c3a225d208024a6812b6141843014c82b8ebbe788a4589deeeb9ed",
+  "beforeMainSha256": "959f7174fd3a84407d73f9f508398b1535527e3e831e4e59f32ed6429f8f1c8a",
+  "afterMainSha256": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+  "beforeCompiledJsSha256": "5e2ab5ff0845d79e5747d1e72d790e4aae88eec9bfe9b63a3409f3ddda25dd59",
+  "afterCompiledJsSha256": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148",
+  "scope": "JS bridge explicit-events branch only; core and public API unchanged",
+  "limits": [
+    "range validity does not prove provenance of same-numbered rows from another file",
+    "unchanged core/Wasm/old full collections/downloads not rerun",
+    "no native or remoteCI result",
+    "not pushed/published/submitted"
+  ]
+}

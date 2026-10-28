@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "test",
+    "semantics06_wbtest.mbt",
+    "--target",
+    "js",
+    "--deny-warn",
+    "--filter",
+    "*variance*"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T05:11:27.378034+00:00",
+  "exitCode": 2,
+  "stdout": "[mawei2018/fcs] test semantics06_wbtest.mbt:76 (\"repair06 representable variance survives an overflowing sum of squares\") failed: Error\n    at $panic (D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\_build\\js\\debug\\test\\fcs.whitebox_test.js:23:9)\n    at Option::unwrap (D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\lib\\core\\builtin\\option.mbt:40:13)\n    at f (D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\semantics06_wbtest.mbt:80:16)\n    at moonbit_test_driver_internal_js_catch (D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\__generated_driver_for_whitebox_test.mbt:399:11)\n    at _M0FP29mawei20183fcs42moonbit__test__driver__internal__js__catch (D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\_build\\js\\debug\\test\\fcs.whitebox_test.js:939:6)\n    at moonbit_test_driver_internal_catch_error (D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\__generated_driver_for_whitebox_test.mbt:396:3)\n    at MoonBit_Test_Driver::run_test (D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\__generated_driver_for_whitebox_test.mbt:527:5)\n    at moonbit_test_driver_internal_do_execute (D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\__generated_driver_for_whitebox_test.mbt:700:10)\n    at moonbit_test_driver_internal_execute (D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\__generated_driver_for_whitebox_test.mbt:601:5)\n    at <anonymous> (D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\__generated_driver_for_whitebox_test.mbt:553:3)\nTotal tests: 1, passed: 0, failed: 1.\n",
+  "stderr": ""
+}

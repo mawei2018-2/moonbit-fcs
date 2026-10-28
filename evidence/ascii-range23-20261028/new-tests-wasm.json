@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "test",
+    "ascii_range23_wbtest.mbt",
+    "--target",
+    "wasm-gc",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T11:35:50.372590+00:00",
+  "exitCode": 0,
+  "stdout": "Total tests: 7, passed: 7, failed: 0.\n",
+  "stderr": ""
+}

@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-23",
+  "version": "0.2.0",
+  "core": {
+    "js": {
+      "total": 15,
+      "passed": 15
+    },
+    "wasm-gc": {
+      "total": 15,
+      "passed": 15
+    }
+  },
+  "coreCommands": [
+    "moon test --target js",
+    "moon test --target wasm-gc"
+  ],
+  "coreTiming": "executed after padding source/test edits and moon fmt/info, before documentation/version-only changes",
+  "cli": {
+    "command": "node tools/test_cli.mjs",
+    "groups": 11,
+    "passed": 11
+  },
+  "publicReference": "reference.json",
+  "publicReferenceCommand": "python tools/reference_check.py --reference-dir /path/to/pinned/FlowIO --report reference.json",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "tools/generate_fixtures.py"
+      ],
+      "exit": 0,
+      "log": "final-0.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\work\\moon\\bin\\moon.exe",
+        "fmt"
+      ],
+      "exit": 0,
+      "log": "final-1.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\work\\moon\\bin\\moon.exe",
+        "info"
+      ],
+      "exit": 0,
+      "log": "final-2.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\work\\moon\\bin\\moon.exe",
+        "check",
+        "--target",
+        "js"
+      ],
+      "exit": 0,
+      "log": "final-3.log"
+    },
+    {
+      "command": [
+        "node",
+        "examples/run-use-case.mjs"
+      ],
+      "exit": 0,
+      "log": "final-4.log"
+    }
+  ],
+  "fixtureRegenerationByteIdentical": true,
+  "originalUseCaseSelectedCsvVerified": true,
+  "remoteCiRun": false,
+  "remoteWrites": false
+}

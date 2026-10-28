@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "run",
+    ".",
+    "--target",
+    "wasm-gc",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\examples\\named-channel-consumer",
+  "startedUtc": "2026-10-28T06:59:23.839608+00:00",
+  "exitCode": 0,
+  "stdout": "{\"populations\":[{\"id\":\"window\",\"event_indices\":[1,2],\"count\":2,\"parent_count\":3,\"total_count\":3,\"parent_fraction\":0.6666666666666666,\"total_fraction\":0.6666666666666666},{\"id\":\"exact\",\"parent\":\"window\",\"event_indices\":[2],\"count\":1,\"parent_count\":2,\"total_count\":3,\"parent_fraction\":0.5,\"total_fraction\":0.3333333333333333}],\"fsc_index\":2,\"selected_values\":[\"18446744073709551618\",\"30\"]}\n",
+  "stderr": ""
+}

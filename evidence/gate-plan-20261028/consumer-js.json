@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "run",
+    ".",
+    "--target",
+    "js",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\examples\\gate-plan-consumer",
+  "startedUtc": "2026-10-28T06:22:50.259727+00:00",
+  "exitCode": 0,
+  "stdout": "[{\"id\":\"id_window\",\"parent\":\"shape\",\"event_indices\":[2,5],\"count\":2,\"parent_count\":3,\"total_count\":6,\"parent_fraction\":0.6666666666666666,\"total_fraction\":0.3333333333333333},{\"id\":\"high\",\"parent\":\"window\",\"event_indices\":[2,3,5],\"count\":3,\"parent_count\":4,\"total_count\":6,\"parent_fraction\":0.75,\"total_fraction\":0.5},{\"id\":\"window\",\"event_indices\":[1,2,3,5],\"count\":4,\"parent_count\":6,\"total_count\":6,\"parent_fraction\":0.6666666666666666,\"total_fraction\":0.6666666666666666},{\"id\":\"shape\",\"parent\":\"window\",\"event_indices\":[1,2,5],\"count\":3,\"parent_count\":4,\"total_count\":6,\"parent_fraction\":0.75,\"total_fraction\":0.5},{\"id\":\"low\",\"parent\":\"window\",\"event_indices\":[1],\"count\":1,\"parent_count\":4,\"total_count\":6,\"parent_fraction\":0.25,\"total_fraction\":0.16666666666666666}]\n",
+  "stderr": ""
+}

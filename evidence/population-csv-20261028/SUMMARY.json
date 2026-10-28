@@ -1,0 +1,47 @@
+{
+  "outcome": "bounded_feature_completed",
+  "newDefectsConfirmed": 0,
+  "feature": "direct-population-csv",
+  "candidatesResearched": 1,
+  "previousGap": "existing real example required subset FCS then CSV",
+  "behavior": "CSV reads selected population members directly from original Dataset with independent output view and source-index receipt",
+  "syntheticCliCalls": 19,
+  "syntheticCases": 18,
+  "wideCsvValuesVerified": 100224,
+  "wideChunkRows": 781,
+  "realExampleCliCalls": 2,
+  "realPopulation": "inner",
+  "realEvents": 662,
+  "realCsvValuesVerified": 1324,
+  "realSourceBytesReferenced": 5296,
+  "realSourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "realCsvSha256": "2985089b8c3be625fc4187f966faa080d63cd0c57882d142d4370e9573eea9d8",
+  "frozenRound10MembersAndCsvMatched": true,
+  "noIntermediateFcs": true,
+  "populationSlicesAndSourceIndicesVerified": true,
+  "gateAndOutputViewsIndependent": true,
+  "rawIntegersAnalysisEmptyFailuresChunkingAndDefaultCsvVerified": true,
+  "beforeCliSha256": "a124053c02760eb4d1819a801a54cb079ddb897e51690daec9c8504800209dbd",
+  "afterCliSha256": "f4f5f44974e56be973414e88a525318b04dc4af3c2101d0b67aee467da09e9cd",
+  "compiledJsSha256": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148",
+  "compiledJsUnchanged": true,
+  "coreBridgeAndPublicApiUnchanged": true,
+  "research": {
+    "registryQueries": [
+      "fcs",
+      "cytometry"
+    ],
+    "registryLimitEach": 20,
+    "githubQueries": [
+      "fcs language:MoonBit",
+      "cytometry language:MoonBit"
+    ],
+    "comparison": "FlowKit Session.get_gate_events; mature workflow, no algorithm novelty/uniqueness claim"
+  },
+  "limits": [
+    "memory-resident Dataset/member list/index receipt; no streaming or speed benchmark",
+    "source indices belong to selected Dataset, not global/authenticated instrument identity",
+    "CSV output compensation uses original full source matrix, not reduced-matrix equivalence",
+    "no external adoption/clinical claim; no remote CI result; not pushed/published/submitted"
+  ]
+}

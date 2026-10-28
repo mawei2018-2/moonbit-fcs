@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "commands": 61,
+  "cases": [
+    {
+      "case": "same named plan survives column reordering",
+      "kind": "I",
+      "order": "little",
+      "permutation": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "case": "same named plan survives column reordering",
+      "kind": "I",
+      "order": "big",
+      "permutation": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "case": "same named plan survives column reordering",
+      "kind": "I",
+      "order": "little",
+      "permutation": [
+        2,
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "case": "same named plan survives column reordering",
+      "kind": "I",
+      "order": "big",
+      "permutation": [
+        2,
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "case": "same named plan survives column reordering",
+      "kind": "A",
+      "order": "little",
+      "permutation": [
+        2,
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "case": "same named plan survives column reordering",
+      "kind": "D",
+      "order": "big",
+      "permutation": [
+        2,
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "case": "count0 validation, exact spelling and nullable defaults"
+    },
+    {
+      "case": "duplicate PnN remains usable with numeric references"
+    }
+  ],
+  "inputLicense": "original MIT synthetic data",
+  "oracle": "explicit source-column identity and hand-worked members; raw bit extraction; actual CSV",
+  "sourceSha256": {
+    "gating.mbt": "87f0ab627405dd765fef62422c050af61ee7238677e8589a759d633526b5a807",
+    "cmd/bridge/main.mbt": "959f7174fd3a84407d73f9f508398b1535527e3e831e4e59f32ed6429f8f1c8a",
+    "tools/fcs.mjs": "071c2ef3967a1265cc677f1cf7072a4066235786664daa6347fffda542d79b70",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "names10_wbtest.mbt": "fa7ee65ff14e42c0916506fbd4da982196596b1df14020f399b4d65768824412",
+    "tools/check-channel-names.py": "315c886f3148a3d57f0d1f30cf424e3c7bd5d3901da1b38f4b77b11e8cd45a8f",
+    "tools/check-gate-plan.py": "648cd847401641b061529f7551fde3ab603ac3a7e8128af4b23272fcdbaf45cb",
+    "_build/js/release/build/cmd/bridge/bridge.js": "5e2ab5ff0845d79e5747d1e72d790e4aae88eec9bfe9b63a3409f3ddda25dd59"
+  }
+}

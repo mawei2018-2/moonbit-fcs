@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "eventIndicesVerified": 662,
+  "scientificValuesUnchanged": 1324,
+  "sortedRowsVerified": 662,
+  "filteredRowsVerified": 332,
+  "downstreamNeedsOnlyCsv": true,
+  "eventIndexColumn": "source_event_index",
+  "oldScientificCsvSha256": "2985089b8c3be625fc4187f966faa080d63cd0c57882d142d4370e9573eea9d8",
+  "newIndexedCsvSha256": "4e040b25be65bb4515810534fc0da6ff2b8185071a7522838a1f79ab27604b9a",
+  "frozenRound16ResultSha256": "5cf18fff513ff4f9ddf2a93ae37c565039c26c65efc32731c7b2206af0283bb4",
+  "sourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "noIntermediateFcs": true,
+  "sourceUnchanged": true,
+  "oracle": "frozen round16 source mapping/data and actual CSV-only DictReader sorting/filtering",
+  "inputLicense": "CC BY4.0 RepOD file96804; attribution/license/changes retained",
+  "sourceSha256ByFile": {
+    "tools/fcs.mjs": "8deaeaa8b6c534829140456dd3fa57ab875596a04ca0af411e6ab37e6c75217c",
+    "examples/repod-population-csv.mjs": "db1c64edb03315ae3700b1c3c6db7b6caf181173802eca8af0b848deaf09558d",
+    "_build/js/release/build/cmd/bridge/bridge.js": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148"
+  }
+}

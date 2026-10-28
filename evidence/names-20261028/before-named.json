@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "populations",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\before-inputs\\original.fcs",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\before-inputs\\named.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T06:45:36.622006+00:00",
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "JsonDecodeError(\n  (\n    Index(Index(Root, index=0), index=0),\n    \"Double::from_json: expected number\",\n  ),\n)\n"
+}

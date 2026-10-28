@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "tools/test-request-contract.mjs"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T06:26:16.583235+00:00",
+  "exitCode": 0,
+  "stdout": "{\"rejectedRequests\":38,\"exactSelectionPreserved\":true,\"inputUnchanged\":true}\n",
+  "stderr": ""
+}

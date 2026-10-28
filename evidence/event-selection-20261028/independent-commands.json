@@ -1,0 +1,502 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-0.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0-valid-0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-1.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-11-max-20261028\\\\independent\\\\n0-valid-0.fcs\",\"bytes\":497}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-2.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0-invalid-0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-3.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-4.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0-invalid-1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-5.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-6.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n0-invalid-2.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-7.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-8.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1-valid-0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-9.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-11-max-20261028\\\\independent\\\\n1-valid-0.fcs\",\"bytes\":497}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-10.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  0,\n  0\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1-valid-1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-11.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-11-max-20261028\\\\independent\\\\n1-valid-1.fcs\",\"bytes\":521}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-12.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1-invalid-0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-13.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-14.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1-invalid-1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-15.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-16.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n1-invalid-2.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-17.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-18.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3-valid-0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-19.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-11-max-20261028\\\\independent\\\\n3-valid-0.fcs\",\"bytes\":497}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-20.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2,\n  0,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3-valid-1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-21.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-11-max-20261028\\\\independent\\\\n3-valid-1.fcs\",\"bytes\":521}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-22.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3-invalid-0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-23.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-24.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3-invalid-1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-25.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-26.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3-invalid-2.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-27.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chained.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-28.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2,\n  0,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chained.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chain-valid-0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-29.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-11-max-20261028\\\\independent\\\\chain-valid-0.fcs\",\"bytes\":521}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chained.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-30.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  0\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chained.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chain-valid-1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-31.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-11-max-20261028\\\\independent\\\\chain-valid-1.fcs\",\"bytes\":513}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chained.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-32.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chained.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chain-invalid-0.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-33.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chained.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-34.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chained.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\chain-invalid-1.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-35.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"selected event out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\n3.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\null-selection.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\independent\\options-36.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-11-max-20261028\\\\independent\\\\null-selection.fcs\",\"bytes\":521}\n",
+    "stderr": ""
+  }
+]

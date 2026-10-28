@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "rewrite",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\before-inputs\\gain-half.fcs",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\before-inputs\\gain-half-I.fcs",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\before-inputs\\before-gain-write-options.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T05:44:32.507838+00:00",
+  "exitCode": 0,
+  "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-07-max-20261028\\\\before-inputs\\\\gain-half-I.fcs\",\"bytes\":510}\n",
+  "stderr": ""
+}

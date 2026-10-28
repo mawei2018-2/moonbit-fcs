@@ -1,0 +1,268 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-0.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 6,\n    \"nonfinite\": 0,\n    \"minimum\": 2,\n    \"maximum\": 12,\n    \"mean\": 7,\n    \"variance\": 14\n  },\n  {\n    \"count\": 6,\n    \"nonfinite\": 0,\n    \"minimum\": 8,\n    \"maximum\": 28,\n    \"mean\": 18,\n    \"variance\": 55.999999999999986\n  },\n  {\n    \"count\": 6,\n    \"nonfinite\": 0,\n    \"minimum\": 18446744073709552000,\n    \"maximum\": 18446744073709552000,\n    \"mean\": 18446744073709552000,\n    \"variance\": 0\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-1.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"selected\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    2,\n    4,\n    5\n  ],\n  \"channel_names\": [\n    \"X\",\n    \"Y\",\n    \"ID\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 6,\n      \"maximum\": 12,\n      \"mean\": 9.333333333333334,\n      \"variance\": 9.333333333333332\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 20,\n      \"maximum\": 28,\n      \"mean\": 24,\n      \"variance\": 16\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 18446744073709552000,\n      \"maximum\": 18446744073709552000,\n      \"mean\": 18446744073709552000,\n      \"variance\": 0\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-2.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"selected\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    2,\n    4,\n    5\n  ],\n  \"channel_names\": [\n    \"X\",\n    \"Y\",\n    \"ID\"\n  ],\n  \"scaled\": true,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 3,\n      \"maximum\": 6,\n      \"mean\": 4.666666666666667,\n      \"variance\": 2.333333333333333\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 5,\n      \"maximum\": 7,\n      \"mean\": 6,\n      \"variance\": 1\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 18446744073709552000,\n      \"maximum\": 18446744073709552000,\n      \"mean\": 18446744073709552000,\n      \"variance\": 0\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-3.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"selected\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    2,\n    4,\n    5\n  ],\n  \"channel_names\": [\n    \"X\",\n    \"Y\",\n    \"ID\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 3,\n      \"maximum\": 6,\n      \"mean\": 4.666666666666667,\n      \"variance\": 2.333333333333333\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 3,\n      \"maximum\": 4.5,\n      \"mean\": 3.6666666666666665,\n      \"variance\": 0.5833333333333333\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 18446744073709552000,\n      \"maximum\": 18446744073709552000,\n      \"mean\": 18446744073709552000,\n      \"variance\": 0\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-4.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"selected\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    2,\n    4,\n    5\n  ],\n  \"channel_names\": [\n    \"X\",\n    \"Y\",\n    \"ID\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 6,\n      \"maximum\": 12,\n      \"mean\": 9.333333333333334,\n      \"variance\": 9.333333333333332\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 20,\n      \"maximum\": 28,\n      \"mean\": 24,\n      \"variance\": 16\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 18446744073709552000,\n      \"maximum\": 18446744073709552000,\n      \"mean\": 18446744073709552000,\n      \"variance\": 0\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-5.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"empty\",\n  \"population_events\": 0,\n  \"source_event_indices\": [],\n  \"channel_names\": [\n    \"X\",\n    \"Y\",\n    \"ID\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 0,\n      \"nonfinite\": 0\n    },\n    {\n      \"count\": 0,\n      \"nonfinite\": 0\n    },\n    {\n      \"count\": 0,\n      \"nonfinite\": 0\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-6.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"single\",\n  \"population_events\": 1,\n  \"source_event_indices\": [\n    4\n  ],\n  \"channel_names\": [\n    \"X\",\n    \"Y\",\n    \"ID\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 1,\n      \"nonfinite\": 0,\n      \"minimum\": 10,\n      \"maximum\": 10,\n      \"mean\": 10\n    },\n    {\n      \"count\": 1,\n      \"nonfinite\": 0,\n      \"minimum\": 28,\n      \"maximum\": 28,\n      \"mean\": 28\n    },\n    {\n      \"count\": 1,\n      \"nonfinite\": 0,\n      \"minimum\": 18446744073709552000,\n      \"maximum\": 18446744073709552000,\n      \"mean\": 18446744073709552000\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\nonfinite.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-7.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 4,\n  \"source_event_indices\": [\n    0,\n    1,\n    2,\n    3\n  ],\n  \"channel_names\": [\n    \"Mask\",\n    \"Signal\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 4,\n      \"nonfinite\": 0,\n      \"minimum\": 1,\n      \"maximum\": 4,\n      \"mean\": 2.5,\n      \"variance\": 1.6666666666666667\n    },\n    {\n      \"count\": 1,\n      \"nonfinite\": 3,\n      \"minimum\": 3,\n      \"maximum\": 3,\n      \"mean\": 3\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\extreme.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-8.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    0,\n    1,\n    2\n  ],\n  \"channel_names\": [\n    \"Mask\",\n    \"Huge\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 1,\n      \"maximum\": 3,\n      \"mean\": 2,\n      \"variance\": 1\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": -1e+154,\n      \"maximum\": 1e+154,\n      \"mean\": 0,\n      \"variance\": 1e+308\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\chain.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-9.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"selected\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    2,\n    4,\n    5\n  ],\n  \"channel_names\": [\n    \"X\",\n    \"Y\",\n    \"ID\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 6,\n      \"maximum\": 12,\n      \"mean\": 9.333333333333334,\n      \"variance\": 9.333333333333332\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 20,\n      \"maximum\": 28,\n      \"mean\": 24,\n      \"variance\": 16\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 18446744073709552000,\n      \"maximum\": 18446744073709552000,\n      \"mean\": 18446744073709552000,\n      \"variance\": 0\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-10.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"unknown population: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-11.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"unknown population: p\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-12.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "unsupported population-stats option: start\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-13.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "unsupported population-stats option: channels\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-14.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "scaled must be boolean\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-15.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "population-stats requires gates and population\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\original-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-16.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"gate plan contains a parent cycle\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\histogram.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-17.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "population statistics require list DATA; use histogram APIs\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\examples\\repod\\titration_CD11c_concat.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent\\options-18.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"inner\",\n  \"population_events\": 662,\n  \"source_event_indices\": [\n    10,\n    23,\n    28,\n    40,\n    48,\n    49,\n    50,\n    61,\n    65,\n    67,\n    76,\n    119,\n    122,\n    138,\n    150,\n    166,\n    169,\n    176,\n    183,\n    184,\n    190,\n    219,\n    224,\n    229,\n    252,\n    265,\n    279,\n    281,\n    286,\n    289,\n    324,\n    336,\n    339,\n    361,\n    365,\n    374,\n    386,\n    412,\n    417,\n    439,\n    460,\n    480,\n    489,\n    499,\n    527,\n    536,\n    544,\n    546,\n    555,\n    572,\n    592,\n    605,\n    612,\n    616,\n    657,\n    669,\n    679,\n    681,\n    695,\n    705,\n    706,\n    708,\n    727,\n    747,\n    768,\n    795,\n    796,\n    829,\n    844,\n    863,\n    868,\n    877,\n    878,\n    889,\n    892,\n    918,\n    931,\n    966,\n    968,\n    982,\n    1040,\n    1045,\n    1071,\n    1091,\n    1115,\n    1136,\n    1169,\n    1203,\n    1236,\n    1255,\n    1271,\n    1283,\n    1286,\n    1287,\n    1296,\n    1320,\n    1381,\n    1391,\n    1397,\n    1403,\n    1414,\n    1426,\n    1444,\n    1450,\n    1453,\n    1473,\n    1475,\n    1489,\n    1491,\n    1501,\n    1512,\n    1524,\n    1532,\n    1533,\n    1559,\n    1593,\n    1601,\n    1612,\n    1615,\n    1679,\n    1683,\n    1693,\n    1711,\n    1721,\n    1733,\n    1768,\n    1775,\n    1794,\n    1812,\n    1838,\n    1842,\n    1845,\n    1869,\n    1888,\n    1893,\n    1955,\n    1979,\n    1990,\n    2003,\n    2012,\n    2021,\n    2045,\n    2084,\n    2115,\n    2166,\n    2167,\n    2170,\n    2228,\n    2272,\n    2287,\n    2300,\n    2311,\n    2327,\n    2332,\n    2334,\n    2341,\n    2342,\n    2345,\n    2388,\n    2405,\n    2419,\n    2436,\n    2447,\n    2456,\n    2459,\n    2487,\n    2525,\n    2541,\n    2631,\n    2653,\n    2660,\n    2692,\n    2805,\n    2819,\n    2912,\n    2998,\n    3004,\n    3079,\n    3089,\n    3105,\n    3110,\n    3136,\n    3152,\n    3185,\n    3235,\n    3245,\n    3267,\n    3277,\n    3279,\n    3282,\n    3301,\n    3308,\n    3367,\n    3383,\n    3393,\n    3485,\n    3512,\n    3539,\n    3560,\n    3561,\n    3563,\n    3581,\n    3610,\n    3622,\n    3626,\n    3630,\n    3668,\n    3690,\n    3716,\n    3721,\n    3728,\n    3749,\n    3750,\n    3753,\n    3809,\n    3854,\n    3856,\n    3863,\n    3929,\n    3945,\n    3972,\n    4002,\n    4023,\n    4052,\n    4085,\n    4119,\n    4127,\n    4129,\n    4133,\n    4150,\n    4159,\n    4177,\n    4258,\n    4366,\n    4367,\n    4440,\n    4468,\n    4477,\n    4487,\n    4522,\n    4534,\n    4607,\n    4630,\n    4633,\n    4681,\n    4728,\n    4729,\n    4819,\n    4890,\n    4944,\n    4965,\n    5009,\n    5044,\n    5059,\n    5070,\n    5145,\n    5197,\n    5217,\n    5244,\n    5330,\n    5336,\n    5365,\n    5403,\n    5431,\n    5600,\n    5643,\n    5707,\n    5731,\n    5912,\n    5920,\n    5944,\n    5957,\n    5979,\n    6043,\n    6081,\n    6102,\n    6113,\n    6144,\n    6177,\n    6215,\n    6220,\n    6248,\n    6272,\n    6397,\n    6400,\n    6405,\n    6433,\n    6524,\n    6569,\n    6623,\n    6632,\n    6677,\n    6707,\n    6756,\n    6761,\n    6785,\n    6805,\n    6806,\n    6811,\n    6834,\n    6908,\n    6910,\n    6943,\n    6945,\n    6946,\n    6957,\n    6976,\n    7016,\n    7024,\n    7037,\n    7074,\n    7112,\n    7167,\n    7179,\n    7218,\n    7239,\n    7260,\n    7267,\n    7274,\n    7293,\n    7296,\n    7312,\n    7316,\n    7320,\n    7361,\n    7399,\n    7405,\n    7412,\n    7431,\n    7451,\n    7453,\n    7454,\n    7459,\n    7468,\n    7507,\n    7554,\n    7558,\n    7571,\n    7607,\n    7637,\n    7647,\n    7660,\n    7671,\n    7707,\n    7728,\n    7733,\n    7736,\n    7749,\n    7754,\n    7767,\n    7773,\n    7839,\n    7853,\n    7883,\n    7899,\n    7901,\n    7949,\n    7958,\n    7962,\n    7964,\n    7977,\n    7980,\n    7993,\n    8008,\n    8012,\n    8019,\n    8027,\n    8040,\n    8067,\n    8089,\n    8102,\n    8113,\n    8133,\n    8183,\n    8233,\n    8237,\n    8290,\n    8295,\n    8343,\n    8388,\n    8405,\n    8426,\n    8462,\n    8485,\n    8494,\n    8519,\n    8521,\n    8542,\n    8546,\n    8560,\n    8570,\n    8580,\n    8587,\n    8652,\n    8656,\n    8754,\n    8780,\n    8788,\n    8810,\n    8830,\n    8831,\n    8865,\n    8885,\n    8887,\n    8896,\n    8897,\n    8918,\n    8933,\n    8974,\n    9002,\n    9003,\n    9020,\n    9090,\n    9112,\n    9136,\n    9141,\n    9143,\n    9150,\n    9159,\n    9173,\n    9206,\n    9209,\n    9224,\n    9230,\n    9231,\n    9242,\n    9244,\n    9248,\n    9249,\n    9275,\n    9279,\n    9305,\n    9318,\n    9323,\n    9353,\n    9381,\n    9384,\n    9386,\n    9430,\n    9470,\n    9473,\n    9491,\n    9508,\n    9585,\n    9587,\n    9597,\n    9649,\n    9716,\n    9724,\n    9730,\n    9765,\n    9772,\n    9780,\n    9847,\n    9854,\n    9858,\n    9980,\n    10021,\n    10027,\n    10052,\n    10053,\n    10057,\n    10068,\n    10105,\n    10111,\n    10140,\n    10158,\n    10159,\n    10161,\n    10165,\n    10196,\n    10212,\n    10233,\n    10273,\n    10303,\n    10333,\n    10338,\n    10344,\n    10428,\n    10461,\n    10504,\n    10530,\n    10567,\n    10574,\n    10578,\n    10587,\n    10612,\n    10622,\n    10656,\n    10702,\n    10729,\n    10745,\n    10754,\n    10824,\n    10847,\n    10896,\n    10898,\n    10930,\n    10942,\n    10981,\n    10993,\n    10998,\n    11007,\n    11031,\n    11097,\n    11106,\n    11127,\n    11175,\n    11179,\n    11188,\n    11218,\n    11227,\n    11248,\n    11293,\n    11297,\n    11308,\n    11310,\n    11315,\n    11323,\n    11332,\n    11333,\n    11353,\n    11355,\n    11387,\n    11392,\n    11396,\n    11398,\n    11429,\n    11431,\n    11452,\n    11480,\n    11502,\n    11514,\n    11522,\n    11532,\n    11582,\n    11583,\n    11629,\n    11676,\n    11678,\n    11686,\n    11754,\n    11758,\n    11761,\n    11779,\n    11817,\n    11825,\n    11828,\n    11849,\n    11885,\n    11925,\n    11950,\n    11999,\n    12000,\n    12003,\n    12028,\n    12072,\n    12084,\n    12091,\n    12102,\n    12129,\n    12166,\n    12239,\n    12309,\n    12346,\n    12396,\n    12399,\n    12416,\n    12433,\n    12440,\n    12445,\n    12448,\n    12451,\n    12472,\n    12482,\n    12501,\n    12522,\n    12537,\n    12540,\n    12548,\n    12626,\n    12630,\n    12674,\n    12721,\n    12732,\n    12734,\n    12738,\n    12795,\n    12843,\n    12848,\n    12856,\n    12857,\n    12861,\n    12886,\n    12893,\n    12914,\n    12926,\n    12938,\n    12998,\n    13016,\n    13020,\n    13063,\n    13077,\n    13087,\n    13099,\n    13152,\n    13199,\n    13218,\n    13223,\n    13235,\n    13265,\n    13278,\n    13280,\n    13305,\n    13358,\n    13411,\n    13417,\n    13458,\n    13468,\n    13474,\n    13499,\n    13502,\n    13509,\n    13519,\n    13534,\n    13568,\n    13570,\n    13572,\n    13574,\n    13581,\n    13590,\n    13598,\n    13606,\n    13637,\n    13641,\n    13645,\n    13652,\n    13663,\n    13669,\n    13673,\n    13727,\n    13729,\n    13730,\n    13759,\n    13762,\n    13784,\n    13827,\n    13845,\n    13849,\n    13941,\n    13959,\n    13980,\n    14003,\n    14029,\n    14036,\n    14073,\n    14081,\n    14110,\n    14153,\n    14198,\n    14208,\n    14232\n  ],\n  \"channel_names\": [\n    \"FSC-A\",\n    \"FSC-H\",\n    \"SSC-A\",\n    \"SSC-B-A\",\n    \"SSC-B-H\",\n    \"SSC-H\",\n    \"AF-A\",\n    \"APC-eFluor 780-A\",\n    \"Alexa Fluor 700-A\",\n    \"BUV395-A\",\n    \"BUV496-A\",\n    \"BUV661-A\",\n    \"BUV737-A\",\n    \"FITC-A\",\n    \"LIVE DEAD Blue-A\",\n    \"NovaFluor Blue 610-70S-A\",\n    \"PE-A\",\n    \"PE-Cy7-A\",\n    \"PerCP-Cy5.5-A\",\n    \"SampleID\",\n    \"Super Bright 600-A\",\n    \"Super Bright 645-A\",\n    \"Super Bright 702-A\",\n    \"Super Bright 780-A\",\n    \"eFluor 450-A\",\n    \"Time\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": 600432.6875,\n      \"maximum\": 899964.4375,\n      \"mean\": 771260.0522092151,\n      \"variance\": 7454541432.668426\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": 381886,\n      \"maximum\": 882009,\n      \"mean\": 666637.4290030205,\n      \"variance\": 9120279054.08497\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": 1400552.75,\n      \"maximum\": 1799725.75,\n      \"mean\": 1587872.1387839897,\n      \"variance\": 13290396845.593405\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": 370974.21875,\n      \"maximum\": 990763.9375,\n      \"mean\": 547307.5431929751,\n      \"variance\": 15250484093.487614\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": 202693,\n      \"maximum\": 836735,\n      \"mean\": 358560.72054380644,\n      \"variance\": 6185980289.968692\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": 642828,\n      \"maximum\": 1893505,\n      \"mean\": 1094015.7990936541,\n      \"variance\": 12240042116.13356\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -71.50857543945312,\n      \"maximum\": 23919.37109375,\n      \"mean\": 9240.175167441008,\n      \"variance\": 4902517.811951322\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -4691.07958984375,\n      \"maximum\": 1698.952392578125,\n      \"mean\": -185.9488370123227,\n      \"variance\": 575893.9100744063\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -6007.9365234375,\n      \"maximum\": 900.3009033203125,\n      \"mean\": -319.9443254521243,\n      \"variance\": 555867.1034302954\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -530.2683715820312,\n      \"maximum\": 5064.388671875,\n      \"mean\": 1149.559800148012,\n      \"variance\": 318088.61819555686\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": 982.0230712890625,\n      \"maximum\": 26902.740234375,\n      \"mean\": 8853.48863731915,\n      \"variance\": 20283130.933390956\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -409.12213134765625,\n      \"maximum\": 231508.46875,\n      \"mean\": 16643.315909855308,\n      \"variance\": 966384774.8061345\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -4161.17236328125,\n      \"maximum\": 3981.623779296875,\n      \"mean\": -197.38562160500751,\n      \"variance\": 392538.0485618158\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -3130.45849609375,\n      \"maximum\": 1721.600341796875,\n      \"mean\": -208.3533934423213,\n      \"variance\": 300106.35926557134\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -254.81900024414062,\n      \"maximum\": 50242.57421875,\n      \"mean\": 5111.868293704582,\n      \"variance\": 13610686.034384698\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -2431.436767578125,\n      \"maximum\": 1104.5440673828125,\n      \"mean\": -206.56348168633852,\n      \"variance\": 289287.7558496966\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -7445.0361328125,\n      \"maximum\": 1061.4241943359375,\n      \"mean\": -544.1645065232706,\n      \"variance\": 1308758.997959519\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -1157.355224609375,\n      \"maximum\": 1282.3111572265625,\n      \"mean\": -119.04154420979441,\n      \"variance\": 76487.7762244046\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -2801.610107421875,\n      \"maximum\": 1919.3902587890625,\n      \"mean\": -248.09372103272807,\n      \"variance\": 205861.7523194896\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": 29419.548828125,\n      \"maximum\": 231290.015625,\n      \"mean\": 113100.42367765766,\n      \"variance\": 3985338199.3656836\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -3203.7177734375,\n      \"maximum\": 2093.778076171875,\n      \"mean\": -365.08301508930856,\n      \"variance\": 256849.79087356076\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -4564.28515625,\n      \"maximum\": 1988.401123046875,\n      \"mean\": -383.8612015716665,\n      \"variance\": 1459787.5691555676\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -1491.2164306640625,\n      \"maximum\": 3675.389892578125,\n      \"mean\": 10.236766481687672,\n      \"variance\": 427486.05234566453\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -2671.9951171875,\n      \"maximum\": 3864.92578125,\n      \"mean\": -477.5084683952732,\n      \"variance\": 194059.01080050596\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": -3015.50634765625,\n      \"maximum\": 6771.21923828125,\n      \"mean\": 136.48269824174977,\n      \"variance\": 406884.12309236784\n    },\n    {\n      \"count\": 662,\n      \"nonfinite\": 0,\n      \"minimum\": 812.9000244140625,\n      \"maximum\": 742378.1875,\n      \"mean\": 236657.4290269926,\n      \"variance\": 27301858241.68497\n    }\n  ]\n}\n",
+    "stderr": ""
+  }
+]

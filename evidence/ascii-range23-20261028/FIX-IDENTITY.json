@@ -1,0 +1,9 @@
+{
+  "beforeWriteSha256": "3fee064db93da0548280b71ac56d0b454ea10498b2b4b4da70dd3c8a5d646e3b",
+  "afterWriteSha256": "03d4069a2ae0df563c26f8ff4eb11089d2ffcb042c055083ce40352b81fc9707",
+  "beforeCompiledJsSha256": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148",
+  "afterCompiledJsSha256": "02c5755340033c8ee5cacdbe2c4f458dd1bbf17b7ff900ba14b40ad5b92ceed6",
+  "publicApiUnchanged": true,
+  "nodeAdapterUnchanged": true,
+  "bridgeSourceUnchanged": true
+}

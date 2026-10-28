@@ -1,0 +1,7 @@
+{
+  "beforeCliSha256": "071c2ef3967a1265cc677f1cf7072a4066235786664daa6347fffda542d79b70",
+  "afterCliSha256": "5d78b5c4d8ada9f73a6c061ce1c729b13b61426419b691b15bd87ed253286f50",
+  "compiledJsSha256": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148",
+  "compiledJsUnchanged": true,
+  "bridgeUnchanged": true
+}

@@ -1,0 +1,36 @@
+{
+  "checkedUtc": "2026-10-28T12:49:35.684391+00:00",
+  "limitPerQuery": 20,
+  "results": [
+    {
+      "query": "fcs",
+      "url": "https://mooncakes.io/api/v0/search?kw=fcs&limit=20",
+      "status": 200,
+      "modules": [
+        {
+          "name": "mawei2018/fcs",
+          "version": "0.2.2",
+          "repository": "https://github.com/mawei2018/moonbit-fcs"
+        },
+        {
+          "name": "lxyhgvb/moonbit-radioframe",
+          "version": "0.2.0",
+          "repository": "https://github.com/lxyhgvb/moonbit-radioframe"
+        }
+      ]
+    },
+    {
+      "query": "cytometry",
+      "url": "https://mooncakes.io/api/v0/search?kw=cytometry&limit=20",
+      "status": 200,
+      "modules": [
+        {
+          "name": "mawei2018/fcs",
+          "version": "0.2.2",
+          "repository": "https://github.com/mawei2018/moonbit-fcs"
+        }
+      ]
+    }
+  ],
+  "limits": "bounded public name/summary search; no uniqueness or complete contest-entries claim"
+}

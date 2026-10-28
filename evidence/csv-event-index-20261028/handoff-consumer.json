@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-18-max-20261028\\verify_handoff.py"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T10:03:19.883435+00:00",
+  "exitCode": 0,
+  "stdout": "{\"status\": \"passed\", \"eventIndicesVerified\": 662, \"scientificValuesUnchanged\": 1324, \"filteredRowsVerified\": 332, \"downstreamNeedsOnlyCsv\": true}\n",
+  "stderr": ""
+}

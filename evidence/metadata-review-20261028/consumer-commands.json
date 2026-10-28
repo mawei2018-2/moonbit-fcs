@@ -1,0 +1,29 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-14-max-20261028\\consumer\\source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-14-max-20261028\\consumer\\selected-with-provenance.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-14-max-20261028\\consumer\\options-0.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-14-max-20261028\\\\consumer\\\\selected-with-provenance.fcs\",\"bytes\":749}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "metadata",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-14-max-20261028\\consumer\\selected-with-provenance.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-14-max-20261028\\consumer\\options-1.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"$MODE\",\n    \"L\"\n  ],\n  [\n    \"$DATATYPE\",\n    \"D\"\n  ],\n  [\n    \"$PAR\",\n    \"2\"\n  ],\n  [\n    \"$TOT\",\n    \"2\"\n  ],\n  [\n    \"$BYTEORD\",\n    \"4,3,2,1\"\n  ],\n  [\n    \"$BEGINSTEXT\",\n    \"0\"\n  ],\n  [\n    \"$ENDSTEXT\",\n    \"0\"\n  ],\n  [\n    \"$BEGINANALYSIS\",\n    \"0000000000\"\n  ],\n  [\n    \"$ENDANALYSIS\",\n    \"0000000000\"\n  ],\n  [\n    \"$NEXTDATA\",\n    \"0\"\n  ],\n  [\n    \"$BEGINDATA\",\n    \"0000000717\"\n  ],\n  [\n    \"$ENDDATA\",\n    \"0000000748\"\n  ],\n  [\n    \"$P2N\",\n    \"A\"\n  ],\n  [\n    \"$P2B\",\n    \"64\"\n  ],\n  [\n    \"$P2R\",\n    \"262144\"\n  ],\n  [\n    \"$P2E\",\n    \"0,0\"\n  ],\n  [\n    \"$P1N\",\n    \"B\"\n  ],\n  [\n    \"$P1B\",\n    \"64\"\n  ],\n  [\n    \"$P1R\",\n    \"262144\"\n  ],\n  [\n    \"$P1E\",\n    \"0,0\"\n  ],\n  [\n    \"NOTE\",\n    \"reviewed\"\n  ],\n  [\n    \"SOURCE_SAMPLE\",\n    \"batch14\"\n  ],\n  [\n    \"VENDOR_CUSTOM\",\n    \"retain-me\"\n  ],\n  [\n    \"$ORIGINALITY\",\n    \"Non-Original\"\n  ],\n  [\n    \"SOURCE_FILE_SHA256\",\n    \"ae72c5216d930e53bb8b364f2522833f56b1455f4fb02b912b345396b0c0dcd1\"\n  ],\n  [\n    \"SOURCE_EVENTS\",\n    \"2,0\"\n  ],\n  [\n    \"SOURCE_COLUMNS\",\n    \"B,A\"\n  ]\n]\n",
+    "stderr": ""
+  }
+]

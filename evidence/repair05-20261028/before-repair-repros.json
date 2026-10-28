@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "test",
+    "correctness_wbtest.mbt",
+    "--target",
+    "js",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T01:53:16.983749+00:00",
+  "exitCode": 2,
+  "stdout": "[mawei2018/fcs] test correctness_wbtest.mbt:2 (\"repair05 inverse rejects nonfinite source coefficients\") failed: correctness_wbtest.mbt:9:12-9:56@mawei2018/fcs FAILED: infinite matrix coefficient accepted\n[mawei2018/fcs] test correctness_wbtest.mbt:15 (\"repair05 finite inverse does not silently overflow elimination\") failed: correctness_wbtest.mbt:25:5-25:63@mawei2018/fcs FAILED: `false` is not true\n[mawei2018/fcs] test correctness_wbtest.mbt:30 (\"repair05 default create validates spillover channel identity before returning bytes\") failed: correctness_wbtest.mbt:39:12-39:54@mawei2018/fcs FAILED: create returned an unreadable file\n[mawei2018/fcs] test correctness_wbtest.mbt:45 (\"repair05 writer chooses a usable delimiter for legal metadata\") failed: mawei2018/fcs.FcsError.Invalid\n[mawei2018/fcs] test correctness_wbtest.mbt:57 (\"repair05 printable delimiter fallback escapes keyword and value\") failed: mawei2018/fcs.FcsError.Invalid\nTotal tests: 5, passed: 0, failed: 5.\n",
+  "stderr": ""
+}

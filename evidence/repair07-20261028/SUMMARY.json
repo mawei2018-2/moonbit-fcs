@@ -1,0 +1,28 @@
+{
+  "rootCause": "write reused floating PnR as integer range without covering normalized selected values",
+  "substantiveConsequences": [
+    "silent integer value masking",
+    "spurious integer rejection/unreadable ASCII output for accepted floating ranges"
+  ],
+  "actualWidthRejectionPreserved": true,
+  "publicConsumers": [
+    "js",
+    "wasm-gc"
+  ],
+  "newRegressionsPerBackend": 3,
+  "relatedRegressionsPerBackend": 36,
+  "independent07Calls": 71,
+  "affectedRepair06Calls": 56,
+  "apiSha256": "9dc10679f401610d7162cc2836c6f262726221131c7d57dcfb10a291dfa7ef2a",
+  "writeBeforeSha256": "2fa9ea30e156fa3ebd00988137e3f2e61e920fdc0a0095b60e14c86000a15f9e",
+  "writeAfterSha256": "3fee064db93da0548280b71ac56d0b454ea10498b2b4b4da70dd3c8a5d646e3b",
+  "bridgeBeforeSha256": "3831962ae7178cffb5c4951b0005e552f424bb81ab365eb2dceca09ad7d087d3",
+  "bridgeAfterSha256": "778fe6a73706fce23c692cba096a447e501ca1104abe57b7cd9e3a5475716978",
+  "sourceLicense": "original MIT synthetic inputs",
+  "limits": [
+    "Double scaling remains bounded by floating arithmetic",
+    "fractional PnR is a supported API input, not newly certified as standard-conformant",
+    "old full collections, native runtime and remote CI not rerun",
+    "not pushed, published or submitted"
+  ]
+}

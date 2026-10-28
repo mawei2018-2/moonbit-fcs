@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "test",
+    "deep_features_wbtest.mbt",
+    "--index",
+    "6",
+    "--target",
+    "wasm-gc",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T06:30:17.861215+00:00",
+  "exitCode": 0,
+  "stdout": "Total tests: 1, passed: 1, failed: 0.\n",
+  "stderr": ""
+}

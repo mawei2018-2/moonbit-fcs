@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "commands": 21,
+  "cases": [
+    {
+      "case": "unchanged default on new input",
+      "members": [
+        0,
+        2,
+        3
+      ],
+      "reportedChannels": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "case": "null retains default format",
+      "members": [
+        0,
+        2,
+        3
+      ],
+      "reportedChannels": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "case": "one raw report channel",
+      "members": [
+        0,
+        2,
+        3
+      ],
+      "reportedChannels": [
+        1
+      ]
+    },
+    {
+      "case": "one scaled report channel",
+      "members": [
+        0,
+        2,
+        3
+      ],
+      "reportedChannels": [
+        1
+      ]
+    },
+    {
+      "case": "unreported Driver still contributes to Target compensation",
+      "members": [
+        0,
+        2,
+        3
+      ],
+      "reportedChannels": [
+        1
+      ]
+    },
+    {
+      "case": "mixed order and repeated report channel",
+      "members": [
+        0,
+        2,
+        3
+      ],
+      "reportedChannels": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "case": "empty report columns keep membership and view",
+      "members": [
+        0,
+        2,
+        3
+      ],
+      "reportedChannels": []
+    },
+    {
+      "case": "empty population retains requested column identity",
+      "members": [],
+      "reportedChannels": [
+        1
+      ]
+    },
+    {
+      "case": "bad names, indices and shapes including empty population",
+      "expectedFailures": 8
+    },
+    {
+      "case": "numeric positions retain duplicate source labels",
+      "members": [
+        0,
+        1
+      ],
+      "reportedChannels": [
+        1,
+        0
+      ]
+    },
+    {
+      "case": "ambiguous source label rejected without guessing"
+    },
+    {
+      "case": "report channel indices belong to selected dataset",
+      "members": [
+        0,
+        2,
+        3
+      ],
+      "reportedChannels": [
+        1,
+        0
+      ]
+    },
+    {
+      "case": "round25 unsupported-channel input preserved as new supported request",
+      "members": [
+        2,
+        4,
+        5
+      ],
+      "reportedChannels": [
+        0
+      ]
+    },
+    {
+      "case": "portable report-channel example",
+      "members": [
+        2,
+        5
+      ],
+      "reportedChannels": [
+        2,
+        0,
+        2
+      ]
+    }
+  ],
+  "expectedFailureCommands": 9,
+  "inputLicense": "original MIT synthetic inputs",
+  "sourceFilesUnchanged": true,
+  "inputsSha256": {
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs": "3fc880c0d7213ffb23a110d71e7461c3ce77280367552d4a0be01143fc0907ae",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\duplicate-names.fcs": "ce22b8487133b7c7f49cfc5af030bce2e987a6a2c60aafb70f2bfde71bffbd73",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\chained.fcs": "9a07288c88264ca6beafcfc6034e653137dad310fc319f1e869fce8f52331cd8",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\retained-round25-channel-request.fcs": "731f938f1c3179bf54e737db57a977fe64f4ddb9f672069565f380b5665333db",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\portable-example.fcs": "482fe8dae538757f1f39f5a3067ba28b9b3095a05459ba7c50029a5bf714e725"
+  },
+  "defaultAndNullReportEqual": true,
+  "fullMatrixUnreportedDependencyVerified": true,
+  "retainedRound25InputSha256": "731f938f1c3179bf54e737db57a977fe64f4ddb9f672069565f380b5665333db",
+  "noOldSuiteOrRepodRun": true,
+  "oracle": "independent packed bits/struct inputs, Fraction statistics, explicit source indices and closed-form triangular compensation",
+  "sourceSha256": {
+    "tools/fcs.mjs": "827b0601abe9fd865fa8de4b53c9fa8e51e9eba2e9e3014cf2947e1de705b36b",
+    "tools/check-population-stat-channels.py": "1278d3b687bb1ca6b749c500eb01d58f427414211d903dc3b0b4e8f278761461",
+    "tools/check-population-stats.py": "9d2231321bc24454aa6db9b92f46bea5e10ed4bece80674623b7906af7472da8",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "examples/population-stat-channels.json": "10d121914c4d8b76b6a8d03d60ecb938ebffc6443b25b03317d5f534554d9433",
+    "events.mbt": "e346ed5de08f71267aaa75f82275987ac272c4edd81f3a925b6f8302df2165cf",
+    "write.mbt": "03d4069a2ae0df563c26f8ff4eb11089d2ffcb042c055083ce40352b81fc9707",
+    "cmd/bridge/main.mbt": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "_build/js/release/build/cmd/bridge/bridge.js": "02c5755340033c8ee5cacdbe2c4f458dd1bbf17b7ff900ba14b40ad5b92ceed6"
+  }
+}

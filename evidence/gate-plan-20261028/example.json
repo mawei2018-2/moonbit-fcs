@@ -1,0 +1,12 @@
+{
+  "command": [
+    "node",
+    "examples/run-gate-plan.mjs",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\example"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T06:21:33.607223+00:00",
+  "exitCode": 0,
+  "stdout": "{\n  \"status\": \"passed\",\n  \"output\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-09-max-20261028\\\\example\",\n  \"inputLicense\": \"original MIT synthetic events\",\n  \"sourceSha256\": \"41299eb6a4ab99550d795a17b85b48f7ef369fbca7bcbf20dde135ee5b4eb7f6\",\n  \"selectedSha256\": \"cb13b9c763537940f20894d424094ebf0de7b58a99ed5a31733eeb34f53c5a4d\",\n  \"planSha256\": \"c488e1582e8580f6a6f218aa145f70c899363484a43e3adb476a2c47cce26c9c\",\n  \"population\": \"id_window\",\n  \"originalEventIndices\": [\n    2,\n    5\n  ],\n  \"populations\": [\n    {\n      \"id\": \"id_window\",\n      \"count\": 2,\n      \"parent_count\": 3,\n      \"parent_fraction\": 0.6666666666666666\n    },\n    {\n      \"id\": \"high\",\n      \"count\": 3,\n      \"parent_count\": 4,\n      \"parent_fraction\": 0.75\n    },\n    {\n      \"id\": \"window\",\n      \"count\": 4,\n      \"parent_count\": 6,\n      \"parent_fraction\": 0.6666666666666666\n    },\n    {\n      \"id\": \"shape\",\n      \"count\": 3,\n      \"parent_count\": 4,\n      \"parent_fraction\": 0.75\n    },\n    {\n      \"id\": \"low\",\n      \"count\": 1,\n      \"parent_count\": 4,\n      \"parent_fraction\": 0.25\n    }\n  ],\n  \"selectedValues\": [\n    [\n      \"18446744073709551618\",\n      \"30\",\n      \"9\"\n    ],\n    [\n      \"18446744073709551621\",\n      \"20\",\n      \"8\"\n    ]\n  ],\n  \"commands\": 6\n}\n",
+  "stderr": ""
+}

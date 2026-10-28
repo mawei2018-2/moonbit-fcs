@@ -1,0 +1,340 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case": "identity",
+      "source": "F",
+      "order": "little",
+      "expected": [
+        [
+          2.0,
+          "NaN",
+          5.0
+        ],
+        [
+          3.0,
+          "Infinity",
+          7.0
+        ],
+        [
+          4.0,
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [
+        0,
+        1
+      ],
+      "dependency": "A unaffected by B"
+    },
+    {
+      "case": "independent-block",
+      "source": "F",
+      "order": "little",
+      "expected": [
+        [
+          -0.5,
+          "NaN",
+          5.0
+        ],
+        [
+          -0.5,
+          "Infinity",
+          7.0
+        ],
+        [
+          -0.5,
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [
+        0,
+        1,
+        2
+      ],
+      "dependency": "A unaffected by B"
+    },
+    {
+      "case": "dependent-block",
+      "source": "F",
+      "order": "little",
+      "expected": [
+        [
+          "NaN",
+          "NaN",
+          5.0
+        ],
+        [
+          "-Infinity",
+          "Infinity",
+          7.0
+        ],
+        [
+          "Infinity",
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [],
+      "dependency": "B contributes to A"
+    },
+    {
+      "case": "identity",
+      "source": "F",
+      "order": "big",
+      "expected": [
+        [
+          2.0,
+          "NaN",
+          5.0
+        ],
+        [
+          3.0,
+          "Infinity",
+          7.0
+        ],
+        [
+          4.0,
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [
+        0,
+        1
+      ],
+      "dependency": "A unaffected by B"
+    },
+    {
+      "case": "independent-block",
+      "source": "F",
+      "order": "big",
+      "expected": [
+        [
+          -0.5,
+          "NaN",
+          5.0
+        ],
+        [
+          -0.5,
+          "Infinity",
+          7.0
+        ],
+        [
+          -0.5,
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [
+        0,
+        1,
+        2
+      ],
+      "dependency": "A unaffected by B"
+    },
+    {
+      "case": "dependent-block",
+      "source": "F",
+      "order": "big",
+      "expected": [
+        [
+          "NaN",
+          "NaN",
+          5.0
+        ],
+        [
+          "-Infinity",
+          "Infinity",
+          7.0
+        ],
+        [
+          "Infinity",
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [],
+      "dependency": "B contributes to A"
+    },
+    {
+      "case": "identity",
+      "source": "D",
+      "order": "little",
+      "expected": [
+        [
+          2.0,
+          "NaN",
+          5.0
+        ],
+        [
+          3.0,
+          "Infinity",
+          7.0
+        ],
+        [
+          4.0,
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [
+        0,
+        1
+      ],
+      "dependency": "A unaffected by B"
+    },
+    {
+      "case": "independent-block",
+      "source": "D",
+      "order": "little",
+      "expected": [
+        [
+          -0.5,
+          "NaN",
+          5.0
+        ],
+        [
+          -0.5,
+          "Infinity",
+          7.0
+        ],
+        [
+          -0.5,
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [
+        0,
+        1,
+        2
+      ],
+      "dependency": "A unaffected by B"
+    },
+    {
+      "case": "dependent-block",
+      "source": "D",
+      "order": "little",
+      "expected": [
+        [
+          "NaN",
+          "NaN",
+          5.0
+        ],
+        [
+          "-Infinity",
+          "Infinity",
+          7.0
+        ],
+        [
+          "Infinity",
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [],
+      "dependency": "B contributes to A"
+    },
+    {
+      "case": "identity",
+      "source": "D",
+      "order": "big",
+      "expected": [
+        [
+          2.0,
+          "NaN",
+          5.0
+        ],
+        [
+          3.0,
+          "Infinity",
+          7.0
+        ],
+        [
+          4.0,
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [
+        0,
+        1
+      ],
+      "dependency": "A unaffected by B"
+    },
+    {
+      "case": "independent-block",
+      "source": "D",
+      "order": "big",
+      "expected": [
+        [
+          -0.5,
+          "NaN",
+          5.0
+        ],
+        [
+          -0.5,
+          "Infinity",
+          7.0
+        ],
+        [
+          -0.5,
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [
+        0,
+        1,
+        2
+      ],
+      "dependency": "A unaffected by B"
+    },
+    {
+      "case": "dependent-block",
+      "source": "D",
+      "order": "big",
+      "expected": [
+        [
+          "NaN",
+          "NaN",
+          5.0
+        ],
+        [
+          "-Infinity",
+          "Infinity",
+          7.0
+        ],
+        [
+          "Infinity",
+          "-Infinity",
+          9.0
+        ]
+      ],
+      "rectangle": [],
+      "dependency": "B contributes to A"
+    },
+    {
+      "case": "subset and CSV consumers preserve independence and raw DATA",
+      "selectedEvents": 2
+    }
+  ],
+  "commands": 64,
+  "inputLicense": "original MIT synthetic inputs",
+  "oracle": "struct source bytes; explicit closed-form identity/triangular-block expressions; exact Fraction statistics",
+  "sourceSha256": {
+    "compensation.mbt": "8bf6c911d4ba9f509ed7da26a8717013d02b43ddac3f2350a695c658a12cab68",
+    "isolation08_wbtest.mbt": "2be8ccbab27664545a1f8bd551387bd1c07b3ac115b802c4b685b0db24bf828d",
+    "events.mbt": "e346ed5de08f71267aaa75f82275987ac272c4edd81f3a925b6f8302df2165cf",
+    "write.mbt": "3fee064db93da0548280b71ac56d0b454ea10498b2b4b4da70dd3c8a5d646e3b",
+    "pkg.generated.mbti": "9dc10679f401610d7162cc2836c6f262726221131c7d57dcfb10a291dfa7ef2a",
+    "tools/fcs.mjs": "d6faa1c8cfe8b718ed6d1640d647ce026bfc149c95977bbeff81c03752a7965e",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "tools/check-repair06.py": "0b1e5b145c455841096eb1a719e8c313670609de927887a538b5e2c760d964fb",
+    "tools/check-repair08.py": "fcdc94f73e1f56d3d0de6bbed31f04636a9091491de716fb916231926770f8e2",
+    "_build/js/release/build/cmd/bridge/bridge.js": "004413e0563685859ff6053b70204e179978ead9249e158745064d7dfc4b4f94"
+  }
+}

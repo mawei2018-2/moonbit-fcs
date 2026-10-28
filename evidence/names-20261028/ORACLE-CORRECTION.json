@@ -1,0 +1,7 @@
+{
+  "initialReport": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-10-max-20261028\\independent-names\\RESULT.json",
+  "initialCalls": 60,
+  "issue": "Conditional assert skipped the D mixed-reference CLI call; corrected to execute first and compare Double JSON numerically. Initial receipt retained.",
+  "productCodeChangedForOracle": false,
+  "legacyTestCorrection": "String 1 remains rejected, now as an unknown exact PnN name; original input retained, and positive B/A named selection added."
+}

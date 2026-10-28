@@ -1,0 +1,265 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\packed-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-0.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"0\",\n    \"0\",\n    \"0\",\n    \"0\",\n    \"0\",\n    \"0\",\n    \"0\"\n  ],\n  [\n    \"1\",\n    \"1023\",\n    \"4095\",\n    \"16383\",\n    \"262143\",\n    \"1048575\",\n    \"36893488147419103231\"\n  ],\n  [\n    \"1\",\n    \"513\",\n    \"2049\",\n    \"8193\",\n    \"131073\",\n    \"524289\",\n    \"18446744073709551619\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\packed-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\selected-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-1.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-05-20261028\\\\independent\\\\selected-little.fcs\",\"bytes\":642}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\packed-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-2.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\packed-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-3.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"0\",\n    \"0\",\n    \"0\",\n    \"0\",\n    \"0\",\n    \"0\",\n    \"0\"\n  ],\n  [\n    \"1\",\n    \"1023\",\n    \"4095\",\n    \"16383\",\n    \"262143\",\n    \"1048575\",\n    \"36893488147419103231\"\n  ],\n  [\n    \"1\",\n    \"513\",\n    \"2049\",\n    \"8193\",\n    \"131073\",\n    \"524289\",\n    \"18446744073709551619\"\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\packed-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\selected-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-4.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-05-20261028\\\\independent\\\\selected-big.fcs\",\"bytes\":642}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\packed-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-5.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\printable-source.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\printable-rewritten.fcs"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-05-20261028\\\\independent\\\\printable-rewritten.fcs\",\"bytes\":928}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "create",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\matrix-large.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-7.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-05-20261028\\\\independent\\\\matrix-large.fcs\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compensation",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\matrix-large.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  5e-309,\n  5e-309,\n  5e-309,\n  -5e-309\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "create",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\matrix-column-range.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-9.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-05-20261028\\\\independent\\\\matrix-column-range.fcs\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compensation",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\matrix-column-range.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  5e-309,\n  5e-309,\n  5e+307,\n  -5e+307\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "create",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\matrix-row-range.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-11.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-05-20261028\\\\independent\\\\matrix-row-range.fcs\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "compensation",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\matrix-row-range.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  5e-309,\n  5e+307,\n  5e-309,\n  -5e+307\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "create",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\invalid-matching.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-13.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"spillover channel must identify exactly one parameter: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "create",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\singular.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-14.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-05-20261028\\\\independent\\\\singular.fcs\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\singular.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-15.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"singular spillover matrix\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "validate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\nonfinite-matrix.fcs"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"non-finite numeric metadata\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\singular.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\duplicate.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-17.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"duplicate output channel\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\singular.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\options-18.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\nonfinite-data.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"NaN\",\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-05-20261028\\independent\\nonfinite-data.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 0,\n    \"nonfinite\": 1\n  },\n  {\n    \"count\": 1,\n    \"nonfinite\": 0,\n    \"minimum\": 2,\n    \"maximum\": 2,\n    \"mean\": 2\n  }\n]\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "version": "0.4.0",
+  "coreTests": {
+    "js": 23,
+    "wasm-gc": 23
+  },
+  "standardCases": 12,
+  "independentlyReadProducts": 58,
+  "checksPassed": 21,
+  "historicalReportsPreserved": true,
+  "proposalsUnchanged": true,
+  "allOldPublicFunctionsPreserved": true,
+  "fullConformanceClaim": false
+}

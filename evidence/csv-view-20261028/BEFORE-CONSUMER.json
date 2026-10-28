@@ -1,0 +1,70 @@
+{
+  "sourceEventIndices": [
+    1,
+    2
+  ],
+  "sourceRawValues": [
+    [
+      8,
+      24
+    ],
+    [
+      12,
+      36
+    ]
+  ],
+  "gains": [
+    2,
+    4
+  ],
+  "spillover": [
+    [
+      1,
+      0.5
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "expectedLinear": [
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      9
+    ]
+  ],
+  "expectedCompensated": [
+    [
+      4,
+      4
+    ],
+    [
+      6,
+      6
+    ]
+  ],
+  "actualCsv": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "4",
+      "4"
+    ],
+    [
+      "6",
+      "6"
+    ]
+  ],
+  "receipt": {
+    "written": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-13-max-20261028\\before-inputs\\compensated.csv",
+    "events": 2,
+    "scaled": false
+  },
+  "finding": "CSV values are linearized and compensated, but scaled flag is false"
+}

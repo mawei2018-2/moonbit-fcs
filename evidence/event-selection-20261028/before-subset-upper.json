@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "subset",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\before-inputs\\n3.fcs",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\before-inputs\\must-not-exist.fcs",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-11-max-20261028\\before-inputs\\n3-upper.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T07:30:31.943029+00:00",
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Invalid(\"selected event out of bounds\")\n"
+}

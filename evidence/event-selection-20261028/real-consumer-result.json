@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "commands": 5,
+  "cases": [
+    {
+      "case": "frozen population IDs to FlowIO consumer",
+      "sourceIndices": [
+        14232,
+        10,
+        7454,
+        14232
+      ],
+      "valuesVerified": 12,
+      "rawBytesVerified": 48,
+      "sourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+      "outputSha256": "0e29967073c3a225d208024a6812b6141843014c82b8ebbe788a4589deeeb9ed",
+      "externalReader": "FlowIO1.4.0 preprocess=False"
+    }
+  ],
+  "inputLicense": "CC BY4.0 RepOD file96804",
+  "oracle": "explicit event sequences, struct DATA and independent metadata; optional FlowIO raw readback",
+  "sourceSha256": {
+    "cmd/bridge/main.mbt": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+    "tools/fcs.mjs": "071c2ef3967a1265cc677f1cf7072a4066235786664daa6347fffda542d79b70",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "gating.mbt": "87f0ab627405dd765fef62422c050af61ee7238677e8589a759d633526b5a807",
+    "write.mbt": "3fee064db93da0548280b71ac56d0b454ea10498b2b4b4da70dd3c8a5d646e3b",
+    "tools/check-event-selection.py": "80fa4c34392a4b8089e50b0acba18dbfe127a5b731c30807f5e36c7e57dd9c45",
+    "_build/js/release/build/cmd/bridge/bridge.js": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "population-stats",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-09-max-20261028\\example\\events.fcs",
+    "--options",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\examples\\population-stats.json"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T12:40:22.016321+00:00",
+  "expectedExitCode": 0,
+  "exitCode": 0,
+  "stdout": "{\n  \"population\": \"id_window\",\n  \"population_events\": 2,\n  \"source_event_indices\": [\n    2,\n    5\n  ],\n  \"channel_names\": [\n    \"X\",\n    \"Y\",\n    \"M\",\n    \"ID\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 20,\n      \"maximum\": 30,\n      \"mean\": 25,\n      \"variance\": 50\n    },\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 3,\n      \"maximum\": 4,\n      \"mean\": 3.5,\n      \"variance\": 0.5\n    },\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 8,\n      \"maximum\": 9,\n      \"mean\": 8.5,\n      \"variance\": 0.5\n    },\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 18446744073709552000,\n      \"maximum\": 18446744073709552000,\n      \"mean\": 18446744073709552000,\n      \"variance\": 0\n    }\n  ]\n}\n",
+  "stderr": ""
+}

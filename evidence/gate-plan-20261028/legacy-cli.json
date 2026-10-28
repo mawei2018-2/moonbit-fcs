@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "tools/test_cli.mjs"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T06:26:16.944564+00:00",
+  "exitCode": 0,
+  "stdout": "{\"passed\":11,\"temp\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-09-max-20261028\\\\tmp\\\\moonbit-fcs-cli-Uctgds\"}\n",
+  "stderr": ""
+}

@@ -1,0 +1,561 @@
+{
+  "status": "passed",
+  "oracle": "independent Python integer/struct/ASCII reader and NumPy.linalg.solve",
+  "numpy": "2.5.3",
+  "tasks": 55,
+  "sourceSha256": {
+    "parse.mbt": "52a8e5483593eb6df5a3500e274fdef4477e827d0092cd868eb88a42ca379e01",
+    "encoding.mbt": "257c70bd7f6246fbaa24dbe4c9fb81994c13f4d7f13b9ba8406182fa9ee58480",
+    "histogram.mbt": "9adf519edc90a7ee4ec8f594c519ca6360b3928c094c817f2b622d764d7fd83a",
+    "compensation.mbt": "9470a5567af442fbf8351b5454cf36413355270fd517c0734106400ffc24e442",
+    "construction.mbt": "3879ed35ec20ca787ba52cdb992e1cb08235a8408392895b7c3d5f077a77f724",
+    "geometry.mbt": "7a07dbea8cf93e47bc9e3852ad1ea4364cc5da8f9b6786e8e84e67f3b5f74acb",
+    "write.mbt": "3864407046bb69d556f1b984dbe47b58aedeac221d5b9ca62ff0ac8b7d4d8df6",
+    "events.mbt": "dd8fb1e62a8099e7b016619009a642cbec2c726a27489af65ff24e6cf8fc0fe4",
+    "cmd/bridge/main.mbt": "ee11b462bb8a6cededc90bb8226f516acd23201a099a5f3480300118dcde74a9",
+    "tools/check-deep-features.py": "e7a1ef3174e95b50037833379e237e0661dc8760117f6bdafb0ad508bff8c8d7",
+    "_build/js/release/build/cmd/bridge/bridge.js": "1a6d5ad5cebfb0ab064ce612c8c4b1c7a84b3faae5dcda8d033fb0cc4074b686"
+  },
+  "cases": [
+    {
+      "case": "arbitrary widths and exact gate",
+      "order": "little",
+      "input": "wide-little.fcs",
+      "output": "wide-selected-little.fcs",
+      "expected": [
+        89884656743115795386465259539451236680898848947115328636715040578866337902750481566354238661203768010560056939935696678829394884407208311246423715319737062188883946712432742638151109800623047059726541476042502884419075341171231440736956555270413618581675255342293149119973622969239858152417678164812112068618,
+        18446744073709551618
+      ]
+    },
+    {
+      "case": "ASCII to arbitrary binary",
+      "input": "wide-little.fcs",
+      "output": "wide-converted-little.fcs",
+      "expected": [
+        18446744073709551617,
+        79228162514264337593543950343,
+        115792089237316195423570985008687907853269984665640564039457584007913129639939,
+        89884656743115795386465259539451236680898848947115328636715040578866337902750481566354238661203768010560056939935696678829394884407208311246423715319737062188883946712432742638151109800623047059726541476042502884419075341171231440736956555270413618581675255342293149119973622969239858152417678164812112068617,
+        18446744073709551618,
+        79228162514264337593543950344,
+        115792089237316195423570985008687907853269984665640564039457584007913129639940,
+        89884656743115795386465259539451236680898848947115328636715040578866337902750481566354238661203768010560056939935696678829394884407208311246423715319737062188883946712432742638151109800623047059726541476042502884419075341171231440736956555270413618581675255342293149119973622969239858152417678164812112068618,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "arbitrary widths and exact gate",
+      "order": "big",
+      "input": "wide-big.fcs",
+      "output": "wide-selected-big.fcs",
+      "expected": [
+        89884656743115795386465259539451236680898848947115328636715040578866337902750481566354238661203768010560056939935696678829394884407208311246423715319737062188883946712432742638151109800623047059726541476042502884419075341171231440736956555270413618581675255342293149119973622969239858152417678164812112068618,
+        18446744073709551618
+      ]
+    },
+    {
+      "case": "ASCII to arbitrary binary",
+      "input": "wide-big.fcs",
+      "output": "wide-converted-big.fcs",
+      "expected": [
+        18446744073709551617,
+        79228162514264337593543950343,
+        115792089237316195423570985008687907853269984665640564039457584007913129639939,
+        89884656743115795386465259539451236680898848947115328636715040578866337902750481566354238661203768010560056939935696678829394884407208311246423715319737062188883946712432742638151109800623047059726541476042502884419075341171231440736956555270413618581675255342293149119973622969239858152417678164812112068617,
+        18446744073709551618,
+        79228162514264337593543950344,
+        115792089237316195423570985008687907853269984665640564039457584007913129639940,
+        89884656743115795386465259539451236680898848947115328636715040578866337902750481566354238661203768010560056939935696678829394884407208311246423715319737062188883946712432742638151109800623047059726541476042502884419075341171231440736956555270413618581675255342293149119973622969239858152417678164812112068618,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "histogram reorder C",
+      "input": "hist-C-I-16.fcs",
+      "output": "hist-C-I-16-reorder.fcs",
+      "expected": [
+        1,
+        3,
+        5,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "case": "histogram marginal C",
+      "input": "hist-C-I-16.fcs",
+      "output": "hist-C-I-16-marginal.fcs",
+      "expected": [
+        9,
+        12
+      ]
+    },
+    {
+      "case": "histogram reorder C",
+      "input": "hist-C-A-4.fcs",
+      "output": "hist-C-A-4-reorder.fcs",
+      "expected": [
+        1,
+        3,
+        5,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "case": "histogram marginal C",
+      "input": "hist-C-A-4.fcs",
+      "output": "hist-C-A-4-marginal.fcs",
+      "expected": [
+        9,
+        12
+      ]
+    },
+    {
+      "case": "histogram reorder C",
+      "input": "hist-C-A-0.fcs",
+      "output": "hist-C-A-0-reorder.fcs",
+      "expected": [
+        1,
+        3,
+        5,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "case": "histogram marginal C",
+      "input": "hist-C-A-0.fcs",
+      "output": "hist-C-A-0-marginal.fcs",
+      "expected": [
+        9,
+        12
+      ]
+    },
+    {
+      "case": "histogram reorder C",
+      "input": "hist-C-F-32.fcs",
+      "output": "hist-C-F-32-reorder.fcs",
+      "expected": [
+        1,
+        3,
+        5,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "case": "histogram marginal C",
+      "input": "hist-C-F-32.fcs",
+      "output": "hist-C-F-32-marginal.fcs",
+      "expected": [
+        9,
+        12
+      ]
+    },
+    {
+      "case": "histogram reorder C",
+      "input": "hist-C-D-64.fcs",
+      "output": "hist-C-D-64-reorder.fcs",
+      "expected": [
+        1,
+        3,
+        5,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "case": "histogram marginal C",
+      "input": "hist-C-D-64.fcs",
+      "output": "hist-C-D-64-marginal.fcs",
+      "expected": [
+        9,
+        12
+      ]
+    },
+    {
+      "case": "histogram reorder U",
+      "input": "hist-U-I-16.fcs",
+      "output": "hist-U-I-16-reorder.fcs",
+      "expected": [
+        1,
+        5,
+        4,
+        3,
+        7
+      ]
+    },
+    {
+      "case": "histogram marginal U",
+      "input": "hist-U-I-16.fcs",
+      "output": "hist-U-I-16-marginal.fcs",
+      "expected": [
+        3,
+        7
+      ]
+    },
+    {
+      "case": "histogram reorder U",
+      "input": "hist-U-A-4.fcs",
+      "output": "hist-U-A-4-reorder.fcs",
+      "expected": [
+        1,
+        5,
+        4,
+        3,
+        7
+      ]
+    },
+    {
+      "case": "histogram marginal U",
+      "input": "hist-U-A-4.fcs",
+      "output": "hist-U-A-4-marginal.fcs",
+      "expected": [
+        3,
+        7
+      ]
+    },
+    {
+      "case": "histogram reorder U",
+      "input": "hist-U-A-0.fcs",
+      "output": "hist-U-A-0-reorder.fcs",
+      "expected": [
+        1,
+        5,
+        4,
+        3,
+        7
+      ]
+    },
+    {
+      "case": "histogram marginal U",
+      "input": "hist-U-A-0.fcs",
+      "output": "hist-U-A-0-marginal.fcs",
+      "expected": [
+        3,
+        7
+      ]
+    },
+    {
+      "case": "histogram reorder U",
+      "input": "hist-U-F-32.fcs",
+      "output": "hist-U-F-32-reorder.fcs",
+      "expected": [
+        1,
+        5,
+        4,
+        3,
+        7
+      ]
+    },
+    {
+      "case": "histogram marginal U",
+      "input": "hist-U-F-32.fcs",
+      "output": "hist-U-F-32-marginal.fcs",
+      "expected": [
+        3,
+        7
+      ]
+    },
+    {
+      "case": "histogram reorder U",
+      "input": "hist-U-D-64.fcs",
+      "output": "hist-U-D-64-reorder.fcs",
+      "expected": [
+        1,
+        5,
+        4,
+        3,
+        7
+      ]
+    },
+    {
+      "case": "histogram marginal U",
+      "input": "hist-U-D-64.fcs",
+      "output": "hist-U-D-64-marginal.fcs",
+      "expected": [
+        3,
+        7
+      ]
+    },
+    {
+      "case": "wide histogram frequency and TOT C",
+      "input": "wide-hist-C.fcs",
+      "output": "wide-hist-C-subset.fcs",
+      "expected": [
+        36893488147419103234,
+        36893488147419103234
+      ]
+    },
+    {
+      "case": "wide histogram frequency and TOT U",
+      "input": "wide-hist-U.fcs",
+      "output": "wide-hist-U-subset.fcs",
+      "expected": [
+        18446744073709551617,
+        18446744073709551617
+      ]
+    },
+    {
+      "case": "create I",
+      "output": "create-I.fcs",
+      "expected": [
+        18446744073709551617,
+        79228162514264337593543950339
+      ]
+    },
+    {
+      "case": "create A",
+      "output": "create-A.fcs",
+      "expected": [
+        18446744073709551617,
+        79228162514264337593543950339
+      ]
+    },
+    {
+      "case": "create F",
+      "output": "create-F.fcs",
+      "expected": [
+        1.25,
+        -2
+      ]
+    },
+    {
+      "case": "create D",
+      "output": "create-D.fcs",
+      "expected": [
+        1.25,
+        -2
+      ]
+    },
+    {
+      "case": "histogram constructor exact total",
+      "output": "create-hist-auto-total.fcs",
+      "expected": [
+        18446744073709551617,
+        18446744073709551617,
+        18446744073709551617,
+        18446744073709551617
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "wide-little.fcs",
+      "sha256": "0edcab0e311f4a118d939b1feabced55ef5c249f371e578a978b5fd01e630020"
+    },
+    {
+      "file": "wide-selected-little.fcs",
+      "sha256": "ac30cec2a0483e41e47314842465a4bcf45b690015ea4bcd421f64b0c22740e6"
+    },
+    {
+      "file": "wide-ascii-little.fcs",
+      "sha256": "6b4cb57be5f0a8518dd5c4b028f3fba4e065832ea4c988c18e68b25893084580"
+    },
+    {
+      "file": "wide-converted-little.fcs",
+      "sha256": "e59dfa4a46f59fed0e845ef3c0613f301f9c49cf83019fbd3f764745b2e22ae1"
+    },
+    {
+      "file": "wide-big.fcs",
+      "sha256": "934cc57bc4352c735bd88f292915e85ff0acfcb5b269744b38a581aead51f7ad"
+    },
+    {
+      "file": "wide-selected-big.fcs",
+      "sha256": "0a36f06fab62fbb126ef3f2ae175abc7d2fef6c00595fe6aea37fff31b86dd2f"
+    },
+    {
+      "file": "wide-ascii-big.fcs",
+      "sha256": "b82e5e4f2913091940cec60aff69fad6ffbe6aba54505fc187d60e7c82712725"
+    },
+    {
+      "file": "wide-converted-big.fcs",
+      "sha256": "ac78f76f3ea4c865a967feb3654b079c1e088c41dd489fd13f5c97deef0fa0da"
+    },
+    {
+      "file": "wide-mask.fcs",
+      "sha256": "67cd0d5ce59777b013abb0889ca524d90b64ab572d623158a3b9892bd92fe948"
+    },
+    {
+      "file": "hist-C-I-16.fcs",
+      "sha256": "bb72461ac54b7c5ddc6aefeb7573ecf0d96730fcf67dadf31a504cc7132dd582"
+    },
+    {
+      "file": "hist-C-I-16-reorder.fcs",
+      "sha256": "a027989bc04ef792fd77bcbd314cd193903cbb391f43a8b3d5d80affcdbf9278"
+    },
+    {
+      "file": "hist-C-I-16-marginal.fcs",
+      "sha256": "431cb752e725f0fe580df6c3dc754e7c4b214b7664600e31893629f26b322dff"
+    },
+    {
+      "file": "hist-C-A-4.fcs",
+      "sha256": "1875655f3c4a93ea8cb9f2217d6464667e2a9af6846a58edd0e37a01f568d383"
+    },
+    {
+      "file": "hist-C-A-4-reorder.fcs",
+      "sha256": "a689a2f1d152ecb845f604ab59b137c5242410619150fc867173e3aef7dcff3c"
+    },
+    {
+      "file": "hist-C-A-4-marginal.fcs",
+      "sha256": "ca838e295bcdccb2b2fa8e52f1e62ebccd043c044743a5721aa547be54442d9c"
+    },
+    {
+      "file": "hist-C-A-0.fcs",
+      "sha256": "adc0e38a21a2bf78a12773b10b4d23c0663c7c9e04e21169f9b099f9f63280a0"
+    },
+    {
+      "file": "hist-C-A-0-reorder.fcs",
+      "sha256": "cb0e7db87f41cf5a4d7d93b013c874011fa5d12f8a2b1bbfa8b41cecb7883912"
+    },
+    {
+      "file": "hist-C-A-0-marginal.fcs",
+      "sha256": "ba504ce3c5e717ce9405cbc88c7ad55a63749a9427ddf5448f25fcf479fa4f94"
+    },
+    {
+      "file": "hist-C-F-32.fcs",
+      "sha256": "e6c5fcbae6cba68f84418ee8d22e7f2098f0fb3061633c2cc307e79d53a9a1c2"
+    },
+    {
+      "file": "hist-C-F-32-reorder.fcs",
+      "sha256": "708bb0bb99cbdd326424a8e8b41c525f9d48ac3290080cf5e9f95e5ac163cb43"
+    },
+    {
+      "file": "hist-C-F-32-marginal.fcs",
+      "sha256": "30b8ce058eab9b5d0981b0b47fd75ea795cde8bf07163561724c8bf2c2aeea90"
+    },
+    {
+      "file": "hist-C-D-64.fcs",
+      "sha256": "58d5b87aa986bd7a9f3a338147196411196b1aea4e04fdc1edb2fa178814f10b"
+    },
+    {
+      "file": "hist-C-D-64-reorder.fcs",
+      "sha256": "5a67a3aa89f490868e9903e5352c631f4a14f7109af4500dabb8de68980ec522"
+    },
+    {
+      "file": "hist-C-D-64-marginal.fcs",
+      "sha256": "8772260ea1cb3069f7ad9b55861f84d517c8c586bb5aa0de31c9f31fd101e58f"
+    },
+    {
+      "file": "hist-U-I-16.fcs",
+      "sha256": "0061058863b644a1f78956d7a7d3163f46de175aa904feb88a2d3905728dc751"
+    },
+    {
+      "file": "hist-U-I-16-reorder.fcs",
+      "sha256": "a265c7625bd29d3972663f8599d562b70f60d4c603d47d0c8c98f4019c01aa96"
+    },
+    {
+      "file": "hist-U-I-16-marginal.fcs",
+      "sha256": "2938c9b91bfe2abed89e942ba307581c5464774c051a712761b8ce2b0287fc78"
+    },
+    {
+      "file": "hist-U-A-4.fcs",
+      "sha256": "e0a2d1de67e49671f27b15651ab7b66ddc3659654d1c348fe9273128a8b18a3f"
+    },
+    {
+      "file": "hist-U-A-4-reorder.fcs",
+      "sha256": "43005cb8c6d261986a3c980315ba75326425140fd8891c684454604218de0bbb"
+    },
+    {
+      "file": "hist-U-A-4-marginal.fcs",
+      "sha256": "4e32eddeb4c7e3e4c5d0da5f754cf93d3f16f7351bda70d962585aba6e08998a"
+    },
+    {
+      "file": "hist-U-A-0.fcs",
+      "sha256": "9209d8ebd838f71df731536c1f7dcd604a859938390db91eeabbe36bb61197d2"
+    },
+    {
+      "file": "hist-U-A-0-reorder.fcs",
+      "sha256": "e947b4798e4731614f65ce41e0e71a37d84cc3e5f50319638eae54a0e5098be3"
+    },
+    {
+      "file": "hist-U-A-0-marginal.fcs",
+      "sha256": "d9efb134703ff7e3fc4cc674015bd8aa3297026d6569acd5bce2530f67da6b79"
+    },
+    {
+      "file": "hist-U-F-32.fcs",
+      "sha256": "28d1da466243535ada6ff61016a65094f2b31237565818b686a4a023cde10bcd"
+    },
+    {
+      "file": "hist-U-F-32-reorder.fcs",
+      "sha256": "d8179000de8ef6da8a89de643a776731b7f70c36e9f3dd13501b31e72e5df90e"
+    },
+    {
+      "file": "hist-U-F-32-marginal.fcs",
+      "sha256": "c743bc22a57d486d28573fb9bf375683386e095364afad5c00d1d66e606f866e"
+    },
+    {
+      "file": "hist-U-D-64.fcs",
+      "sha256": "709473a1a2bc986e410ed3aa6e32095362a33b5910e69474aec5180942ccee99"
+    },
+    {
+      "file": "hist-U-D-64-reorder.fcs",
+      "sha256": "067971a5b232cfe7b07017759ce6858fd3d6740558e9a5a7c0e67ff3e3f79bbe"
+    },
+    {
+      "file": "hist-U-D-64-marginal.fcs",
+      "sha256": "3a51d73078daae6b79877919385e01267cde0f026fd2c7f4caad3dcbbaba86b9"
+    },
+    {
+      "file": "wide-hist-C.fcs",
+      "sha256": "383a4e5ee72cbedd05df2575f9eb8b23a999610f3def4dee094c8e88e4bb4879"
+    },
+    {
+      "file": "wide-hist-C-subset.fcs",
+      "sha256": "3be3d3acc55066ae17de857538cabe9ebae5004e3a8e59407909f798c493f03e"
+    },
+    {
+      "file": "wide-hist-U.fcs",
+      "sha256": "6409c2fb878ad72f5acf6ae1245daf97ee2f94fd415574f47b58905204e95795"
+    },
+    {
+      "file": "wide-hist-U-subset.fcs",
+      "sha256": "e2346dbf0c4c1bca86dd8ae873e1b42fac33e4a474456ed4b94d2ac70b710ab0"
+    },
+    {
+      "file": "create-I.fcs",
+      "sha256": "bb0956b30d962cd9a2438374fd2ee434e1411390461136538c13ce54eb3c43cb"
+    },
+    {
+      "file": "create-A.fcs",
+      "sha256": "a01f3338785cf2ae28d94597b7e61ca30162ae7858bfcb52e323addfae567234"
+    },
+    {
+      "file": "create-F.fcs",
+      "sha256": "def6dc2b0557559656759d0e86ed8a7b1d8cb7eef632021b19cbefb58740b23d"
+    },
+    {
+      "file": "create-D.fcs",
+      "sha256": "b3a3298b4f7835d9a0c8fc7fb2045dd7d9f4ca60f1bad861f47f12e897b788a6"
+    },
+    {
+      "file": "create-hist-auto-total.fcs",
+      "sha256": "d38ac9ccd7ff6f9eec7304da537735e0a183b44c776c01e03493a8ab72fdf4ac"
+    },
+    {
+      "file": "compensation.fcs",
+      "sha256": "c32654c7078b848c80530f85f85a0e98eb71c99b4901b8cd413b6ad486558cd7"
+    },
+    {
+      "file": "compensation-subset.fcs",
+      "sha256": "ee4de592fe81238378a59fa85c3ac90e66a53548e692cfe2623dae79383724d8"
+    },
+    {
+      "file": "CLI-HISTOGRAM.fcs",
+      "sha256": "e874f9df4cb3517e9a59d1569cf0c131019b3d3ecfc576a39cac0a8e264f85a4"
+    }
+  ],
+  "sourceLicense": "original MIT synthetic vectors"
+}

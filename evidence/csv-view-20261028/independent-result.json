@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "commands": 8,
+  "sourceEventIndices": [
+    1,
+    2
+  ],
+  "selectedRawBytesVerified": 8,
+  "cases": [
+    {
+      "case": "raw",
+      "rows": 2,
+      "exactValues": [
+        [
+          "8",
+          "24"
+        ],
+        [
+          "12",
+          "36"
+        ]
+      ],
+      "scaled": false,
+      "compensated": false,
+      "csvSha256": "16056c0b9ffa772f7a1acfe2af0509eb26181e75beb56f99ea5c0cd57aba709c"
+    },
+    {
+      "case": "linear",
+      "rows": 2,
+      "exactValues": [
+        [
+          "4",
+          "6"
+        ],
+        [
+          "6",
+          "9"
+        ]
+      ],
+      "scaled": true,
+      "compensated": false,
+      "csvSha256": "2fe4be0cbbd1b65847c6b60fb8a73e2a3a59785ee71e98ec947d94480cf9bdc7"
+    },
+    {
+      "case": "compensated",
+      "rows": 2,
+      "exactValues": [
+        [
+          "4",
+          "4"
+        ],
+        [
+          "6",
+          "6"
+        ]
+      ],
+      "scaled": true,
+      "compensated": true,
+      "csvSha256": "c484c0a317e9542952c25f1409fd613228637ffefae27df565747b1ee33045b2"
+    },
+    {
+      "case": "compensated-explicit-false",
+      "rows": 2,
+      "exactValues": [
+        [
+          "4",
+          "4"
+        ],
+        [
+          "6",
+          "6"
+        ]
+      ],
+      "scaled": true,
+      "compensated": true,
+      "csvSha256": "c484c0a317e9542952c25f1409fd613228637ffefae27df565747b1ee33045b2"
+    },
+    {
+      "case": "compensated-both-true",
+      "rows": 2,
+      "exactValues": [
+        [
+          "4",
+          "4"
+        ],
+        [
+          "6",
+          "6"
+        ]
+      ],
+      "scaled": true,
+      "compensated": true,
+      "csvSha256": "c484c0a317e9542952c25f1409fd613228637ffefae27df565747b1ee33045b2"
+    },
+    {
+      "case": "empty-compensated",
+      "rows": 0,
+      "exactValues": [],
+      "scaled": true,
+      "compensated": true,
+      "csvSha256": "fdb7a92cd1f89f108336d9126866c9f7769673126d2468c1c6287b712e0e3743"
+    }
+  ],
+  "oracle": "Python struct source projection, Fraction gain and closed-form row-vector inverse, csv consumer",
+  "inputLicense": "original MIT synthetic inputs",
+  "inputUnchanged": true,
+  "scope": "CSV receipt only; numerical output, core, bridge and public API unchanged",
+  "sourceSha256": {
+    "tools/fcs.mjs": "a124053c02760eb4d1819a801a54cb079ddb897e51690daec9c8504800209dbd",
+    "tools/check-csv-view.py": "64b8dd2b0489d2015f6b6aa703e2035af440aadec9b0612e4ff15feb52274685",
+    "tools/check-repair06.py": "0b1e5b145c455841096eb1a719e8c313670609de927887a538b5e2c760d964fb",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "events.mbt": "e346ed5de08f71267aaa75f82275987ac272c4edd81f3a925b6f8302df2165cf",
+    "compensation.mbt": "8bf6c911d4ba9f509ed7da26a8717013d02b43ddac3f2350a695c658a12cab68",
+    "cmd/bridge/main.mbt": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "_build/js/release/build/cmd/bridge/bridge.js": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "flowio": "1.4.0",
+  "scope": "current CLI, independent raw-byte/struct projection and FlowIO; not full RepOD or universal compatibility",
+  "sourceSha256": {
+    "parse.mbt": "52a8e5483593eb6df5a3500e274fdef4477e827d0092cd868eb88a42ca379e01",
+    "encoding.mbt": "257c70bd7f6246fbaa24dbe4c9fb81994c13f4d7f13b9ba8406182fa9ee58480",
+    "compensation.mbt": "9470a5567af442fbf8351b5454cf36413355270fd517c0734106400ffc24e442",
+    "write.mbt": "3864407046bb69d556f1b984dbe47b58aedeac221d5b9ca62ff0ac8b7d4d8df6",
+    "events.mbt": "dd8fb1e62a8099e7b016619009a642cbec2c726a27489af65ff24e6cf8fc0fe4",
+    "cmd/bridge/main.mbt": "ee11b462bb8a6cededc90bb8226f516acd23201a099a5f3480300118dcde74a9",
+    "pkg.generated.mbti": "9dc10679f401610d7162cc2836c6f262726221131c7d57dcfb10a291dfa7ef2a",
+    "tools/fcs.mjs": "ed00f45986dadcb3f8ea727e3e7f7bd13f560bc0a89f3cf14ffb0b9528b721a8",
+    "tools/check-current-cli.py": "a7fa53d0aee2f32ff5326c0a37a9a844c71d0a580454f3941453c54f533a3f93",
+    "_build/js/release/build/cmd/bridge/bridge.js": "1a6d5ad5cebfb0ab064ce612c8c4b1c7a84b3faae5dcda8d033fb0cc4074b686"
+  },
+  "inputSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "sourceEvents": [
+    0,
+    7160,
+    14319
+  ],
+  "sourceChannels": [
+    2,
+    0,
+    1
+  ],
+  "sourceValuesCompared": 9,
+  "selectedValuesCompared": 4,
+  "boundaryValuesCompared": 1,
+  "sourceValues": [
+    [
+      1449230.0,
+      1300365.25,
+      1132780.0
+    ],
+    [
+      1974801.25,
+      964991.1875,
+      773176.0
+    ],
+    [
+      1416249.375,
+      1849335.125,
+      1584959.0
+    ]
+  ],
+  "selectedValues": [
+    [
+      1584959.0,
+      1416249.375
+    ],
+    [
+      1132780.0,
+      1449230.0
+    ]
+  ],
+  "selectedDataBytesExactProjection": true,
+  "sourceUnchanged": true,
+  "normalCasesPassed": true,
+  "lastEventBoundaryPassed": true,
+  "errorCases": [
+    "out-of-range event rejected without output",
+    "negative start rejected",
+    "existing output preserved",
+    "truncated header rejected"
+  ],
+  "license": "RepOD file96804 and derived projections CC BY4.0; validation code original MIT",
+  "commands": 9
+}

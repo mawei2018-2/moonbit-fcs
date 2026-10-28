@@ -1,0 +1,813 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-identity.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-1.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-2.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 2,\n    \"maximum\": 4,\n    \"mean\": 3,\n    \"variance\": 1\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-3.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-4.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-independent-block.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-6.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    -0.5,\n    \"NaN\",\n    5\n  ],\n  [\n    -0.5,\n    \"Infinity\",\n    7\n  ],\n  [\n    -0.5,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-7.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": -0.5,\n    \"maximum\": -0.5,\n    \"mean\": -0.5,\n    \"variance\": 0\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-8.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-9.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-dependent-block.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-11.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"NaN\",\n    \"NaN\",\n    5\n  ],\n  [\n    \"-Infinity\",\n    \"Infinity\",\n    7\n  ],\n  [\n    \"Infinity\",\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-12.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-13.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-little-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-14.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-identity.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-16.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-17.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 2,\n    \"maximum\": 4,\n    \"mean\": 3,\n    \"variance\": 1\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-18.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-19.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-independent-block.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-21.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    -0.5,\n    \"NaN\",\n    5\n  ],\n  [\n    -0.5,\n    \"Infinity\",\n    7\n  ],\n  [\n    -0.5,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-22.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": -0.5,\n    \"maximum\": -0.5,\n    \"mean\": -0.5,\n    \"variance\": 0\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-23.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-24.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-dependent-block.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-26.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"NaN\",\n    \"NaN\",\n    5\n  ],\n  [\n    \"-Infinity\",\n    \"Infinity\",\n    7\n  ],\n  [\n    \"Infinity\",\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-27.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-28.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\F-big-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-29.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-identity.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-31.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-32.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 2,\n    \"maximum\": 4,\n    \"mean\": 3,\n    \"variance\": 1\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-33.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-34.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-independent-block.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-36.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    -0.5,\n    \"NaN\",\n    5\n  ],\n  [\n    -0.5,\n    \"Infinity\",\n    7\n  ],\n  [\n    -0.5,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-37.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": -0.5,\n    \"maximum\": -0.5,\n    \"mean\": -0.5,\n    \"variance\": 0\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-38.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-39.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-dependent-block.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-41.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"NaN\",\n    \"NaN\",\n    5\n  ],\n  [\n    \"-Infinity\",\n    \"Infinity\",\n    7\n  ],\n  [\n    \"Infinity\",\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-42.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-43.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-44.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-identity.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-46.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-47.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 2,\n    \"maximum\": 4,\n    \"mean\": 3,\n    \"variance\": 1\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-48.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-identity.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-49.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-independent-block.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-51.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    -0.5,\n    \"NaN\",\n    5\n  ],\n  [\n    -0.5,\n    \"Infinity\",\n    7\n  ],\n  [\n    -0.5,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-52.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": -0.5,\n    \"maximum\": -0.5,\n    \"mean\": -0.5,\n    \"variance\": 0\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-53.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-independent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-54.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0,\n  1,\n  2\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-dependent-block.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    \"NaN\",\n    5\n  ],\n  [\n    3,\n    \"Infinity\",\n    7\n  ],\n  [\n    4,\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-56.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    \"NaN\",\n    \"NaN\",\n    5\n  ],\n  [\n    \"-Infinity\",\n    \"Infinity\",\n    7\n  ],\n  [\n    \"Infinity\",\n    \"-Infinity\",\n    9\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-57.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 0,\n    \"nonfinite\": 3\n  },\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 5,\n    \"maximum\": 9,\n    \"mean\": 7,\n    \"variance\": 4\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-58.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-big-dependent-block.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-59.json"
+    ],
+    "code": 0,
+    "stdout": "[]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-identity.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\selected.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-60.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-08-max-20261028\\\\independent08\\\\selected.fcs\",\"bytes\":648}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\selected.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-61.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    5\n  ],\n  [\n    3,\n    7\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-identity.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\independent-channels.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-62.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-08-max-20261028\\\\independent08\\\\independent-channels.csv\",\"events\":3,\"scaled\":false}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\D-little-dependent-block.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\dependent-selection.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-08-max-20261028\\independent08\\options-63.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-08-max-20261028\\\\independent08\\\\dependent-selection.fcs\",\"bytes\":600}\n",
+    "stderr": ""
+  }
+]

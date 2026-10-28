@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "round": 23,
+  "completedUtc": "2026-10-28T12:05:00.667204+00:00",
+  "defect": "accepted ASCII values lost significant bits after integer conversion with unchanged PnR",
+  "fix": "grow linear/Time target range only if selected value bits require it; preserve covered log ranges and reject unrepresentable log conversions",
+  "newTests": {
+    "js": {
+      "passed": 7,
+      "failed": 0
+    },
+    "wasmGc": {
+      "passed": 7,
+      "failed": 0
+    }
+  },
+  "independentCli": {
+    "commands": 33,
+    "cases": 12,
+    "retainedRangeCalls": 22,
+    "completedCalibrationCalls": 11,
+    "expectedFailureCommands": 3
+  },
+  "initialHarnessFailure": "duplicate P1E fixture retained separately, excluded from passed counts; no product change between both verification parts",
+  "productionSourceSha256": {
+    "write.mbt": "03d4069a2ae0df563c26f8ff4eb11089d2ffcb042c055083ce40352b81fc9707",
+    "ascii_range23_wbtest.mbt": "94c82522a52133d33c4a5bf70203fa73d8a852aae2c8e0dca15c342e5908dd1c",
+    "tools/fcs.mjs": "8deaeaa8b6c534829140456dd3fa57ab875596a04ca0af411e6ab37e6c75217c",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "_build/js/release/build/cmd/bridge/bridge.js": "02c5755340033c8ee5cacdbe2c4f458dd1bbf17b7ff900ba14b40ad5b92ceed6"
+  },
+  "publicApiUnchanged": true,
+  "nodeAdapterUnchanged": true,
+  "bridgeSourceUnchanged": true,
+  "coreAndCompiledJsChanged": true,
+  "noOldSuiteRerun": true,
+  "limits": [
+    "original MIT synthetic fixtures; no instrument-vendor authenticity or independent standard certification",
+    "local focused checks; no remote CI, push, publish or contest acceptance",
+    "raw FCS fixtures and compiled before/after JS copies remain in the round23 report, outside the source archive"
+  ]
+}

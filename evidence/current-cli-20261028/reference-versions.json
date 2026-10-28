@@ -1,0 +1,13 @@
+{
+  "name": "reference-versions",
+  "startedUtc": "2026-10-27T16:52:59.096890+00:00",
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\fcs-reference-venv\\Scripts\\python.exe",
+    "-c",
+    "import sys,flowio,numpy;print(sys.version);print(\"FlowIO\",flowio.__version__,\"NumPy\",numpy.__version__)"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "exitCode": 0,
+  "stdout": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]\nFlowIO 1.4.0 NumPy 2.5.3\n",
+  "stderr": ""
+}

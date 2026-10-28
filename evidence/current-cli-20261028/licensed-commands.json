@@ -1,0 +1,119 @@
+[
+  {
+    "command": [
+      "node",
+      "tools/fcs.mjs",
+      "validate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\repod-3x3.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\options-0.json"
+    ],
+    "exitCode": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 3,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"SSC-A\",\n      \"stain\": \"\",\n      \"bits\": 32,\n      \"range\": \"4194304\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"FSC-A\",\n      \"stain\": \"\",\n      \"bits\": 32,\n      \"range\": \"4194304\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"FSC-H\",\n      \"stain\": \"\",\n      \"bits\": 32,\n      \"range\": \"4194304\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Float32\",\n  \"byte_order\": \"LittleEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\repod-3x3.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\options-1.json"
+    ],
+    "exitCode": 0,
+    "stdout": "[\n  [\n    1449230,\n    1300365.25,\n    1132780\n  ],\n  [\n    1974801.25,\n    964991.1875,\n    773176\n  ],\n  [\n    1416249.375,\n    1849335.125,\n    1584959\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\repod-3x3.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\selected-2x2.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\options-2.json"
+    ],
+    "exitCode": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\implementation-03\\\\licensed-small-projection\\\\selected-2x2.fcs\",\"bytes\":610}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "tools/fcs.mjs",
+      "validate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\selected-2x2.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\options-3.json"
+    ],
+    "exitCode": 0,
+    "stdout": "{\n  \"version\": \"FCS3.1\",\n  \"events\": 2,\n  \"mode\": \"ListMode\",\n  \"channels\": [\n    {\n      \"name\": \"FSC-H\",\n      \"stain\": \"\",\n      \"bits\": 32,\n      \"range\": \"4194304\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    },\n    {\n      \"name\": \"SSC-A\",\n      \"stain\": \"\",\n      \"bits\": 32,\n      \"range\": \"4194304\",\n      \"decades\": 0,\n      \"zero\": 0,\n      \"gain\": 1\n    }\n  ],\n  \"datatype\": \"Float32\",\n  \"byte_order\": \"LittleEndian\",\n  \"warnings\": [],\n  \"spillover\": null,\n  \"next_offset\": 0,\n  \"timestep\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\repod-3x3.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\last-event.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\options-4.json"
+    ],
+    "exitCode": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\implementation-03\\\\licensed-small-projection\\\\last-event.fcs\",\"bytes\":557}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "tools/fcs.mjs",
+      "subset",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\repod-3x3.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\invalid.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\options-5.json"
+    ],
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"selected event out of bounds\")\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\repod-3x3.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\options-6.json"
+    ],
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": "Failure(\"values range exceeds dataset or 100000 sample chunk\")\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\repod-3x3.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\selected-2x2.fcs"
+    ],
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": "EEXIST: file already exists, open 'D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\selected-2x2.fcs'\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/fcs.mjs",
+      "validate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\implementation-03\\licensed-small-projection\\truncated.fcs"
+    ],
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"truncated or invalid byte range at 0, length 617\")\n"
+  }
+]

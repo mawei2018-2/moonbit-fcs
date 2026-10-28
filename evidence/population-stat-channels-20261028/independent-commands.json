@@ -1,0 +1,296 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-0.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    0,\n    2,\n    3\n  ],\n  \"channel_names\": [\n    \"Driver\",\n    \"Target\",\n    \"ID\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 4,\n      \"maximum\": 12,\n      \"mean\": 8,\n      \"variance\": 16\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 8,\n      \"maximum\": 24,\n      \"mean\": 17.333333333333332,\n      \"variance\": 69.33333333333333\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 18446744073709552000,\n      \"maximum\": 18446744073709552000,\n      \"mean\": 18446744073709552000,\n      \"variance\": 0\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-1.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    0,\n    2,\n    3\n  ],\n  \"channel_names\": [\n    \"Driver\",\n    \"Target\",\n    \"ID\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 4,\n      \"maximum\": 12,\n      \"mean\": 8,\n      \"variance\": 16\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 8,\n      \"maximum\": 24,\n      \"mean\": 17.333333333333332,\n      \"variance\": 69.33333333333333\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 18446744073709552000,\n      \"maximum\": 18446744073709552000,\n      \"mean\": 18446744073709552000,\n      \"variance\": 0\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-2.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    0,\n    2,\n    3\n  ],\n  \"channel_names\": [\n    \"Target\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 8,\n      \"maximum\": 24,\n      \"mean\": 17.333333333333332,\n      \"variance\": 69.33333333333333\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-3.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    0,\n    2,\n    3\n  ],\n  \"channel_names\": [\n    \"Target\"\n  ],\n  \"scaled\": true,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 2,\n      \"maximum\": 6,\n      \"mean\": 4.333333333333333,\n      \"variance\": 4.333333333333333\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-4.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    0,\n    2,\n    3\n  ],\n  \"channel_names\": [\n    \"Target\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 1,\n      \"maximum\": 4,\n      \"mean\": 2.3333333333333335,\n      \"variance\": 2.3333333333333335\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-5.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    0,\n    2,\n    3\n  ],\n  \"channel_names\": [\n    \"Target\",\n    \"Driver\",\n    \"Target\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 1,\n      \"maximum\": 4,\n      \"mean\": 2.3333333333333335,\n      \"variance\": 2.3333333333333335\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 2,\n      \"maximum\": 6,\n      \"mean\": 4,\n      \"variance\": 4\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 1,\n      \"maximum\": 4,\n      \"mean\": 2.3333333333333335,\n      \"variance\": 2.3333333333333335\n    }\n  ],\n  \"channel_indices\": [\n    1,\n    0,\n    1\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-6.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    0,\n    2,\n    3\n  ],\n  \"channel_names\": [],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [],\n  \"channel_indices\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-7.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"empty\",\n  \"population_events\": 0,\n  \"source_event_indices\": [],\n  \"channel_names\": [\n    \"Target\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 0,\n      \"nonfinite\": 0\n    }\n  ],\n  \"channel_indices\": [\n    1\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-8.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-9.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: missing\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-10.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"channel index out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-11.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"channel index out of bounds\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-12.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event/channel/range indices must be exact 32-bit integers\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-13.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"unknown channel name: 1\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-14.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"channels must be an array of indices or PnN names\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\new-source-with-analysis.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-15.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"channels must be an array of indices or PnN names\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\duplicate-names.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-16.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 2,\n  \"source_event_indices\": [\n    0,\n    1\n  ],\n  \"channel_names\": [\n    \"Twin\",\n    \"Twin\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 10,\n      \"maximum\": 20,\n      \"mean\": 15,\n      \"variance\": 50\n    },\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 3,\n      \"maximum\": 7,\n      \"mean\": 5,\n      \"variance\": 8\n    }\n  ],\n  \"channel_indices\": [\n    1,\n    0\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\duplicate-names.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-17.json"
+    ],
+    "expectedCode": 1,
+    "code": 1,
+    "stdout": "",
+    "stderr": "Invalid(\"ambiguous channel name: Twin\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\chained.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-18.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"p\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    0,\n    2,\n    3\n  ],\n  \"channel_names\": [\n    \"Target\",\n    \"Driver\"\n  ],\n  \"scaled\": true,\n  \"compensated\": true,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 1,\n      \"maximum\": 4,\n      \"mean\": 2.3333333333333335,\n      \"variance\": 2.3333333333333335\n    },\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 2,\n      \"maximum\": 6,\n      \"mean\": 4,\n      \"variance\": 4\n    }\n  ],\n  \"channel_indices\": [\n    1,\n    0\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\retained-round25-channel-request.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-19.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"selected\",\n  \"population_events\": 3,\n  \"source_event_indices\": [\n    2,\n    4,\n    5\n  ],\n  \"channel_names\": [\n    \"X\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 3,\n      \"nonfinite\": 0,\n      \"minimum\": 6,\n      \"maximum\": 12,\n      \"mean\": 9.333333333333334,\n      \"variance\": 9.333333333333332\n    }\n  ],\n  \"channel_indices\": [\n    0\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "population-stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\portable-example.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-26-max-20261028\\independent\\options-20.json"
+    ],
+    "expectedCode": 0,
+    "code": 0,
+    "stdout": "{\n  \"population\": \"id_window\",\n  \"population_events\": 2,\n  \"source_event_indices\": [\n    2,\n    5\n  ],\n  \"channel_names\": [\n    \"M\",\n    \"X\",\n    \"M\"\n  ],\n  \"scaled\": false,\n  \"compensated\": false,\n  \"statistics\": [\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 8,\n      \"maximum\": 9,\n      \"mean\": 8.5,\n      \"variance\": 0.5\n    },\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 20,\n      \"maximum\": 30,\n      \"mean\": 25,\n      \"variance\": 50\n    },\n    {\n      \"count\": 2,\n      \"nonfinite\": 0,\n      \"minimum\": 8,\n      \"maximum\": 9,\n      \"mean\": 8.5,\n      \"variance\": 0.5\n    }\n  ],\n  \"channel_indices\": [\n    2,\n    0,\n    2\n  ]\n}\n",
+    "stderr": ""
+  }
+]

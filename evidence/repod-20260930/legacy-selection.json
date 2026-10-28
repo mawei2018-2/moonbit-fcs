@@ -1,0 +1,10 @@
+{
+  "flowio": "1.4.0",
+  "sourceEvents": 5785,
+  "selectedEvents": 396,
+  "valuesCompared": 1188,
+  "channelMetadataEqual": true,
+  "selection": "original numeric interval only; not biological gating",
+  "sourceSha256": "40ed9f6d4293a87077cab07a34c68b2497d4d69988adcb64a5f718098f48b56f",
+  "outputSha256": "03d15e9232070d9dbdf293ada370c2f38a309bfd0d18fc8e591e2d4093fdc7a5"
+}

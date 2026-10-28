@@ -1,0 +1,152 @@
+{
+  "status": "passed",
+  "commands": 26,
+  "cases": [
+    {
+      "case": "default complete group retains old schema",
+      "groupEvents": 5,
+      "windowSourceIndices": [
+        0,
+        2,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "case": "middle member window with full-matrix compensation and repeated report columns",
+      "groupEvents": 5,
+      "windowSourceIndices": [
+        2,
+        4
+      ]
+    },
+    {
+      "case": "actual same-window CSV consumer",
+      "scientificCells": 6,
+      "sourceIndices": [
+        2,
+        4
+      ]
+    },
+    {
+      "case": "count-only first members raw view",
+      "groupEvents": 5,
+      "windowSourceIndices": [
+        0,
+        2
+      ]
+    },
+    {
+      "case": "start-only tail members scaled view",
+      "groupEvents": 5,
+      "windowSourceIndices": [
+        5,
+        7
+      ]
+    },
+    {
+      "case": "explicit full window preserves all statistics",
+      "groupEvents": 5,
+      "windowSourceIndices": [
+        0,
+        2,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "case": "zero middle window keeps group denominator and channel identity",
+      "groupEvents": 5,
+      "windowSourceIndices": []
+    },
+    {
+      "case": "end start has default zero count",
+      "groupEvents": 5,
+      "windowSourceIndices": []
+    },
+    {
+      "case": "empty population legal zero window",
+      "groupEvents": 0,
+      "windowSourceIndices": []
+    },
+    {
+      "case": "strict negative/out-of-group/invalid-type windows",
+      "expectedFailures": 10
+    },
+    {
+      "case": "zero window does not bypass channel or population validation",
+      "expectedFailures": 2
+    },
+    {
+      "case": "nonzero dataset window uses that source's indices",
+      "groupEvents": 5,
+      "windowSourceIndices": [
+        2,
+        4
+      ]
+    },
+    {
+      "case": "window-specific finite/nonfinite denominator",
+      "groupEvents": 4,
+      "windowSourceIndices": [
+        2,
+        3
+      ]
+    },
+    {
+      "case": "retained round25 unsupported-start request now supported",
+      "groupEvents": 3,
+      "windowSourceIndices": [
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "case": "portable one-member window example",
+      "groupEvents": 2,
+      "windowSourceIndices": [
+        5
+      ]
+    }
+  ],
+  "expectedFailureCommands": 12,
+  "inputLicense": "original MIT synthetic inputs",
+  "sourceAndAnalysisUnchanged": true,
+  "groupEvents": 5,
+  "windowEvents": 2,
+  "windowSourceIndices": [
+    2,
+    4
+  ],
+  "csvScientificCells": 6,
+  "actualCsvMatchesStatistics": true,
+  "defaultSchemaRetained": true,
+  "explicitFullWindowMatchesDefaultExceptEvents": true,
+  "fullMatrixCompensationBeforeReportedColumns": true,
+  "finiteCountUsesWindowOnly": true,
+  "retainedRound25InputSha256": "731f938f1c3179bf54e737db57a977fe64f4ddb9f672069565f380b5665333db",
+  "inputsSha256": {
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-source-with-analysis.fcs": "a13fb70b1732ab896e6175451a808969fb526f9ba7d976fbc882e62ab0eba288",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\chained.fcs": "b5fce90a274b1b182a30e53f0e44638423bf880f8fa4625eb7a98ba184c333a0",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\window-nonfinite.fcs": "11573ef350f4062ba5afd708fb130ad1e675d1f69b1b01c2d6480b86ed413c8e",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\retained-round25-start-request.fcs": "731f938f1c3179bf54e737db57a977fe64f4ddb9f672069565f380b5665333db",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\portable-window-example.fcs": "41299eb6a4ab99550d795a17b85b48f7ef369fbca7bcbf20dde135ee5b4eb7f6"
+  },
+  "noOldSuiteOrRepodRun": true,
+  "oracle": "independent packed bits/struct, explicit noncontinuous member windows, Fraction statistics, closed-form compensation and csv reader",
+  "sourceSha256": {
+    "tools/fcs.mjs": "84702ecfcc43677c2325b22d52e74be027bbc59bec114df1f562b8d529f18b0c",
+    "tools/check-population-stat-window.py": "36fba741fbd10b85493964558b7fcbd52175b0efae895882f1b6d7467c732f54",
+    "tools/check-population-stats.py": "df341f334ce3f044e8dbf1ef9156525e78dc3eb9e885323da6bb0c450a05269d",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "examples/population-stat-window.json": "4b1c96c70f847bceaa4230e3778f4a8a9645f45edbbf7b46d519125d42080e83",
+    "events.mbt": "e346ed5de08f71267aaa75f82275987ac272c4edd81f3a925b6f8302df2165cf",
+    "write.mbt": "03d4069a2ae0df563c26f8ff4eb11089d2ffcb042c055083ce40352b81fc9707",
+    "cmd/bridge/main.mbt": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "_build/js/release/build/cmd/bridge/bridge.js": "02c5755340033c8ee5cacdbe2c4f458dd1bbf17b7ff900ba14b40ad5b92ceed6"
+  }
+}

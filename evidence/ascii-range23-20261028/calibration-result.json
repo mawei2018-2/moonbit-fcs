@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "section": "calibration",
+  "commands": 11,
+  "cases": [
+    {
+      "case": "log range preserved if mask already covers value; otherwise no output",
+      "coveredRange": 17
+    },
+    {
+      "case": "existing unrepresentable storage failure",
+      "value": 300
+    },
+    {
+      "case": "existing unrepresentable storage failure",
+      "value": -1
+    },
+    {
+      "case": "Time tick calibration does not depend on PnR",
+      "raw": 20,
+      "scaled": 5
+    },
+    {
+      "case": "BigInt range expansion",
+      "bits": 129,
+      "outputRange": "340282366920938463463374607431768211460"
+    }
+  ],
+  "inputLicense": "original MIT synthetic inputs",
+  "oracle": "independent ASCII/struct/bit/PnR masks, Fraction linear scaling, log formula and actual CSV/gate consumers",
+  "sourceSha256": {
+    "write.mbt": "03d4069a2ae0df563c26f8ff4eb11089d2ffcb042c055083ce40352b81fc9707",
+    "ascii_range23_wbtest.mbt": "94c82522a52133d33c4a5bf70203fa73d8a852aae2c8e0dca15c342e5908dd1c",
+    "tools/check-ascii-to-integer.py": "2c1cc2782b6f70261e8d6941151ff002ac7b9b074cb0c116584beef2b35abf27",
+    "tools/check-repair06.py": "0b1e5b145c455841096eb1a719e8c313670609de927887a538b5e2c760d964fb",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "tools/fcs.mjs": "8deaeaa8b6c534829140456dd3fa57ab875596a04ca0af411e6ab37e6c75217c",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "_build/js/release/build/cmd/bridge/bridge.js": "02c5755340033c8ee5cacdbe2c4f458dd1bbf17b7ff900ba14b40ad5b92ceed6"
+  }
+}

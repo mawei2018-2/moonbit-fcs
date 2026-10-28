@@ -1,0 +1,116 @@
+{
+  "utc": "2026-09-26T20:44:48.395517+00:00",
+  "version": "0.2.1",
+  "checks": [
+    {
+      "name": "format",
+      "command": [
+        "moon",
+        "fmt"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "api",
+      "command": [
+        "moon",
+        "info"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "check",
+      "command": [
+        "moon",
+        "check",
+        "--target",
+        "all"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "build",
+      "command": [
+        "moon",
+        "build",
+        "--target",
+        "js",
+        "--release"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "requests",
+      "command": [
+        "node",
+        "tools/test-request-contract.mjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "cli",
+      "command": [
+        "node",
+        "tools/test_cli.mjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "public-example",
+      "command": [
+        "node",
+        "examples/public-selection.mjs",
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\work\\fcs-reference\\FlowIO\\data\\fcs_files\\G11.fcs",
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\work\\reassessment-20260927\\fcs-selected"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "public-verification",
+      "command": [
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\work\\fcs-reference-venv\\Scripts\\python.exe",
+        "tools/verify-public-selection.py",
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\work\\fcs-reference\\FlowIO\\data\\fcs_files\\G11.fcs",
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\work\\reassessment-20260927\\fcs-selected",
+        "--report",
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\outputs\\repos\\moonbit-fcs\\evidence\\request-20260927\\selection.json"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "reference",
+      "command": [
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\work\\fcs-reference-venv\\Scripts\\python.exe",
+        "tools/reference_check.py",
+        "--reference-dir",
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\work\\fcs-reference\\FlowIO",
+        "--report",
+        "C:\\Users\\uiwcv\\Documents\\Codex\\2026-09-10\\ban\\outputs\\repos\\moonbit-fcs\\evidence\\request-20260927\\reference.json"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "malformed-utf8-no-output",
+      "exitCode": 0
+    }
+  ],
+  "sourceHashPolicy": "LF-normalized source",
+  "sources": {
+    "parse.mbt": "e8260f4f9c7eeccd76bf826f4186ce11f97dc3ea3e930c1bcfd64a2d7c550a6c",
+    "text.mbt": "88f79664f93de2b39e561e9d59e2783964a51cc31352746719cd3af28c44fefa",
+    "write.mbt": "ad19182e177682923cd5946a06a494e9d9de26e8babcbc2c7c2d81541ca5a4b9",
+    "events.mbt": "3cbc2228e4e5d81eb4f1418b486fe8a4747dbc1ae123fff0c7aa78519cda8506",
+    "cmd/bridge/main.mbt": "0aa78b95ef42e3b0daca06d06459d4ad91229bbd28068c628f5d437d4b672d71",
+    "tools/fcs.mjs": "b3ac36948cd1298f3db5864f9975c84990ae8a3b26edee7686a170a810e1a8fe",
+    "tools/test-request-contract.mjs": "a6cfc7702d413be7cd20ff3dc96ed2384ea99ca4e56fc9b67ed82571155318a2",
+    "examples/public-selection.mjs": "342478daf4bf8606ecb05a3c4bef46b46e6545a19d6f7a76115f31db182f0850",
+    "tools/verify-public-selection.py": "1bb1649628fd51ec8256341380af7ba77759befe6aedda1affc2091097d59525",
+    "moon.mod": "c578df36a28d6b12ceef02f3e8bcaff2499bc07207646f9ee4d34ffab5add6fd"
+  },
+  "scope": "JSON adapter and CLI changed; unchanged pure-core prior 15/15 backend results retained",
+  "limits": [
+    "no clinical classification",
+    "public data exchange, no laboratory deployment",
+    "public repo and topic switch outstanding"
+  ]
+}

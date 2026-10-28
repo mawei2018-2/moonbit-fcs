@@ -1,0 +1,50 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Action completed."
+    }
+  ],
+  "structuredContent": {
+    "archive_filter_applied": null,
+    "repositories": [
+      {
+        "id": "1392953166",
+        "name": "moonbit-fcs",
+        "owner": {
+          "login": "mawei2018",
+          "id": 308007783,
+          "type": "User",
+          "avatar_url": "https://avatars.githubusercontent.com/u/308007783?v=4",
+          "url": "https://api.github.com/users/mawei2018"
+        },
+        "repository_full_name": "mawei2018/moonbit-fcs",
+        "permissions": {
+          "admin": false,
+          "maintain": false,
+          "pull": true,
+          "push": false,
+          "triage": false
+        },
+        "allow_auto_merge": null,
+        "allow_merge_commit": null,
+        "allow_rebase_merge": null,
+        "allow_squash_merge": null,
+        "allow_update_branch": null,
+        "clone_url": "https://github.com/mawei2018/moonbit-fcs.git",
+        "size": 104,
+        "default_branch": "main",
+        "git_commits_url": "https://api.github.com/repos/mawei2018/moonbit-fcs/git/commits{/sha}",
+        "git_refs_url": "https://api.github.com/repos/mawei2018/moonbit-fcs/git/refs{/sha}",
+        "git_url": "git://github.com/mawei2018/moonbit-fcs.git",
+        "master_branch": null,
+        "visibility": "public",
+        "archived": false,
+        "is_code_search_indexed": null,
+        "display_title": "mawei2018/moonbit-fcs",
+        "display_url": "https://github.com/mawei2018/moonbit-fcs"
+      }
+    ]
+  },
+  "isError": false
+}

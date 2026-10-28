@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "commands": 37,
+  "cases": [
+    {
+      "case": "bounds and order",
+      "events": 0,
+      "legal": [
+        []
+      ]
+    },
+    {
+      "case": "bounds and order",
+      "events": 1,
+      "legal": [
+        [],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "case": "bounds and order",
+      "events": 3,
+      "legal": [
+        [],
+        [
+          2,
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "case": "selected dataset owns the event boundary",
+      "datasetSizes": [
+        3,
+        1
+      ],
+      "nullSelectionPreserved": true
+    }
+  ],
+  "inputLicense": "original MIT synthetic inputs",
+  "oracle": "explicit event sequences, struct DATA and independent metadata; optional FlowIO raw readback",
+  "sourceSha256": {
+    "cmd/bridge/main.mbt": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+    "tools/fcs.mjs": "071c2ef3967a1265cc677f1cf7072a4066235786664daa6347fffda542d79b70",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "gating.mbt": "87f0ab627405dd765fef62422c050af61ee7238677e8589a759d633526b5a807",
+    "write.mbt": "3fee064db93da0548280b71ac56d0b454ea10498b2b4b4da70dd3c8a5d646e3b",
+    "tools/check-event-selection.py": "80fa4c34392a4b8089e50b0acba18dbfe127a5b731c30807f5e36c7e57dd9c45",
+    "_build/js/release/build/cmd/bridge/bridge.js": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148"
+  }
+}

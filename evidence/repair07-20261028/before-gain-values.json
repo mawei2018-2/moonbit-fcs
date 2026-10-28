@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "values",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-07-max-20261028\\before-inputs\\gain-half-I.fcs"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T05:44:32.742411+00:00",
+  "exitCode": 0,
+  "stdout": "[\n  [\n    \"52\"\n  ],\n  [\n    \"70\"\n  ]\n]\n",
+  "stderr": ""
+}

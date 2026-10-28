@@ -1,0 +1,14 @@
+{
+  "command": [
+    "node",
+    "tools/fcs.mjs",
+    "compare",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\before-inputs\\L.fcs",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-12-max-20261028\\before-inputs\\C.fcs"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T08:08:50.292504+00:00",
+  "exitCode": 0,
+  "stdout": "[\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\before-inputs\\\\L.fcs\",\n    \"events\": 2,\n    \"compatible\": true,\n    \"warnings\": []\n  },\n  {\n    \"file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-12-max-20261028\\\\before-inputs\\\\C.fcs\",\n    \"events\": \"10\",\n    \"compatible\": true,\n    \"warnings\": []\n  }\n]\n",
+  "stderr": ""
+}

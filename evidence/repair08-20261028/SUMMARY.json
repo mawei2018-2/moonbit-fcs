@@ -1,0 +1,27 @@
+{
+  "rootCause": "unconditional zero-weight multiplication spread NaN/Infinity to independent compensated channels",
+  "repair": "skip exactly-zero inverse coefficients; retain all nonzero dependencies",
+  "newRegressionsPerBackend": 2,
+  "relatedRegressionsPerBackend": 5,
+  "targets": [
+    "js",
+    "wasm-gc"
+  ],
+  "independentCliCalls": 64,
+  "independentSemanticCases": 13,
+  "publicConsumers": [
+    "js",
+    "wasm-gc"
+  ],
+  "rawSubsetDataUnchanged": true,
+  "beforeCompensationSha256": "90423bdd755934930996453a577c31909c4637dfa1711d1a9183e7ca9087d108",
+  "afterCompensationSha256": "8bf6c911d4ba9f509ed7da26a8717013d02b43ddac3f2350a695c658a12cab68",
+  "beforeCompiledJsSha256": "778fe6a73706fce23c692cba096a447e501ca1104abe57b7cd9e3a5475716978",
+  "afterCompiledJsSha256": "004413e0563685859ff6053b70204e179978ead9249e158745064d7dfc4b4f94",
+  "limits": [
+    "no new standard conformance claim for nonfinite DATA",
+    "Double precision limits remain",
+    "unaffected conversion/full collections/downloads/native/remoteCI not rerun",
+    "not pushed/published/submitted"
+  ]
+}

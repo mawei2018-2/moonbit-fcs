@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "commands": 23,
+  "cases": [
+    {
+      "case": "all ordered cross-mode pairs reject compatibility",
+      "comparisons": 6,
+      "modes": [
+        "ListMode",
+        "Correlated",
+        "Uncorrelated"
+      ],
+      "exitCode": 2,
+      "validJson": true
+    },
+    {
+      "case": "same-mode counts/data/byte-order differences remain compatible",
+      "comparisons": 3,
+      "acceptedConsumerCalls": 6,
+      "consumers": [
+        {
+          "file": "L1",
+          "operation": "populations",
+          "sourceEventIndices": [
+            1
+          ]
+        },
+        {
+          "file": "L2",
+          "operation": "populations",
+          "sourceEventIndices": [
+            1,
+            2
+          ]
+        },
+        {
+          "file": "C1",
+          "operation": "histogram-axis",
+          "exactFrequencies": [
+            "4",
+            "6"
+          ]
+        },
+        {
+          "file": "C2",
+          "operation": "histogram-axis",
+          "exactFrequencies": [
+            "8",
+            "12"
+          ]
+        },
+        {
+          "file": "U1",
+          "operation": "histogram-axis",
+          "exactFrequencies": [
+            "1",
+            "2"
+          ]
+        },
+        {
+          "file": "U2",
+          "operation": "histogram-axis",
+          "exactFrequencies": [
+            "2",
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "multi-file baseline and existing channel mismatch criterion retained"
+    }
+  ],
+  "inputLicense": "original MIT synthetic inputs",
+  "oracle": "Python struct DATA, explicit source event indices and exact histogram sums",
+  "scope": "Node compare preflight only; no new MoonBit core or public API",
+  "sourceSha256": {
+    "tools/fcs.mjs": "5d78b5c4d8ada9f73a6c061ce1c729b13b61426419b691b15bd87ed253286f50",
+    "tools/check-compare-mode.py": "e54a0ebceee1ff2cda7ea08e096e8b83eec131ab85590e93bf89cd8f0ed08a79",
+    "tools/check-repair06.py": "0b1e5b145c455841096eb1a719e8c313670609de927887a538b5e2c760d964fb",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "cmd/bridge/main.mbt": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "_build/js/release/build/cmd/bridge/bridge.js": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148"
+  }
+}

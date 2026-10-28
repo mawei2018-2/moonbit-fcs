@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "commands": 19,
+  "cases": [
+    {
+      "case": "exact-ID membership and full-matrix statistics",
+      "view": "raw",
+      "members": [
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "case": "exact-ID membership and full-matrix statistics",
+      "view": "scaled",
+      "members": [
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "case": "exact-ID membership and full-matrix statistics",
+      "view": "compensated",
+      "members": [
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "case": "scaled gate/raw statistics separation"
+    },
+    {
+      "case": "empty and singleton populations"
+    },
+    {
+      "case": "nonfinite counts and no-matrix scaled fallback"
+    },
+    {
+      "case": "finite extreme sample variance"
+    },
+    {
+      "case": "nonzero dataset resets private standalone dataset index"
+    },
+    {
+      "case": "bad/missing/cyclic plans, unsupported options/types and histogram mode",
+      "expectedFailures": 8
+    },
+    {
+      "case": "licensed RepOD actual population statistics",
+      "events": 662,
+      "channels": 26,
+      "valuesUsed": 17212
+    }
+  ],
+  "expectedFailureCommands": 8,
+  "oracle": "independent integer bitstream/struct inputs, exact Fraction sample statistics and actual pinned RepOD F32 cells",
+  "repod": {
+    "events": 662,
+    "channels": 26,
+    "sourceValuesUsed": 17212,
+    "sourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+    "sourceUnchanged": true
+  },
+  "analysisSourceUnchanged": true,
+  "sourceSha256": {
+    "tools/fcs.mjs": "dd3dfc0758ee3e40901bf5ffeac2a7b2e0b35e711107eb1ff48253a66f2d4aec",
+    "tools/check-population-stats.py": "136a7fff769f81b1f529d6498b3eb0a27aef7291194f27f883636c7f0ce7e319",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "events.mbt": "e346ed5de08f71267aaa75f82275987ac272c4edd81f3a925b6f8302df2165cf",
+    "write.mbt": "03d4069a2ae0df563c26f8ff4eb11089d2ffcb042c055083ce40352b81fc9707",
+    "cmd/bridge/main.mbt": "0abaace286bb3bd0874bd3899f493c76c204a30b81f263a3aba1d1e8168601a6",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "_build/js/release/build/cmd/bridge/bridge.js": "02c5755340033c8ee5cacdbe2c4f458dd1bbf17b7ff900ba14b40ad5b92ceed6"
+  }
+}

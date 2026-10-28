@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "sourceEvents": 14320,
+  "population": "inner",
+  "events": 662,
+  "csvValuesVerified": 1324,
+  "sourceBytesReferenced": 5296,
+  "sourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "csvSha256": "2985089b8c3be625fc4187f966faa080d63cd0c57882d142d4370e9573eea9d8",
+  "sourceMemberIndicesMatchedFrozenRound10": true,
+  "csvBytesMatchFrozenRound10": true,
+  "noIntermediateFcs": true,
+  "sourceUnchanged": true,
+  "oracle": "frozen round10 membership plus direct original F32 source-byte projection and Python csv consumer",
+  "inputLicense": "CC BY4.0 RepOD file96804; attribution/license retained",
+  "sourceSha256ByFile": {
+    "tools/fcs.mjs": "f4f5f44974e56be973414e88a525318b04dc4af3c2101d0b67aee467da09e9cd",
+    "examples/repod-population-csv.mjs": "ce8392b3fcdbaab005a83c4a25dc7c5535b21f29f30b1884ce9d37b48048e92f",
+    "examples/repod-gate-plan.json": "947eb0e16b99e82d1ee7fb43c3f8cc62aee8bdb140c9521c89a464afd3863d0b",
+    "_build/js/release/build/cmd/bridge/bridge.js": "d92d465180015c16441a7d0c59606c339e569702e274a6bf6619060ac23da148"
+  }
+}

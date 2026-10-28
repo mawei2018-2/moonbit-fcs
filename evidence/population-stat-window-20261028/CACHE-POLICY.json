@@ -1,0 +1,14 @@
+{
+  "strategy": "Node/Python stdlib only; no SDK or package manager",
+  "nodeCompileCache": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\node-compile-cache",
+  "temp": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\tmp",
+  "pythonDontWriteBytecode": true,
+  "sdkInvoked": false,
+  "deepRepairReportsReadOnly": true,
+  "consumerNodeCompileCache": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\node-cache",
+  "observedCacheDirectories": [
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\node-compile-cache",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\window-consumer\\node-cache",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\final-closeout-20261028\\tmp"
+  ]
+}

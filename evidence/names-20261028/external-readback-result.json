@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "inputLicense": "CC BY4.0 file96804",
+  "externalReader": "FlowIO1.4.0 preprocess=False",
+  "counts": [
+    2117,
+    1794,
+    662
+  ],
+  "selectedValuesVerified": 1986,
+  "rawDataBytesVerified": 7944,
+  "csvValuesVerified": 1324,
+  "sourceSha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "selectedSha256": "0ccebcb39a4d6cfee2d9bc6023b580eaf99eeb45d5ab68d599ed106070977611",
+  "oracle": "explicit NumPy numeric conditions; FlowIO raw values; direct source DATA byte projection",
+  "sourceFilesSha256": {
+    "gating.mbt": "87f0ab627405dd765fef62422c050af61ee7238677e8589a759d633526b5a807",
+    "cmd/bridge/main.mbt": "959f7174fd3a84407d73f9f508398b1535527e3e831e4e59f32ed6429f8f1c8a",
+    "tools/fcs.mjs": "071c2ef3967a1265cc677f1cf7072a4066235786664daa6347fffda542d79b70",
+    "pkg.generated.mbti": "5fad6051d725fcb5b6bb19279216e85b229f1094c091f34d432500b3021b6a6f",
+    "examples/repod-gate-plan.json": "947eb0e16b99e82d1ee7fb43c3f8cc62aee8bdb140c9521c89a464afd3863d0b",
+    "examples/repod-gate-plan.mjs": "ee2d34a281885314f6254a5afa44f7822b09909644a5bb707869b8c60a1f8a67",
+    "tools/verify-named-repod.py": "8489cebb13b51589eb3bcdc3d3855a565fff30a3b6fca19b7126caddf5fe428a",
+    "_build/js/release/build/cmd/bridge/bridge.js": "5e2ab5ff0845d79e5747d1e72d790e4aae88eec9bfe9b63a3409f3ddda25dd59"
+  }
+}

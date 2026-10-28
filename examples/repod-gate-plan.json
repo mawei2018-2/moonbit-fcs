@@ -1,0 +1,9 @@
+{
+  "allow_offset_padding": true,
+  "gates": [
+    {"id": "window", "bounds": [["FSC-A", 500000, 1000000]]},
+    {"id": "scatter", "parent": "window", "bounds": [["SSC-A", 1250000, 2000000]]},
+    {"id": "inner", "parent": "scatter", "x": "FSC-A", "y": "SSC-A",
+     "vertices": [[600000, 1400000], [900000, 1400000], [900000, 1800000], [600000, 1800000]]}
+  ]
+}

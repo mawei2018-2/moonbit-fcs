@@ -1,0 +1,29 @@
+{
+  "datasetDoi": "10.18150/JOLWGT",
+  "datasetVersion": "2.0",
+  "datasetTitle": "Flow Cytometry data",
+  "creator": "Bronisz, Agnieszka",
+  "citation": "Bronisz, Agnieszka, 2026, Flow Cytometry data, doi:10.18150/JOLWGT, RepOD, V2",
+  "datasetUrl": "https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/JOLWGT",
+  "fileUrl": "https://repod.icm.edu.pl/file.xhtml?fileId=96804&version=2.0",
+  "downloadUrl": "https://repod.icm.edu.pl/api/access/datafile/96804",
+  "metadataUrl": "https://repod.icm.edu.pl/api/datasets/:persistentId/versions/2.0?persistentId=doi:10.18150/JOLWGT",
+  "checkedUtc": "2026-09-30T10:30:16.842365+00:00",
+  "fileId": 96804,
+  "fileVersion": 1,
+  "datasetVersionId": 7888,
+  "fileLevelLicense": {
+    "restricted": false,
+    "termsOfUseType": "LICENSE_BASED",
+    "licenseName": "CC BY Creative Commons Attribution License 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/legalcode"
+  },
+  "filename": "titration_CD11c_concat.fcs",
+  "bytes": 1493163,
+  "md5": "c71f86b98a9f622c84cc1134adef5b70",
+  "sha256": "91097cd6506972e13817bfda617ffa4fd27f81d93618554417ba39346882886c",
+  "originalFileModified": false,
+  "changes": "None; the original FCS file is copied byte for byte",
+  "scope": "format exchange with raw intensities, no biological interpretation or participant inference",
+  "historicalG11FileLicense": "not established; this receipt applies only to RepOD file 96804"
+}

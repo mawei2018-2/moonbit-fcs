@@ -1,0 +1,190 @@
+{
+  "checkedUtc": "2026-10-28T09:10:56.263096+00:00",
+  "endpointSource": "moonbitlang/mooncakes.io@f0c100a5a6d77bc519f9c5d4ed6a8cee8628d695/src/page/home/server_search.mbt; verified in round09",
+  "webReader": "two API URLs inaccessible via web__run; one direct JSON request each used",
+  "results": [
+    {
+      "query": "fcs",
+      "url": "https://mooncakes.io/api/v0/search?kw=fcs&limit=20",
+      "status": 200,
+      "data": [
+        {
+          "name": "mawei2018/fcs",
+          "version": "0.2.2",
+          "yanked": false,
+          "yanked_reason": null,
+          "license": "MIT",
+          "repository": "https://github.com/mawei2018/moonbit-fcs",
+          "keywords": [],
+          "description": "Flow cytometry FCS file validation and reproducible data preparation",
+          "is_new": false,
+          "created_at": "2026-09-30T00:49:50.732365",
+          "downloads": 25,
+          "matched_package_count": 1,
+          "matched_packages": [
+            {
+              "package": "",
+              "name": "mawei2018/fcs",
+              "summary": "MoonBit package mawei2018/fcs parses list-mode FCS flow cytometry data, validates segments and spillover matrices, applies explicit scaling, computes channel statistics, selects events by rectangle or polygon gates, and writes standalone FCS 3.1 output with optional event and channel selection. It also provides create, parse, and parse_all functions for buil\n\nKeywords: FCS, 流式细胞术, flow cytometry, list-mode, FCS3.1, parse, Dataset, event selection, 事件选择, spillover, rectangle, polygon, ChannelStats, write, create",
+              "summary_version": "0.2.2",
+              "is_summary_current": true,
+              "summary_fragments": [
+                {
+                  "text": "MoonBit package mawei2018/",
+                  "matched": false
+                },
+                {
+                  "text": "fcs",
+                  "matched": true
+                },
+                {
+                  "text": " parses list-mode ",
+                  "matched": false
+                },
+                {
+                  "text": "FCS",
+                  "matched": true
+                },
+                {
+                  "text": " flow cytometry data, validates segments and spillover matrices, applies explicit scaling, computes channel statistics, selects events by rectangle or polygon gates, and writes standalone ",
+                  "matched": false
+                },
+                {
+                  "text": "FCS",
+                  "matched": true
+                },
+                {
+                  "text": " 3.1 output with optional event and channel selection. It also provides create, parse, and parse_all functions for buil\n\nKeywords: ",
+                  "matched": false
+                },
+                {
+                  "text": "FCS",
+                  "matched": true
+                },
+                {
+                  "text": ", 流式细胞术, flow cytometry, list-mode, ",
+                  "matched": false
+                },
+                {
+                  "text": "FCS",
+                  "matched": true
+                },
+                {
+                  "text": "3.1, parse, Dataset, event selection, 事件选择, spillover, rectangle, polygon, ChannelStats, write, create",
+                  "matched": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lxyhgvb/moonbit-radioframe",
+          "version": "0.2.0",
+          "yanked": false,
+          "yanked_reason": null,
+          "license": "Apache-2.0",
+          "repository": "https://github.com/lxyhgvb/moonbit-radioframe",
+          "keywords": [
+            "wireless",
+            "ieee802154",
+            "frame",
+            "simulation",
+            "bitstream",
+            "mac",
+            "sixlowpan",
+            "ipv6",
+            "routing"
+          ],
+          "description": "MoonBit wireless frame, link simulation, security, routing, and 6LoWPAN toolkit",
+          "is_new": false,
+          "created_at": "2026-08-24T15:49:46.238047",
+          "downloads": 28,
+          "matched_package_count": 1,
+          "matched_packages": [
+            {
+              "package": "src/integrity",
+              "name": "lxyhgvb/moonbit-radioframe/src/integrity",
+              "summary": "Provides data integrity utilities for radio frames: CRC16 (CCITT variants, IEEE 802.15.4 FCS), CRC32, Internet and XOR checksums, frame checksum verification with IntegrityReport, plus bit-flip and burst error injection for testing.\n\nKeywords: CRC16, CRC32, IEEE 802.15.4 FCS, CCITT, checksum, 帧校验, 完整性, IntegrityReport, verify_frame_checksum, compute_internet_checksum, compute_xor_checksum, inject_bit_flip, inject_burst_error, radioframe",
+              "summary_version": "0.2.0",
+              "is_summary_current": true,
+              "summary_fragments": [
+                {
+                  "text": "Provides data integrity utilities for radio frames: CRC16 (CCITT variants, IEEE 802.15.4 ",
+                  "matched": false
+                },
+                {
+                  "text": "FCS",
+                  "matched": true
+                },
+                {
+                  "text": "), CRC32, Internet and XOR checksums, frame checksum verification with IntegrityReport, plus bit-flip and burst error injection for testing.\n\nKeywords: CRC16, CRC32, IEEE 802.15.4 ",
+                  "matched": false
+                },
+                {
+                  "text": "FCS",
+                  "matched": true
+                },
+                {
+                  "text": ", CCITT, checksum, 帧校验, 完整性, IntegrityReport, verify_frame_checksum, compute_internet_checksum, compute_xor_checksum, inject_bit_flip, inject_burst_error, radioframe",
+                  "matched": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "cytometry",
+      "url": "https://mooncakes.io/api/v0/search?kw=cytometry&limit=20",
+      "status": 200,
+      "data": [
+        {
+          "name": "mawei2018/fcs",
+          "version": "0.2.2",
+          "yanked": false,
+          "yanked_reason": null,
+          "license": "MIT",
+          "repository": "https://github.com/mawei2018/moonbit-fcs",
+          "keywords": [],
+          "description": "Flow cytometry FCS file validation and reproducible data preparation",
+          "is_new": false,
+          "created_at": "2026-09-30T00:49:50.732365",
+          "downloads": 25,
+          "matched_package_count": 1,
+          "matched_packages": [
+            {
+              "package": "",
+              "name": "mawei2018/fcs",
+              "summary": "MoonBit package mawei2018/fcs parses list-mode FCS flow cytometry data, validates segments and spillover matrices, applies explicit scaling, computes channel statistics, selects events by rectangle or polygon gates, and writes standalone FCS 3.1 output with optional event and channel selection. It also provides create, parse, and parse_all functions for buil\n\nKeywords: FCS, 流式细胞术, flow cytometry, list-mode, FCS3.1, parse, Dataset, event selection, 事件选择, spillover, rectangle, polygon, ChannelStats, write, create",
+              "summary_version": "0.2.2",
+              "is_summary_current": true,
+              "summary_fragments": [
+                {
+                  "text": "MoonBit package mawei2018/fcs parses list-mode FCS flow ",
+                  "matched": false
+                },
+                {
+                  "text": "cytometry",
+                  "matched": true
+                },
+                {
+                  "text": " data, validates segments and spillover matrices, applies explicit scaling, computes channel statistics, selects events by rectangle or polygon gates, and writes standalone FCS 3.1 output with optional event and channel selection. It also provides create, parse, and parse_all functions for buil\n\nKeywords: FCS, 流式细胞术, flow ",
+                  "matched": false
+                },
+                {
+                  "text": "cytometry",
+                  "matched": true
+                },
+                {
+                  "text": ", list-mode, FCS3.1, parse, Dataset, event selection, 事件选择, spillover, rectangle, polygon, ChannelStats, write, create",
+                  "matched": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

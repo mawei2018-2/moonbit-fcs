@@ -1,0 +1,305 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case": "Time raw ticks and detector gain",
+      "source": "F",
+      "order": "little",
+      "timestep": "0.5",
+      "target": "I",
+      "raw": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "scaled": [
+        [
+          0.5,
+          1
+        ],
+        [
+          1.0,
+          2
+        ]
+      ]
+    },
+    {
+      "case": "Time raw ticks and detector gain",
+      "source": "F",
+      "order": "little",
+      "timestep": "0.5",
+      "target": "A",
+      "raw": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "scaled": [
+        [
+          0.5,
+          1
+        ],
+        [
+          1.0,
+          2
+        ]
+      ]
+    },
+    {
+      "case": "Time raw ticks and detector gain",
+      "source": "F",
+      "order": "big",
+      "timestep": "2",
+      "target": "I",
+      "raw": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "scaled": [
+        [
+          2.0,
+          1
+        ],
+        [
+          4.0,
+          2
+        ]
+      ]
+    },
+    {
+      "case": "Time raw ticks and detector gain",
+      "source": "F",
+      "order": "big",
+      "timestep": "2",
+      "target": "A",
+      "raw": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "scaled": [
+        [
+          2.0,
+          1
+        ],
+        [
+          4.0,
+          2
+        ]
+      ]
+    },
+    {
+      "case": "Time raw ticks and detector gain",
+      "source": "D",
+      "order": "little",
+      "timestep": "2",
+      "target": "I",
+      "raw": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "scaled": [
+        [
+          2.0,
+          1
+        ],
+        [
+          4.0,
+          2
+        ]
+      ]
+    },
+    {
+      "case": "Time raw ticks and detector gain",
+      "source": "D",
+      "order": "little",
+      "timestep": "2",
+      "target": "A",
+      "raw": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "scaled": [
+        [
+          2.0,
+          1
+        ],
+        [
+          4.0,
+          2
+        ]
+      ]
+    },
+    {
+      "case": "Time raw ticks and detector gain",
+      "source": "D",
+      "order": "big",
+      "timestep": "0.5",
+      "target": "I",
+      "raw": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "scaled": [
+        [
+          0.5,
+          1
+        ],
+        [
+          1.0,
+          2
+        ]
+      ]
+    },
+    {
+      "case": "Time raw ticks and detector gain",
+      "source": "D",
+      "order": "big",
+      "timestep": "0.5",
+      "target": "A",
+      "raw": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "scaled": [
+        [
+          0.5,
+          1
+        ],
+        [
+          1.0,
+          2
+        ]
+      ]
+    },
+    {
+      "case": "C/U retain histogram APIs and reject event-only analysis",
+      "mode": "C"
+    },
+    {
+      "case": "C/U retain histogram APIs and reject event-only analysis",
+      "mode": "U"
+    },
+    {
+      "case": "exact Fraction statistics",
+      "group": 0,
+      "expectedMean": 0.0,
+      "expectedVariance": null,
+      "actualMean": 0,
+      "actualVariance": null
+    },
+    {
+      "case": "exact Fraction statistics",
+      "group": 1,
+      "expectedMean": 0.0,
+      "expectedVariance": 6.666666666666667e+307,
+      "actualMean": 0,
+      "actualVariance": 6.666666666666667e+307
+    },
+    {
+      "case": "exact Fraction statistics",
+      "group": 2,
+      "expectedMean": 0.0,
+      "expectedVariance": 5e+307,
+      "actualMean": 0,
+      "actualVariance": 5e+307
+    },
+    {
+      "case": "exact Fraction statistics",
+      "group": 3,
+      "expectedMean": 2.5,
+      "expectedVariance": 1.6666666666666667,
+      "actualMean": 2.5,
+      "actualVariance": 1.6666666666666667
+    },
+    {
+      "case": "exact Fraction statistics",
+      "group": 4,
+      "expectedMean": 0.0,
+      "expectedVariance": 0.0,
+      "actualMean": 0,
+      "actualVariance": 0
+    },
+    {
+      "case": "exact Fraction statistics",
+      "group": 5,
+      "expectedMean": 0.0,
+      "expectedVariance": 6.666666666666667e+307,
+      "actualMean": 0,
+      "actualVariance": 6.666666666666667e+307
+    },
+    {
+      "case": "exact Fraction statistics",
+      "group": 6,
+      "expectedMean": 1e+308,
+      "expectedVariance": null,
+      "actualMean": 1e+308,
+      "actualVariance": null
+    },
+    {
+      "case": "exact Fraction statistics",
+      "group": 7,
+      "expectedMean": null,
+      "expectedVariance": null,
+      "actualMean": null,
+      "actualVariance": null
+    }
+  ],
+  "commands": 56,
+  "oracle": "independent struct ticks/gains; exact Fraction mean/sample variance; documented list-vs-histogram mode",
+  "inputLicense": "original MIT synthetic inputs",
+  "sourceSha256": {
+    "write.mbt": "3fee064db93da0548280b71ac56d0b454ea10498b2b4b4da70dd3c8a5d646e3b",
+    "events.mbt": "e346ed5de08f71267aaa75f82275987ac272c4edd81f3a925b6f8302df2165cf",
+    "pkg.generated.mbti": "9dc10679f401610d7162cc2836c6f262726221131c7d57dcfb10a291dfa7ef2a",
+    "tools/fcs.mjs": "d6faa1c8cfe8b718ed6d1640d647ce026bfc149c95977bbeff81c03752a7965e",
+    "tools/check-repair05.py": "89b42d8866eecf398fbc45a5e37ab598918f9627d61875eee84ebf4271f61228",
+    "tools/check-repair06.py": "0b1e5b145c455841096eb1a719e8c313670609de927887a538b5e2c760d964fb",
+    "_build/js/release/build/cmd/bridge/bridge.js": "778fe6a73706fce23c692cba096a447e501ca1104abe57b7cd9e3a5475716978"
+  }
+}

@@ -1,0 +1,712 @@
+[
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-0.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    0.5,\n    1\n  ],\n  [\n    1,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\list-F-little.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-1.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\list-F-little.csv\",\"events\":2,\"scaled\":true}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-little-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-2.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\time-F-little-to-I.fcs\",\"bytes\":570}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-little-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-3.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    0.5,\n    1\n  ],\n  [\n    1,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-little-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-4.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-little-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-5.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\time-F-little-to-A.fcs\",\"bytes\":583}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-little-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-6.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    0.5,\n    1\n  ],\n  [\n    1,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-little-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-7.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-8.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    1\n  ],\n  [\n    4,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\list-F-big.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-9.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\list-F-big.csv\",\"events\":2,\"scaled\":true}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-big-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-10.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\time-F-big-to-I.fcs\",\"bytes\":568}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-big-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-11.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    1\n  ],\n  [\n    4,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-big-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-12.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-big-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-13.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\time-F-big-to-A.fcs\",\"bytes\":581}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-big-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-14.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    1\n  ],\n  [\n    4,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-F-big-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-15.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-little.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-16.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    1\n  ],\n  [\n    4,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\list-D-little.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-17.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\list-D-little.csv\",\"events\":2,\"scaled\":true}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-little-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-18.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\time-D-little-to-I.fcs\",\"bytes\":568}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-little-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-19.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    1\n  ],\n  [\n    4,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-little-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-20.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-little.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-little-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-21.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\time-D-little-to-A.fcs\",\"bytes\":581}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-little-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-22.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    2,\n    1\n  ],\n  [\n    4,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-little-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-23.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-big.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-24.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    0.5,\n    1\n  ],\n  [\n    1,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\list-D-big.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-25.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\list-D-big.csv\",\"events\":2,\"scaled\":true}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-big-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-26.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\time-D-big-to-I.fcs\",\"bytes\":570}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-big-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-27.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    0.5,\n    1\n  ],\n  [\n    1,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-big-to-I.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-28.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "rewrite",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-big.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-big-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-29.json"
+    ],
+    "code": 0,
+    "stdout": "{\"written\":\"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-06-max-20261028\\\\independent-complete\\\\time-D-big-to-A.fcs\",\"bytes\":583}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-big-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-30.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  [\n    0.5,\n    1\n  ],\n  [\n    1,\n    2\n  ]\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\time-D-big-to-A.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-31.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  0\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "histogram-axis",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-C.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-32.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  \"4\",\n  \"6\"\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-C.fcs"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-C.fcs"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-C.fcs"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-C.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-36.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-C.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-37.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-C.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-C.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-38.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "CSV event export requires list DATA; use histogram APIs\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "histogram",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-C.fcs"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"shape\": [\n    2,\n    2\n  ],\n  \"frequencies\": [\n    \"1\",\n    \"2\",\n    \"3\",\n    \"4\"\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "histogram-axis",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-U.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-40.json"
+    ],
+    "code": 0,
+    "stdout": "[\n  \"1\",\n  \"2\"\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-U.fcs"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "values",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-U.fcs"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-U.fcs"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-U.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-44.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "gate",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-U.fcs",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-45.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "Failure(\"event queries require list DATA; use histogram APIs\")\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "csv",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-U.fcs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-U.csv",
+      "--options",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\options-46.json"
+    ],
+    "code": 1,
+    "stdout": "",
+    "stderr": "CSV event export requires list DATA; use histogram APIs\n"
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "histogram",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\histogram-U.fcs"
+    ],
+    "code": 0,
+    "stdout": "{\n  \"shape\": [\n    2,\n    2\n  ],\n  \"frequencies\": [\n    \"1\",\n    \"2\",\n    \"1\",\n    \"2\"\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\statistics-0.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 2,\n    \"nonfinite\": 0,\n    \"minimum\": -1e+308,\n    \"maximum\": 1e+308,\n    \"mean\": 0\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\statistics-1.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 4,\n    \"nonfinite\": 0,\n    \"minimum\": -1e+154,\n    \"maximum\": 1e+154,\n    \"mean\": 0,\n    \"variance\": 6.666666666666667e+307\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\statistics-2.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 5,\n    \"nonfinite\": 0,\n    \"minimum\": -1e+154,\n    \"maximum\": 1e+154,\n    \"mean\": 0,\n    \"variance\": 5e+307\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\statistics-3.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 4,\n    \"nonfinite\": 0,\n    \"minimum\": 1,\n    \"maximum\": 4,\n    \"mean\": 2.5,\n    \"variance\": 1.6666666666666667\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\statistics-4.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 3,\n    \"nonfinite\": 0,\n    \"minimum\": 0,\n    \"maximum\": 0,\n    \"mean\": 0,\n    \"variance\": 0\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\statistics-5.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 4,\n    \"nonfinite\": 2,\n    \"minimum\": -1e+154,\n    \"maximum\": 1e+154,\n    \"mean\": 0,\n    \"variance\": 6.666666666666667e+307\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\statistics-6.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 1,\n    \"nonfinite\": 0,\n    \"minimum\": 1e+308,\n    \"maximum\": 1e+308,\n    \"mean\": 1e+308\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "tools/fcs.mjs",
+      "stats",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-06-max-20261028\\independent-complete\\statistics-7.fcs"
+    ],
+    "code": 0,
+    "stdout": "[\n  {\n    \"count\": 0,\n    \"nonfinite\": 0\n  }\n]\n",
+    "stderr": ""
+  }
+]

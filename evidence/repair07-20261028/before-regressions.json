@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "test",
+    "conversion07_wbtest.mbt",
+    "--target",
+    "js",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T05:47:02.604546+00:00",
+  "exitCode": 2,
+  "stdout": "[mawei2018/fcs] test conversion07_wbtest.mbt:2 (\"repair07 floating conversion cannot mask normalized values above source range\") failed: conversion07_wbtest.mbt:29:11-29:61@mawei2018/fcs FAILED: `\"70\" != \"198\"`\ndiff:\n-\"70\" +\"198\"\n[mawei2018/fcs] test conversion07_wbtest.mbt:46 (\"repair07 accepted floating ranges produce positive integer output ranges\") failed: mawei2018/fcs.FcsError.Invalid\nTotal tests: 3, passed: 1, failed: 2.\n",
+  "stderr": ""
+}

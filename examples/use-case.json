@@ -1,0 +1,41 @@
+{
+  "title": "事件选择后保留通道信息再交付 FCS",
+  "scope": "原创 4 事件样例；输出是格式交换数据，不是临床分析或真实用户证明。",
+  "steps": [
+    {
+      "args": [
+        "tools/fcs.mjs",
+        "create",
+        "{out}/events.fcs",
+        "--options",
+        "examples/events.json"
+      ]
+    },
+    {
+      "args": [
+        "tools/fcs.mjs",
+        "subset",
+        "{out}/events.fcs",
+        "{out}/selected.fcs",
+        "--options",
+        "examples/gate.json"
+      ]
+    },
+    {
+      "args": [
+        "tools/fcs.mjs",
+        "csv",
+        "{out}/selected.fcs",
+        "{out}/selected.csv"
+      ]
+    },
+    {
+      "args": [
+        "tools/fcs.mjs",
+        "inspect",
+        "{out}/selected.fcs"
+      ]
+    }
+  ],
+  "expected": "选出 FSC-A 在 [15,35) 的两个事件并保留两个指定通道；CSV 和 FCS 均可交付。"
+}

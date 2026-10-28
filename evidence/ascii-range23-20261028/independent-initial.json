@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python",
+    "tools/check-ascii-to-integer.py",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-23-max-20261028\\independent"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T11:36:55.993643+00:00",
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\tools\\check-ascii-to-integer.py\", line 151, in <module>\n    main()\n    ~~~~^^\n  File \"D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\tools\\check-ascii-to-integer.py\", line 98, in main\n    assert cli(\"values\", log_bad, options={\"scaled\": True}) == [[10000]]\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs\\tools\\check-ascii-to-integer.py\", line 37, in cli\n    assert r.returncode == code, (argv, r.stdout, r.stderr)\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: (['node', 'tools/fcs.mjs', 'values', 'D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-23-max-20261028\\\\independent\\\\log-unrepresentable.fcs', '--options', 'D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\fcs\\\\deep-repair-23-max-20261028\\\\independent\\\\options-22.json'], '', 'Invalid(\"duplicate TEXT keyword: $P1E\")\\n')\n"
+}

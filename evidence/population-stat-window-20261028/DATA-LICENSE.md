@@ -1,0 +1,3 @@
+# Window evidence licenses
+
+All new code, synthetic bit/struct fixtures, portable examples and independent Fraction/closed-form expectations are original MIT material. No new instrument dataset was downloaded or distributed here. Generated FCS/CSV inputs and outputs remain in final-closeout outside this source archive. The retained older start:0 fixture/request is byte/options-identical to the frozen original, whose rejection log remains read-only. Primary peer documentation was compared, not copied into implementation; only bounded metadata summaries and links are packaged. Existing RepOD data elsewhere in the project retains its own CC BY4.0 attribution/license.

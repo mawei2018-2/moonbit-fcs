@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "tools/check-population-stats.py",
+    "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\fcs\\deep-repair-25-max-20261028\\independent"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-fcs",
+  "startedUtc": "2026-10-28T12:38:40.923821+00:00",
+  "expectedExitCode": 0,
+  "exitCode": 0,
+  "stdout": "{\"status\": \"passed\", \"commands\": 19, \"cases\": 10, \"repodEvents\": 662, \"repodValues\": 17212}\n",
+  "stderr": ""
+}

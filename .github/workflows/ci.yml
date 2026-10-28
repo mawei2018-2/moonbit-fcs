@@ -1,0 +1,117 @@
+name: checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare isolated tool caches
+        run: |
+          echo "MOON_HOME=$RUNNER_TEMP/moonbit-fcs-sdk" >> "$GITHUB_ENV"
+          echo "NODE_COMPILE_CACHE=$RUNNER_TEMP/fcs-node-cache" >> "$GITHUB_ENV"
+      - run: curl -fsSL https://cli.moonbitlang.com/install/unix.sh | bash -s -- "$(cat .moonbit-version)"
+      - run: echo "$MOON_HOME/bin" >> "$GITHUB_PATH"
+      - name: Record actual runtime and compiler versions
+        run: |
+          node --version
+          python --version
+          moon version --all
+      - run: moon update
+      - run: moon check --target js --deny-warn
+      - run: moon test --target js --deny-warn && moon test --target wasm-gc --deny-warn
+      - run: moon build --target js --release --deny-warn && node tools/test_cli.mjs
+      - run: node tools/test-request-contract.mjs
+      - name: Verify repair05 bitstream, TEXT and matrix counterexamples
+        run: python tools/check-repair05.py "${{ runner.temp }}/fcs-repair05"
+      - name: Verify time conversion, mode errors and exact statistical counterexamples
+        run: python tools/check-repair06.py "${{ runner.temp }}/fcs-repair06"
+      - name: Verify normalized integer ranges and conversion output identity
+        run: python tools/check-repair07.py "${{ runner.temp }}/fcs-repair07"
+      - name: Verify ASCII to integer range masks and calibration
+        run: python tools/check-ascii-to-integer.py "${{ runner.temp }}/fcs-ascii-to-integer"
+      - name: Verify sparse compensation and nonfinite channel independence
+        run: python tools/check-repair08.py "${{ runner.temp }}/fcs-repair08"
+      - name: Verify hierarchical gate plans and exact population exports
+        run: |
+          python tools/check-gate-plan.py "${{ runner.temp }}/fcs-gate-plan"
+          node examples/run-gate-plan.mjs "${{ runner.temp }}/fcs-gate-plan-example"
+          (cd examples/gate-plan-consumer && moon run . --target js --deny-warn)
+          (cd examples/gate-plan-consumer && moon run . --target wasm-gc --deny-warn)
+      - name: Verify exact channel names and zero-row boundaries
+        run: |
+          python tools/check-channel-names.py "${{ runner.temp }}/fcs-channel-names"
+          (cd examples/named-channel-consumer && moon run . --target js --deny-warn)
+          (cd examples/named-channel-consumer && moon run . --target wasm-gc --deny-warn)
+      - name: Verify explicit event selection bounds order and selected dataset
+        run: python tools/check-event-selection.py "${{ runner.temp }}/fcs-event-selection"
+      - name: Verify compare storage modes and accepted operation domains
+        run: python tools/check-compare-mode.py "${{ runner.temp }}/fcs-compare-mode"
+      - name: Verify calibrated population CSV values and view receipts
+        run: python tools/check-csv-view.py "${{ runner.temp }}/fcs-csv-view"
+      - name: Verify direct population CSV and licensed file example
+        run: |
+          python tools/check-population-csv.py "${{ runner.temp }}/fcs-population-csv"
+          node examples/repod-population-csv.mjs "${{ runner.temp }}/fcs-population-csv-repod"
+      - name: Verify optional CSV source-index column and standalone handoff
+        run: |
+          python tools/check-csv-event-index.py "${{ runner.temp }}/fcs-csv-event-index"
+          node examples/repod-population-csv.mjs "${{ runner.temp }}/fcs-csv-event-index-repod" --event-index-column source_event_index
+      - name: Verify population statistics with exact synthetic and licensed F32 consumers
+        run: python tools/check-population-stats.py "${{ runner.temp }}/fcs-population-stats"
+      - name: Verify reported statistic channels retain full compensation dependencies
+        run: python tools/check-population-stat-channels.py "${{ runner.temp }}/fcs-population-stat-channels"
+      - name: Verify member-window statistics and matching population CSV
+        run: python tools/check-population-stat-window.py "${{ runner.temp }}/fcs-population-stat-window"
+      - name: Verify independent standard encoding vectors
+        run: |
+          python tools/generate-standard-encodings.py --check
+          node tools/run-standard-encodings.mjs "${{ runner.temp }}/fcs-standard-encodings"
+          python tools/verify-standard-encodings.py "${{ runner.temp }}/fcs-standard-encodings" --report "${{ runner.temp }}/fcs-standard-report.json"
+      - run: python -m pip install flowio==1.4.0 numpy==2.5.3
+      - name: Record independent reference versions
+        run: python -c "import flowio, numpy; print('FlowIO', flowio.__version__); print('NumPy', numpy.__version__)"
+      - name: Verify frozen population event sequence with an external reader
+        run: python tools/check-event-selection.py "${{ runner.temp }}/fcs-event-selection-real" --repod-only
+      - name: Verify named third-party population export with FlowIO and raw source bytes
+        run: |
+          node examples/repod-gate-plan.mjs "${{ runner.temp }}/fcs-named-repod"
+          python tools/verify-named-repod.py "${{ runner.temp }}/fcs-named-repod" --report "${{ runner.temp }}/fcs-named-repod-oracle.json"
+      - name: Verify wide integers, C/U histograms and compensation independently
+        run: python tools/check-deep-features.py "${{ runner.temp }}/fcs-deep" --report "${{ runner.temp }}/fcs-deep.json"
+      - run: python tools/reference_check.py
+      - name: Check pinned public FCS files independently
+        shell: bash
+        run: |
+          git init "$RUNNER_TEMP/flowio-reference"
+          git -C "$RUNNER_TEMP/flowio-reference" fetch --depth=1 https://github.com/whitews/FlowIO.git 83d28a22d42235c10d17afb017250ee208afed95
+          git -C "$RUNNER_TEMP/flowio-reference" checkout --detach FETCH_HEAD
+          python tools/reference_check.py --reference-dir "$RUNNER_TEMP/flowio-reference" --report "$RUNNER_TEMP/fcs-reference-current.json"
+          node examples/public-selection.mjs "$RUNNER_TEMP/flowio-reference/data/fcs_files/G11.fcs" "$RUNNER_TEMP/fcs-selected"
+          python tools/verify-public-selection.py "$RUNNER_TEMP/flowio-reference/data/fcs_files/G11.fcs" "$RUNNER_TEMP/fcs-selected" --report "$RUNNER_TEMP/fcs-selected.json"
+      - name: Check licensed offline RepOD exchange and separate consumers
+        shell: bash
+        run: |
+          moon fmt --check
+          (cd examples/repod-consumer && moon fmt --check)
+          node examples/repod-selection.mjs "$RUNNER_TEMP/fcs-repod"
+          python tools/verify-repod-selection.py "$RUNNER_TEMP/fcs-repod" --report "$RUNNER_TEMP/fcs-repod-oracle.json"
+          python tools/run-repod-consumer.py "$RUNNER_TEMP/fcs-repod-js" --target js --expected "$RUNNER_TEMP/fcs-repod/consumer-record.json"
+          python tools/run-repod-consumer.py "$RUNNER_TEMP/fcs-repod-wasm" --target wasm-gc --expected "$RUNNER_TEMP/fcs-repod/consumer-record.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fcs-reference-current
+          path: ${{ runner.temp }}/fcs-reference-current.json
+      - run: python tools/generate_fixtures.py && moon fmt && git diff --exit-code

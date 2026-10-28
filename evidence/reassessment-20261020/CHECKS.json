@@ -1,0 +1,286 @@
+{
+  "version": "0.4.0",
+  "startedUtc": "2026-10-19T16:19:40.789492+00:00",
+  "checks": [
+    {
+      "label": "format",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+        "fmt",
+        "--check"
+      ],
+      "exitCode": 0,
+      "seconds": 10.599
+    },
+    {
+      "label": "check-all",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+        "check",
+        "--target",
+        "all",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "seconds": 6.688
+    },
+    {
+      "label": "test-js",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+        "test",
+        "--target",
+        "js",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "seconds": 6.211
+    },
+    {
+      "label": "test-wasm-gc",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+        "test",
+        "--target",
+        "wasm-gc",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "seconds": 4.849
+    },
+    {
+      "label": "build-js",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+        "build",
+        "--target",
+        "js",
+        "--release",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "seconds": 2.804
+    },
+    {
+      "label": "public-api",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+        "info"
+      ],
+      "exitCode": 0,
+      "seconds": 1.35
+    },
+    {
+      "label": "actionlint",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\actionlint\\actionlint.exe",
+        ".github/workflows/ci.yml"
+      ],
+      "exitCode": 0,
+      "seconds": 1.966
+    },
+    {
+      "label": "fixture-determinism",
+      "command": [
+        "C:\\Users\\uiwcv\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "tools/generate-standard-encodings.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "seconds": 0.342
+    },
+    {
+      "label": "standard-workflow",
+      "command": [
+        "node",
+        "tools/run-standard-encodings.mjs",
+        "D:\\CodexLocal\\ban\\work\\rejections-20261020\\fcs-standard-final"
+      ],
+      "exitCode": 0,
+      "seconds": 0.578
+    },
+    {
+      "label": "standard-oracle",
+      "command": [
+        "C:\\Users\\uiwcv\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "tools/verify-standard-encodings.py",
+        "D:\\CodexLocal\\ban\\work\\rejections-20261020\\fcs-standard-final",
+        "--report",
+        "D:\\CodexLocal\\ban\\outputs\\repos\\moonbit-fcs\\evidence\\standard-encodings-20261020.json"
+      ],
+      "exitCode": 0,
+      "seconds": 1.961
+    },
+    {
+      "label": "cli",
+      "command": [
+        "node",
+        "tools/test_cli.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 10.907
+    },
+    {
+      "label": "request-contract",
+      "command": [
+        "node",
+        "tools/test-request-contract.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.613
+    },
+    {
+      "label": "use-case",
+      "command": [
+        "node",
+        "examples/run-use-case.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 3.812
+    },
+    {
+      "label": "flowio",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\fcs-reference-venv\\Scripts\\python.exe",
+        "tools/reference_check.py",
+        "--reference-dir",
+        "D:\\CodexLocal\\ban\\work\\fcs-reference\\FlowIO",
+        "--report",
+        "D:\\CodexLocal\\ban\\outputs\\repos\\moonbit-fcs\\evidence\\reassessment-20261020\\flowio.json"
+      ],
+      "exitCode": 0,
+      "seconds": 43.14
+    },
+    {
+      "label": "public-selection",
+      "command": [
+        "node",
+        "examples/public-selection.mjs",
+        "D:\\CodexLocal\\ban\\work\\fcs-reference\\FlowIO\\data\\fcs_files\\G11.fcs",
+        "D:\\CodexLocal\\ban\\work\\rejections-20261020\\fcs-public-selection"
+      ],
+      "exitCode": 0,
+      "seconds": 0.227
+    },
+    {
+      "label": "public-oracle",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\fcs-reference-venv\\Scripts\\python.exe",
+        "tools/verify-public-selection.py",
+        "D:\\CodexLocal\\ban\\work\\fcs-reference\\FlowIO\\data\\fcs_files\\G11.fcs",
+        "D:\\CodexLocal\\ban\\work\\rejections-20261020\\fcs-public-selection",
+        "--report",
+        "D:\\CodexLocal\\ban\\outputs\\repos\\moonbit-fcs\\evidence\\reassessment-20261020\\public-selection.json"
+      ],
+      "exitCode": 0,
+      "seconds": 1.022
+    },
+    {
+      "label": "repod-workflow",
+      "command": [
+        "node",
+        "examples/repod-selection.mjs",
+        "D:\\CodexLocal\\ban\\work\\rejections-20261020\\fcs-repod"
+      ],
+      "exitCode": 0,
+      "seconds": 0.765
+    },
+    {
+      "label": "repod-oracle",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\fcs-reference-venv\\Scripts\\python.exe",
+        "tools/verify-repod-selection.py",
+        "D:\\CodexLocal\\ban\\work\\rejections-20261020\\fcs-repod",
+        "--report",
+        "D:\\CodexLocal\\ban\\outputs\\repos\\moonbit-fcs\\evidence\\reassessment-20261020\\repod.json"
+      ],
+      "exitCode": 0,
+      "seconds": 1.342
+    },
+    {
+      "label": "consumer-js",
+      "command": [
+        "C:\\Users\\uiwcv\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "tools/run-repod-consumer.py",
+        "D:\\CodexLocal\\ban\\work\\rejections-20261020\\fcs-consumer-js",
+        "--target",
+        "js",
+        "--expected",
+        "D:\\CodexLocal\\ban\\work\\rejections-20261020\\fcs-repod\\consumer-record.json"
+      ],
+      "exitCode": 0,
+      "seconds": 4.21
+    },
+    {
+      "label": "consumer-wasm-gc",
+      "command": [
+        "C:\\Users\\uiwcv\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "tools/run-repod-consumer.py",
+        "D:\\CodexLocal\\ban\\work\\rejections-20261020\\fcs-consumer-wasm",
+        "--target",
+        "wasm-gc",
+        "--expected",
+        "D:\\CodexLocal\\ban\\work\\rejections-20261020\\fcs-repod\\consumer-record.json"
+      ],
+      "exitCode": 0,
+      "seconds": 2.734
+    },
+    {
+      "label": "package",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+        "package",
+        "--frozen"
+      ],
+      "exitCode": 0,
+      "seconds": 0.968
+    }
+  ],
+  "allRequiredChecksPassed": true,
+  "scope": "local Windows, pinned compiler, no remote CI/publish/submission",
+  "baseline": {
+    "commit": "0ff238ea6db305476c556b67551a7cdff1816918",
+    "proposals": {
+      "PROPOSAL.md": "688d087d4f093eecc191c5e099036b686433474d94137feb18f61c4b524d3b67",
+      "mawei2018-fcs-\u7533\u62a5\u4e66.md": "688d087d4f093eecc191c5e099036b686433474d94137feb18f61c4b524d3b67"
+    }
+  },
+  "historicalReportsPreserved": [],
+  "proposalsUnchanged": true,
+  "sourceSha256": {
+    "core_wbtest.mbt": "e7ce400236fd1f6f8d73d9ad72c684fe44008004c8bbf77a045cd291731e5e52",
+    "data_encodings.mbt": "0406c3a7e3d8697e74631afc74b13212026afa501283471cef6026f49bdb13fa",
+    "derived_extensions.mbt": "427a40e7e6dbab6ce069c502683a1ac6a5acfaf251a0c71188bbf79d6290a266",
+    "events.mbt": "9f4e2ceb0ef1d2ebe70f1eb99d2c1ea4739dc20e31d778b084ba720803bb5dda",
+    "fixtures_wbtest.mbt": "3c1973bdf4db4ef5d63e192c92e1fa8fd8f415ccf13a2503ab2dbc148907026b",
+    "offset_padding.mbt": "99ff42c782c01b2047fd9c9ecb3bf19e1d3c70c36164a5519ed0184f52e47516",
+    "offset_padding_wbtest.mbt": "fcff9641f2245b3c3bd3e7efdea6b68cb9c935ac4557b790c5f57aba79ec1cf8",
+    "padding_wbtest.mbt": "128bd6c189f9f335f03e5f78d45cc3972da2471f1135cccc6d96f30d7a995119",
+    "parse.mbt": "fadd02db2522fa560643669eaba578520b31b453d1c2de48c6b9eec0f3612733",
+    "standard_encodings_wbtest.mbt": "886dbe491a7577f94dc0da4e8f0903b21bf7428b101fbba2665a5461601a39ee",
+    "standard_encoding_fixtures_wbtest.mbt": "aad60dbea1fad91686d56fb14102eac1181c1c07caaa3adcebf6446380a1c6aa",
+    "text.mbt": "88f79664f93de2b39e561e9d59e2783964a51cc31352746719cd3af28c44fefa",
+    "types.mbt": "e3e455873022d220a69aa362e59e9e16b8b2394c207b3df2b83b64cb88f29851",
+    "write.mbt": "8832020f9a7d05c0fcd9b5c973ae3b89c0766581b9783af27f121f766bd9f8f8",
+    "examples/repod-consumer/main.mbt": "fefcfd3529449121ef9d8233789e903522bcbae154fca4c83f07c3ae7257277f",
+    "cmd/bridge/main.mbt": "94697c7de1b193058cf8a7c695aa28efd587d478a0fc5d8bfd611be7f1a01ab6"
+  },
+  "finishedUtc": "2026-10-19T16:21:28.110929+00:00",
+  "fixtureCorrectionAfterPass": {
+    "reason": "ASCII wide-integer fixture PnR raised to include its stored integer, so its normative-range claim is valid; product code unchanged.",
+    "affectedFiles": [
+      "tools/generate-standard-encodings.py",
+      "examples/standard-encodings/INPUTS.json",
+      "standard_encoding_fixtures_wbtest.mbt"
+    ],
+    "validation": {
+      "generatorCheck": "passed",
+      "targetedTestsJs": 6,
+      "targetedTestsWasmGc": 6,
+      "workflowCases": 12,
+      "products": 58,
+      "independentOracle": "passed"
+    },
+    "outputDirectory": "D:\\CodexLocal\\ban\\work\\rejections-20261020\\fcs-standard-sealed"
+  }
+}
