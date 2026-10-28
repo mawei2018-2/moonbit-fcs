@@ -27,7 +27,7 @@ CSV可另选event_index_column，把该源Dataset索引写入首列，便于CSV�
 
 计划与输出列可使用精确PnN通道名，支持换序元数据；[具名通道与第三方交换例程](NAMED-CHANNELS.md)提供RepOD→群体FCS→FlowIO回读。
 
-`population-stats`将gates/population接到既有MoonBit统计，报告该群体的源事件索引、有限/非有限计数、极值、均值和样本方差。可选start/count按群体成员位置取窗口，与CSV语义对齐；显式窗口另报实际events，population_events保留完整群体数。默认全部原通道；可选channels按精确PnN/数字选择和重排报告，返回源channel_indices。顶层scaled/compensated独立选择统计视图，完整通道矩阵先参与补偿，再筛报告列；无中间磁盘FCS，原文件与ANALYSIS不改。内部仍创建群体FCS内存副本；统计为Double，不保证大整数精度。用法和边界见[群体统计](POPULATION-STATS.md)。原stats仍报告整个Dataset，返回格式保持。
+`population-stats`将gates/population接到既有MoonBit统计，报告该群体的源事件索引、有限/非有限计数、极值、均值和样本方差。可选start/count按群体成员位置取窗口，与CSV语义对齐；显式窗口另报实际events，population_events保留完整群体数。默认全部原通道；可选channels按精确PnN/数字选择和重排报告，返回源channel_indices。顶层scaled/compensated独立选择统计视图；指定列仅计算请求输出，保留完整源数据及实际补偿依赖，避免无关输出校准阻断请求；无中间磁盘FCS，原文件与ANALYSIS不改。内部仍创建群体FCS内存副本；统计为Double，不保证大整数精度。用法、闭式反例和边界见[群体统计](POPULATION-STATS.md)。原stats仍报告整个Dataset，返回格式保持。
 
 `include_read_report:true`可随群体统计附上原输入SHA-256、所选Dataset、原版本及其真实读取warnings，避免内部规范化副本掩盖兼容修正。默认/false保持原schema和输出字节；统计、成员与读取政策保持。许可原文件的单次交付示例见[repod-population-read-report.mjs](examples/repod-population-read-report.mjs)。
 

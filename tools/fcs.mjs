@@ -130,11 +130,12 @@ async function main() {
     // this private in-memory copy drops ANALYSIS; source bytes remain untouched.
     const bytes = api.transform(source, JSON.stringify({...parseOptions, command:'subset', events:selected, drop_analysis:true}));
     const population = api.load(bytes, '{}');
-    const statistics = JSON.parse(api.query(population, JSON.stringify({command:'stats', scaled:!!options.scaled, compensated:!!options.compensated})));
+    const statistics = JSON.parse(api.query(population, JSON.stringify({command:reportChannels === null ? 'stats' : 'selected-stats',
+      ...(reportChannels === null ? {} : {channels:reportChannels}), scaled:!!options.scaled, compensated:!!options.compensated})));
     console.log(JSON.stringify({population:options.population, population_events:members.length,
       source_event_indices:selected, channel_names:(reportChannels ?? info.channels.map((_, i) => i)).map(i => info.channels[i].name),
       scaled:!!options.scaled || !!options.compensated, compensated:!!options.compensated,
-      statistics:reportChannels === null ? statistics : reportChannels.map(i => statistics[i]),
+      statistics,
       ...(reportChannels === null ? {} : {channel_indices:reportChannels}),
       ...(hasWindow ? {events:count} : {}),
       ...(options.include_read_report ? {read_report:{source_sha256:sourceHash, dataset:options.dataset ?? 0,

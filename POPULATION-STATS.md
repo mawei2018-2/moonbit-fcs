@@ -32,13 +32,15 @@ node examples/repod-population-read-report.mjs /path/to/NEW_DIRECTORY
 
 示例的`statistics.json`统计inner群体成员窗口start1/count2、Time/FSC-A两列，同时保留原文件4项真实偏移空格修正和原SHA-256；不另跑inspect或写中间FCS。Bronisz署名、DOI10.18150/JOLWGT及CC BY4.0许可随输出保留。源码原文件、DATA和ANALYSIS保持。
 
-可选`channels:["M",0,"M"]`按精确PnN/数字混合选择、换序或重复报告项；返回`channel_indices`原Dataset零起始通道号，例子为`[2,0,2]`。空数组返回空通道/统计数组，仍报告实际窗口的源成员；省略或null保持原全通道格式，不加channel_indices。缺失/歧义名字、非法数字索引和类型失败，空群体也校验；数字字符串只作为PnN，不转索引。重复源标签可用数字位置区分。
+可选`channels:["M",0,"M"]`按精确PnN/数字混合选择、换序或重复报告项；返回`channel_indices`原Dataset零起始通道号，例子为`[2,0,2]`。只计算所请求的输出统计，重复项复用同一结果；补偿所需源测量通道和完整矩阵仍保留。无关输出通道的不可用校准不会阻断请求，真实非零依赖的校准错误仍失败。空数组返回空通道/统计数组，仍报告实际窗口的源成员；省略或null保持原全通道格式及行为，不加channel_indices。缺失/歧义名字、非法数字索引和类型失败，空群体也校验；数字字符串只作为PnN，不转索引。重复源标签可用数字位置区分。
 
 可选start/count沿用CSV的群体成员位置：start默认0，count默认完整群体数减start，保持原顺序，不按Time或ID排序。例如成员为0/2/4/5/7，start1/count2选择原事件2/4。参数须为非负精确32位整数，start不能越过群体末尾，count不能越过剩余成员；不截断越界请求，null不代替省略。合法末尾/零长度/空群体窗口返回空统计；坏群体和通道仍失败。每通道count/nonfinite反映实际窗口，均值/方差使用其中有限值，不能以population_events作为统计分母。
 
 命令支持解析选项dataset、strict、allow_exclusive_end、latin1、allow_text_padding、allow_offset_padding，其余接受gates/population/scaled/compensated/channels/start/count及布尔include_read_report。metadata、encoding等不适用选项报错。坏计划/群体、非布尔视图/报告标志及C/U模式也失败，不返回部分统计。旧stats/CSV/门控命令的参数合同不变。
 
-实现先取得完整群体成员，再取实际窗口，以全部原通道构造私有FCS内存副本，复用现有MoonBit statistics，最后才按channels筛报告。即使只报告一个通道，未报告通道仍参与完整矩阵补偿；这与先投影FCS再对主子矩阵补偿不同。私有副本显式丢弃已失效ANALYSIS，源文件的字节和ANALYSIS保持。没有临时磁盘FCS，仍有完整门控、内存选择/拷贝及窗口内全通道统计开销；不宣称零拷贝、流式或自动滑动分析。
+实现先取得完整群体成员，再取实际窗口，以全部原通道构造私有FCS内存副本，复用现有MoonBit statistics。指定channels时仅求请求输出的统计，但其实际所需测量值仍从完整矩阵/原通道取得；这与先投影FCS再对主子矩阵补偿不同。默认/ null仍求全部通道。私有副本显式丢弃已失效ANALYSIS，源文件的字节和ANALYSIS保持。没有临时磁盘FCS，仍有完整门控、内存选择/拷贝和所请求统计的计算开销；不宣称零拷贝、流式或自动滑动分析。
+
+可运行反例与闭式数值见[校准依赖示例](examples/stat-channel-dependencies/README.md)：同一个可读源的公开单通道统计和CSV已能得到Target的`[2,1]`，群体统计现在也能交付，而不计算无关的Unavailable输出。输入gain=0的警告与原严格读取政策保持，不把它宣称为严格标准合法输入。
 
 组合入口复用现有MoonBit核心/API，不增加统计方法、自动分类、批次报告或临床结论。独立标准库核验入口为：
 

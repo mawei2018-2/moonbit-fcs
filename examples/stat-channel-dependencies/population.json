@@ -1,0 +1,22 @@
+{
+  "gates": [
+    {
+      "id": "p",
+      "bounds": [
+        [
+          "Driver",
+          0,
+          13
+        ]
+      ]
+    }
+  ],
+  "population": "p",
+  "channels": [
+    "Target"
+  ],
+  "start": 1,
+  "count": 2,
+  "compensated": true,
+  "include_read_report": true
+}

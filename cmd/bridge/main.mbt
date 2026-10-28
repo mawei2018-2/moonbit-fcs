@@ -308,7 +308,7 @@ fn selected(d : @lib.Dataset, o : Map[String, Json]) -> Array[Int]? raise {
 fn do_query(d : @lib.Dataset, o : Map[String, Json]) -> String raise {
   let cmd : String = optional(o, "command", "inspect")
   if d.mode != @lib.ListMode &&
-    ["values", "stats", "gate", "populations"].contains(cmd) {
+    ["values", "stats", "selected-stats", "gate", "populations"].contains(cmd) {
     raise Failure("event queries require list DATA; use histogram APIs")
   }
   let result : Json = match cmd {
@@ -353,6 +353,27 @@ fn do_query(d : @lib.Dataset, o : Map[String, Json]) -> String raise {
           compensated=optional(o, "compensated", false),
         )
       }).to_json()
+    "selected-stats" => {
+      // Keep the complete Dataset for compensation dependencies, but do not
+      // evaluate unrelated output calibrations. Duplicate reports reuse JSON.
+      let scaled = optional(o, "scaled", false)
+      let compensated = optional(o, "compensated", false)
+      let cache : Map[Int, Json] = Map([])
+      report_channels(d, o)
+      .map(channel => {
+        match cache.get(channel) {
+          Some(statistic) => statistic
+          None => {
+            let statistic = d
+              .statistics(channel, scaled~, compensated~)
+              .to_json()
+            cache[channel] = statistic
+            statistic
+          }
+        }
+      })
+      .to_json()
+    }
     "populations" => d.gate_plan(gate_steps(d, o)).to_json()
     // The Node CSV adapter uses the same MoonBit resolution as values.
     "channel-indices" => report_channels(d, o).to_json()

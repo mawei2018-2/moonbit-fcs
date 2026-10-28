@@ -73,6 +73,8 @@ jobs:
         run: python tools/check-population-stats.py "${{ runner.temp }}/fcs-population-stats"
       - name: Verify reported statistic channels retain full compensation dependencies
         run: python tools/check-population-stat-channels.py "${{ runner.temp }}/fcs-population-stat-channels"
+      - name: Verify requested statistics evaluate only actual calibration dependencies
+        run: python tools/check-population-stat-dependencies.py "${{ runner.temp }}/fcs-population-stat-dependencies"
       - name: Verify member-window statistics and matching population CSV
         run: python tools/check-population-stat-window.py "${{ runner.temp }}/fcs-population-stat-window"
       - name: Verify optional population read provenance with independent source and statistics consumers
