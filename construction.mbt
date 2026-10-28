@@ -101,6 +101,11 @@ fn Dataset::write_histogram(
       "histogram projection invalidates ANALYSIS; explicitly drop_analysis",
     )
   }
+  if changed && self.keyword("$COMP") != None && !drop_spillover {
+    raise Invalid(
+      "legacy COMP requires explicit removal before channel changes",
+    )
+  }
   let meta = []
   for (key, value) in self.metadata {
     let k = key.to_upper()

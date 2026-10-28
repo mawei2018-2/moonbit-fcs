@@ -91,6 +91,8 @@ jobs:
           python tools/verify-named-repod.py "${{ runner.temp }}/fcs-named-repod" --report "${{ runner.temp }}/fcs-named-repod-oracle.json"
       - name: Verify wide integers, C/U histograms and compensation independently
         run: python tools/check-deep-features.py "${{ runner.temp }}/fcs-deep" --report "${{ runner.temp }}/fcs-deep.json"
+      - name: Verify legacy COMP histogram projection with independent byte consumers
+        run: python tools/check-histogram-comp.py "${{ runner.temp }}/fcs-histogram-comp"
       - run: python tools/reference_check.py
       - name: Check pinned public FCS files independently
         shell: bash
