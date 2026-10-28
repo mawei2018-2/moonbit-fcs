@@ -53,7 +53,7 @@ CSV回执的scaled表示所选视图包含线性缩放，compensated表示选择
 
 CLI原始I/A值默认精确字符串；`exact_integers:false`显式选择Double。缩放、统计、补偿使用Double，不保证任意整数精度。S行代表源染料、列代表探测器；奇异/不可表示逆矩阵报错。写出保留未补偿DATA；通道主子矩阵不承诺等价于全通道补偿后投影。
 
-旧`$COMP`不自动应用或重排。L/C/U改变通道或直方图轴的选择/顺序时，须显式`drop_spillover:true`移除旧补偿元数据；原轴重写仍保留COMP，无COMP的合法C/U投影照常支持。独立字节回归与具体范围见[FCS31-COMPATIBILITY.md](FCS31-COMPATIBILITY.md)。
+C/U直方图选择或重排轴时，旧`$COMP`按FCS3.0的维度前缀与行优先位置同时选择/重排行列，系数字符串原样保留，单轴仍保留1×1矩阵；不将补偿应用到DATA。原轴重写保持整个COMP值，`drop_spillover:true`仍可显式移除。无法对应源轴的维度/字段数只在改轴写出时报错，读取与原轴重写仍保留原值；L模式原有显式移除规则不变。独立字节回归与范围见[FCS31-COMPATIBILITY.md](FCS31-COMPATIBILITY.md)。
 
 声明读取FCS2.0/3.0/3.1、写出3.1；ASCII与C/U虽弃用仍有实现。结构、偏移、截断、非法索引和不可表示转换明确失败。具体布局/限制见[FCS31-COMPATIBILITY.md](FCS31-COMPATIBILITY.md)。不承诺FCS3.2、全部厂商异常、CRC验证、临床诊断或t-SNE/UMAP。
 

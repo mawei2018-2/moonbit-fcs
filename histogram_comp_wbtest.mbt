@@ -30,7 +30,7 @@ test "legacy COMP keeps unchanged histogram axes and raw DATA readable" {
 }
 
 ///|
-test "legacy COMP histogram projection requires explicit removal without changing bins" {
+test "legacy COMP histogram projection maps positional coefficients without changing bins" {
   for correlated in [true, false] {
     let d = legacy_comp_histogram(correlated)
     let expected = if correlated {
@@ -46,28 +46,22 @@ test "legacy COMP histogram projection requires explicit removal without changin
         ["3", "7", "11"],
       ]
     }
+    let matrices = ["3,0,-5,-6,-2,0,-1,-4,-3,0", "2,0,-5,-2,0", "1,0"]
     for i, axes in [[2, 0, 1], [2, 0], [1]] {
-      let rejected = try {
-        ignore(d.write(channel_indices=axes))
-        false
-      } catch {
-        Invalid(message) =>
-          message ==
-          "legacy COMP requires explicit removal before channel changes"
-        _ => false
-      }
-      assert_true(rejected)
-      let selected = parse(
-        d.write(channel_indices=axes, drop_spillover=true),
-        strict=true,
-      )
-      assert_eq(selected.keyword("$COMP"), None)
+      let selected = parse(d.write(channel_indices=axes), strict=true)
+      assert_eq(selected.keyword("$COMP"), Some(matrices[i]))
       assert_eq(
         selected.channel_info().map(c => c.name),
         axes.map(c => ["FL1-A", "FL2-A", "FL3-A"][c]),
       )
       assert_eq(selected.histogram_shape(), axes.map(c => [2, 3, 2][c]))
       assert_eq(selected.histogram_frequencies(), expected[i])
+      let dropped = parse(
+        d.write(channel_indices=axes, drop_spillover=true),
+        strict=true,
+      )
+      assert_eq(dropped.keyword("$COMP"), None)
+      assert_eq(dropped.raw, selected.raw)
       assert_eq(d.keyword("$COMP"), Some("3,0,-1,-2,-3,0,-4,-5,-6,0"))
     }
   }

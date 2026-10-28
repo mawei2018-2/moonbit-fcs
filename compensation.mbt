@@ -169,6 +169,39 @@ fn remove_keyword(meta : Array[(String, String)], key : String) -> Unit {
 }
 
 ///|
+// FCS3.0 COMP is n followed by an n*n row-major positional matrix.
+// Copy coefficient text at retained row/column indices, never numerical values.
+fn Dataset::sync_histogram_comp(
+  self : Dataset,
+  meta : Array[(String, String)],
+  channels : Array[Int],
+) -> Unit raise FcsError {
+  guard self.keyword("$COMP") is Some(text) else { return }
+  let fields = text.split(",").map(s => s.to_owned()).to_array()
+  let n = self.channels.length()
+  let message = "unrecognized legacy COMP matrix shape; explicitly use drop_spillover to remove it"
+  if n <= 0 ||
+    fields.length() < 2 ||
+    (fields.length() - 1) / n != n ||
+    (fields.length() - 1) % n != 0 {
+    raise Invalid(message)
+  }
+  let declared = decimal_integer(fields[0].trim().to_owned()) catch {
+    _ => raise Invalid(message)
+  }
+  if declared.compare_int(n) != 0 {
+    raise Invalid(message)
+  }
+  let selected = [channels.length().to_string()]
+  for row in channels {
+    for column in channels {
+      selected.push(fields[1 + row * n + column])
+    }
+  }
+  put(meta, "$COMP", selected.join(","))
+}
+
+///|
 fn Dataset::sync_spillover(
   self : Dataset,
   meta : Array[(String, String)],
