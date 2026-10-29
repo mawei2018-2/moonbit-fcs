@@ -1,0 +1,44 @@
+{
+  "population": "either",
+  "population_events": 4,
+  "source_event_indices": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "channel_names": [
+    "B",
+    "C"
+  ],
+  "scaled": true,
+  "compensated": true,
+  "channel_indices": [
+    1,
+    2
+  ],
+  "statistics": [
+    {
+      "count": 4,
+      "nonfinite": 0,
+      "minimum": 0,
+      "maximum": 6,
+      "mean": 1.5,
+      "variance": 9
+    },
+    {
+      "count": 4,
+      "nonfinite": 0,
+      "minimum": 0,
+      "maximum": 4,
+      "mean": 1.75,
+      "variance": 2.9166666666666665
+    }
+  ],
+  "read_report": {
+    "source_sha256": "8b9249a3eea90117c5dca7afd040a2811e455b145345a4addd88372f68e968c9",
+    "dataset": 0,
+    "version": "FCS3.1",
+    "warnings": []
+  }
+}

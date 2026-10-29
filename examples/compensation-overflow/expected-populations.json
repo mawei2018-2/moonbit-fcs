@@ -1,0 +1,56 @@
+[
+  {
+    "id": "zero",
+    "event_indices": [
+      0,
+      1,
+      4
+    ],
+    "count": 3,
+    "parent_count": 4,
+    "total_count": 7,
+    "parent_fraction": 0.75,
+    "total_fraction": 0.42857142857142855,
+    "parent": "finite"
+  },
+  {
+    "id": "rest",
+    "event_indices": [
+      2
+    ],
+    "count": 1,
+    "parent_count": 4,
+    "total_count": 7,
+    "parent_fraction": 0.25,
+    "total_fraction": 0.14285714285714285,
+    "parent": "finite"
+  },
+  {
+    "id": "finite",
+    "event_indices": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "count": 4,
+    "parent_count": 7,
+    "total_count": 7,
+    "parent_fraction": 0.5714285714285714,
+    "total_fraction": 0.5714285714285714
+  },
+  {
+    "id": "either",
+    "event_indices": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "count": 4,
+    "parent_count": 7,
+    "total_count": 7,
+    "parent_fraction": 0.5714285714285714,
+    "total_fraction": 0.5714285714285714
+  }
+]

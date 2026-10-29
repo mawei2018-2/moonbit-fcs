@@ -2,6 +2,8 @@
 
 `.github/workflows/ci.yml`的必要作业为`test`，push/pull_request均执行。既有固定MoonBit工具链、JS/Wasm-GC测试、公开/许可文件互通、统计、COMP、事件成员列和CSV发布验证保持。真实完成以目标提交对应Actions作业及全部必要步骤终态为准；配置、推送和本地通过分别记录。
 
+补偿中间溢出新增必要步骤 `Verify finite compensation overflow recovery with independent file consumers`，检查公开模块格式并运行 `python tools/check-compensation-overflow.py "$RUNNER_TEMP/fcs-compensation-overflow"`。六套原创完整 D64 文件以 Fraction 固定有限乘积/部分和溢出抵消、次正规数/负零、正常数与最大有限值舍入、增益缩放、真实非有限和零依赖；JS/Wasm-GC 公共 API 比较每个逆矩阵项、全部值和有限/Infinity 位模式。独立标准库进程消费完整群体/统计 JSON、原始选择 FCS 和两份 CSV，结构合法但科学值/成员/位模式被改的反例必须拒绝。普通 stdout 与接纳版本逐字节比较，旧矩阵/通道错误与已有目标守护保持。CHECKS、进程、完整输入/输出及实际编译产物上传，云端元数据和下载字节读回分别陈述。
+
 布尔群体的必要步骤为 `Verify Boolean gate dependencies with independent complete file consumers`，检查公开调用模块格式并执行 `python tools/check-boolean-gates.py "$RUNNER_TEMP/fcs-boolean-gates"`。六套原创完整预期覆盖前向依赖菱形、AND/OR/NOT、父限制、重复引用、几何后代、空源/空父、跨分支和非有限补集；错误计划及选择/写文件路径验证未知引用、参数、视图、混合循环和已有目标保护。独立进程消费全部群体/统计 JSON、三份精确 FCS 和两份带成员列 CSV，JS/Wasm-GC 公共 API 报告也逐项核对；三份结构仍合法的错误内容必须被接收器拒绝。纯几何 stdout 与接纳版本的 UTF-8/LF 控制逐字节相等。
 
 核心新增 DAG/枚举由双后端测试覆盖；本地运行相关旧门控和 CLI/request 回归，云端保留完整原检查。CHECKS、实际进程、完整原创输入/输出和编译桥接身份随 artifact 保留；上传和元数据仍不代表下载字节读回。

@@ -40,6 +40,7 @@ node tools/fcs.mjs population-stats NEW.fcs --options examples/population-stat-w
 
 - [命名门控计划](GATE-PLANS.md)：群体选择、父子计数、原始索引与精确整数 ID。
 - [布尔群体](BOOLEAN-GATES.md)：跨分支交集、并集、父群体内排除及后续几何门，连通 FCS/CSV 和统计交付。
+- [补偿数值边界](COMPENSATION-NUMERICS.md)：恢复有限点积的中间溢出抵消，完整数值、群体及文件接收例程。
 - [具名通道](NAMED-CHANNELS.md)与[RepOD 交换](REPOD-EXCHANGE.md)：许可原文件到群体 FCS、CSV 及独立读者的完整交接。
 - [群体统计](POPULATION-STATS.md)：成员窗口、输出通道、实际补偿依赖与可选输入读取来源报告。
 - [群体分位数](POPULATION-QUANTILES.md)：同一窗口/视图的有限观测中位数和四分位数，以及独立 JSON 接收例程；省略/null 保持原报告。
@@ -71,6 +72,8 @@ moon run . --target wasm-gc --deny-warn
 ## 数值与使用范围
 
 原始 I/A 值在 CLI 默认用精确字符串交付；`exact_integers:false` 显式选择 Double。缩放、统计和补偿使用 Double，不保证任意大整数精度。补偿按测量行向量 M×S⁻¹ 计算，奇异或不可表示的逆矩阵报错；写回仍保留未补偿 DATA。补偿视图包含线性缩放，没有补偿矩阵时退回缩放，回执的 `compensated` 表示视图选择。
+
+普通补偿路径保持原有结果；当有限输入的乘加中间溢出时，后备路径精确累加实际 binary64 观测与缓存系数的乘积，再舍入一次，避免本来有限的事件变为 NaN 而漏选。真实非有限输入、最终溢出及零系数依赖规则保持；它不恢复此前校准或逆矩阵中的精度，详见[数值合同](COMPENSATION-NUMERICS.md)。
 
 群体窗口按成员位置切片，不按 Time 排序；空群体无均值，单例无样本方差。C/U 使用直方图 API，不接受列表门控和事件统计。`compare` 检查所列模式、通道及校准字段，不证明生物面板、样本来源或全部元数据等价。
 

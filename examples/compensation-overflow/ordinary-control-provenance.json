@@ -1,0 +1,8 @@
+{
+  "acceptedBaseSHA": "cb56d944dafa07ebcae77cf179ec4696cd28b962",
+  "compiledBridgeSHA256": "a9c4ee9d70a5ab1feb583cc1033fa121dd57c14ab913a0213f11bb5d55a046e2",
+  "sourceSHA256": "e0ef4c2bac2e1ee2d503a23fbbeb5f9729380cc5e989bf204d587e5c5b9df5fd",
+  "optionsSHA256": "ceb886092f7838138a1aa9563d31ba7f099690bf31c147fda32779226377746d",
+  "stdoutSHA256": "b5438e5cf98748124a6d0c4553fde3566369b4d93dfd9c6b4e60c503c07b127f",
+  "captureDomain": "UTF-8/LF stdout; whole output also matches independent exact-rational expected observations"
+}

@@ -1,0 +1,54 @@
+{
+  "gates": [
+    {
+      "id": "zero",
+      "parent": "finite",
+      "bounds": [
+        [
+          "B",
+          -0.5,
+          0.5
+        ]
+      ],
+      "compensated": true
+    },
+    {
+      "id": "rest",
+      "parent": "finite",
+      "boolean": {
+        "op": "not",
+        "refs": [
+          "zero"
+        ]
+      }
+    },
+    {
+      "id": "finite",
+      "bounds": [
+        [
+          "B",
+          -1,
+          7
+        ]
+      ],
+      "compensated": true
+    },
+    {
+      "id": "either",
+      "boolean": {
+        "op": "or",
+        "refs": [
+          "zero",
+          "rest"
+        ]
+      }
+    }
+  ],
+  "population": "either",
+  "channels": [
+    "C",
+    "B"
+  ],
+  "drop_analysis": true,
+  "drop_spillover": true
+}

@@ -158,6 +158,22 @@ fn Dataset::compensated_value(
       value += self.value(event, cached.indices[i], scaled=true) * weight
     }
   }
+  if !finite(value) {
+    // Retry only an overflowed finite-input dot product. Genuine measured
+    // NaN/Infinity keeps the existing propagation and sparse dependencies.
+    let terms : Array[(Double, Double)] = []
+    for i in 0..<cached.indices.length() {
+      let weight = cached.inverse[i * cached.indices.length() + target]
+      if weight != 0.0 {
+        let measured = self.value(event, cached.indices[i], scaled=true)
+        if !finite(measured) {
+          return value
+        }
+        terms.push((measured, weight))
+      }
+    }
+    return compensation_exact_dot(terms)
+  }
   value
 }
 
