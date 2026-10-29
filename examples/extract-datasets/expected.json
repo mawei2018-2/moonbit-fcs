@@ -1,0 +1,145 @@
+{
+  "source_sha256": "4339b5cebdfe587c8e0119027307664fdf08986864f7773d8cd240873eb1669a",
+  "datasets": [
+    {
+      "dataset": 0,
+      "source_offset": 0,
+      "source_version": "FCS2.0",
+      "source_mode": "ListMode",
+      "source_events": 2,
+      "source_warnings": [],
+      "metadataExceptLayoutOffsets": {
+        "$MODE": "L",
+        "$DATATYPE": "I",
+        "$BYTEORD": "1,2,3,4",
+        "$PAR": "2",
+        "$TOT": "2",
+        "$BEGINSTEXT": "0",
+        "$ENDSTEXT": "0",
+        "$NEXTDATA": "0",
+        "$ORIGINALITY": "Non-Original",
+        "VENDOR": "original-0|retained",
+        "$P1N": "A",
+        "$P1S": "A-stain",
+        "$P1B": "16",
+        "$P1R": "65536",
+        "$P1E": "0,0",
+        "$P1G": "1",
+        "$P2N": "B",
+        "$P2S": "B-stain",
+        "$P2B": "16",
+        "$P2R": "65536",
+        "$P2E": "0,0",
+        "$P2G": "1"
+      },
+      "analysis": {
+        "NOTE": "first|analysis"
+      },
+      "rawDataHex": "0100020003000400",
+      "consumed": {
+        "columnSums": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "dataset": 1,
+      "source_offset": 2048,
+      "source_version": "FCS3.1",
+      "source_mode": "ListMode",
+      "source_events": 3,
+      "source_warnings": [],
+      "metadataExceptLayoutOffsets": {
+        "$MODE": "L",
+        "$DATATYPE": "D",
+        "$BYTEORD": "4,3,2,1",
+        "$PAR": "2",
+        "$TOT": "3",
+        "$BEGINSTEXT": "0",
+        "$ENDSTEXT": "0",
+        "$NEXTDATA": "0",
+        "$ORIGINALITY": "Non-Original",
+        "VENDOR": "original-1|retained",
+        "$P1N": "D1",
+        "$P1S": "D1-stain",
+        "$P1B": "64",
+        "$P1R": "1024",
+        "$P1E": "0,0",
+        "$P1G": "1",
+        "$P2N": "D2",
+        "$P2S": "D2-stain",
+        "$P2B": "64",
+        "$P2R": "1024",
+        "$P2E": "0,0",
+        "$P2G": "1"
+      },
+      "analysis": {
+        "NOTE": "second|analysis 日本語"
+      },
+      "rawDataHex": "80000000000000003ff80000000000007ff8000000000123fff000000000000040040000000000007ff0000000000000",
+      "consumed": {
+        "finiteCount": 3,
+        "finiteSum": "4",
+        "negativeZeroCount": 1,
+        "nanCount": 1,
+        "positiveInfinityCount": 1,
+        "negativeInfinityCount": 1
+      }
+    },
+    {
+      "dataset": 2,
+      "source_offset": 6144,
+      "source_version": "FCS3.0",
+      "source_mode": "Correlated",
+      "source_events": "17",
+      "source_warnings": [],
+      "metadataExceptLayoutOffsets": {
+        "$MODE": "C",
+        "$DATATYPE": "I",
+        "$BYTEORD": "1,2,3,4",
+        "$PAR": "2",
+        "$TOT": "17",
+        "$BEGINSTEXT": "0",
+        "$ENDSTEXT": "0",
+        "$NEXTDATA": "0",
+        "$ORIGINALITY": "Non-Original",
+        "VENDOR": "original-2|retained",
+        "$P1N": "H1",
+        "$P1S": "H1-stain",
+        "$P1B": "16",
+        "$P1R": "2",
+        "$P1E": "0,0",
+        "$P1G": "1",
+        "$P2N": "H2",
+        "$P2S": "H2-stain",
+        "$P2B": "16",
+        "$P2R": "2",
+        "$P2E": "0,0",
+        "$P2G": "1",
+        "$COMP": "2,1,0.25,0.5,1"
+      },
+      "analysis": {},
+      "rawDataHex": "0200030005000700",
+      "consumed": {
+        "frequencies": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "marginals": [
+          [
+            7,
+            10
+          ],
+          [
+            5,
+            12
+          ]
+        ],
+        "total": 17
+      }
+    }
+  ]
+}

@@ -105,6 +105,8 @@ jobs:
         run: python tools/check-histogram-comp.py "${{ runner.temp }}/fcs-histogram-comp"
       - name: Verify positional writes of duplicate-name compatibility datasets with independent file receivers
         run: python tools/check-duplicate-write.py "${{ runner.temp }}/fcs-duplicate-write"
+      - name: Verify complete chained Dataset extraction with independent standalone file receivers
+        run: python tools/check-extract-datasets.py "${{ runner.temp }}/fcs-extract-datasets"
       - run: python tools/reference_check.py
       - name: Check pinned public FCS files independently
         shell: bash
@@ -145,4 +147,9 @@ jobs:
             ${{ runner.temp }}/fcs-duplicate-write/PROCESS-LAUNCHES.jsonl
             ${{ runner.temp }}/fcs-duplicate-write/inputs/MANIFEST.json
             ${{ runner.temp }}/fcs-duplicate-write/outputs/*.fcs
+            ${{ runner.temp }}/fcs-extract-datasets/CHECKS.json
+            ${{ runner.temp }}/fcs-extract-datasets/PROCESS-LAUNCHES.jsonl
+            ${{ runner.temp }}/fcs-extract-datasets/inputs/MANIFEST.json
+            ${{ runner.temp }}/fcs-extract-datasets/outputs/**/manifest.json
+            ${{ runner.temp }}/fcs-extract-datasets/outputs/**/*.fcs
       - run: python tools/generate_fixtures.py && moon fmt && git diff --exit-code

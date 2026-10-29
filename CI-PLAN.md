@@ -15,3 +15,7 @@ python tools/check-population-report.py "$RUNNER_TEMP/fcs-population-report"
 重复PnN写出修复的必要步骤为`Verify positional writes of duplicate-name compatibility datasets with independent file receivers`，运行`python tools/check-duplicate-write.py "$RUNNER_TEMP/fcs-duplicate-write"`。它从原创完整兼容源独立固定全部元数据/数值与I/F/D原始DATA字节，ASCII逐字段核对；实际FCS-only进程检查全部输出并消费按PnS区分的列及C/U边缘分布。strict/名称歧义、非法输出位置/编码形状与重复名称创建的错误合同保持。CHECKS、输入清单、启动记录及实际FCS输出上传，元数据和下载字节身份分开。
 
 `duplicate_write_wbtest.mbt`另以冻结源的原始十六进制字节，执行实际parse/write/parse以及创建错误操作；既有JS/Wasm-GC测试步骤会执行这些新测试。该修复修改私有编码元数据接线，故本地使用固定私有工具链进行check、格式化、info、相关文件双后端测试和JS release构建；公共生成接口应保持。云端完整旧门保持，不以本地结果冒充远端终态。
+
+链式Dataset抽取新增必要步骤`Verify complete chained Dataset extraction with independent standalone file receivers`，执行`python tools/check-extract-datasets.py "$RUNNER_TEMP/fcs-extract-datasets"`。原创完整链固定0/2048/6144源偏移、I/D/C原始位模式与ANALYSIS；独立标准库进程从实际目录读取manifest及每份单Dataset FCS，逐项核对全部字段、完整DATA、ANALYSIS和来源映射，并消费整数列合计、D特殊值分类及C边缘。单Dataset/零事件、真实逐Dataset读取修正、后段损坏/坏选项和既有目标守护均覆盖；哈希自洽但数据被换位的完整伪造包必须被独立原始内容预期拒绝。
+
+上传CHECKS、启动记录、原始输入清单和实际FCS/manifest输出。宿主入口新增，科学核心/公共API未改时本地复用已验收编译桥接并记录哈希，仅读本轮新小型输入，不重跑旧原生/科学参考生成器；云端完整原有门继续执行。远端上传/元数据仍不替代下载字节读回。

@@ -19,6 +19,8 @@ node tools/fcs.mjs subset /path/to/NEW.fcs /path/to/SELECTED.fcs --options examp
 
 CLI提供inspect/validate/metadata/stats/values/gate；populations/population-stats/population-report；subset/rewrite/csv；create/create-histogram；histogram/histogram-axis/histogram-bin/compensation。JSON通过 `--options FILE.json` 传入。
 
+`extract-datasets input.fcs new-directory`按原NEXTDATA链把全部Dataset交付为独立FCS3.1文件及manifest，记录原文件哈希、Dataset号/偏移、原版本/模式/事件数/实际warnings和每个输出身份。复用现有读取/重写，完整规划后才新建目录；已有目录/文件不覆盖，普通IO失败可能留下部分目录。完整用法及仅读最终文件的接收例程见[链式Dataset抽取](EXTRACT-DATASETS.md)。
+
 `populations`执行命名分层门控计划，gate/subset可选择指定群体。完整原始索引、父群体计数和65位ID导出示例见[门控计划](GATE-PLANS.md)。
 
 `population-report samples.json output.csv --options gates.json`将共享门计划应用于样本清单，交付一张样本×群体计数表，带父/总群体比例、原文件SHA-256、所选Dataset、原版本和实际读取警告。文件路径相对清单所在目录解析；公共读取选项可逐样本覆盖，门控视图仍属于每一步。全部样本成功后才创建新输出；现有目标保留。独立CSV接收方可直接透视计数和按群体频率排序；[完整合同与例程](POPULATION-REPORT.md)说明内存、零分母和解释范围。

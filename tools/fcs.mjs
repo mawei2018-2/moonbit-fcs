@@ -5,11 +5,13 @@ import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { publishCsv } from './csv-output.mjs';
 import { collectPopulationReport } from './population-report.mjs';
+import { prepareDatasetExtraction } from './extract-datasets.mjs';
 
 const help = `MoonBit FCS data preparation (Node >= 22)
   node tools/fcs.mjs inspect|validate|stats|metadata|values|gate input.fcs [--options options.json]
   node tools/fcs.mjs csv input.fcs output.csv [--atomic-output] [--options options.json]
   node tools/fcs.mjs subset|rewrite input.fcs output.fcs [--options options.json]
+  node tools/fcs.mjs extract-datasets input.fcs output-directory [--options read-options.json]
   node tools/fcs.mjs create|create-histogram output.fcs --options events.json
   node tools/fcs.mjs histogram|histogram-axis|histogram-bin|compensation input.fcs [--options options.json]
   node tools/fcs.mjs populations input.fcs --options gate-plan.json
@@ -46,6 +48,8 @@ adds events (window length), while population_events remains the full group leng
 It uses an in-memory population FCS copy; see POPULATION-STATS.md for limits.
 population-report applies shared gates to a sample roster and writes count/fraction CSV rows.
 Sample file paths are relative to samples.json; see POPULATION-REPORT.md for its read options and provenance.
+extract-datasets rewrites every chained Dataset as a standalone FCS3.1 file with a source manifest.
+The directory must not exist; normal write IO failures may leave partial output. See EXTRACT-DATASETS.md.
 Build first: moon build --target js --release`;
 
 function input(file) {
@@ -118,6 +122,17 @@ async function main() {
     if (files.length !== 2) throw Error('transform needs input and output paths');
     const bytes = api.transform(input(files[0]), JSON.stringify({...options, command}));
     writeNew(files[1], bytes); console.log(JSON.stringify({written:files[1], bytes:bytes.length})); return;
+  }
+  if (command === 'extract-datasets') {
+    if (files.length !== 2) throw Error('extract-datasets needs input and output-directory paths');
+    const plan = prepareDatasetExtraction(input(files[0]),options,api);
+    fs.mkdirSync(files[1]);
+    for (const file of plan.files) writeNew(path.join(files[1],file.file),file.bytes);
+    const manifestPath = path.join(files[1],'manifest.json');
+    writeNew(manifestPath,Buffer.from(JSON.stringify({schema_version:1,source_file:files[0],
+      source_sha256:plan.source_sha256,datasets:plan.datasets},null,2)+'\n','utf8'));
+    console.log(JSON.stringify({written:files[1],datasets:plan.datasets.length,manifest:manifestPath}));
+    return;
   }
   if (command === 'population-report') {
     if (files.length !== 2) throw Error('population-report needs manifest and output paths');
