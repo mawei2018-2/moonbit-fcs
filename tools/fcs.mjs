@@ -3,10 +3,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
+import { publishCsv } from './csv-output.mjs';
 
 const help = `MoonBit FCS data preparation (Node >= 22)
   node tools/fcs.mjs inspect|validate|stats|metadata|values|gate input.fcs [--options options.json]
-  node tools/fcs.mjs csv input.fcs output.csv [--options options.json]
+  node tools/fcs.mjs csv input.fcs output.csv [--atomic-output] [--options options.json]
   node tools/fcs.mjs subset|rewrite input.fcs output.fcs [--options options.json]
   node tools/fcs.mjs create|create-histogram output.fcs --options events.json
   node tools/fcs.mjs histogram|histogram-axis|histogram-bin|compensation input.fcs [--options options.json]
@@ -28,6 +29,8 @@ CSV receipts describe the selected view: compensation implies scaling.
 CSV also accepts gates/population directly; start/count slice population members.
 Gate view flags stay in each step; top-level view flags select CSV output values.
 CSV event_index_column:"source_event_index" optionally prepends a zero-based source Dataset index.
+CSV --atomic-output publishes a complete closed file using a same-directory non-replacing hard link.
+It requires filesystem hard-link support; see POPULATION-CSV.md for cleanup warnings and limits.
 population-stats requires gates/population and reports all original channels by default, plus source indices;
 top-level scaled/compensated choose statistics views, independently of per-step gate views.
 Its optional channels list selects/reorders report columns after full-channel compensation;
@@ -75,6 +78,10 @@ async function main() {
     if (!options || Array.isArray(options) || typeof options !== 'object') throw Error('options must be object');
     args.splice(p, 2);
   }
+  // Only a trailing host flag is reserved. Literal input/output filenames named
+  // --atomic-output keep their existing meaning in the three positional args.
+  const atomicOutput = args[0] === 'csv' && args.length === 4 && args[3] === '--atomic-output';
+  if (atomicOutput) args.pop();
   const [command, ...files] = args;
   const modulePath = new URL('../_build/js/release/build/cmd/bridge/bridge.js', import.meta.url);
   if (!fs.existsSync(modulePath)) throw Error('run moon build --target js --release first');
@@ -164,8 +171,7 @@ async function main() {
     if (!Number.isSafeInteger(start) || !Number.isSafeInteger(count) || start < 0 || count < 0 || start > available || count > available - start) throw Error('invalid CSV range');
     // Resolve every requested scaling path before creating the destination.
     if (count) query(d, 'values', {start:selected ? selected[start] : start,count:1,channels});
-    const fd = fs.openSync(files[1], 'wx');
-    try {
+    const render = fd => {
       const header = channels.map(i => csvCell(info.channels[i].name));
       if (eventIndexColumn !== null) header.unshift(csvCell(eventIndexColumn));
       fs.writeFileSync(fd, header.join(',') + '\r\n');
@@ -181,10 +187,17 @@ async function main() {
         fs.writeFileSync(fd, rows.map((row, i) => (eventIndexColumn === null ? row : [sourceAt + i, ...row]).join(',')).join('\r\n') + '\r\n');
         at += take;
       }
-    } finally { fs.closeSync(fd); }
+    };
+    let publication = null;
+    if (atomicOutput) publication = publishCsv(files[1], render);
+    else {
+      const fd = fs.openSync(files[1], 'wx');
+      try { render(fd); } finally { fs.closeSync(fd); }
+    }
     console.log(JSON.stringify({written:files[1], events:count, scaled:!!options.scaled || !!options.compensated, compensated:!!options.compensated,
       ...(eventIndexColumn === null ? {} : {event_index_column:eventIndexColumn}),
-      ...(selected ? {population:options.population, population_events:selected.length, source_event_indices:selected.slice(start,start + count)} : {})})); return;
+      ...(selected ? {population:options.population, population_events:selected.length, source_event_indices:selected.slice(start,start + count)} : {}),
+      ...(publication ?? {})})); return;
   }
   if (!['inspect','validate','stats','metadata','values','gate','populations','histogram','histogram-axis','histogram-bin','compensation'].includes(command) || files.length !== 1) throw Error('invalid command/arguments; use --help');
   console.log(JSON.stringify(query(read(files[0]), command), null, 2));

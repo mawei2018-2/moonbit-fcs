@@ -58,6 +58,30 @@ source_event = int(rows[0]["source_event_index"])
 
 CSV只读源FCS，不写FCS或修改ANALYSIS，所以不需要为CSV请求drop_analysis。原有FCS子集写出的ANALYSIS保护保持。列表模式限制保持，C/U仍用直方图API。未指定群体的原CSV合同不变；本增量不新增CSV对独立events/bounds/vertices选择器的支持。
 
+## CSV完成后发布最终名称（可选）
+
+只取得最终文件路径、没有生产进程stdout/退出码的接收方，可使用：
+
+```sh
+node tools/fcs.mjs csv input.fcs received.csv --atomic-output --options selection.json
+```
+
+此标志必须在输入/输出路径之后，可在`--options FILE`之前或之后；由Node主机消费，不转发为MoonBit请求参数。三项位置参数中的`--atomic-output`仍可作为原有输入/输出文件名；只有额外尾随标志才选择新模式。只适用于csv，默认命令的CSV字节、回执和错误保持。门控/窗口、精确整数、表头/源索引及科学视图继续走原生成路径。
+
+新模式在目标父目录独占创建本次拥有的暂存文件，写完并关闭后用不替换目标的硬链接发布最终名称。正常发布前异常不生成本生产者的最终文件，也不返回成功回执；只清理本次拥有的暂存项。已有或并发创建的目标不覆盖、不删除，不退回覆盖rename或部分copy。原始FCS只读。等待旧CLI退出0再消费的调用者已经可取得完整CSV，无须为了这个流程改用新标志。
+
+成功回执只在新模式增加`atomic_output:true, cleanupPending:false`。发布是提交点：若发布已完成、随后暂存清理失败，完整目标保留，退出0，改为`cleanupPending:true`并附绝对`stagingPath`和限长告警，例如`warning:"CSV published; staging cleanup is pending (EACCES)."`。调用方可核对返回的本次暂存路径后清理它；不要删除已发布目标。
+
+发布前错误退出1且stdout为空，stderr形如`atomic CSV write failed (EIO); no output was published by this invocation.`；阶段为staging/write/close/publish，IO代码只保留1–40字符的ASCII大写字母/数字/下划线，否则为UNKNOWN。若正常异常处理中的暂存清理也失败，错误附上实际暂存路径与清理待办；不将既有或并发目标称为本次成功结果。
+
+需要目标父目录的本地文件系统支持独占创建/硬链接；不支持时明确失败，不降低为copy。范围不含网络/对象存储、fsync或掉电持久性、watcher恰好一次投递、CSV与JSON回执多文件事务、强杀后自动清理，也不扩展到FCS写出命令。自行编写的[CSV-only文件接收方](examples/atomic-csv/README.md)验证完整文件交付，不代表真实第三方或机构采用。
+
+独立验收使用完整原创I16输入和手写CSV字节、100001行模65536规则、65位整数及原门控/补偿窗口对照。外部IO检查点让另一个Python标准库进程在真实写入期间尝试打开最终路径，覆盖迟发EIO、close/link错误、目标竞争及发布后清理告警，不依赖睡眠或fs.watch时序，也不向生产代码加入测试开关：
+
+```sh
+python tools/check-atomic-csv.py /path/to/NEW_CHECK_DIRECTORY
+```
+
 ## 真实文件例程与独立预期
 
 RepOD例程离线读取已许可文件96804，复用已有inner数值门控，只导出Time/FSC-A两列。执行inspect保存4条显式偏移空格兼容警告，再直接CSV，共2次CLI；输出662事件、1324值、原Dataset事件索引回执及来源/署名/CC BY4.0说明，不生成中间FCS。数值阈值只是格式交换示例，没有生物学分类结论。

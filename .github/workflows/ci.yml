@@ -71,6 +71,8 @@ jobs:
           node examples/repod-population-csv.mjs "${{ runner.temp }}/fcs-csv-event-index-repod" --event-index-column source_event_index
       - name: Verify population statistics with exact synthetic and licensed F32 consumers
         run: python tools/check-population-stats.py "${{ runner.temp }}/fcs-population-stats"
+      - name: Verify optional CSV publication with independent file-only receivers
+        run: python tools/check-atomic-csv.py "${{ runner.temp }}/fcs-atomic-csv"
       - name: Verify reported statistic channels retain full compensation dependencies
         run: python tools/check-population-stat-channels.py "${{ runner.temp }}/fcs-population-stat-channels"
       - name: Verify requested statistics evaluate only actual calibration dependencies
@@ -119,5 +121,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: fcs-reference-current
-          path: ${{ runner.temp }}/fcs-reference-current.json
+          path: |
+            ${{ runner.temp }}/fcs-reference-current.json
+            ${{ runner.temp }}/fcs-atomic-csv/CHECKS.json
+            ${{ runner.temp }}/fcs-atomic-csv/PROCESS-LAUNCHES.jsonl
+            ${{ runner.temp }}/fcs-atomic-csv/inputs/MANIFEST.json
+            ${{ runner.temp }}/fcs-atomic-csv/**/driver-trace.json
       - run: python tools/generate_fixtures.py && moon fmt && git diff --exit-code

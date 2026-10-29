@@ -1,0 +1,9 @@
+{
+  "strict": true,
+  "channels": [
+    "X"
+  ],
+  "start": 1,
+  "count": 2,
+  "event_index_column": "source_event_index"
+}

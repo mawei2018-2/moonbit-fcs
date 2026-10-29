@@ -25,6 +25,8 @@ csv也可直接接受gates/population，无需中间FCS；start/count切片群�
 
 CSV可另选event_index_column，把该源Dataset索引写入首列，便于CSV单文件在下游排序/筛选后仍对应原事件；默认关闭，列名由调用方指定。
 
+CSV可在输出路径后追加`--atomic-output`，写完并关闭同目录暂存文件后，以不覆盖目标的硬链接发布完整CSV，供只接收最终文件路径的下游使用。默认命令及科学值/回执保持；需要本地文件系统支持该发布原语。发布后暂存清理失败仍返回成功及明确的cleanupPending/路径告警。不是掉电持久性或多文件事务；合同与独立文件接收例程见[群体CSV](POPULATION-CSV.md)和[可运行示例](examples/atomic-csv/README.md)。
+
 计划与输出列可使用精确PnN通道名，支持换序元数据；[具名通道与第三方交换例程](NAMED-CHANNELS.md)提供RepOD→群体FCS→FlowIO回读。
 
 `population-stats`将gates/population接到既有MoonBit统计，报告该群体的源事件索引、有限/非有限计数、极值、均值和样本方差。可选start/count按群体成员位置取窗口，与CSV语义对齐；显式窗口另报实际events，population_events保留完整群体数。默认全部原通道；可选channels按精确PnN/数字选择和重排报告，返回源channel_indices。顶层scaled/compensated独立选择统计视图；指定列仅计算请求输出，保留完整源数据及实际补偿依赖，避免无关输出校准阻断请求；无中间磁盘FCS，原文件与ANALYSIS不改。内部仍创建群体FCS内存副本；统计为Double，不保证大整数精度。用法、闭式反例和边界见[群体统计](POPULATION-STATS.md)。原stats仍报告整个Dataset，返回格式保持。
