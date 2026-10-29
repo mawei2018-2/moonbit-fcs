@@ -17,9 +17,11 @@ node tools/fcs.mjs subset /path/to/NEW.fcs /path/to/SELECTED.fcs --options examp
 
 所有输出要求新路径。真实文件完整交换例程为 `node examples/repod-selection.mjs /path/to/NEW_DIRECTORY`，详见[RepOD交换](REPOD-EXCHANGE.md)。RepOD原文件的偏移空格须显式兼容；调用方检查警告，strict不能与兼容选项组合。
 
-CLI提供inspect/validate/metadata/stats/values/gate；populations/population-stats；subset/rewrite/csv；create/create-histogram；histogram/histogram-axis/histogram-bin/compensation。JSON通过 `--options FILE.json` 传入。
+CLI提供inspect/validate/metadata/stats/values/gate；populations/population-stats/population-report；subset/rewrite/csv；create/create-histogram；histogram/histogram-axis/histogram-bin/compensation。JSON通过 `--options FILE.json` 传入。
 
 `populations`执行命名分层门控计划，gate/subset可选择指定群体。完整原始索引、父群体计数和65位ID导出示例见[门控计划](GATE-PLANS.md)。
+
+`population-report samples.json output.csv --options gates.json`将共享门计划应用于样本清单，交付一张样本×群体计数表，带父/总群体比例、原文件SHA-256、所选Dataset、原版本和实际读取警告。文件路径相对清单所在目录解析；公共读取选项可逐样本覆盖，门控视图仍属于每一步。全部样本成功后才创建新输出；现有目标保留。独立CSV接收方可直接透视计数和按群体频率排序；[完整合同与例程](POPULATION-REPORT.md)说明内存、零分母和解释范围。
 
 csv也可直接接受gates/population，无需中间FCS；start/count切片群体成员，回执带实际导出行的源Dataset索引。门控与输出视图分别指定，完整用法和RepOD例程见[直接群体CSV](POPULATION-CSV.md)。
 

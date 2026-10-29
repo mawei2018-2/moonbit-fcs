@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { publishCsv } from './csv-output.mjs';
+import { collectPopulationReport } from './population-report.mjs';
 
 const help = `MoonBit FCS data preparation (Node >= 22)
   node tools/fcs.mjs inspect|validate|stats|metadata|values|gate input.fcs [--options options.json]
@@ -13,6 +14,7 @@ const help = `MoonBit FCS data preparation (Node >= 22)
   node tools/fcs.mjs histogram|histogram-axis|histogram-bin|compensation input.fcs [--options options.json]
   node tools/fcs.mjs populations input.fcs --options gate-plan.json
   node tools/fcs.mjs population-stats input.fcs --options population.json
+  node tools/fcs.mjs population-report samples.json output.csv --options gates.json
   node tools/fcs.mjs compare first.fcs second.fcs [more.fcs ...]
 Options: dataset (0-based), strict, allow_exclusive_end, latin1, allow_text_padding, allow_offset_padding, scaled;
 allow_text_padding accepts only trailing ASCII spaces after the final TEXT delimiter and warns;
@@ -42,6 +44,8 @@ adds events (window length), while population_events remains the full group leng
   include_read_report:true optionally adds the original source SHA-256, selected dataset,
   source version and actual read warnings before the private canonical statistics copy.
 It uses an in-memory population FCS copy; see POPULATION-STATS.md for limits.
+population-report applies shared gates to a sample roster and writes count/fraction CSV rows.
+Sample file paths are relative to samples.json; see POPULATION-REPORT.md for its read options and provenance.
 Build first: moon build --target js --release`;
 
 function input(file) {
@@ -114,6 +118,13 @@ async function main() {
     if (files.length !== 2) throw Error('transform needs input and output paths');
     const bytes = api.transform(input(files[0]), JSON.stringify({...options, command}));
     writeNew(files[1], bytes); console.log(JSON.stringify({written:files[1], bytes:bytes.length})); return;
+  }
+  if (command === 'population-report') {
+    if (files.length !== 2) throw Error('population-report needs manifest and output paths');
+    const report = collectPopulationReport(files[0],options,api,input);
+    writeNew(files[1],report.csv);
+    console.log(JSON.stringify({written:files[1],samples:report.samples,rows:report.rows}));
+    return;
   }
   if (command === 'population-stats') {
     if (files.length !== 1) throw Error('population-stats needs one input path');

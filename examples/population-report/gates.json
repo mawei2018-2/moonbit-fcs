@@ -1,0 +1,69 @@
+{
+  "strict": true,
+  "gates": [
+    {
+      "id": "child,\"Y\"\n生細胞",
+      "parent": "band",
+      "bounds": [
+        [
+          "Y",
+          1,
+          2.5
+        ]
+      ],
+      "scaled": true
+    },
+    {
+      "id": "band",
+      "bounds": [
+        [
+          "X",
+          2,
+          10
+        ]
+      ]
+    },
+    {
+      "id": "ID-window",
+      "integer_bounds": [
+        {
+          "channel": "ID",
+          "lower": "18446744073709551617",
+          "upper": "18446744073709551620"
+        }
+      ]
+    },
+    {
+      "id": "vacant",
+      "bounds": [
+        [
+          "X",
+          90,
+          100
+        ]
+      ]
+    },
+    {
+      "id": "empty-child",
+      "parent": "vacant",
+      "bounds": [
+        [
+          "Y",
+          0,
+          100
+        ]
+      ]
+    },
+    {
+      "id": "compensated",
+      "bounds": [
+        [
+          "Y",
+          1,
+          4
+        ]
+      ],
+      "compensated": true
+    }
+  ]
+}

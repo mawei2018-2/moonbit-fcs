@@ -75,6 +75,8 @@ jobs:
         run: python tools/check-atomic-csv.py "${{ runner.temp }}/fcs-atomic-csv"
       - name: Verify population membership columns with independent CSV-only receivers
         run: python tools/check-population-columns.py "${{ runner.temp }}/fcs-population-columns"
+      - name: Verify multi-sample population reports with independent CSV-only receivers
+        run: python tools/check-population-report.py "${{ runner.temp }}/fcs-population-report"
       - name: Verify reported statistic channels retain full compensation dependencies
         run: python tools/check-population-stat-channels.py "${{ runner.temp }}/fcs-population-stat-channels"
       - name: Verify requested statistics evaluate only actual calibration dependencies
@@ -132,4 +134,9 @@ jobs:
             ${{ runner.temp }}/fcs-population-columns/CHECKS.json
             ${{ runner.temp }}/fcs-population-columns/PROCESS-LAUNCHES.jsonl
             ${{ runner.temp }}/fcs-population-columns/inputs/MANIFEST.json
+            ${{ runner.temp }}/fcs-population-report/CHECKS.json
+            ${{ runner.temp }}/fcs-population-report/PROCESS-LAUNCHES.jsonl
+            ${{ runner.temp }}/fcs-population-report/inputs/MANIFEST.json
+            ${{ runner.temp }}/fcs-population-report/negative-inputs/MANIFEST.json
+            ${{ runner.temp }}/fcs-population-report/outputs/*.csv
       - run: python tools/generate_fixtures.py && moon fmt && git diff --exit-code

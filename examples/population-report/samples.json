@@ -1,0 +1,17 @@
+{
+  "samples": [
+    {
+      "sample": "donor α,\"A\"\nline",
+      "file": "panel A.fcs"
+    },
+    {
+      "sample": "donor β",
+      "file": "linked.fcs",
+      "dataset": 1
+    },
+    {
+      "sample": "empty",
+      "file": "empty.fcs"
+    }
+  ]
+}
