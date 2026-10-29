@@ -6,6 +6,7 @@ fn set_encoding_metadata(
   encoding : Encoding,
   mode : StorageMode,
   events : Int,
+  require_unique_names? : Bool = true,
 ) -> Unit raise FcsError {
   encoding.validate(names.length())
   if names.is_empty() ||
@@ -47,7 +48,7 @@ fn set_encoding_metadata(
   put(meta, "$TOT", events.to_string())
   put(meta, "$ORIGINALITY", "Non-Original")
   for c in 0..<names.length() {
-    if names[c].is_empty() || seen.contains(names[c]) {
+    if names[c].is_empty() || (require_unique_names && seen.contains(names[c])) {
       raise Invalid("unique nonempty channel names required")
     }
     seen[names[c]] = true
@@ -151,6 +152,7 @@ fn Dataset::write_histogram(
     chosen,
     self.mode,
     self.events,
+    require_unique_names=false,
   )
   put(meta, "$TOT", self.total_events)
   self.sync_spillover(meta, cs, drop_spillover)

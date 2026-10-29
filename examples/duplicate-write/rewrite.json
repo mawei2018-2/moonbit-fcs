@@ -1,0 +1,14 @@
+{
+  "channels": [
+    1,
+    0
+  ],
+  "encoding": {
+    "datatype": "D",
+    "widths": [
+      64,
+      64
+    ],
+    "big_endian": true
+  }
+}

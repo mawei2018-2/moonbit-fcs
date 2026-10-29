@@ -103,6 +103,8 @@ jobs:
         run: python tools/check-deep-features.py "${{ runner.temp }}/fcs-deep" --report "${{ runner.temp }}/fcs-deep.json"
       - name: Verify legacy COMP histogram projection with independent byte consumers
         run: python tools/check-histogram-comp.py "${{ runner.temp }}/fcs-histogram-comp"
+      - name: Verify positional writes of duplicate-name compatibility datasets with independent file receivers
+        run: python tools/check-duplicate-write.py "${{ runner.temp }}/fcs-duplicate-write"
       - run: python tools/reference_check.py
       - name: Check pinned public FCS files independently
         shell: bash
@@ -139,4 +141,8 @@ jobs:
             ${{ runner.temp }}/fcs-population-report/inputs/MANIFEST.json
             ${{ runner.temp }}/fcs-population-report/negative-inputs/MANIFEST.json
             ${{ runner.temp }}/fcs-population-report/outputs/*.csv
+            ${{ runner.temp }}/fcs-duplicate-write/CHECKS.json
+            ${{ runner.temp }}/fcs-duplicate-write/PROCESS-LAUNCHES.jsonl
+            ${{ runner.temp }}/fcs-duplicate-write/inputs/MANIFEST.json
+            ${{ runner.temp }}/fcs-duplicate-write/outputs/*.fcs
       - run: python tools/generate_fixtures.py && moon fmt && git diff --exit-code

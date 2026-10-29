@@ -14,6 +14,8 @@ gate计划中bounds的第一个元素、polygon的x/y及integer_bounds.channel�
 
 缺失或重名引用明确失败；兼容读取的重复PnN文件仍可用数字索引。未知/歧义列使CSV和FCS导出在创建目标前失败。values请求0行时也检查通道，合法0行仍返回[]。旧单门谓词、histogram的标量channel/axis继续使用数字合同；群体FCS使用gate/subset，CSV既可读取其输出FCS，也可[直接接受gates/population](POPULATION-CSV.md)。
 
+重复名称会给出读取警告，strict读取仍报错，不宣称这类输入严格符合规范。数字位置也用于列表重编码及C/U直方图重写/换轴；保留各原列的名称与PnS/校准/数据，既不改名，也不让字符串引用猜一个重复列。新建文件的唯一非空名称要求保持；曾在写出时误用该创建校验的反例、修复范围和独立接收见[DUPLICATE-WRITE.md](DUPLICATE-WRITE.md)。重复输出同一数字轴仍报错。
+
 MoonBit调用方使用`dataset.channel_index("FSC-A")`取得原GatePredicate所需Int。GateStep和gate_plan类型未变，新增方法是兼容扩展；独立模块examples/named-channel-consumer可在该目录以`moon run . --target js --deny-warn`或`--target wasm-gc`运行，展示换序元数据、分层门控及65位ID导出。
 
 ## 已许可第三方文件的完整例程

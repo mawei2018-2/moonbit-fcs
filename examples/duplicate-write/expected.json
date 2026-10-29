@@ -1,0 +1,47 @@
+{
+  "mode": "L",
+  "metadataExceptDataOffsets": {
+    "$MODE": "L",
+    "$DATATYPE": "D",
+    "$BYTEORD": "4,3,2,1",
+    "$PAR": "2",
+    "$TOT": "3",
+    "$BEGINSTEXT": "0",
+    "$ENDSTEXT": "0",
+    "$BEGINANALYSIS": "0",
+    "$ENDANALYSIS": "0",
+    "$NEXTDATA": "0",
+    "$ORIGINALITY": "Non-Original",
+    "VENDOR": "preserved|metadata 日本語",
+    "$P1N": "DUP",
+    "$P1S": "right",
+    "$P1R": "65536",
+    "$P1E": "0,0",
+    "$P1G": "1",
+    "$P1B": "64",
+    "$P2N": "DUP",
+    "$P2S": "left",
+    "$P2R": "65536",
+    "$P2E": "0,0",
+    "$P2G": "1",
+    "$P2B": "64"
+  },
+  "values": [
+    [
+      3,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      7,
+      5
+    ]
+  ],
+  "rawDataHex": "4008000000000000400000000000000040140000000000004008000000000000401c0000000000004014000000000000",
+  "expectedDataBytes": 48,
+  "sourceNamesAreCompatibilityInput": true,
+  "standardStrictInputClaimed": false
+}

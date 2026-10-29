@@ -283,6 +283,7 @@ pub fn Dataset::write(
       chosen,
       ListMode,
       es.length(),
+      require_unique_names=false,
     )
     for i in 0..<cs.length() {
       if chosen.kind == Float32 || chosen.kind == Float64 {
