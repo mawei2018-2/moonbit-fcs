@@ -308,7 +308,9 @@ fn selected(d : @lib.Dataset, o : Map[String, Json]) -> Array[Int]? raise {
 fn do_query(d : @lib.Dataset, o : Map[String, Json]) -> String raise {
   let cmd : String = optional(o, "command", "inspect")
   if d.mode != @lib.ListMode &&
-    ["values", "stats", "selected-stats", "gate", "populations"].contains(cmd) {
+    [
+      "values", "stats", "selected-stats", "selected-quantiles", "gate", "populations",
+    ].contains(cmd) {
     raise Failure("event queries require list DATA; use histogram APIs")
   }
   let result : Json = match cmd {
@@ -369,6 +371,32 @@ fn do_query(d : @lib.Dataset, o : Map[String, Json]) -> String raise {
               .to_json()
             cache[channel] = statistic
             statistic
+          }
+        }
+      })
+      .to_json()
+    }
+    "selected-quantiles" => {
+      let probabilities : Array[Double] = required(o, "probabilities")
+      if probabilities.is_empty() ||
+        probabilities.any(p => p.is_nan() || p.is_inf() || p < 0.0 || p > 1.0) {
+        raise Failure(
+          "quantile probabilities must be nonempty and finite in [0,1]",
+        )
+      }
+      let scaled = optional(o, "scaled", false)
+      let compensated = optional(o, "compensated", false)
+      let cache : Map[Int, Json] = Map([])
+      report_channels(d, o)
+      .map(channel => {
+        match cache.get(channel) {
+          Some(result) => result
+          None => {
+            let result = d
+              .quantiles(channel, probabilities, scaled~, compensated~)
+              .to_json()
+            cache[channel] = result
+            result
           }
         }
       })

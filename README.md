@@ -28,7 +28,7 @@ node tools/fcs.mjs population-stats NEW.fcs --options examples/population-stat-w
 | 文件读取与检查 | 读取 FCS2.0/3.0/3.1、I/A/F/D 列表数据及 C/U 直方图；检查段、偏移、通道和补偿元数据。`inspect`、`validate`、`metadata` 提供结构与读取报告。 |
 | 精确整数 | BigInt 和十进制文本保留原始整数，支持非字节对齐及超过 64 位的位流；`integer_value`、`integer_text`、`rectangle_exact` 提供精确访问与选择。I 类型按 PnR 有效位读取。 |
 | 命名群体 | `gate_plan` 与 `populations` 组合矩形、多边形及精确整数条件，支持单父层级、前向父引用和分支，保留原事件索引、父群体及总群体比例。 |
-| 数值视图与统计 | 原值、线性缩放、补偿视图可分别用于门控和输出。`population-stats` 支持群体窗口、指定通道及重排，报告有限/非有限计数、极值、均值和样本方差。 |
+| 数值视图与统计 | 原值、线性缩放、补偿视图可分别用于门控和输出。`population-stats` 支持群体窗口、指定通道及重排，报告有限/非有限计数、极值、均值和样本方差；可选 `probabilities` 附带中位数及其它线性 type-7 分位数。 |
 | FCS 交换 | `create`、`subset`、`rewrite` 写出 FCS3.1，同步所选通道元数据与补偿矩阵。不可表示的转换明确失败，失效 ANALYSIS 须显式处理。 |
 | 链式 Dataset 交付 | `extract-datasets` 将完整 NEXTDATA 链拆为独立 FCS3.1 和 manifest，记录输入与输出哈希、源 Dataset 偏移、模式及实际读取警告。 |
 | CSV 交接 | `csv` 可直接导出群体窗口、精确原始整数、可选源索引及多个群体的成员列；`population-report` 交付多样本×群体计数及比例表。 |
@@ -41,6 +41,7 @@ node tools/fcs.mjs population-stats NEW.fcs --options examples/population-stat-w
 - [命名门控计划](GATE-PLANS.md)：群体选择、父子计数、原始索引与精确整数 ID。
 - [具名通道](NAMED-CHANNELS.md)与[RepOD 交换](REPOD-EXCHANGE.md)：许可原文件到群体 FCS、CSV 及独立读者的完整交接。
 - [群体统计](POPULATION-STATS.md)：成员窗口、输出通道、实际补偿依赖与可选输入读取来源报告。
+- [群体分位数](POPULATION-QUANTILES.md)：同一窗口/视图的有限观测中位数和四分位数，以及独立 JSON 接收例程；省略/null 保持原报告。
 - [直接群体 CSV](POPULATION-CSV.md)：窗口及源行号；[成员列示例](examples/population-columns/README.md)演示仅凭 CSV 消费群体关系。
 - [多样本群体报告](POPULATION-REPORT.md)：共享门计划、逐样本读取选项、来源与父/总群体比例。
 - [完整 Dataset 抽取](EXTRACT-DATASETS.md)：链式输入、独立文件清单及仅读最终交付文件的接收程序。

@@ -85,6 +85,10 @@ jobs:
         run: python tools/check-population-stat-window.py "${{ runner.temp }}/fcs-population-stat-window"
       - name: Verify optional population read provenance with independent source and statistics consumers
         run: python tools/check-population-read-report.py "${{ runner.temp }}/fcs-population-read-report"
+      - name: Verify population quantiles with independent JSON and public API consumers
+        run: |
+          (cd examples/quantile-consumer && moon fmt --check)
+          python tools/check-population-quantiles.py "${{ runner.temp }}/fcs-population-quantiles"
       - name: Verify independent standard encoding vectors
         run: |
           python tools/generate-standard-encodings.py --check
@@ -131,6 +135,10 @@ jobs:
           name: fcs-reference-current
           path: |
             ${{ runner.temp }}/fcs-reference-current.json
+            ${{ runner.temp }}/fcs-population-quantiles/CHECKS.json
+            ${{ runner.temp }}/fcs-population-quantiles/PROCESS-LAUNCHES.jsonl
+            ${{ runner.temp }}/fcs-population-quantiles/inputs/MANIFEST.json
+            ${{ runner.temp }}/fcs-population-quantiles/outputs/*.json
             ${{ runner.temp }}/fcs-atomic-csv/CHECKS.json
             ${{ runner.temp }}/fcs-atomic-csv/PROCESS-LAUNCHES.jsonl
             ${{ runner.temp }}/fcs-atomic-csv/inputs/MANIFEST.json

@@ -65,6 +65,15 @@ pub struct ChannelStats {
 } derive(Debug, ToJson)
 
 ///|
+pub struct ChannelQuantiles {
+  method_id : String
+  count : Int
+  nonfinite : Int
+  probabilities : Array[Double]
+  values : Array[Double?]
+} derive(Debug)
+
+///|
 pub(all) struct Bounds {
   channel : Int
   lower : Double

@@ -46,6 +46,9 @@ adds events (window length), while population_events remains the full group leng
   include_read_report:true optionally adds the original source SHA-256, selected dataset,
   source version and actual read warnings before the private canonical statistics copy.
 It uses an in-memory population FCS copy; see POPULATION-STATS.md for limits.
+  probabilities:[0.25,0.5,0.75] optionally adds finite-observation linear type-7 quantiles
+  in the same member window and requested view. Omitted/null retains the previous report.
+  The array must be nonempty with numeric probabilities in [0,1]. See POPULATION-QUANTILES.md.
 population-report applies shared gates to a sample roster and writes count/fraction CSV rows.
 Sample file paths are relative to samples.json; see POPULATION-REPORT.md for its read options and provenance.
 extract-datasets rewrites every chained Dataset as a standalone FCS3.1 file with a source manifest.
@@ -144,9 +147,11 @@ async function main() {
   if (command === 'population-stats') {
     if (files.length !== 1) throw Error('population-stats needs one input path');
     const parseKeys = ['dataset','strict','allow_exclusive_end','latin1','allow_text_padding','allow_offset_padding'];
-    const allowed = new Set([...parseKeys,'gates','population','scaled','compensated','channels','start','count','include_read_report']);
+    const allowed = new Set([...parseKeys,'gates','population','scaled','compensated','channels','start','count','include_read_report','probabilities']);
     for (const key of Object.keys(options)) if (!allowed.has(key)) throw Error(`unsupported population-stats option: ${key}`);
     for (const key of ['scaled','compensated','include_read_report']) if (Object.hasOwn(options, key) && typeof options[key] !== 'boolean') throw Error(`${key} must be boolean`);
+    const probabilities = options.probabilities ?? null;
+    if (probabilities !== null && (!Array.isArray(probabilities) || !probabilities.length || probabilities.some(p => typeof p !== 'number' || !Number.isFinite(p) || p < 0 || p > 1))) throw Error('probabilities must be a nonempty numeric array in [0,1]');
     if (!Object.hasOwn(options, 'gates') || typeof options.population !== 'string') throw Error('population-stats requires gates and population');
     const source = input(files[0]);
     const sourceHash = options.include_read_report ? createHash('sha256').update(source).digest('hex') : null;
@@ -160,6 +165,7 @@ async function main() {
     delete gateOptions.start;
     delete gateOptions.count;
     delete gateOptions.include_read_report;
+    delete gateOptions.probabilities;
     const members = JSON.parse(api.query(d, JSON.stringify(gateOptions)));
     const hasWindow = Object.hasOwn(options, 'start') || Object.hasOwn(options, 'count');
     const start = options.start ?? 0, count = options.count ?? members.length - start;
@@ -172,10 +178,13 @@ async function main() {
     const population = api.load(bytes, '{}');
     const statistics = JSON.parse(api.query(population, JSON.stringify({command:reportChannels === null ? 'stats' : 'selected-stats',
       ...(reportChannels === null ? {} : {channels:reportChannels}), scaled:!!options.scaled, compensated:!!options.compensated})));
+    const quantiles = probabilities === null ? null : JSON.parse(api.query(population, JSON.stringify({command:'selected-quantiles',
+      probabilities, ...(reportChannels === null ? {} : {channels:reportChannels}), scaled:!!options.scaled, compensated:!!options.compensated})));
     console.log(JSON.stringify({population:options.population, population_events:members.length,
       source_event_indices:selected, channel_names:(reportChannels ?? info.channels.map((_, i) => i)).map(i => info.channels[i].name),
       scaled:!!options.scaled || !!options.compensated, compensated:!!options.compensated,
       statistics,
+      ...(quantiles === null ? {} : {quantiles}),
       ...(reportChannels === null ? {} : {channel_indices:reportChannels}),
       ...(hasWindow ? {events:count} : {}),
       ...(options.include_read_report ? {read_report:{source_sha256:sourceHash, dataset:options.dataset ?? 0,

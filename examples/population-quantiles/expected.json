@@ -1,0 +1,115 @@
+{
+  "population": "p",
+  "population_events": 6,
+  "source_event_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "channel_names": [
+    "Target",
+    "Driver",
+    "Target"
+  ],
+  "scaled": true,
+  "compensated": true,
+  "statistics": [
+    {
+      "count": 4,
+      "nonfinite": 2,
+      "minimum": 4.5,
+      "maximum": 497.5,
+      "mean": 130.875,
+      "variance": 59753.229166666664
+    },
+    {
+      "count": 6,
+      "nonfinite": 0,
+      "minimum": 1.0,
+      "maximum": 7.0,
+      "mean": 4.333333333333333,
+      "variance": 4.666666666666667
+    },
+    {
+      "count": 4,
+      "nonfinite": 2,
+      "minimum": 4.5,
+      "maximum": 497.5,
+      "mean": 130.875,
+      "variance": 59753.229166666664
+    }
+  ],
+  "quantiles": [
+    {
+      "method": "linear-type7",
+      "count": 4,
+      "nonfinite": 2,
+      "probabilities": [
+        1,
+        0.5,
+        0,
+        0.25,
+        0.75,
+        0.5
+      ],
+      "values": [
+        497.5,
+        10.75,
+        4.5,
+        7.125,
+        134.5,
+        10.75
+      ]
+    },
+    {
+      "method": "linear-type7",
+      "count": 6,
+      "nonfinite": 0,
+      "probabilities": [
+        1,
+        0.5,
+        0,
+        0.25,
+        0.75,
+        0.5
+      ],
+      "values": [
+        7.0,
+        4.5,
+        1.0,
+        3.25,
+        5.75,
+        4.5
+      ]
+    },
+    {
+      "method": "linear-type7",
+      "count": 4,
+      "nonfinite": 2,
+      "probabilities": [
+        1,
+        0.5,
+        0,
+        0.25,
+        0.75,
+        0.5
+      ],
+      "values": [
+        497.5,
+        10.75,
+        4.5,
+        7.125,
+        134.5,
+        10.75
+      ]
+    }
+  ],
+  "channel_indices": [
+    1,
+    2,
+    1
+  ]
+}

@@ -2,6 +2,8 @@
 
 `.github/workflows/ci.yml`的必要作业为`test`，push/pull_request均执行。既有固定MoonBit工具链、JS/Wasm-GC测试、公开/许可文件互通、统计、COMP、事件成员列和CSV发布验证保持。真实完成以目标提交对应Actions作业及全部必要步骤终态为准；配置、推送和本地通过分别记录。
 
+群体分位数的必要步骤为 `Verify population quantiles with independent JSON and public API consumers`。它检查独立 MoonBit 消费模块格式，并执行 `python tools/check-population-quantiles.py "$RUNNER_TEMP/fcs-population-quantiles"`：从原创 struct FCS 与有理数完整预期，核对原始/缩放/补偿、群体窗口、极值/非有限数据、错误路径、默认字节兼容及 JS/Wasm-GC 公共 API。另启仅读最终 JSON 的接收进程，覆盖全文、错误中位数及次正规数擦零反例；零与次正规数精确核对，其余 Double 数值的固定向量容差为 4 ULP，身份、模式、计数、索引和概率严格一致。新公共 API 的双端核心数值测试随既有 `moon test` 执行，原检查命令不删减。CHECKS、输入清单、进程启动记录和实际 JSON 输出随 artifact 保留。
+
 多样本报告新增必要步骤：`Verify multi-sample population reports with independent CSV-only receivers`，执行：
 
 ```sh

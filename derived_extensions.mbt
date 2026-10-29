@@ -23,6 +23,12 @@ pub extend ChannelStats with @moonbitlang/core/debug.Debug::{to_repr}
 pub extend ChannelStats with ToJson::{to_json}
 
 ///|
+pub extend ChannelQuantiles with @moonbitlang/core/debug.Debug::{to_repr}
+
+///|
+pub extend ChannelQuantiles with ToJson::{to_json}
+
+///|
 pub extend Dataset with @moonbitlang/core/debug.Debug::{to_repr}
 
 ///|

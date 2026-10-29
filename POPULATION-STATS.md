@@ -2,6 +2,8 @@
 
 `population-stats`把已有命名群体与MoonBit通道统计接通：用户不必先保存群体FCS/CSV，再另写汇总代码。它输出JSON，原`stats`仍统计整个Dataset并保持数组格式。
 
+可选 `probabilities:[0.25,0.5,0.75]` 在同一成员窗口和数值视图附带有限观测的线性 type-7 分位数；省略或 null 保持原报告字节。完整定义、数值/内存边界和独立接收例程见[群体分位数](POPULATION-QUANTILES.md)。
+
 ```sh
 moon build --target js --release --deny-warn
 node examples/run-gate-plan.mjs /path/to/NEW_DIRECTORY

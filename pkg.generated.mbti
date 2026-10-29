@@ -52,6 +52,17 @@ pub struct Channel {
 pub fn Channel::to_json(Self) -> Json
 pub fn Channel::to_repr(Self) -> @debug.Repr
 
+pub struct ChannelQuantiles {
+  method_id : String
+  count : Int
+  nonfinite : Int
+  probabilities : Array[Double]
+  values : Array[Double?]
+} derive(@debug.Debug)
+pub fn ChannelQuantiles::to_json(Self) -> Json
+pub fn ChannelQuantiles::to_repr(Self) -> @debug.Repr
+pub impl ToJson for ChannelQuantiles
+
 pub struct ChannelStats {
   count : Int
   nonfinite : Int
@@ -88,6 +99,7 @@ pub fn Dataset::integer_value(Self, Int, Int) -> @bigint.BigInt raise FcsError
 pub fn Dataset::keyword(Self, String) -> String?
 pub fn Dataset::keywords(Self) -> Array[(String, String)]
 pub fn Dataset::polygon(Self, Int, Int, Array[(Double, Double)], scaled? : Bool, compensated? : Bool) -> Array[Int] raise FcsError
+pub fn Dataset::quantiles(Self, Int, Array[Double], scaled? : Bool, compensated? : Bool) -> ChannelQuantiles raise FcsError
 pub fn Dataset::rectangle(Self, Array[Bounds], scaled? : Bool, compensated? : Bool) -> Array[Int] raise FcsError
 pub fn Dataset::rectangle_exact(Self, Array[IntegerBounds]) -> Array[Int] raise FcsError
 pub fn Dataset::spillover(Self) -> Spillover? raise FcsError

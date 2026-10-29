@@ -1,0 +1,39 @@
+{
+  "population": "p",
+  "population_events": 6,
+  "source_event_indices": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "channel_names": [
+    "Target",
+    "Driver"
+  ],
+  "scaled": false,
+  "compensated": false,
+  "statistics": [
+    {
+      "count": 3,
+      "nonfinite": 1,
+      "minimum": 20,
+      "maximum": 1000,
+      "mean": 350,
+      "variance": 316900
+    },
+    {
+      "count": 4,
+      "nonfinite": 0,
+      "minimum": 12,
+      "maximum": 24,
+      "mean": 18,
+      "variance": 26.666666666666668
+    }
+  ],
+  "channel_indices": [
+    1,
+    2
+  ],
+  "events": 4
+}
