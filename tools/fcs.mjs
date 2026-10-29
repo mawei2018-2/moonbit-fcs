@@ -29,6 +29,8 @@ CSV receipts describe the selected view: compensation implies scaling.
 CSV also accepts gates/population directly; start/count slice population members.
 Gate view flags stay in each step; top-level view flags select CSV output values.
 CSV event_index_column:"source_event_index" optionally prepends a zero-based source Dataset index.
+CSV population_columns:[{population:"gate-id",column:"in_gate"},...] appends 0/1 membership flags.
+It requires gates; without a population filter it annotates the ordinary source window.
 CSV --atomic-output publishes a complete closed file using a same-directory non-replacing hard link.
 It requires filesystem hard-link support; see POPULATION-CSV.md for cleanup warnings and limits.
 population-stats requires gates/population and reports all original channels by default, plus source indices;
@@ -83,6 +85,11 @@ async function main() {
   const atomicOutput = args[0] === 'csv' && args.length === 4 && args[3] === '--atomic-output';
   if (atomicOutput) args.pop();
   const [command, ...files] = args;
+  const requestedPopulationColumns = command === 'csv' && Object.hasOwn(options, 'population_columns') ? options.population_columns : null;
+  if (command === 'csv' && Object.hasOwn(options, 'population_columns')) {
+    options = {...options};
+    delete options.population_columns; // Host-only annotation schema, never a MoonBit request option.
+  }
   const modulePath = new URL('../_build/js/release/build/cmd/bridge/bridge.js', import.meta.url);
   if (!fs.existsSync(modulePath)) throw Error('run moon build --target js --release first');
   const api = await import(modulePath.href);
@@ -159,7 +166,35 @@ async function main() {
     const eventIndexColumn = options.event_index_column ?? null;
     if (eventIndexColumn !== null && (typeof eventIndexColumn !== 'string' || !eventIndexColumn.length || channels.some(i => info.channels[i].name === eventIndexColumn))) throw Error('CSV event_index_column must be a nonempty name distinct from selected data columns');
     let selected = null;
-    if (Object.hasOwn(options, 'gates') || Object.hasOwn(options, 'population')) {
+    const annotationColumns = [];
+    const annotationMembers = [];
+    if (requestedPopulationColumns !== null && !Array.isArray(requestedPopulationColumns)) throw Error('CSV population_columns must be an array or null');
+    if (requestedPopulationColumns?.length) {
+      const labels = new Set(channels.map(i => info.channels[i].name));
+      if (eventIndexColumn !== null) labels.add(eventIndexColumn);
+      for (const column of requestedPopulationColumns) {
+        if (!column || Array.isArray(column) || typeof column !== 'object' || typeof column.population !== 'string' || !column.population.length || typeof column.column !== 'string' || !column.column.length) throw Error('CSV population column requires nonempty population and column strings');
+        if (labels.has(column.column)) throw Error('CSV population column conflicts with another output column: '+column.column);
+        labels.add(column.column);
+        annotationColumns.push({population:column.population, column:column.column});
+      }
+      const gateOptions = {...options, command:'populations'};
+      delete gateOptions.scaled;
+      delete gateOptions.compensated;
+      const populations = new Map(JSON.parse(api.query(d, JSON.stringify(gateOptions))).map(p => [p.id, p]));
+      const cachedMembers = new Map();
+      for (const column of annotationColumns) {
+        const population = populations.get(column.population);
+        if (!population) throw Error('unknown population: '+column.population);
+        if (!cachedMembers.has(column.population)) cachedMembers.set(column.population, new Set(population.event_indices));
+        annotationMembers.push(cachedMembers.get(column.population));
+      }
+      if (Object.hasOwn(options, 'population') && options.population !== null) {
+        const population = populations.get(options.population);
+        if (!population) throw Error('unknown population: '+options.population);
+        selected = population.event_indices;
+      }
+    } else if (Object.hasOwn(options, 'gates') || Object.hasOwn(options, 'population')) {
       // Output view flags are independent of the per-step gate views.
       const gateOptions = {...options, command:'gate'};
       delete gateOptions.scaled;
@@ -174,8 +209,9 @@ async function main() {
     const render = fd => {
       const header = channels.map(i => csvCell(info.channels[i].name));
       if (eventIndexColumn !== null) header.unshift(csvCell(eventIndexColumn));
+      header.push(...annotationColumns.map(column => csvCell(column.column)));
       fs.writeFileSync(fd, header.join(',') + '\r\n');
-      const chunk = Math.max(1, Math.floor(100000 / (channels.length + (eventIndexColumn === null ? 0 : 1))));
+      const chunk = Math.max(1, Math.floor(100000 / (channels.length + (eventIndexColumn === null ? 0 : 1) + annotationColumns.length)));
       for (let at = start; at < start + count;) {
         const sourceAt = selected ? selected[at] : at;
         let take = Math.min(chunk, start + count - at);
@@ -184,7 +220,11 @@ async function main() {
           while (take < chunk && at + take < start + count && selected[at + take] === sourceAt + take) take++;
         }
         const rows = query(d, 'values', {start:sourceAt, count:take, channels});
-        fs.writeFileSync(fd, rows.map((row, i) => (eventIndexColumn === null ? row : [sourceAt + i, ...row]).join(',')).join('\r\n') + '\r\n');
+        fs.writeFileSync(fd, rows.map((row, i) => {
+          const event = sourceAt + i;
+          const cells = eventIndexColumn === null ? row : [event, ...row];
+          return (annotationMembers.length ? cells.concat(annotationMembers.map(members => members.has(event) ? 1 : 0)) : cells).join(',');
+        }).join('\r\n') + '\r\n');
         at += take;
       }
     };
@@ -197,6 +237,7 @@ async function main() {
     console.log(JSON.stringify({written:files[1], events:count, scaled:!!options.scaled || !!options.compensated, compensated:!!options.compensated,
       ...(eventIndexColumn === null ? {} : {event_index_column:eventIndexColumn}),
       ...(selected ? {population:options.population, population_events:selected.length, source_event_indices:selected.slice(start,start + count)} : {}),
+      ...(annotationColumns.length ? {population_columns:annotationColumns} : {}),
       ...(publication ?? {})})); return;
   }
   if (!['inspect','validate','stats','metadata','values','gate','populations','histogram','histogram-axis','histogram-bin','compensation'].includes(command) || files.length !== 1) throw Error('invalid command/arguments; use --help');

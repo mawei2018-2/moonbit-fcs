@@ -1,0 +1,71 @@
+{
+  "strict": true,
+  "gates": [
+    {
+      "id": "child",
+      "parent": "band",
+      "bounds": [
+        [
+          "Y",
+          1,
+          2.5
+        ]
+      ],
+      "scaled": true
+    },
+    {
+      "id": "band",
+      "bounds": [
+        [
+          "X",
+          0,
+          10
+        ]
+      ]
+    },
+    {
+      "id": "id_65",
+      "integer_bounds": [
+        {
+          "channel": "ID",
+          "lower": "18446744073709551617",
+          "upper": "18446744073709551620"
+        }
+      ]
+    },
+    {
+      "id": "never",
+      "bounds": [
+        [
+          "X",
+          90,
+          100
+        ]
+      ]
+    }
+  ],
+  "channels": [
+    "ID",
+    "Y",
+    "X"
+  ],
+  "event_index_column": "source_event_index",
+  "population_columns": [
+    {
+      "population": "band",
+      "column": "in_band"
+    },
+    {
+      "population": "child",
+      "column": "in_child"
+    },
+    {
+      "population": "id_65",
+      "column": "id_65"
+    },
+    {
+      "population": "never",
+      "column": "never"
+    }
+  ]
+}

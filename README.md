@@ -25,6 +25,8 @@ csv也可直接接受gates/population，无需中间FCS；start/count切片群�
 
 CSV可另选event_index_column，把该源Dataset索引写入首列，便于CSV单文件在下游排序/筛选后仍对应原事件；默认关闭，列名由调用方指定。
 
+CSV还可用`population_columns:[{population:"child",column:"in_child"},...]`附上多个具名群体的0/1成员列。配合原科学列和源索引，CSV-only接收方能直接统计交集、排序后保留成员关联，无须再拼接另一份群体JSON。省略/null/[]保持默认；非空列表需要gates，未指定population时标注原事件窗口，指定时标注该群体窗口。原MoonBit门控/科学值和可选完整发布保持；[可运行文件接收示例](examples/population-columns/README.md)只证明可消费性，不代表外部采用。
+
 CSV可在输出路径后追加`--atomic-output`，写完并关闭同目录暂存文件后，以不覆盖目标的硬链接发布完整CSV，供只接收最终文件路径的下游使用。默认命令及科学值/回执保持；需要本地文件系统支持该发布原语。发布后暂存清理失败仍返回成功及明确的cleanupPending/路径告警。不是掉电持久性或多文件事务；合同与独立文件接收例程见[群体CSV](POPULATION-CSV.md)和[可运行示例](examples/atomic-csv/README.md)。
 
 计划与输出列可使用精确PnN通道名，支持换序元数据；[具名通道与第三方交换例程](NAMED-CHANNELS.md)提供RepOD→群体FCS→FlowIO回读。

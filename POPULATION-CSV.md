@@ -58,6 +58,41 @@ source_event = int(rows[0]["source_event_index"])
 
 CSV只读源FCS，不写FCS或修改ANALYSIS，所以不需要为CSV请求drop_analysis。原有FCS子集写出的ANALYSIS保护保持。列表模式限制保持，C/U仍用直方图API。未指定群体的原CSV合同不变；本增量不新增CSV对独立events/bounds/vertices选择器的支持。
 
+## 将多个群体成员关系写入CSV（可选）
+
+需要把多个重叠/分层群体交给只读CSV的脚本时，在现有options中增加：
+
+```json
+{
+  "gates":[
+    {"id":"band","bounds":[["X",0,10]]},
+    {"id":"child","parent":"band","scaled":true,"bounds":[["Y",1,2.5]]}
+  ],
+  "channels":["X","Y"],
+  "event_index_column":"source_event_index",
+  "population_columns":[
+    {"population":"band","column":"in_band"},
+    {"population":"child","column":"in_child"}
+  ]
+}
+```
+
+非空population_columns要求gates；population省略或null时，导出原Dataset的start/count事件窗口并标注每一行。另指定population则保持已有“先选该群体，再取成员窗口”的行为。原科学列之后按请求顺序追加0/1，源索引仍可选放首列，回执仅增加同顺序的population_columns映射。索引指所选Dataset，不是文件全局行号或仪器ID。
+
+成员关系由同一个既有MoonBit完整gate_plan求得一次，按原事件号映射；每步的raw/scaled/compensated决定门控，顶层视图只决定科学数据列，不重新解释0/1。空群体/零行窗口仍保留完整表头，坏计划和引用仍校验。没有新增门控/补偿算法、推断分类、布尔门依赖图或生物学标签。
+
+column须为非空明确字符串，与实际所选科学列、源索引列以及其他成员列不重名；未导出的源通道名称可用作明确别名。精确标签不裁剪/猜测，逗号/引号/换行/UTF-8使用原表头转义。同一群体可用不同别名重复报告，复用同一成员集合；原数字选列允许的重复科学标签仍保留。不存在的群体、坏格式/别名或计划在创建目标前失败，空窗口也不隐藏它们。
+
+此选项由Node消费，不作为新参数传入MoonBit。省略、null或[]完全关闭标注并保持旧schema/行为；关闭时，gates未配population仍按原合同失败。其他命令、原CSV及--atomic-output发布/cleanupPending合同保持。
+
+完整原创输入、独立成员索引、65位ID及CSV-only接收脚本见[群体成员列例程](examples/population-columns/README.md)。接收脚本能只从收到的表中核对成员计数/交集、重排后逐行对应源索引和科学值。它是自编的实际文件消费者，不是第三方采用或临床有效性证明。当前仍整文件/群体结果驻留内存，不宣称流式或性能加速。
+
+```sh
+python tools/check-population-columns.py /path/to/NEW_CHECK_DIRECTORY
+```
+
+独立验收使用手写原始I65/16/16源与完整CSV期待、固定父子/重叠成员、selected Dataset和非连续群体窗口；60013行模13/7原值与三个成员标志逐项读回，覆盖多个块。原公共API可组合得到成员结果，本增量交付的是完整文件接收链，不主张算法首创。
+
 ## CSV完成后发布最终名称（可选）
 
 只取得最终文件路径、没有生产进程stdout/退出码的接收方，可使用：
