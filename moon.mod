@@ -1,4 +1,4 @@
-name = "mawei2018/fcs"
+name = "mawei2018-2/fcs"
 
 version = "0.5.0"
 

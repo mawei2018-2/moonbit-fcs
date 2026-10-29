@@ -33,4 +33,4 @@ python examples/extract-datasets/receive.py extracted --expected examples/extrac
 
 完整伪造包的清单与全部文件哈希自洽，但两个直方图频数被交换、总数仍17；它仍必须被独立固定的原始DATA预期拒绝。此自编真实接收证明可消费性及本轮原始内容核验，不代表外部采用、全部组合穷举或临床结论。
 
-[FlowIO官方API](https://flowio.readthedocs.io/en/latest/api.html)已有多Dataset读取和单文件写出，说明这是成熟交换场景。本项目独立宿主组合沿用自己的MoonBit实现；不声称算法首创、生态唯一或FlowIO功能对等。当前Mooncakes状态未从工具确认，源码模块身份仍为mawei2018/fcs、0.5.0。
+[FlowIO官方API](https://flowio.readthedocs.io/en/latest/api.html)已有多Dataset读取和单文件写出，说明这是成熟交换场景。本项目独立宿主组合沿用自己的MoonBit实现；不声称算法首创、生态唯一或FlowIO功能对等。源码模块为`mawei2018-2/fcs`，版本0.5.0；使用源码工作区构建，包注册表版本须另行核实。

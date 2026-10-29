@@ -1,5 +1,5 @@
 import {
-  "mawei2018/fcs",
+  "mawei2018-2/fcs",
   "moonbitlang/core/encoding/base64",
 }
 

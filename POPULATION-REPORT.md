@@ -44,4 +44,4 @@ python examples/population-report/receive.py out.csv --expected examples/populat
 
 独立检查：`python tools/check-population-report.py /path/to/NEW_DIRECTORY`。原创小型原始FCS包含换序/大端、超过64位的原ID、逐门缩放/补偿、父子/空父、零事件和链式第二Dataset。原始字节独立解码及有理数谓词对照手写成员集合；完整CSV预期由这些集合计算，另起CSV-only进程检查全部字段并执行透视/排序。实际Unicode、引号和换行有物理向量。无效清单/读取选项、晚发生的文件/解析/Dataset错误、零事件坏计划和已有目标均覆盖；没有重跑旧大样本或修改科学核心。
 
-多样本报告是成熟工作流，例如[FlowKit Session文档](https://flowkit.readthedocs.io/en/latest/session.html)的汇总报告。本实现独立编写，复用本项目既有API，不宣称FlowKit功能对等、算法首创或MoonBit生态唯一。当前注册表状态未从本轮工具确认，源码模块身份仍为`mawei2018/fcs`、0.5.0。
+多样本报告是成熟工作流，例如[FlowKit Session文档](https://flowkit.readthedocs.io/en/latest/session.html)的汇总报告。本实现独立编写，复用本项目既有API，不宣称FlowKit功能对等、算法首创或MoonBit生态唯一。源码模块为`mawei2018-2/fcs`，版本0.5.0；使用源码工作区构建，包注册表版本须另行核实。

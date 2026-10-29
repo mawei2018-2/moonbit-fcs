@@ -1,33 +1,48 @@
 # MoonBit FCS：精确事件选择与可追溯数据交换
 
-以纯MoonBit实现流式细胞术FCS数据准备，连接读取、规则分组、统计与FCS/CSV交付。
-目标用户是MoonBit数据工具开发者：读取仪器导出文件，按明确规则选择群体、校准和重排数据，交给下游脚本；不替代实验室门控判读。
+申报与维护账号：**mawei2018-2**。源码仓库：[mawei2018-2/moonbit-fcs](https://github.com/mawei2018-2/moonbit-fcs)。模块：**`mawei2018-2/fcs`**，源码版本 **0.5.0**，代码许可 **MIT**。
 
-- 读取FCS2.0/3.0/3.1，支持I/A/F/D、固定/自由ASCII；解析通道、段结构和补偿元数据，兼容填充须显式选择。
-- BigInt/十进制文本保留原始整数，支持非字节对齐及超过64位的精确选择；I按PnR有效位读取，Double视图有精度边界。
-- 矩形半开、多边形含边界与整数谓词组成命名父子/分支群体，返回源索引、计数及父/总群体比例，支持精确通道名；歧义不猜测，坏计划整次失败。
-- 多样本清单与共享门计划可直接交付群体计数CSV，保留样本/来源/Dataset、原读取警告与父/总群体比例，支持下游透视和频率比较；逐样本复用原门控，全部成功才创建输出，不据此判定生物面板等价。
-- 按gain、对数放大器和Time/TIMESTEP缩放，以测量行向量M×S⁻¹补偿；门控和统计视图独立，指定统计列仅计算请求输出，保留完整矩阵及真实测量依赖，无关输出校准不阻断请求。
-- 群体统计按成员位置start/count取窗口，报告有限/非有限数、极值、均值和样本方差，保留源事件/通道号，不混淆窗口与原行号，不按Time排序；空群体无均值，单例无样本方差。
-- 群体统计可选附带原输入哈希、所选Dataset、原版本和实际读取修正报告，便于单份JSON交接；默认输出、成员、视图和统计保持，不将兼容开关本身当成发生修正。
-- 创建或选择、换序后写FCS3.1，同步通道元数据；I/A/F/D不可表示转换明确失败，写出保留未补偿DATA，ANALYSIS失效须显式处理。C/U旧COMP按保留轴精确映射行列并保留系数文本；不应用到DATA，原轴重写及显式移除保留；L模式原有规则保持。
-- 可把原NEXTDATA链中的全部Dataset抽取为独立规范FCS3.1和交付清单，保留原文件/源Dataset/读取警告对应关系及每份输出哈希，供单Dataset接收者独立消费；继承既有重写语义，所有重写成功才创建新目录，不宣称多文件原子发布或来源认证。
-- 对原已兼容读取并警告的重复PnN数据，数字位置可继续用于列表重编码及C/U重写/换轴，保持各列PnS和数值身份；修复创建专用名称唯一校验误阻断写出的缺陷。strict、歧义名字、重复输出位置和新建文件的唯一名称要求保持，不改科学模型。
-- CSV直接导出群体窗口及可选源行号，可另附多个具名群体0/1成员列，让仅读CSV的接收方统计交集、排序后保持成员/科学值关联；门控仍复用原API，默认不变。可选完成后独占发布最终名称，需要支持同目录硬链接的文件系统；发布后清理失败有明确成功告警，不宣称持久事务或外部采用。
-- C/U直方图提供精确频数、轴重排和C边缘分布，累加不经Double，必要时扩大位宽；不套用列表门控/统计。
+## 项目定位
 
-格式、位流、门控、矩阵与统计由MoonBit实现；核心支持JS/Wasm-GC。Node≥22负责文件/JSON与CLI接线，Python仅作开发参考；内存处理不宣称流式。
-FlowIO/[FlowKit](https://whitews.github.io/FlowKit/)已有Python方案。本项目独立贡献是MoonBit可组合实现、精确整数和层级成员身份，以及选择到FCS/CSV/统计的交换链，不主张算法首创或生态唯一。
+MoonBit FCS 为 MoonBit 数据工具开发者提供流式细胞术 FCS 数据准备核心，连接文件读取、明确规则分组、统计与 FCS/CSV 交付。典型场景是读取仪器导出文件，选择目标事件和通道，保留来源与数值身份，交给下游脚本继续处理。核心可编译至 JS 和 Wasm-GC；Node.js 负责文件与命令行接线，运行不依赖 Python。
 
-最短使用（固定工具链，输出路径须不存在）：
+项目的贡献是可组合的 MoonBit 格式、精确整数与元数据交换实现，以及从命名群体到独立文件接收者的完整工作流。FlowIO、FlowKit 等已有成熟 Python 方案，本项目不主张门控算法首创或生态唯一。
+
+## 核心功能
+
+- **读取与精确访问**：读取 FCS2.0/3.0/3.1 的 I/A/F/D 列表数据和 C/U 直方图，解析段、通道及补偿元数据。BigInt 和十进制文本保留原始整数，支持非字节对齐和超过 64 位的精确选择；I 类型按 PnR 有效位读取。
+- **命名群体与数值视图**：矩形、多边形及精确整数谓词组成单父层级与分支计划，返回源事件索引、父/总群体计数及比例。通道支持数字或精确 PnN 名称，名字歧义明确失败。每步门控和输出可独立选择原值、缩放或补偿视图。
+- **统计与多样本报告**：群体统计按成员位置取窗口，可选择和重排输出通道，保留完整补偿矩阵及实际测量依赖，报告有限/非有限计数、极值、均值和样本方差。可选附带原输入哈希、所选 Dataset、原版本及实际读取警告。多样本共享门计划直接交付样本×群体计数 CSV。
+- **FCS 与直方图交换**：创建、选择或换序后写出 FCS3.1，同步通道元数据与补偿矩阵；不可表示转换明确失败，失效 ANALYSIS 须显式处理。C/U 提供精确频数、轴重排与 C 边缘分布，旧 `$COMP` 按保留轴映射行列并保留系数文本。已兼容读取的重复 PnN 数据可按数字位置重写。
+- **可追溯文件交付**：完整 NEXTDATA 链可抽取为独立 FCS3.1 与 manifest，记录源 Dataset 偏移、模式、读取警告及每份输出哈希。CSV 可直接导出群体窗口、精确原始整数、可选源行号和多个群体成员列，便于仅读 CSV 的接收者统计交集并保留事件关联。
+
+## 可复现用法
+
+按 [TOOLCHAIN.md](TOOLCHAIN.md) 使用固定 MoonBit 工具链及 Node.js ≥22，从源码构建。输出路径须尚不存在：
+
 ```sh
+moon update
 moon build --target js --release --deny-warn
-node tools/fcs.mjs create out.fcs --options examples/gate-plan-events.json
-node tools/fcs.mjs population-stats out.fcs --options examples/population-stat-window.json
+node tools/fcs.mjs create NEW.fcs --options examples/gate-plan-events.json
+node tools/fcs.mjs population-stats NEW.fcs --options examples/population-stat-window.json
 ```
-得到含65位ID的out.fcs和窗口统计报告：取群体第二名成员、源事件5，报告M/X/M，完整群体2个事件、实际窗口1个事件。
 
-已有独立字节/有理数真值、FlowIO回读及许可RepOD交换证据，核心相关回归覆盖JS/Wasm-GC；上述短例与窗口/CSV交接已在本地执行通过，不代表全部组合穷举或线上验收。
-不支持FCS3.2、CRC校验、全部厂商异常、GatingML/FlowJo导入、自动门控/降维或临床结论；Double统计不保证任意整数精度。
-仓库：[源码](https://github.com/mawei2018-2/moonbit-fcs)；模块mawei2018/fcs，源码0.5.0；Mooncakes包发布与GitHub源码版本分别核对。
-代码/合成向量为MIT，见根LICENSE；标准库依自身许可，FlowIO/NumPy开发参考为BSD-3-Clause。附带RepOD文件96804及派生物为CC BY4.0，保留Bronisz署名、DOI10.18150/JOLWGT和修改说明；标准PDF及未确权仪器数据不分发。
+该例创建含 65 位 ID 的文件，取命名群体第二名成员进行统计：原事件索引为 5，完整群体有 2 个事件，实际窗口有 1 个事件，报告 M/X/M 通道。公共 MoonBit 调用方在 `moon.mod` 依赖 `mawei2018-2/fcs@0.5.0`，在 `moon.pkg` 导入 `mawei2018-2/fcs`；[源码消费者](examples/gate-plan-consumer)通过工作区解析本地模块，包注册表发布状态须另行核实。
+
+[README.md](README.md)提供完整命令、API 与使用范围；[群体统计](POPULATION-STATS.md)、[多样本报告](POPULATION-REPORT.md)、[群体 CSV](POPULATION-CSV.md)及[Dataset 抽取](EXTRACT-DATASETS.md)提供可执行合同与文件接收例程。
+
+## 工程验证与边界
+
+核心、CLI 和项目自编独立消费者由 [CI](.github/workflows/ci.yml)覆盖，包括 JS/Wasm-GC 回归、独立字节/有理数真值、FlowIO 回读与许可 RepOD 交换。验证结果须关联具体提交、输入及编译产物；实际远端执行结果见[仓库 Actions](https://github.com/mawei2018-2/moonbit-fcs/actions)。项目自编消费者证明接口可消费性，不代表外部实验室采用。
+
+缩放、补偿和统计采用 Double，不保证任意大整数精度；补偿按测量行向量 M×S⁻¹ 计算，写出 DATA 保持未补偿值。群体窗口按成员位置切片，空群体无均值、单例无样本方差。C/U 使用直方图接口，不接受列表门控或事件统计。比较检查不证明样本来源或生物面板等价。
+
+处理基于内存 Bytes，CLI 读取整个输入文件。抽取与多样本报告先完成规划和计算，再创建新目标，普通 IO 失败仍可能留下部分目录。CSV 可选在写完后以同目录硬链接独占发布最终名称，须有文件系统支持；这不提供掉电持久性或多文件事务。
+
+支持范围不含 FCS3.2、CRC 验证、全部厂商异常、GatingML/FlowJo 导入、自动门控、降维或临床诊断。兼容读取须显式选择并检查实际 warnings；哈希及源行号用于交付对应关系，不构成来源认证。
+
+## 来源与许可
+
+当前项目由 mawei2018 原账号的 FCS 源码和贡献历史延续，维护与申报账号为 mawei2018-2。根 [LICENSE](LICENSE) 的原版权声明及 Git 作者历史保留；历史换题说明、原申报稿与取证记录中的旧账号和旧模块名作为来源记录保留。
+
+代码和原创合成向量为 MIT，标准库依其自身许可，FlowIO/NumPy 开发参考依其 BSD 许可。附带 RepOD 文件 96804 及派生物为 CC BY 4.0，保留 Bronisz 署名、DOI 10.18150/JOLWGT、许可和修改说明。标准 PDF 及未确权仪器数据不分发，完整说明见 [THIRD_PARTY.md](THIRD_PARTY.md)。

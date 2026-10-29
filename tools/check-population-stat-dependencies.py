@@ -195,8 +195,8 @@ console.log(JSON.stringify(result));"""
         assert json.loads(r.stdout)==truth(SELECTED,[1,0,1],'compensated',True)
         # Actual public MoonBit per-channel API on the identical original raw-byte file.
         consumer=out/'public-consumer';consumer.mkdir()
-        (consumer/'moon.mod').write_text('name = "mawei2018/fcs-stat-dependency-consumer"\nversion = "0.1.0"\nlicense = "MIT"\nimport { "mawei2018/fcs@0.5.0", }\n',encoding='utf-8')
-        (consumer/'moon.pkg').write_text('import { "mawei2018/fcs", }\npkgtype(kind: "executable")\n',encoding='utf-8')
+        (consumer/'moon.mod').write_text('name = "mawei2018-2/fcs-stat-dependency-consumer"\nversion = "0.1.0"\nlicense = "MIT"\nimport { "mawei2018-2/fcs@0.5.0", }\n',encoding='utf-8')
+        (consumer/'moon.pkg').write_text('import { "mawei2018-2/fcs", }\npkgtype(kind: "executable")\n',encoding='utf-8')
         (consumer/'moon.work').write_text('members = ['+json.dumps(ROOT.as_posix())+', ".",]\n',encoding='utf-8')
         literal='b"'+''.join('\\x'+f'{byte:02x}' for byte in paths['unrelated'].read_bytes())+'"'
         main='''///|

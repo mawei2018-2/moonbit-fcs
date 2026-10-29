@@ -44,13 +44,13 @@ jobs:
         run: python tools/check-ascii-to-integer.py "${{ runner.temp }}/fcs-ascii-to-integer"
       - name: Verify sparse compensation and nonfinite channel independence
         run: python tools/check-repair08.py "${{ runner.temp }}/fcs-repair08"
-      - name: Verify hierarchical gate plans and exact population exports
+      - name: Verify mawei2018-2/fcs gate plans and public consumers
         run: |
           python tools/check-gate-plan.py "${{ runner.temp }}/fcs-gate-plan"
           node examples/run-gate-plan.mjs "${{ runner.temp }}/fcs-gate-plan-example"
           (cd examples/gate-plan-consumer && moon run . --target js --deny-warn)
           (cd examples/gate-plan-consumer && moon run . --target wasm-gc --deny-warn)
-      - name: Verify exact channel names and zero-row boundaries
+      - name: Verify mawei2018-2/fcs named-channel public consumers
         run: |
           python tools/check-channel-names.py "${{ runner.temp }}/fcs-channel-names"
           (cd examples/named-channel-consumer && moon run . --target js --deny-warn)
@@ -79,7 +79,7 @@ jobs:
         run: python tools/check-population-report.py "${{ runner.temp }}/fcs-population-report"
       - name: Verify reported statistic channels retain full compensation dependencies
         run: python tools/check-population-stat-channels.py "${{ runner.temp }}/fcs-population-stat-channels"
-      - name: Verify requested statistics evaluate only actual calibration dependencies
+      - name: Verify mawei2018-2/fcs statistics dependencies and generated consumers
         run: python tools/check-population-stat-dependencies.py "${{ runner.temp }}/fcs-population-stat-dependencies"
       - name: Verify member-window statistics and matching population CSV
         run: python tools/check-population-stat-window.py "${{ runner.temp }}/fcs-population-stat-window"
@@ -117,7 +117,7 @@ jobs:
           python tools/reference_check.py --reference-dir "$RUNNER_TEMP/flowio-reference" --report "$RUNNER_TEMP/fcs-reference-current.json"
           node examples/public-selection.mjs "$RUNNER_TEMP/flowio-reference/data/fcs_files/G11.fcs" "$RUNNER_TEMP/fcs-selected"
           python tools/verify-public-selection.py "$RUNNER_TEMP/flowio-reference/data/fcs_files/G11.fcs" "$RUNNER_TEMP/fcs-selected" --report "$RUNNER_TEMP/fcs-selected.json"
-      - name: Check licensed offline RepOD exchange and separate consumers
+      - name: Check licensed offline RepOD exchange and mawei2018-2/fcs cold consumers
         shell: bash
         run: |
           moon fmt --check

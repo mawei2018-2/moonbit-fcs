@@ -1,5 +1,5 @@
 // Generated using `moon info`, DON'T EDIT IT
-package "mawei2018/fcs"
+package "mawei2018-2/fcs"
 
 import {
   "moonbitlang/core/bigint",
