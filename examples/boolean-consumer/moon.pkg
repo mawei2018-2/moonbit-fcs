@@ -1,0 +1,5 @@
+import {
+  "mawei2018-2/fcs",
+}
+
+pkgtype(kind: "executable")

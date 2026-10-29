@@ -1,0 +1,8 @@
+{
+  "acceptedBaseCommit": "3463130435984338549bf76128d44a7c7cdb3470",
+  "compiledBridgeSHA256": "0f77dc6414eb6104c72ba9b23b311eb346709cb35b460acbe5853ce62e26bb62",
+  "inputSHA256": "0f1b9849e694bf9974422a18938281e56749125d435a2ed545c18e8bb0065dcf",
+  "optionsSHA256": "14dd046ac448110773877483496aa55c4dabbdc87a7c21d8a440dfacafdac92a",
+  "stdoutSHA256": "32cb4b99c33a2b27a85706eeae132bd68f9dc11facd0b06a4ddcf58f11a6dffd",
+  "captureDomain": "UTF-8 stdout text with LF newlines; same full output also matched independently fixed population truth"
+}

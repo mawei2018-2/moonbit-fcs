@@ -1,0 +1,160 @@
+[
+  {
+    "id": "notA",
+    "event_indices": [
+      5,
+      6
+    ],
+    "count": 2,
+    "parent_count": 6,
+    "total_count": 8,
+    "parent": "union",
+    "parent_fraction": 0.3333333333333333,
+    "total_fraction": 0.25
+  },
+  {
+    "id": "after",
+    "event_indices": [
+      6
+    ],
+    "count": 1,
+    "parent_count": 2,
+    "total_count": 8,
+    "parent": "notA",
+    "parent_fraction": 0.5,
+    "total_fraction": 0.125
+  },
+  {
+    "id": "intersection",
+    "event_indices": [
+      3,
+      4
+    ],
+    "count": 2,
+    "parent_count": 6,
+    "total_count": 8,
+    "parent": "base",
+    "parent_fraction": 0.3333333333333333,
+    "total_fraction": 0.25
+  },
+  {
+    "id": "A",
+    "event_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "count": 4,
+    "parent_count": 6,
+    "total_count": 8,
+    "parent": "base",
+    "parent_fraction": 0.6666666666666666,
+    "total_fraction": 0.5
+  },
+  {
+    "id": "union",
+    "event_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "count": 6,
+    "parent_count": 6,
+    "total_count": 8,
+    "parent": "base",
+    "parent_fraction": 1.0,
+    "total_fraction": 0.75
+  },
+  {
+    "id": "B",
+    "event_indices": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "count": 4,
+    "parent_count": 6,
+    "total_count": 8,
+    "parent": "base",
+    "parent_fraction": 0.6666666666666666,
+    "total_fraction": 0.5
+  },
+  {
+    "id": "base",
+    "event_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "count": 6,
+    "parent_count": 8,
+    "total_count": 8,
+    "parent_fraction": 0.75,
+    "total_fraction": 0.75
+  },
+  {
+    "id": "rootNotA",
+    "event_indices": [
+      0,
+      5,
+      6,
+      7
+    ],
+    "count": 4,
+    "parent_count": 8,
+    "total_count": 8,
+    "parent_fraction": 0.5,
+    "total_fraction": 0.5
+  },
+  {
+    "id": "notnotA",
+    "event_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "count": 4,
+    "parent_count": 6,
+    "total_count": 8,
+    "parent": "base",
+    "parent_fraction": 0.6666666666666666,
+    "total_fraction": 0.5
+  },
+  {
+    "id": "repeated",
+    "event_indices": [
+      3,
+      4
+    ],
+    "count": 2,
+    "parent_count": 6,
+    "total_count": 8,
+    "parent": "base",
+    "parent_fraction": 0.3333333333333333,
+    "total_fraction": 0.25
+  },
+  {
+    "id": "parentRef",
+    "event_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "count": 4,
+    "parent_count": 6,
+    "total_count": 8,
+    "parent": "base",
+    "parent_fraction": 0.6666666666666666,
+    "total_fraction": 0.5
+  }
+]

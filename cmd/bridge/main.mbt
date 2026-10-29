@@ -162,6 +162,52 @@ fn report_channels(d : @lib.Dataset, o : Map[String, Json]) -> Array[Int] raise 
 }
 
 ///|
+fn boolean_predicate(value : Json) -> @lib.GatePredicate raise {
+  let options = match value {
+    Object(options) => options
+    _ => raise Failure("boolean predicate must be an object")
+  }
+  for key in options.keys() {
+    if !["op", "refs"].contains(key) {
+      raise Failure("unknown Boolean predicate option: " + key)
+    }
+  }
+  let operation = match options.get("op") {
+    Some(String(operation)) => operation
+    _ => raise Failure("Boolean operation must be and, or or not")
+  }
+  let references = match options.get("refs") {
+    Some(Array(values)) =>
+      values.map(value => {
+        match value {
+          String(name) if !name.is_empty() => name
+          _ => raise Failure("Boolean references must be nonempty gate IDs")
+        }
+      })
+    _ => raise Failure("Boolean references must be an array of gate IDs")
+  }
+  match operation {
+    "and" | "or" => {
+      if references.is_empty() {
+        raise Failure("Boolean and/or require nonempty references")
+      }
+      if operation == "and" {
+        @lib.AllOf(references)
+      } else {
+        @lib.AnyOf(references)
+      }
+    }
+    "not" => {
+      if references.length() != 1 {
+        raise Failure("Boolean not requires exactly one reference")
+      }
+      @lib.Not(references[0])
+    }
+    _ => raise Failure("unknown Boolean operation: " + operation)
+  }
+}
+
+///|
 fn gate_steps(
   d : @lib.Dataset,
   o : Map[String, Json],
@@ -173,23 +219,26 @@ fn gate_steps(
   rows.map(row => {
     let allowed = [
       "id", "parent", "bounds", "vertices", "x", "y", "integer_bounds", "scaled",
-      "compensated",
+      "compensated", "boolean",
     ]
     for key in row.keys() {
       if !allowed.contains(key) {
         raise Failure("unknown gate step option: " + key)
       }
     }
-    let predicates = ["bounds", "vertices", "integer_bounds"].filter(key => {
-      row.contains(key)
-    })
+    let predicates = ["bounds", "vertices", "integer_bounds", "boolean"].filter(key => {
+        row.contains(key)
+      },
+    )
     if predicates.length() != 1 {
       raise Failure("gate step requires exactly one predicate")
     }
     if !row.contains("vertices") && (row.contains("x") || row.contains("y")) {
       raise Failure("x/y apply only to polygon gate steps")
     }
-    let predicate : @lib.GatePredicate = if row.contains("integer_bounds") {
+    let predicate : @lib.GatePredicate = if row.contains("boolean") {
+      boolean_predicate(required(row, "boolean"))
+    } else if row.contains("integer_bounds") {
       let bounds : Array[Map[String, Json]] = required(row, "integer_bounds")
       @lib.Exact(
         bounds.map(b => {

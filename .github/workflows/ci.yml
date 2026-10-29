@@ -89,6 +89,10 @@ jobs:
         run: |
           (cd examples/quantile-consumer && moon fmt --check)
           python tools/check-population-quantiles.py "${{ runner.temp }}/fcs-population-quantiles"
+      - name: Verify Boolean gate dependencies with independent complete file consumers
+        run: |
+          (cd examples/boolean-consumer && moon fmt --check)
+          python tools/check-boolean-gates.py "${{ runner.temp }}/fcs-boolean-gates"
       - name: Verify independent standard encoding vectors
         run: |
           python tools/generate-standard-encodings.py --check
@@ -135,6 +139,7 @@ jobs:
           name: fcs-reference-current
           path: |
             ${{ runner.temp }}/fcs-reference-current.json
+            ${{ runner.temp }}/fcs-boolean-gates/
             ${{ runner.temp }}/fcs-population-quantiles/CHECKS.json
             ${{ runner.temp }}/fcs-population-quantiles/PROCESS-LAUNCHES.jsonl
             ${{ runner.temp }}/fcs-population-quantiles/inputs/MANIFEST.json

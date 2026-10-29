@@ -1,0 +1,135 @@
+{
+  "gates": [
+    {
+      "id": "notA",
+      "parent": "union",
+      "boolean": {
+        "op": "not",
+        "refs": [
+          "A"
+        ]
+      }
+    },
+    {
+      "id": "after",
+      "parent": "notA",
+      "vertices": [
+        [
+          5.5,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          20
+        ],
+        [
+          5.5,
+          20
+        ]
+      ],
+      "x": "X",
+      "y": "B"
+    },
+    {
+      "id": "intersection",
+      "parent": "base",
+      "boolean": {
+        "op": "and",
+        "refs": [
+          "A",
+          "B"
+        ]
+      }
+    },
+    {
+      "id": "A",
+      "parent": "base",
+      "bounds": [
+        [
+          "B",
+          2,
+          6
+        ]
+      ],
+      "scaled": true
+    },
+    {
+      "id": "union",
+      "parent": "base",
+      "boolean": {
+        "op": "or",
+        "refs": [
+          "A",
+          "B"
+        ]
+      }
+    },
+    {
+      "id": "B",
+      "parent": "base",
+      "integer_bounds": [
+        {
+          "channel": "ID",
+          "lower": "18446744073709551619",
+          "upper": "18446744073709551623"
+        }
+      ]
+    },
+    {
+      "id": "base",
+      "bounds": [
+        [
+          "X",
+          1,
+          7
+        ]
+      ]
+    },
+    {
+      "id": "rootNotA",
+      "boolean": {
+        "op": "not",
+        "refs": [
+          "A"
+        ]
+      }
+    },
+    {
+      "id": "notnotA",
+      "parent": "base",
+      "boolean": {
+        "op": "not",
+        "refs": [
+          "notA"
+        ]
+      }
+    },
+    {
+      "id": "repeated",
+      "parent": "base",
+      "boolean": {
+        "op": "and",
+        "refs": [
+          "A",
+          "A",
+          "B"
+        ]
+      }
+    },
+    {
+      "id": "parentRef",
+      "parent": "base",
+      "boolean": {
+        "op": "and",
+        "refs": [
+          "base",
+          "A"
+        ]
+      }
+    }
+  ]
+}

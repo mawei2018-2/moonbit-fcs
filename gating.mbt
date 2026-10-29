@@ -3,13 +3,17 @@ pub(all) enum GatePredicate {
   Rectangle(Array[Bounds])
   Polygon(Int, Int, Array[(Double, Double)])
   Exact(Array[IntegerBounds])
+  AllOf(Array[String])
+  AnyOf(Array[String])
+  Not(String)
 } derive(Debug)
 
 ///|
 pub extend GatePredicate with @debug.Debug::{to_repr}
 
 ///|
-/// A unique ID and optional parent ID describe a single-parent gate forest.
+/// A unique ID and optional parent describe a single-parent hierarchy.
+/// Boolean references add dependencies on other completed populations.
 /// Exact predicates use raw integers and require both view flags to be false.
 pub(all) struct GateStep {
   id : String
@@ -68,6 +72,7 @@ pub fn Dataset::channel_index(
 fn GateStep::evaluate(
   self : GateStep,
   dataset : Dataset,
+  referenced : Array[Array[Int]],
 ) -> Array[Int] raise FcsError {
   match self.predicate {
     Rectangle(bounds) =>
@@ -90,13 +95,76 @@ fn GateStep::evaluate(
       }
       dataset.rectangle_exact(bounds)
     }
+    AllOf(_) | AnyOf(_) => {
+      let is_intersection = match self.predicate {
+        AllOf(_) => true
+        _ => false
+      }
+      let membership = Array::make(dataset.events, is_intersection)
+      for hits in referenced {
+        if is_intersection {
+          let present = Array::make(dataset.events, false)
+          for event in hits {
+            present[event] = true
+          }
+          for event in 0..<dataset.events {
+            membership[event] = membership[event] && present[event]
+          }
+        } else {
+          for event in hits {
+            membership[event] = true
+          }
+        }
+      }
+      Array::makei(dataset.events, event => event).filter(event => {
+        membership[event]
+      })
+    }
+    Not(_) => {
+      let membership = Array::make(dataset.events, true)
+      for event in referenced[0] {
+        membership[event] = false
+      }
+      Array::makei(dataset.events, event => event).filter(event => {
+        membership[event]
+      })
+    }
   }
 }
 
 ///|
-/// Evaluate named gates as parent intersections. Forward references and
-/// branches are supported; results retain the input plan order. Every step's
-/// predicate is validated even when its parent selects no events.
+fn GateStep::boolean_references(
+  self : GateStep,
+) -> Array[String] raise FcsError {
+  match self.predicate {
+    AllOf(references) | AnyOf(references) => {
+      if self.scaled || self.compensated {
+        raise Invalid(
+          "Boolean gate view flags must be false; choose views on source gates",
+        )
+      }
+      if references.is_empty() {
+        raise Invalid("Boolean gates require nonempty references")
+      }
+      references
+    }
+    Not(reference) => {
+      if self.scaled || self.compensated {
+        raise Invalid(
+          "Boolean gate view flags must be false; choose views on source gates",
+        )
+      }
+      [reference]
+    }
+    _ => []
+  }
+}
+
+///|
+/// Evaluate predicates and Boolean membership references, then intersect with
+/// each declared parent. Forward references and geometric children of Boolean
+/// gates are supported through one parent/reference DAG. Results retain the
+/// input plan order. Empty parents never hide invalid predicates or references.
 pub fn Dataset::gate_plan(
   self : Dataset,
   steps : Array[GateStep],
@@ -122,12 +190,37 @@ pub fn Dataset::gate_plan(
         }
     }
   })
-  let children : Array[Array[Int]] = Array::makei(steps.length(), _ => [])
+  let references = steps.map(step => {
+    let resolved : Array[Int] = []
+    for name in step.boolean_references() {
+      let index = match ids.get(name) {
+        Some(index) => index
+        None => raise Invalid("unknown Boolean gate reference: \{name}")
+      }
+      if !resolved.contains(index) {
+        resolved.push(index)
+      }
+    }
+    resolved
+  })
+  let dependents : Array[Array[Int]] = Array::makei(steps.length(), _ => [])
+  let pending : Array[Int] = Array::make(steps.length(), 0)
   let ready : Array[Int] = []
   for i in 0..<steps.length() {
+    let dependencies = references[i].copy()
     match parents[i] {
-      None => ready.push(i)
-      Some(parent) => children[parent].push(i)
+      None => ()
+      Some(parent) =>
+        if !dependencies.contains(parent) {
+          dependencies.push(parent)
+        }
+    }
+    pending[i] = dependencies.length()
+    for dependency in dependencies {
+      dependents[dependency].push(i)
+    }
+    if dependencies.is_empty() {
+      ready.push(i)
     }
   }
   let populations : Array[Population?] = Array::make(steps.length(), None)
@@ -137,7 +230,12 @@ pub fn Dataset::gate_plan(
     cursor += 1
     let step = steps[i]
     // Evaluate before intersection so an empty parent cannot hide a bad gate.
-    let hits = step.evaluate(self)
+    let hits = step.evaluate(
+      self,
+      references[i].map(reference => {
+        populations[reference].unwrap().event_indices
+      }),
+    )
     let (event_indices, parent_count) = match parents[i] {
       None => (hits, self.events)
       Some(parent) => {
@@ -168,10 +266,21 @@ pub fn Dataset::gate_plan(
         Some(count.to_double() / self.events.to_double())
       },
     })
-    ready.append(children[i])
+    for dependent in dependents[i] {
+      pending[dependent] -= 1
+      if pending[dependent] == 0 {
+        ready.push(dependent)
+      }
+    }
   }
   if cursor != steps.length() {
-    raise Invalid("gate plan contains a parent cycle")
+    raise Invalid(
+      if references.any(refs => !refs.is_empty()) {
+        "gate plan contains a parent/Boolean dependency cycle"
+      } else {
+        "gate plan contains a parent cycle"
+      },
+    )
   }
   populations.map(population => population.unwrap())
 }

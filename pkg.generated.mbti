@@ -120,6 +120,9 @@ pub(all) enum GatePredicate {
   Rectangle(Array[Bounds])
   Polygon(Int, Int, Array[(Double, Double)])
   Exact(Array[IntegerBounds])
+  AllOf(Array[String])
+  AnyOf(Array[String])
+  Not(String)
 } derive(@debug.Debug)
 pub fn GatePredicate::to_repr(Self) -> @debug.Repr
 

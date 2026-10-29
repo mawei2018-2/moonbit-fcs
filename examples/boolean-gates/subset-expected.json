@@ -1,0 +1,39 @@
+{
+  "version": "FCS3.1",
+  "metadataExceptLayout": {
+    "$MODE": "L",
+    "$DATATYPE": "I",
+    "$BYTEORD": "1,2,3,4",
+    "$PAR": "2",
+    "$TOT": "2",
+    "$BEGINSTEXT": "0",
+    "$ENDSTEXT": "0",
+    "$NEXTDATA": "0",
+    "$ORIGINALITY": "Non-Original",
+    "VENDOR": "original MIT Boolean fixture",
+    "$P1N": "ID",
+    "$P1S": "source-ID",
+    "$P1B": "65",
+    "$P1R": "36893488147419103232",
+    "$P1E": "0,0",
+    "$P1G": "1",
+    "$P2N": "B",
+    "$P2S": "source-B",
+    "$P2B": "8",
+    "$P2R": "256",
+    "$P2E": "0,0",
+    "$P2G": "2"
+  },
+  "analysis": {},
+  "rawDataHex": "03000000000000001108000000000000002a00",
+  "integerValues": [
+    [
+      "18446744073709551619",
+      "8"
+    ],
+    [
+      "18446744073709551620",
+      "10"
+    ]
+  ]
+}

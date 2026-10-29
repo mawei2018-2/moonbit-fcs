@@ -27,7 +27,7 @@ node tools/fcs.mjs population-stats NEW.fcs --options examples/population-stat-w
 |---|---|
 | 文件读取与检查 | 读取 FCS2.0/3.0/3.1、I/A/F/D 列表数据及 C/U 直方图；检查段、偏移、通道和补偿元数据。`inspect`、`validate`、`metadata` 提供结构与读取报告。 |
 | 精确整数 | BigInt 和十进制文本保留原始整数，支持非字节对齐及超过 64 位的位流；`integer_value`、`integer_text`、`rectangle_exact` 提供精确访问与选择。I 类型按 PnR 有效位读取。 |
-| 命名群体 | `gate_plan` 与 `populations` 组合矩形、多边形及精确整数条件，支持单父层级、前向父引用和分支，保留原事件索引、父群体及总群体比例。 |
+| 命名群体 | `gate_plan` 与 `populations` 组合矩形、多边形、精确整数条件及命名群体的 AND/OR/NOT，支持单父限制与完整前向依赖图，保留原事件索引、父群体及总群体比例。 |
 | 数值视图与统计 | 原值、线性缩放、补偿视图可分别用于门控和输出。`population-stats` 支持群体窗口、指定通道及重排，报告有限/非有限计数、极值、均值和样本方差；可选 `probabilities` 附带中位数及其它线性 type-7 分位数。 |
 | FCS 交换 | `create`、`subset`、`rewrite` 写出 FCS3.1，同步所选通道元数据与补偿矩阵。不可表示的转换明确失败，失效 ANALYSIS 须显式处理。 |
 | 链式 Dataset 交付 | `extract-datasets` 将完整 NEXTDATA 链拆为独立 FCS3.1 和 manifest，记录输入与输出哈希、源 Dataset 偏移、模式及实际读取警告。 |
@@ -39,6 +39,7 @@ node tools/fcs.mjs population-stats NEW.fcs --options examples/population-stat-w
 ## 可运行工作流
 
 - [命名门控计划](GATE-PLANS.md)：群体选择、父子计数、原始索引与精确整数 ID。
+- [布尔群体](BOOLEAN-GATES.md)：跨分支交集、并集、父群体内排除及后续几何门，连通 FCS/CSV 和统计交付。
 - [具名通道](NAMED-CHANNELS.md)与[RepOD 交换](REPOD-EXCHANGE.md)：许可原文件到群体 FCS、CSV 及独立读者的完整交接。
 - [群体统计](POPULATION-STATS.md)：成员窗口、输出通道、实际补偿依赖与可选输入读取来源报告。
 - [群体分位数](POPULATION-QUANTILES.md)：同一窗口/视图的有限观测中位数和四分位数，以及独立 JSON 接收例程；省略/null 保持原报告。
@@ -64,6 +65,8 @@ moon run . --target wasm-gc --deny-warn
 ```
 
 消费者的 `moon.mod` 依赖为 `mawei2018-2/fcs@0.5.0`，`moon.pkg` 导入为 `mawei2018-2/fcs`。另见[具名通道消费者](examples/named-channel-consumer)和[独立 RepOD 消费者](examples/repod-consumer)；这些是项目自编集成例程。
+
+[布尔公开 API 消费者](examples/boolean-consumer)覆盖群体依赖和精确子集值。`GatePredicate` 新增 `AllOf`、`AnyOf`、`Not`，外部调用方的穷尽匹配须增加这些分支；原几何计划与 Population 模式保持。
 
 ## 数值与使用范围
 

@@ -32,11 +32,13 @@ node tools/fcs.mjs csv input.fcs selected.csv --options selection.json
 
 plan.json含gates数组，每步id必须唯一非空；parent省略或null表示全部事件，否则引用另一id。selection.json在相同计划上加`"population":"id_window"`，可另加channels、metadata或显式drop选项。输出路径必须不存在，ANALYSIS/补偿处理继续遵循write原合同。
 
-每步恰有一种谓词：bounds为`[[channel,lower,upper]]`的半开区间交集；vertices配合x/y指定含边界的多边形；integer_bounds为`[{"channel":3,"lower":"18446744073709551618","upper":"18446744073709551622"}]`，边界是十进制字符串，避免Double舍入。
+每步恰有一种谓词：bounds为`[[channel,lower,upper]]`的半开区间交集；vertices配合x/y指定含边界的多边形；integer_bounds为`[{"channel":3,"lower":"18446744073709551618","upper":"18446744073709551622"}]`，边界是十进制字符串，避免Double舍入；boolean为`{"op":"and","refs":["A","B"]}`等命名群体集合运算。
+
+布尔引用读取源群体的最终成员，再与该步parent求交；AND/OR至少一个引用，NOT恰好一个引用。父和布尔引用组成同一DAG，支持前向引用、跨分支和布尔群体下的几何门，任何混合循环都使完整计划失败。完整语义、非有限观测补集及可运行交接见[BOOLEAN-GATES.md](BOOLEAN-GATES.md)。
 
 计划的通道位置也可使用精确PnN字符串，如`["FSC-A",500000,1000000]`、`"x":"FSC-A"`及`"channel":"ID"`。channels输出列表支持名字/数字混合，避免通道换序后手工改列号。缺失/歧义名字失败，数字字符串不作索引转换；完整真实文件例程见[NAMED-CHANNELS.md](NAMED-CHANNELS.md)。
 
-scaled/compensated是每步可选标志，默认false。它们只适用于浮点数值视图的bounds/vertices；integer_bounds要求原始整数，不能组合这两个标志。populations/gate/subset计划请求拒绝顶层scaled/compensated，避免忽略视图意图。旧的单门命令仍使用原有顶层标志。
+scaled/compensated是每步可选标志，默认false。它们只适用于浮点数值视图的bounds/vertices；integer_bounds要求原始整数，布尔门操作已确定的成员，两者不能组合这两个标志。populations/gate/subset计划请求拒绝顶层scaled/compensated，避免忽略视图意图。旧的单门命令仍使用原有顶层标志。
 
 csv的计划选择直接读取原Dataset，无须先写FCS；CSV顶层scaled/compensated专门选择输出视图，门控仍按每步标志。CSV的start/count指群体成员位置，回执source_event_indices给出实际导出行的原Dataset索引；详见[直接群体CSV](POPULATION-CSV.md)。
 
@@ -61,4 +63,4 @@ let bytes = dataset.write(event_indices=populations[0].event_indices)
 
 随包的独立模块可从当前源码直接运行，无需等待0.5.0发布：在examples/gate-plan-consumer目录执行`moon run . --target js --deny-warn`或`moon run . --target wasm-gc --deny-warn`。该模块只导入公开API，输出同一计划的完整群体JSON。
 
-此功能独立实现既有矩形/多边形/精确整数选择的组合，未复制FlowKit代码或数据。[FlowKit](https://flowkit.readthedocs.io/en/latest/gating_strategy.html)已有成熟层级分析，本库的差异是MoonBit直接消费、原始整数身份及FCS交换链。不提供GatingML/FlowJo导入、GUI、多父节点/布尔门、跨样本批处理或自动分类。
+此功能独立实现既有矩形/多边形/精确整数选择和布尔成员集合组合，未复制FlowKit代码或数据。[FlowKit](https://flowkit.readthedocs.io/en/latest/gating_strategy.html)已有成熟层级分析，本库的差异是MoonBit直接消费、原始整数身份及FCS交换链。不提供GatingML/FlowJo导入、GUI、跨Dataset门引用或自动分类。

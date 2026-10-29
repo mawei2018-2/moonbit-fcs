@@ -26,7 +26,8 @@ FCS 3.1 forbids this numeric padding. Inspect warnings before rewriting. values:
 exact_integers:true returns decimal strings for I/A without Double rounding;
 subset: events or bounds:[[channel,lower,upper]] or vertices:[[x,y],...] with x/y channel;
 channels, metadata:[[key,value]], drop_spillover, drop_analysis. Output must not exist.
-Gate plans: gates:[{id,parent?,bounds|vertices|integer_bounds,...}];
+Gate plans: gates:[{id,parent?,bounds|vertices|integer_bounds|boolean,...}];
+boolean:{op:"and"|"or"|"not",refs:["gate-id",...]} combines final memberships; see BOOLEAN-GATES.md.
 gate/subset with population:"id" selects that group's original event indices. See GATE-PLANS.md.
 compare exits 2 on inconsistent storage mode/channel metadata/type/timestep/spillover; error exits 1.
 CSV receipts describe the selected view: compensation implies scaling.
